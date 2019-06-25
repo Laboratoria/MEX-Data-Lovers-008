@@ -18,7 +18,6 @@ compañera:
 
 * En lugar de trabajar en una sola rama o _branch_, puedes organizar el flujo de
   trabajo con dos ramas principales:
-  
   - `master`: rama que contiene las funcionalidades terminadas y sin errores.
   - `develop`: rama dónde integrarás las funcionalidades conforme las vayas
     desarrollando.
