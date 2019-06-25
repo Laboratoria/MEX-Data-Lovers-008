@@ -19,16 +19,15 @@ Para poder determinar a los usuarios que serían los indicados para tener una ap
 **
 Los principales usuarios del producto según los resultados arrojados por la entrevista realizada en cuanto edades de los usuarios se muestran en la primera gráfica, al 55.6 oscila entre los 25 a 35 años, el 33.3 oscila entre los 15 a 25 años y solo el 11.1 mas de 35 años. Algo que nos hizo darnos cuenta que no solo los jóvenes son los principales consumidores potenciales de la app, sino que también a personas maduras les resulta atractivo contar con una app de Ricky y Morty.
 
-images/imagen1
+![imagen1] (https://github.com/AdrianaRosas/MEX-Data-Lovers-008/blob/master/src/imagenes/imagen1.png)
 
 **
 ## ¿Qué tan fan eres de Ricky y Morty?
 **
-Cabe mensionar que la encuesta también nos arrojo lo siguiente 40.7 % son muy fans del Ricky y Morty, al 37 % le gusta, 3.8% No tanto y el 18.5 % no los conoce, estos resultado se puede observar en la segunda gráfica.
+Cabe mencionar que la encuesta también nos arrojo lo siguiente 40.7 % son muy fans del Ricky y Morty, al 37 % le gusta, 3.8% No tanto y el 18.5 % no los conoce, estos resultados se puede observar en la segunda gráfica.
   
 
-  images/imagen 2
-  **
+ ![imagen2] (https://github.com/AdrianaRosas/MEX-Data-Lovers-008/blob/master/src/imagenes/imagen%202.png)
 
 ## ¿Qué te interesa conocer de la Ricky y Morty?
 
@@ -39,7 +38,7 @@ Cabe mensionar que la encuesta también nos arrojo lo siguiente 40.7 % son muy f
 ## ¿Qué te interesa ver en una App deRicky y Morty?
 Los resultados arrojados por la entrevista realizada se muestran en la tercera gráfica, a los entrevistados les interesa ver en un 66.7% el nombre, especie y la procedencia de los personajes que son parte de Ricky y Morty. A un 18.5% solo les interesa ver la procedencia, a un 7.4% únicamente la especie y al resto de los encuestados no les interesa, o bien, quieren saber cuando sale la nueva temporada.
 
-  images/imagen 3
+![imagen3] (https://github.com/AdrianaRosas/MEX-Data-Lovers-008/blob/master/src/imagenes/imagen%203.png)
 
 - **
 
