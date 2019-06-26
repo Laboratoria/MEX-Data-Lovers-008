@@ -1,8 +1,8 @@
 
-# Richy y Morty APP Universe
+# Rick y Morty API Universe
 	
 
-Ricky y Morty App Universe promueve la ayuda a los fans de Rick y Morty a saber más sobre datos sobres los personajes, la cronologia , las temporadas y sus cambios que se han visto en esta serie.
+Rick y Morty Api Universe promueve la ayuda a los fans de Rick y Morty a saber más sobre datos sobres los personajes, la cronologia , las temporadas y sus cambios que se han visto en esta serie.
 
 
 ## *Objetivo*

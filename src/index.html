@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="PM-icon-207.png">
     <link rel="shortcut icon" href="https://scontent-mia3-2.cdninstagram.com/vp/3f268ef7e4cbdf16b0b298535fb3a095/5D98AB2E/t51.2885-15/sh0.08/e35/s640x640/60896059_363526267614915_9022280140086626890_n.jpg?_nc_ht=scontent-mia3-2.cdninstagram.com"/>
-
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Titillium+Web&display=swap" rel="stylesheet">
     <title>Rick & Morty API Universe</title>
     <link rel="stylesheet" href="style.css" />
     <script src="./data/rickandmorty/rickandmorty.js"></script>
@@ -12,10 +12,8 @@
   <body>
 
     
-      <div>
-         <h1>  Ricky y Morty</h1>
-      </div>
-      <div class="información">
+     
+      <section class="informacion">
         <div class="Textear"></div>
         <p>Rick es un brillante científico un tanto borracho que secuestra
           <br> 
@@ -25,19 +23,40 @@
           <br>
           a conocer mas sobre estos y otros personajes.</p> 
           <!-- <div><a href="#" class="btn-empezar">Empezar</a></div> -->
-        </div> 
-    </aside>
+        </section> 
+    
 
-<nav>
-   <div class="contenedor-Personajes">
-    <div class="Textear"></div>
-     <h2>  Personajes favoritos</h2>
-      <textarea name="compartir" rows="5" cols="60" id="compartir"></textarea>
-      <div><a href="#" class="btn-continuar">Continuar</a></div>
-      <br>
-      <div><a href="#" class="btn-empezar">Empezar</a></div>
-        </div>
-</nav>
+        <table class="table">
+          <thead>
+              <th>TOP RANKING</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tabla">Rick Sánchez</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td class="tabla">Morty Smith</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td class="tabla">Mr. Poopybutthole</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td class="tabla">Evil Morty</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td class="tabla">Squanchy</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            
+          </tfoot>
+        </table>
+    
     <br>
     <br>
     <br>
@@ -58,16 +77,7 @@
             
         </div>
 
-        <script>
-          var reproductor = videojs ('fm-video',{
-              fluid: true
-          });
-      </script>
-
 </section>
-
-
-   
 
     <script src="main.js"></script>
     <script src="data.js"></script>
