@@ -7,11 +7,15 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Titillium+Web&display=swap" rel="stylesheet">
     <title>Rick & Morty API Universe</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- <script src="./data/steam/steam.js"></script> -->
     <script src="./data/rickandmorty/rickandmorty.js"></script>
   </head>
   <body>
-
-    
+      <div>
+         <h1>  Ricky y Morty</h1>
+      </div>
+      <div class="información">
      
       <section class="informacion">
         <div class="Textear"></div>
@@ -22,6 +26,20 @@
           otros mundos y en dimensiones alternativas, te animas
           <br>
           a conocer mas sobre estos y otros personajes.</p> 
+
+         
+        </div> 
+    </aside>
+
+<nav>
+   <div class="contenedor-Personajes">
+    <div class="Textear"></div>
+     <h2>  Personajes favoritos</h2>
+      <textarea name="compartir" rows="5" cols="60" id="compartir"></textarea>
+
+        </div>
+</nav>
+
           <!-- <div><a href="#" class="btn-empezar">Empezar</a></div> -->
         </section> 
     
@@ -57,6 +75,7 @@
           </tfoot>
         </table>
     
+    
     <br>
     <br>
     <br>
@@ -66,16 +85,44 @@
     <br>
     <br>
     <br>
+  
 
+<!-- sección video -->
 <section>
   <h3>Nueva temporada</h3>
 
         <div id="video"  class="contenedor">
-            <video width="500" class="fm-video video-js vjs-16-9  vjs-big-play-centered" data-setup="{}" controls preload="auto">
+            <video width="40%" class="fm-video video-js vjs-16-9  vjs-big-play-centered" data-setup="{}" controls preload="auto">
                 <source src="video/rick_y_morty_temp4.mp4" type="video/mp4">
             </video>
             
         </div>
+
+</section>
+
+<section id="caracteristicas" class="hide">
+  <div class="content">
+    <!-- <div class="boton?">
+      <select name="filtrar o escoger" id="filtrar o escoger?"> -->
+
+      <option value="filtrar">Filtrar</option>
+      <option value="name">Nombre</option>
+      <option value="species">Especies</option>
+      <option value="location.name">Dimensión</option>
+      <option value="origin-name">Origen</option>
+      <option value="status">Vivo o Muerto</option>
+      </select>
+
+    </div>
+
+<select name="orden" id="orden">
+  <option value="orden">Ordenar</option>
+  <option value="a-z">de A-Z</option>
+  <option value="z-a">de Z-A</option>
+
+</select>
+</div>
+<section class="data" id='data'>
 
 </section>
 
