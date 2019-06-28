@@ -2,7 +2,7 @@
 # Rick y Morty API Universe
 	
 
-Rick y Morty Api Universe promueve la ayuda a los fans de Rick y Morty a saber más sobre datos sobres los personajes, la cronologia , las temporadas y sus cambios que se han visto en esta serie.
+Rick y Morty Api Universe promueve la ayuda a los fans de Rick y Morty a saber más sobre datos sobres los personajes, la cronología , las temporadas y los cambios que se han visto en esta serie.
 
 
 ## *Objetivo*
