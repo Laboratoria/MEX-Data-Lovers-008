@@ -78,6 +78,7 @@ Los espacios virtuales de búsqueda son tediosos
 Card Sorting
 
 Sketches
+![proyecto.sketches](/img/índice.jpeg)
 
 
 # Data Lovers
