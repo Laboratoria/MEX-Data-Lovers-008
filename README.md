@@ -20,20 +20,16 @@ Para poder determinar a los usuarios que serían los indicados para tener una ap
 **
 Los principales usuarios del producto según los resultados arrojados por la entrevista realizada en cuanto edades de los usuarios se muestran en la primera gráfica, al 55.6 oscila entre los 25 a 35 años, el 33.3 oscila entre los 15 a 25 años y solo el 11.1 mas de 35 años. Algo que nos hizo darnos cuenta que no solo los jóvenes son los principales consumidores potenciales de la app, sino que también a personas maduras les resulta atractivo contar con una app de Ricky and Morty.
 
-![imagen1] (https://github.com/AdrianaRosas/MEX-Data-Lovers-008/blob/master/src/imagenes/imagen1.png)
+![](./src/imagenes/imagen1.png)
 
 **
 
 ## ¿Qué tan fan eres de Ricky and Morty?
-**
-<<<<<<< HEAD
-Cabe mensionar que la encuesta también nos arrojo lo siguiente 40.7 % son muy fans del Ricky and Morty, al 37 % le gusta, 3.8% No tanto y el 18.5 % no los conoce, estos resultado se puede observar en la segunda gráfica.
-=======
 Cabe mencionar que la encuesta también nos arrojo lo siguiente 40.7 % son muy fans del Ricky y Morty, al 37 % le gusta, 3.8% No tanto y el 18.5 % no los conoce, estos resultados se puede observar en la segunda gráfica.
->>>>>>> cambios-adri
+
   
 
- ![imagen2] (https://github.com/AdrianaRosas/MEX-Data-Lovers-008/blob/master/src/imagenes/imagen%202.png)
+![](./src/imagenes/imagen 2.png)
 
 ## ¿Qué te interesa conocer de la Ricky and Morty?
 
@@ -44,7 +40,7 @@ Cabe mencionar que la encuesta también nos arrojo lo siguiente 40.7 % son muy f
 ## ¿Qué te interesa ver en una App de Ricky and Morty?
 Los resultados arrojados por la entrevista realizada se muestran en la tercera gráfica, a los entrevistados les interesa ver en un 66.7% el nombre, especie y la procedencia de los personajes que son parte de Ricky and Morty. A un 18.5% solo les interesa ver la procedencia, a un 7.4% únicamente la especie y al resto de los encuestados no les interesa, o bien, quieren saber cuando sale la nueva temporada.
 
-![imagen3] (https://github.com/AdrianaRosas/MEX-Data-Lovers-008/blob/master/src/imagenes/imagen%203.png)
+![](./src/imagenes/imagen 3.png)
 
 - **
 
@@ -68,7 +64,7 @@ Con todo lo anterior deducimos que nuestra proto-persona son jóvenes y adultos 
 Cabe mensionar que la proto-persona no se diseño con forme a una edad en especifico dado que Ricky and Morty cuenta con una gama muy amplia en cuanto a edad por lo que se diseño principalmente por el gusto que tienen las personas por Ricky y Morty mas que por edad
 
 
-images/Usuario
+![](./src/imagenes/Usuario.png)
 **
 
 # Problematica
@@ -81,7 +77,7 @@ El usuario(a) requiere una aplicación que muestre a los personajes de Ricky and
 ## Historias de Usuario
 A continuación algunas historias de usuarios que comenzamos a definir:
 
-images/Hist-usuario(2)
+![](./src/imagenes/Hist-usuario.png)
 
 
 ## PROTOTIPADO
@@ -89,4 +85,4 @@ images/Hist-usuario(2)
 Una vez concluido nuestra investigación con los usuarios se paso al prototipo de App de Ricky and Morty, el cual se mostró a nuevos usuarios para que nos retroalimentaran sobre su expectativa sobre esta, se realizaron los cambios mencionados según la información de los usuarios y el resultado con el que los usuarios satisface sus necesidades es el siguiente:
   
 
-images/Protoripo
+![](./src/imagenes/Prototipo.png)
