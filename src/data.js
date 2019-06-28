@@ -12,3 +12,4 @@ for (let i = 0; i < RICKANDMORTY.results.length; i++){
   console.log(RICKANDMORTY.results[i].name)
 
 }
+
