@@ -1,7 +1,7 @@
 ﻿# Get Schwifty
 
 ## Descripción del proyecto
-
+Get Swifty promete ayudar a los nuevos fans de la Serie Rick and Morty a conocer mejor los personajes, su cronología dentro de la serie, multiversos y sus diferentes cambios dentro de la misma.
 ## Objetivo del proyecto
 Crear un sitio web agradable y fácil de entender enfocado a nuevos fans de la serie Rick y Morty que les gustaría saber más de sus personajes favoritos.
 
@@ -16,24 +16,25 @@ Finalmente el 58% de los encuestados respondieron que si buscan mayor informaci�
 
 ### Resultado de segunda encuesta:
 En nuestra segunda iteración, logramos encuestar a 68 personas que solamente 4 de ellas no conocían la serie de Rick and Morty. Estos fueron los resultados:
+![](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/serie.png)
 
 El 48.5 % de los encuestados tienen entre 19 y 25 años, 44.1% de 26 a 35 años. En contraste con la encuesta anterior, el 54.4 % son mujeres mientras que el 45.6% son hombres. Mostrando una participación casi equitativa.
-![]
+![]()
 
 De las personas que si conocen la serie, el 76.6% les gusta mucho y 20.3% le gusta un poco.
-![]
+![](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/like.png)
 
 Notamos que el 53.2% de los encuestados no suelen buscar mayor información de la serie, solo la consumen. Sin embargo el 46.8% que si busca información suele hacerlo en: 
-![] 
+![](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/infosite.png)
 
 ¿Qué suelen investigar? La mayoría coincidió en informarse sobre los personajes (33.9%), y  multiversos (27.4%),  siendo estos, los más populares. Nuevamente alrededor del 40% no suele buscar mayor información.
-![]
+![](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/infosearch.png)
 
 Específicamente sobre personajes, para los encuestados es más relevante conocer el multiverso de origen(32.3%), el nombre (29%), imágenes del personaje (19.4%) en qué episodio aparece por primera vez (15%). y el 8% se interesa por la personalidad y  motivaciones del personaje.
-![]
+![](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/infocharacters.png)
 
 Y esta data les gustaría encontrarlas en plataformas como páginas web (37.1%),  aplicaciones móviles (32.3%),  en foros (8.1%) y el resto se divide entre Youtube,  o simplemente notificaciones respecto a nuevos capítulos. Nuevamente obtuvimos un alto porcentaje de personas que no le interesaría buscar mayor información (32.3%).
-![]
+![](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/infositeextra.png)
 
 Finalmente en una pregunta abierta donde les pedimos que nos explicaran porque les gusta tanto Rick and Morty, surgieron comentarios donde destacaba el humor que manejaba, su sátira, su ironía, las referencias científicas, filosóficas o de otros programas, así como el comportamiento de sus personajes. 
 
@@ -80,3 +81,5 @@ De acuerdo con las encuestas realizada nuestro usuario se podría definir como u
 Como dato extra, podemos intuir que los usuarios con interés en la serie son personas que invierten mucho tiempo en redes sociales, especialmente en Facebook ya que por este medio fue donde se compartió el link de la encuesta.
 
 En conclusión, nuestro usuario promedio es un hombre mayor de edad (menor de 40 años) cuyo tiempo libre lo invierte en redes sociales con fines de ocio
+
+![]()
