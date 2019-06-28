@@ -16,7 +16,8 @@ Después gráficamos la cantidad de hombres y mujeres que juegan o jugaban poké
 
 En el proceso encontramos que muchas chicas, aunque estaban interesadas jamás lo habían jugado porque sentían que no contaban con los conocimientos necesarios para ser una buena jugadora, y de ahí nació nuestra aplicación. 
 
-Iniciamos creando un prototipo de baja calidad
+Iniciamos creando un prototipo de baja afinidad 
+
 ![skecthBajaAfinidad](imagenes/sketch.jpg)
 
 Nuestra aplicación pretende convertirse en una herramienta efectiva, fácil de usar, amigable con la usuaria, con la finalidad de que adquiera los conocimientos básicos para adentrarse en el mundo pokémon.
