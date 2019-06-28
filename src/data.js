@@ -6,3 +6,7 @@ const example = () => {
 };
 
 window.example = example;
+
+for (let i = 0; i < RICKANDMORTY.results.length; i++ ){
+  console.log (RICKANDMORTY.results[i].status)
+}
