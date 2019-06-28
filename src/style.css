@@ -1,0 +1,35 @@
+body{
+    background-image: url('imagen5.jpg');
+    background-size: 1500px 700px;
+}
+
+h1{
+  text-align:left;
+  color: white;
+  font-family: 'Covered By Your Grace', cursive;
+  height: 100px;
+  width: auto;
+}
+
+.contenedor-texto{
+  /* background: rgba(0,0,0,.7); */
+  width: 100%;
+  max-width: 500px;
+  margin: 90px;
+  color: white;
+  border-radius:5px;
+  text-align: right;
+}
+
+.contenedor-Personajes{
+  /* background: rgba(0,0,0,.7); */
+  width: 100%;
+  max-width: 500px;
+  margin: 48px;
+  color: white;
+  border-radius:5px;
+  text-align: left;
+}
+
+/* .button: hover{
+  cursor:pointer; */
