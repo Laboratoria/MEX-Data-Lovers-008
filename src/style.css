@@ -1,0 +1,36 @@
+#welcome{
+  background-color: white;
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+#pokeboll{
+  height: 15%;
+  width: 15%;
+  float: right;
+  padding-right: 28%;
+}
+
+#pokemon-title{
+  height: 30%;
+  width: 30%;
+  padding-left: 20%;
+}
+
+#initial-question{
+  background-color: brown;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 20%;
+  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  margin-bottom: 0%;
+}
+
+#container-filter{
+  background-color: blue;
+  height: 500px;
+  margin-top: 0%;
+}
+
