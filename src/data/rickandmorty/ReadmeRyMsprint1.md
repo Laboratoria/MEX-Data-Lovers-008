@@ -39,3 +39,4 @@ PARA: Informarme de la trama, entender las teorías  y personajes.
 
 ![](./README.IMAGDATALOVERS/sketch-uno.png)
 ![](./README.IMAGDATALOVERS/sketch-dos.png)
+
