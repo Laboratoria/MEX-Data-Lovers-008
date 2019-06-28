@@ -1,3 +1,5 @@
+DATA LOVERS / "Ricky y Morty", web fan
+
 Descripción del producto:
 
 El presente trabajo se fundamenta en las inquietudes de los aficionados a la serie de Rick y Morthy. Durante nuestra investigación, descubrimos que no existen sitios especializados del programa, que ofrezcan a sus espectadores el contenido que sacie su curiosidad y ayude a dilucidar cuestionamientos que provoca la trama de la misma. Es decir, se ha detectado una demanda real y no cubierta para los seguidores de la serie. Debido a lo anterior, proponemos una página web que ponga a su alcance (al menos como primer intento de cubrir la necesidad antes mencionada) una categorización de los personajes de acuerdo a las siguientes cualidades: Nombre, especie, estatus, locación, género y episodio en donde aparecen cada uno.
