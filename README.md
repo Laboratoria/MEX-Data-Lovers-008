@@ -19,7 +19,7 @@ En nuestra segunda iteración, logramos encuestar a 68 personas que solamente 4 
 ![](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/serie.png)
 
 El 48.5 % de los encuestados tienen entre 19 y 25 años, 44.1% de 26 a 35 años. En contraste con la encuesta anterior, el 54.4 % son mujeres mientras que el 45.6% son hombres. Mostrando una participación casi equitativa.
-![]()
+![](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/genero.png)
 
 De las personas que si conocen la serie, el 76.6% les gusta mucho y 20.3% le gusta un poco.
 ![](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/like.png)
