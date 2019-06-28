@@ -1,17 +1,11 @@
-<<<<<<< HEAD
 
 for(personajes in RICKANDMORTY.results){ 
   // console.log(RICKANDMORTY.results[personajes].image); 
   //console.log(RICKANDMORTY.results[personajes].gender); 
-=======
+
 for(personajes in RICKANDMORTY.results){
-  // console.log(RICKANDMORTY.results[personajes].image);
-
-  
+  // console.log(RICKANDMORTY.results[personajes].image); 
   //console.log(RICKANDMORTY.results[personajes].gender);
-  
->>>>>>> a5f3048058a510ce41e67a3c3550fb539d37e3ac
-
 }
 const data = RICKANDMORTY.results;
 // const data RICKANDMORTY.results
@@ -51,4 +45,4 @@ muestraData()
 //   printData(filterType); // Reutilizando la funcion para imprimir por tipo sobre las tarjetas
 // };
 
-
+}
