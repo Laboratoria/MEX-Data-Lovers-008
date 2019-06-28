@@ -82,4 +82,4 @@ Como dato extra, podemos intuir que los usuarios con interés en la serie son pe
 
 En conclusión, nuestro usuario promedio es un hombre mayor de edad (menor de 40 años) cuyo tiempo libre lo invierte en redes sociales con fines de ocio
 
-![]()
+![](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/userPersona.png)
