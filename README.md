@@ -83,3 +83,34 @@ Como dato extra, podemos intuir que los usuarios con interés en la serie son pe
 En conclusión, nuestro usuario promedio es un hombre mayor de edad (menor de 40 años) cuyo tiempo libre lo invierte en redes sociales con fines de ocio
 
 ![](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/userPersona.png)
+
+## User Journey
+Primer acercamiento a Get Schwifty
+
+1. El usuario recibe recomendaciones por parte de sus compañeros del trabajo sobre la serie.
+2. El usuario busca en internet plataformas de stream o de contenido multimedia dónde pueda ver la serie.
+3. Se percata que las primeras 2 temporadas de la serie estan en Netflix.
+4. Después de ver y disfrutar las temporadas, el usuario se muestra confundido con algunos personajes o pasajes de la serie.
+5. El usuario decide buscar información de los personajes en internet desde su celular.
+6. El usuario se encuentra con Get Schwifty.
+
+Dentro de Get Schwifty-Filtrando data
+1. El usuario accede al sitio Get Shcwifty.
+2. Comienza a buscar información relacionada con la cantidad de ricks que hay, los multiversos en los que se organizan, etc.
+3. El usuario decide concentrarse en un personaje y filtrar la data con la opción de filtrado de la página.
+4. El usuario resuelve sus dudas respecto a dicho personaje.
+
+Ordenando data en Get Schwifty
+1. El usuario decide buscar un personaje pero le es díficil encontrarlo por su nombre.
+2. El usuario descubre un botón que ordena los nombres en orden alfabetico.
+3. El usuario utiliza el botón y encuentra a su personaje rápidamente.
+
+Curiosidad en Get Schwifty
+1. Al ver algunos personajes, nota que no pertenecen a la primera o segunda temporada, y se percata que ya existe la tercer temporada.
+2. Dentro Get Schwifty descubre que hay un apartado de la tercer temporada.
+3. Dentro del apartado nota que se comparten enlaces donde el puede ver la tercera temporada de manera gratuita.
+4. El usuario sale de Get Schwifty al dar click en cualquiera de los enlaces.
+    - https://www.adultswim.com/streams/rick-and-morty
+    - https://www.youtube.com/playlist?list=PLsw7NzOFmtU5a3chL7Q5xT_K6SSIyzWkN
+
+Al notar lo que ofrece Get Schwifty a los nuevos fans de Rick and Morty y su fácil manejo de la información, la página es compartida con otros nuevos fanaticos de la serie.
