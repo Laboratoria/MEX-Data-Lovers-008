@@ -5,7 +5,7 @@
 ##Diseño de la Interfaz de Usuario
 Elegimos el tema del presente proyecto con base a la cantidad de data con la que contabamos inicialmente en nuestro pokemon.js. 
 Iniciamos realizando encuentas para determinar cual tema era el que más le interesaba a las personas. 
-![PrimeraEncuesta](primeraEncuesta.jpg)
+![PrimeraEncuesta](imagenes/primeraEncuesta.jpg)
 
 Los datos que obtuvimos al finalizar la primera encuesta fue que era pokémon. 
 
