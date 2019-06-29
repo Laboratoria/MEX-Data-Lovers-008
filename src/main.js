@@ -50,4 +50,4 @@ muestraData()
 //   printData(filterType); // Reutilizando la funcion para imprimir por tipo sobre las tarjetas
 // };
 
-}
+
