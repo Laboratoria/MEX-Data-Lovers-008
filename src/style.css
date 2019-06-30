@@ -3,11 +3,12 @@ body{
     background-size: 1500px 700px;
 }
 
-h1{
+h2{
   text-align:left;
   color: white;
-  font-family: 'Covered By Your Grace', cursive;
-  height: 100px;
+  font-family: 'Permanent Marker', cursive;
+  /* font-family: 'Covered By Your Grace', cursive; */
+  height: 20px;
   width: auto;
 }
 
@@ -16,20 +17,20 @@ h1{
   width: 100%;
   max-width: 500px;
   margin: 90px;
+  margin-block: 2500px 50px;
   color: white;
   border-radius:5px;
   text-align: right;
+  float: right;
 }
 
 .contenedor-Personajes{
-  /* background: rgba(0,0,0,.7); */
+  background: rgba(0,0,0,.7);
   width: 100%;
   max-width: 500px;
   margin: 48px;
-  color: white;
+  color:  white;
   border-radius:5px;
   text-align: left;
+  float: left;
 }
-
-/* .button: hover{
-  cursor:pointer; */
