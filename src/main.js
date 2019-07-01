@@ -22,6 +22,8 @@ const playCarousel = () => {
 
 playCarousel();
 
+//HIDE & SHOW
+
 const hideSection = (id) => {
     document.getElementById(id).classList.add('hide');
 }
