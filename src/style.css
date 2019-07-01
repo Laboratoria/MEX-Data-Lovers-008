@@ -3,34 +3,117 @@ body{
     background-size: 1500px 700px;
 }
 
+h1{
+  color: white;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-weight: bold;
+  font-size: 60px;
+  text-shadow: 5px 5px 5px blue;
+  margin: 65px;
+}
+
+
 h2{
   text-align:left;
   color: white;
   font-family: 'Permanent Marker', cursive;
   /* font-family: 'Covered By Your Grace', cursive; */
   height: 20px;
-  width: auto;
+  text-shadow: 5px 5px 5px blue;
+  /* width: auto; */
 }
 
-.contenedor-texto{
-  /* background: rgba(0,0,0,.7); */
+#contenedor-texto{
   width: 100%;
   max-width: 500px;
-  margin: 90px;
-  margin-block: 2500px 50px;
+  margin-right: 5%;
   color: white;
   border-radius:5px;
   text-align: right;
   float: right;
 }
 
-.contenedor-Personajes{
+p{
+  font-size: 30px;
+  text-align: right;
+  margin: 0.3em;
+  color: white;
+  font-family: 'Butcherman', cursive;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px blue;
+}
+
+#contenedor-Personajes{
+  width:80%;
+  max-width: 70px;
+  margin-left: 5em;
   background: rgba(0,0,0,.7);
-  width: 100%;
-  max-width: 500px;
-  margin: 48px;
   color:  white;
   border-radius:5px;
-  text-align: left;
-  float: left;
+
 }
+
+.btn-empezar{
+  position: relative;
+  display: inline-block;
+  border: 2px solid blue;
+  padding: 40 px 80px;
+  color:greenyellow;
+  font-weight: 700;
+  text-decoration:none;
+  background-color:rgb(124, 110, 245);
+  object-position: right;
+}
+
+.btn-empezar:hover{
+  color: blue ;
+  background-color: transparent;
+  }
+
+
+.btn-continuar{
+  position: relative;
+  display: inline-block;
+  border: 2px solid blue;
+  padding: 40 px 80px;
+  color:greenyellow;
+  font-weight: 700;
+  text-decoration:none;
+  background-color:rgb(124, 110, 245);
+  text-align: left; 
+}
+
+.btn-continuar:hover{
+color: blue ;
+background-color: transparent;
+}
+
+.btn-temporada{
+  position: relative;
+  display: inline-block;
+  border: 2px solid blue;
+  padding: 40 px 80px;
+  color:greenyellow;
+  font-weight: 700;
+  text-decoration:none;
+  background-color:rgb(124, 110, 245);
+  text-align: left; 
+}
+.btn-temporada:hover{
+  color: blue ;
+  background-color: transparent;
+  }
+
+  h3{
+  text-align: right;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  height: 40px;
+  margin-right: 4%;
+  text-shadow: 5px 5px 5px blue; 
+  }
+  #contenedor{
+    margin: center;
+  }
