@@ -18,6 +18,11 @@ const candy =  document.getElementById("candy");
 const candy_count = document.getElementById("candy_count");
 const egg = document.getElementById("egg");
 const spawn_chance = document.getElementById("spawn_chance");
+const avg_spawns = document.getElementById("avg_spawns");
+const spawn_time = document.getElementById("spawn_time");
+const multipliers = document.getElementById("multipliers");
+const weaknesses = document.getElementById("weaknesses");
+const next_evolution = document.getElementById("next_evolution");
 let contador = 0;
 
 // const showName = () => {
@@ -33,6 +38,9 @@ firstButton.addEventListener("click", () => {
   candy_count.innerHTML = "Caramelos para evolucionar:" + " " + window.pikachu.pokemon[contador].candy_count;
   egg.innerHTML = "Egg:" + " " + window.pikachu.pokemon[contador].egg;
   spawn_chance.innerHTML = "spawn_chance:" + " " + window.pikachu.pokemon[contador].egg;
+  avg_spawns.innerHTML = "avg_spawns:" + " " + window.pikachu.pokemon[contador].avg_spawns;
+  spawn_time.innerHTML = "spawn_time:" + " " + window.pikachu.pokemon[contador].spawn_time;
+  weaknesses.innerHTML = "Debilidades:" + " " + window.pikachu.pokemon[contador].weaknesses;
   contador=contador+1;
 })
 
