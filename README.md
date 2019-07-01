@@ -76,7 +76,7 @@ El usuario(a) requiere una aplicación que muestre a los personajes de Ricky y M
 ## Historias de Usuario
 A continuación algunas historias de usuarios que comenzamos a definir:
 
-images/Hist-usuario
+images/Hist-usuario(2)
 
 
 ## PROTOTIPADO
