@@ -1,19 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="root"></div>
-    <h1>Get Schwifty</h1>
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <!-- <script src="./data/pokemon/pokemon.js"></script> -->
     <!-- <script src="./data/steam/steam.js"></script> -->
     <script src="./data/rickandmorty/rickandmorty.js"></script>
     <!-- <script src="./data/lol/lol.js"></script> -->
+    <section class="content">
+        <nav class="navigation-bar">
+            <figure>
+                <img src="" alt="logo" id="logo">
+            </figure>
+            <div>
+                <input type="search" id="search" placeholder="¿Qué buscas?">
+                <figure>
+                    <a><img alt="search-icon" id="search-icon"></a>
+                </figure>
+            </div>
+        </nav>
+        <section class="landing" id="landing-page">
+            <div class="carousel">
+                <h2>Aquí va el carrusel</h2>
+            </div>
+            <input type="button" value="Catálogo" id="catalog">
+        </section>
+    </section>
+    <section id="characters-page" class="hide">
+        <div class="content">
+            <div class="order-and-filter-button">
+                <select name="filter" id="filter">
+               <option value="filter">Filtrar</option>
+               <option value="rick">Todos los Ricks</option>
+               <option value="morty">Todos los Morty</option>
+               <option value="location.name">Dimensiones</option>
+               <option value="species">Especies</option>
+               <option value="origin.name">Lugar de origen</option>
+               <option value="gender">Género</option>
+               <option value="status">Vivo o muerto</option>
+            </select>
+                <h2>Personajes</h2>
+                <select name="order" id="order">
+               <option value="order">Ordenar</option>
+               <option value="a-z">de la A a la Z</option>
+               <option value="z-a">de la Z a la A</option>
+            </select>
+            </div>
+            <section class="all-data">
+
+            </section>
+        </div>
+    </section>
+    <footer>
+        <h4>Agradecimientos</h4>
+    </footer>
     <script src="data.js"></script>
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>
