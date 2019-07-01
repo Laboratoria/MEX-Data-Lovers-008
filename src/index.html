@@ -10,30 +10,65 @@
     <script src="./data/rickandmorty/rickandmorty.js"></script>
   </head>
   <body>
-    <header>
-      <div class="contenedor-texto">
-        <div class="Textear">
-          <h2>Presentación</h2>
-          <textarea name="empezar" rows="15" cols="60" id="empezar"></textarea>
-          <input type="submit" id="btn-submit" value="Empezar" />
-          <!-- <button id="Empezar" class="boton_empezar"><a href="#empezar">Empezar</a></button> -->
-        </div>
-      </div> 
-    <header>
 
-    <nav>
-      <div class="contenedor-Personajes">
-        <div class="Textear">
-          <h2>Personajes favoritos</h2>
-          <textarea name="compartir" rows="5" cols="60" id="compartir"></textarea>
-          <input type="submit" id="btn-submit" value="Continuar">
-          <!-- <button id="Continuar" class="boton_continuar"><a href="#Continuar">Continuar</a></button> -->
+    
+      <div>
+         <h1>  Ricky y Morty</h1>
+      </div>
+      <div class="información">
+        <div class="Textear"></div>
+        <p>Rick es un brillante científico un tanto borracho que secuestra
+          <br> 
+          a su irritable nieto adolescente Morty para vivir aventuras en 
+          <br>
+          otros mundos y en dimensiones alternativas, te animas
+          <br>
+          a conocer mas sobre estos y otros personajes.</p> 
+          <!-- <div><a href="#" class="btn-empezar">Empezar</a></div> -->
+        </div> 
+    </aside>
+
+<nav>
+   <div class="contenedor-Personajes">
+    <div class="Textear"></div>
+     <h2>  Personajes favoritos</h2>
+      <textarea name="compartir" rows="5" cols="60" id="compartir"></textarea>
+      <div><a href="#" class="btn-continuar">Continuar</a></div>
+      <br>
+      <div><a href="#" class="btn-empezar">Empezar</a></div>
         </div>
-      </div>  
-    </nav>
-          
-    <div id="root">   
-    </div>
+</nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<section>
+  <h3>Nueva temporada</h3>
+
+        <div id="video"  class="contenedor">
+            <video width="500" class="fm-video video-js vjs-16-9  vjs-big-play-centered" data-setup="{}" controls preload="auto">
+                <source src="video/rick_y_morty_temp4.mp4" type="video/mp4">
+            </video>
+            
+        </div>
+
+        <script>
+          var reproductor = videojs ('fm-video',{
+              fluid: true
+          });
+      </script>
+
+</section>
+
+
+   
+
     <script src="main.js"></script>
     <script src="data.js"></script>
   </body>
