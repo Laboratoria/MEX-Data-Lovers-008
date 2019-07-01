@@ -8,49 +8,49 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,600&display=swap" rel="stylesheet">
-  </head>
+</head>
 
 <body>
 
-<!-- DATA -->
+    <!-- DATA -->
 
-  <script src="./data/rickandmorty/rickandmorty.js"></script>
-  
-  <!-- <section class="content"> -->
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
 
-<!-- HEADER -->
+    <!-- <section class="content"> -->
+
+    <!-- HEADER -->
 
     <header>
         <nav class="navigation-bar">
             <figure>
-                <a href=""><img src="img/logo.svg" alt="logo" id="logo"></a> 
+                <a href=""><img src="img/logo.svg" alt="logo" id="logo"></a>
             </figure>
             <div>
                 <input type="search" id="search" placeholder="   ¿Qué buscas?">
                 <!-- <figure> -->
-                    <button type="submit"><i class="fas fa-search"></i></button>
+                <button type="submit"><i class="fas fa-search"></i></button>
                 <!-- </figure> -->
             </div>
         </nav>
     </header>
 
-  <!-- MAIN -->
+    <!-- MAIN -->
     <main class="content">
-      <section class="landing" id="landing-page">
-          <div class="carousel">
-              <a href="" id="back">retroceder</a>
-              <img src="img/rickmorty.jpg" alt="Rick and Morty" class="slide">
-              <img src="img/rick-and-morty.jpg" alt="Rick and Morty" class="slide">
-              <img src="img/rmbeth.jpg" alt="Rick and Morty" class="slide">
-              <a href="" id="next">avanzar</a>
-          </div>
-          <input type="button" value="Catálogo" id="catalog">
-      </section>
-  <!-- </section> -->
-  <section id="characters-page" class="hide">
-      <div class="content">
-          <div class="order-and-filter-button">
-              <select name="filter" id="filter">
+        <section class="landing" id="landing-page">
+            <div class="carousel">
+                <a href="" id="back">retroceder</a>
+                <img src="img/rickmorty.jpg" alt="Rick and Morty" class="slide">
+                <!-- <img src="img/rick-and-morty.jpg" alt="Rick and Morty" class="slide">
+                <img src="img/rmbeth.jpg" alt="Rick and Morty" class="slide"> -->
+                <a href="" id="next">avanzar</a>
+            </div>
+            <input type="button" value="Catálogo" id="catalog">
+        </section>
+        <!-- </section> -->
+        <section id="characters-page" class="hide">
+            <div class="content">
+                <div class="order-and-filter-button">
+                    <select name="filter" id="filter">
              <option value="filter">Filtrar</option>
              <option value="rick">Todos los Ricks</option>
              <option value="morty">Todos los Morty</option>
@@ -60,25 +60,24 @@
              <option value="gender">Género</option>
              <option value="status">Vivo o muerto</option>
           </select>
-              <h2>Personajes</h2>
-              <select name="order" id="order">
+                    <h2>Personajes</h2>
+                    <select name="order" id="order">
              <option value="order">Ordenar</option>
              <option value="a-z">de la A a la Z</option>
              <option value="z-a">de la Z a la A</option>
           </select>
-          </div>
-          
-          <section class="all-data">
-  
-          
-          </section>
-      </div>
-  </section>
-</main>
-<footer>
-      <h4>Todos los derechos reservados &copy;</h4>
-</footer>
-        
+                </div>
+
+                <section class="all-data" id='all-data'>
+
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4>Todos los derechos reservados &copy;</h4>
+    </footer>
+
     <script src="data.js"></script>
     <script src="main.js"></script>
 </body>
