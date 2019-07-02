@@ -1,11 +1,14 @@
 /* BOX SIZING */
+
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+}
 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
 
 /* SELECTORES DE ETIQUETA */
@@ -13,24 +16,22 @@ html {
 * {
     font-family: 'Dosis', sans-serif;
 }
+
 body {
     justify-content: center;
     margin: 0px;
     background-image: url(img/fondo.png);
     background-size: cover;
-    
 }
-
 
 main {
     width: 1200px;
     height: auto;
     padding-bottom: 3rem;
-    background-color: rgba(204,204,204,1);
-    -webkit-box-shadow: 0px 53px 16px 12px rgba(155,242,185,0.177);
-    -moz-box-shadow: 0px 53px 16px 12px rgba(155,242,185,0.177);
-    box-shadow: 0px 53px 16px 12px rgba(155,242,185,0.177);
-
+    background-color: rgba(204, 204, 204, 1);
+    -webkit-box-shadow: 0px 53px 16px 12px rgba(155, 242, 185, 0.177);
+    -moz-box-shadow: 0px 53px 16px 12px rgba(155, 242, 185, 0.177);
+    box-shadow: 0px 53px 16px 12px rgba(155, 242, 185, 0.177);
 }
 
 img {
@@ -46,55 +47,57 @@ footer {
 
 header {
     width: 100%;
-    background-color: rgba(0,0,0, 0.85);
+    background-color: rgba(0, 0, 0, 0.85);
     display: flex;
 }
 
 
 /* CLASES */
 
+
 /* HEADER */
-    .navigation-bar {
-        display: flex;
-        justify-content: space-between;
-        width: 1200px;
-        margin: 0 auto;
-        align-items: center;
-        /* background-color: aqua; */
-    }
-    
-    .navigation-bar div {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 2rem 0;
-        height: 2.5rem;
-    }
-    
-    
-    #logo {
-    
-        width: 8rem;
-    }
-    
-    #search {
-        margin-right: 0px;
-        width: 3.5rem;
-        height: 2.5rem;
-        border-radius: 3rem;
-        border: #00B3CC solid 0.15rem;
-    }
-    
-    #search:hover {
-      width: 15rem;
-      -webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
-      transition: width 0.5s;
-    }
-    
-    #search:focus { 
-        width: 15rem;
-        outline: none;
-        }
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.navigation-bar div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem 0;
+    height: 2.5rem;
+}
+
+#logo {
+    width: 8rem;
+}
+
+#search {
+    margin-right: 0px;
+    width: 3.5rem;
+    height: 2.5rem;
+    border-radius: 3rem;
+    border: #00B3CC solid 0.15rem;
+}
+
+#search:hover {
+    width: 15rem;
+    -webkit-transition: width 0.5s;
+    /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s;
+}
+
+#search:focus {
+    width: 15rem;
+    outline: none;
+}
+
 
 /* MAIN */
 
@@ -116,25 +119,23 @@ header {
     height: 2.5rem;
     border-radius: 100%;
     margin-left: -2.3rem;
-} 
+}
 
-
-.button{
-    border-color:#00B3CC;
+.button {
+    border-color: #00B3CC;
     cursor: pointer;
     color: white;
     background-color: #00B3CC;
-    -webkit-box-shadow: -9px 10px 16px -7px rgba(82,73,82,0.68);
-    -moz-box-shadow: -9px 10px 16px -7px rgba(82,73,82,0.68);
-    box-shadow: -9px 10px 16px -7px rgba(82,73,82,0.68);
+    -webkit-box-shadow: -9px 10px 16px -7px rgba(82, 73, 82, 0.68);
+    -moz-box-shadow: -9px 10px 16px -7px rgba(82, 73, 82, 0.68);
+    box-shadow: -9px 10px 16px -7px rgba(82, 73, 82, 0.68);
     transition: 1ms;
 }
 
 .button:hover {
-    background-color:#9BF2BA;
+    background-color: #9BF2BA;
     border-color: rgb(133, 208, 150);
     color: black;
-
 }
 
 #catalog {
@@ -143,7 +144,6 @@ header {
     font-weight: 700;
     border-radius: 15px;
 }
-
 
 
 /* CAROUSEL */
@@ -229,7 +229,6 @@ header {
     flex-direction: column;
     align-items: center;
 }
-
 
 .order-and-filter-button {
     display: flex;
