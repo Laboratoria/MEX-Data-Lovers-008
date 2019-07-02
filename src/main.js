@@ -1,20 +1,3 @@
-// for(personajes in RICKANDMORTY.results){
-//   console.log(RICKANDMORTY.results[personajes].image);
-// }
-// console.log(RICKANDMORTY.results[0].image);
-
-// for(personajes in RICKANDMORTY.results){
-//   console.log(RICKANDMORTY.results[personajes].name);
-// }
-//  console.log(RICKANDMORTY.results [1].image);
-
-  
-// });
-
-
-// const data = window.RICKANDMORTY.results;
-
-
 for(personajes in RICKANDMORTY.results){
   // console.log(RICKANDMORTY.results[personajes].image);
 }
