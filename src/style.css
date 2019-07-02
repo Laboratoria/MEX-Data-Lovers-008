@@ -1,12 +1,23 @@
 *{
-    background: linear-gradient(to bottom right, red , blue); /* Standard syntax */
+    background: linear-gradient(to bottom right, red , blue);
+    margin: 0%;
 }
 
+body{
+    padding: 10px;
+}
 .header{
     display: flex;
     justify-content: center;
     background: white;
 }
+
+.menu{
+    width: 100%;
+    height: 50%;
+    background: blue;
+}
+
 
 .all-Pokemon{
     display: flex;
@@ -16,5 +27,21 @@
 .datos{
     display: flex;
     justify-content: space-around;
+}
+
+.box-Pokemon{
+    width: 25%;
+    margin: auto;
+    justify-content: center;
+    background: greenyellow;
+}
+
+.img{justify-content: center;
+}
+.datos{
+    width: 30%;
+    margin: auto;
+    align-items: center;
+    background: greenyellow; 
 }
 
