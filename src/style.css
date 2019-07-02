@@ -5,32 +5,159 @@ body {
 }
 
 h1{
-  text-align:left;
   color: white;
-  font-family: 'Covered By Your Grace', cursive;
-  height: 100px;
-  width: auto;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-weight: bold;
+  font-size: 60px;
+  text-shadow: 5px 5px 5px blue;
+  margin: 65px;
 }
 
-.contenedor-texto{
-  /* background: rgba(0,0,0,.7); */
+
+h2{
+  text-align:left;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+  /* font-family: 'Covered By Your Grace', cursive; */
+  height: 20px;
+  text-shadow: 5px 5px 5px blue;
+  /* width: auto; */
+}
+
+#contenedor-texto{
   width: 100%;
   max-width: 500px;
-  margin: 90px;
+  margin-right: 5%;
   color: white;
   border-radius:5px;
   text-align: right;
+  float: right;
 }
 
-.contenedor-Personajes{
-  /* background: rgba(0,0,0,.7); */
-  width: 100%;
-  max-width: 500px;
-  margin: 48px;
+.informacion {
+
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    top: 40px;
+    font-family: 'Amatic SC', Verdana;
+    font-size: 45px;
+    text-align: right;
+    margin: 0.3em;
+    color: white;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px blue;
+} 
+
+
+.tabla {
+  display: flex;
+    flex-direction: column;
+  position: relative;
+  left: 90px;
+    width: 450px; 
+    margin: left;
+    
+}
+
+  th, td { 
+    padding: 15px; 
+    font-family: 'Amatic SC', Verdana;
+    font-size: 25px; }
+  tr {
+
+    padding: 10px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    background-color: rgb(186, 225, 248);
+    
+  }
+  tr:first-child {
+ 
+    padding: 10px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    background-color: rgb(186, 225, 248) ;
+    
+  }
+  tr:nth-child(even) { 
+    
+    padding: 10px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color:black;
+    background-color: rgb(214, 216, 112);
+    
+  }
+ 
+
+.btn-empezar{
+  position: relative;
+  display: inline-block;
+  border: 2px solid blue;
+  padding: 40 px 80px;
+  color:greenyellow;
+  font-weight: 700;
+  text-decoration:none;
+  background-color:rgb(124, 110, 245);
+  object-position: right;
+}
+
+.btn-empezar:hover{
+  color: blue ;
+  background-color: transparent;
+  }
+
+
+.btn-continuar{
+  position: relative;
+  display: inline-block;
+  border: 2px solid blue;
+  padding: 40 px 80px;
+  color:greenyellow;
+  font-weight: 700;
+  text-decoration:none;
+  background-color:rgb(124, 110, 245);
+  text-align: left; 
+}
+
+.btn-continuar:hover{
+color: blue ;
+background-color: transparent;
+}
+
+.btn-temporada{
+  position: relative;
+  display: inline-block;
+  border: 2px solid blue;
+  padding: 40 px 80px;
+  color:greenyellow;
+  font-weight: 700;
+  text-decoration:none;
+  background-color:rgb(124, 110, 245);
+  text-align: left; 
+}
+.btn-temporada:hover{
+  color: blue ;
+  background-color: transparent;
+  }
+
+  h3{
+  text-align: right;
   color: white;
-  border-radius:5px;
-  text-align: left;
-}
-
-/* .button: hover{
-  cursor:pointer; */
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  height: 40px;
+  margin-right: 4%;
+  text-shadow: 5px 5px 5px blue; 
+  }
+  
+  #contenedor{
+    margin: center;
+  }
