@@ -85,6 +85,8 @@ const eraseSearchEnter = () => {
 searchButton.addEventListener('click', eraseSearch);
 searchInput.addEventListener('keyup', eraseSearchEnter);
 
+
 //Working with filter button
 
 // filterButton.addEventListener();
+
