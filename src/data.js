@@ -8,7 +8,10 @@
 
 // window.example = example;
 //---------------------------------------------------------------
-const firstButton = document.getElementById("principalButton");
+const allPokemones = document.getElementById("allPokemones");
+
+const firstButton = document.getElementById("siguiente");
+const buttonAtras = document.getElementById("atras");
 const name = document.getElementById("name");
 const img = document.getElementById("img");
 const type = document.getElementById("type");
@@ -25,23 +28,38 @@ const weaknesses = document.getElementById("weaknesses");
 const next_evolution = document.getElementById("next_evolution");
 let contador = 0;
 
-// const showName = () => {
-//   p1.innerHTML += window.pokemon.POKEMON.pokemon[2];
-// }
+
 firstButton.addEventListener("click", () => {
   name.innerHTML = "Nombre:" + " " + window.pikachu.pokemon[contador].name;
   img.src = window.pikachu.pokemon[contador].img;
   type.innerHTML="Tipo:" + " " +  window.pikachu.pokemon[contador].type;
-  height.innerHTML="Altura:" + " " + window.pikachu.pokemon[contador].height;
-  weight.innerHTML="Ancho:" + " " +  window.pikachu.pokemon[contador].weight;
+  // height.innerHTML="Altura:" + " " + window.pikachu.pokemon[contador].height;
+  // weight.innerHTML="Ancho:" + " " +  window.pikachu.pokemon[contador].weight;
   candy.innerHTML ="Caramelo:" + " " +  window.pikachu.pokemon[contador].candy;
-  candy_count.innerHTML = "Caramelos para evolucionar:" + " " + window.pikachu.pokemon[contador].candy_count;
-  egg.innerHTML = "Egg:" + " " + window.pikachu.pokemon[contador].egg;
-  spawn_chance.innerHTML = "spawn_chance:" + " " + window.pikachu.pokemon[contador].egg;
-  avg_spawns.innerHTML = "avg_spawns:" + " " + window.pikachu.pokemon[contador].avg_spawns;
-  spawn_time.innerHTML = "spawn_time:" + " " + window.pikachu.pokemon[contador].spawn_time;
+  // candy_count.innerHTML = "Caramelos para evolucionar:" + " " + window.pikachu.pokemon[contador].candy_count;
+  // egg.innerHTML = "Egg:" + " " + window.pikachu.pokemon[contador].egg;
+  // spawn_chance.innerHTML = "spawn_chance:" + " " + window.pikachu.pokemon[contador].egg;
+  // avg_spawns.innerHTML = "avg_spawns:" + " " + window.pikachu.pokemon[contador].avg_spawns;
+  // spawn_time.innerHTML = "spawn_time:" + " " + window.pikachu.pokemon[contador].spawn_time;
   weaknesses.innerHTML = "Debilidades:" + " " + window.pikachu.pokemon[contador].weaknesses;
   contador=contador+1;
+})
+
+
+buttonAtras.addEventListener("click", () => {
+  name.innerHTML = "Nombre:" + " " + window.pikachu.pokemon[contador].name;
+  img.src = window.pikachu.pokemon[contador].img;
+  type.innerHTML="Tipo:" + " " +  window.pikachu.pokemon[contador].type;
+  // height.innerHTML="Altura:" + " " + window.pikachu.pokemon[contador].height;
+  // weight.innerHTML="Ancho:" + " " +  window.pikachu.pokemon[contador].weight;
+  candy.innerHTML ="Caramelo:" + " " +  window.pikachu.pokemon[contador].candy;
+  // candy_count.innerHTML = "Caramelos para evolucionar:" + " " + window.pikachu.pokemon[contador].candy_count;
+  // egg.innerHTML = "Egg:" + " " + window.pikachu.pokemon[contador].egg;
+  // spawn_chance.innerHTML = "spawn_chance:" + " " + window.pikachu.pokemon[contador].egg;
+  // avg_spawns.innerHTML = "avg_spawns:" + " " + window.pikachu.pokemon[contador].avg_spawns;
+  // spawn_time.innerHTML = "spawn_time:" + " " + window.pikachu.pokemon[contador].spawn_time;
+  weaknesses.innerHTML = "Debilidades:" + " " + window.pikachu.pokemon[contador].weaknesses;
+  contador=contador-1;
 })
 
 
