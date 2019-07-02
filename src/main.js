@@ -54,8 +54,7 @@ const showData = () => {
     let items = ''; //Variable vacía donde se imprimira cada elemento del data
     data.forEach(element => {
         items += 
-        `<section class="all-data">
-            <div class="data-card">
+        `<div class="data-card">
                 <div class="card">
                     <div class="img">
                          <img class="character-img" src="${element.image}" />
@@ -66,8 +65,7 @@ const showData = () => {
                         <p>Dimensión: ${element.origin.name}</p>
                     </div>
                 </div>
-            </div>
-        </section>`
+            </div>`
     });
     allData.innerHTML = items;
 }
