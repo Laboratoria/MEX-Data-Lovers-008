@@ -20,8 +20,8 @@ var POKEMON = {
     "weaknesses": [
       "Fire",
       " Ice",
-      " Flying",
-      " Psychic"
+      " Flying ",
+      " Psychic "
     ],
     "next_evolution": [{
       "num": "002",
