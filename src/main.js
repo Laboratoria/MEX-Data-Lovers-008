@@ -1,28 +1,29 @@
-const catalogButton = document.getElementById('catalog');
-const logo = document.getElementById('logo');
-const data = window.RICKANDMORTY.results;
-const searchInput = document.getElementById('search');
-const searchButton = document.getElementById('search-button');
-//trying to build carousel
+const catalogButton = document.getElementById('catalog'); // Botón catalogo
+const logo = document.getElementById('logo'); // Botón del logo
+const data = window.RICKANDMORTY.results; // Llamar la data R&M
+const searchInput = document.getElementById('search'); // Barra de búsqueda
+const searchButton = document.getElementById('search-button'); // Botón buscar
 
-// const playCarousel = () => {
-//     let myIndex = 0;
-//     let image = document.getElementsByClassName('slide');
-//     //hide images
-//     for (let i = 0; i < image.length; i++) {
-//         image[i].style.display = "none";
-//     }
-//     //reset index to show firtst image
-//     if (myIndex >= image.length) {
-//         myIndex = 0;
-//     }
+/*trying to build carousel
 
-//     image[myIndex].style.display = 'block';
-//     myIndex++;
-//     setTimeout(playCarousel, 1000);
-// }
+ const playCarousel = () => {
+     let myIndex = 0;
+     let image = document.getElementsByClassName('slide');
+     hide images
+     for (let i = 0; i < image.length; i++) {
+         image[i].style.display = "none";
+     }
+     reset index to show firtst image
+     if (myIndex >= image.length) {
+         myIndex = 0;
+     }
 
-// playCarousel();
+     image[myIndex].style.display = 'block';
+     myIndex++;
+     setTimeout(playCarousel, 1000);
+ }
+
+ playCarousel();*/
 
 //HIDE & SHOW
 
@@ -43,17 +44,29 @@ const returnToIndex = () => {
 catalogButton.addEventListener('click', showCatalog);
 logo.addEventListener('click', returnToIndex);
 
-// Showing data first try
-const allData = document.getElementById('all-data');
 
-const showData = () => {
-    let items = '';
+
+// Showing data first try
+const allData = document.getElementById('all-data'); //Sección contenedora de la data
+
+//FUNCIÓN
+const showData = () => { 
+    let items = ''; //Variable vacía donde se imprimira cada elemento del data
     data.forEach(element => {
-        items += `<section class="all-data">
-        <img src="${element.image}" />
-        <p> ${element.name}</p>
-        <p>Especie: ${element.species}</p>
-        <p>Dimensión: ${element.origin.name}</p>
+        items += 
+        `<section class="all-data">
+            <div class="data-card">
+                <div class="card">
+                    <div class="img">
+                         <img class="character-img" src="${element.image}" />
+                    </div>
+                    <div class="info">
+                        <p class="character-name"> ${element.name}</p>
+                        <p>Especie: ${element.species}</p>
+                        <p>Dimensión: ${element.origin.name}</p>
+                    </div>
+                </div>
+            </div>
         </section>`
     });
     allData.innerHTML = items;
