@@ -68,7 +68,7 @@ a:hover{
 
 #container-filter{
   background-color: blue;
-  height: 500%;
+  height: 1000px;
   margin-top: 0%;
 }
 
@@ -81,12 +81,18 @@ margin: 0%;
 font-family: 'Coiny', cursive;
 }
 
-#pokemones-unoxuno{
-  background-color: white;
+/* #pokemones-unoxuno{
+  background-image: url("imagenes/carta.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
   height: 50%;
   width: 40%;
-}
+} */
 
 #container_allPokemones{
   text-align: center;
 }
+
+/* .lista_de_pokemones{
+  display: none;
+} */
