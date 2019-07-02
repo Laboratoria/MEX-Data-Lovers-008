@@ -3,6 +3,8 @@
 //Seleccionando a los elementos del HTML con ayuda de su Id.
 const firstButton = document.getElementById("siguiente");
 const buttonAtras = document.getElementById("atras");
+const hamburguesa = document.getElementById("hamburguesa")
+const opciones = document.getElementById("opciones")
 const name = document.getElementById("name");
 const img = document.getElementById("img");
 const type = document.getElementById("type");
@@ -18,6 +20,22 @@ const multipliers = document.getElementById("multipliers");
 const weaknesses = document.getElementById("weaknesses");
 const next_evolution = document.getElementById("next_evolution");
 let contador = 0;
+
+function showMenu() {
+  if (opciones.classList.contains("disabled-menu")){
+   opciones.classList.remove("disabled-menu");
+   opciones.classList.add("enabled-menu")
+ }
+ else{
+   opciones.classList.remove("enabled-menu");
+   opciones.classList.add("disabled-menu")
+ }
+
+}
+
+hamburguesa.addEventListener("click",showMenu);
+
+
 
 
 // Funciones puras 
