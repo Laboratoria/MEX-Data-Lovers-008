@@ -167,6 +167,8 @@ header {
     justify-content: space-around;
     margin: 2rem;
     width: 1200px;
+    height: 1000px;
+    overflow: scroll;
     /* align-items: space-between;
     justify-items: space-between; */
 }
