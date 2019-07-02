@@ -162,12 +162,40 @@ header {
 
 .all-data {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: 2rem;
     width: 1200px;
+    /* align-items: space-between;
+    justify-items: space-between; */
 }
 
 .data-card {
-    flex: wrap;
+      width: 30%;
+      margin: auto; 
+      align-items: center;
+      border: #00B3CC 0.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    border: 1px  rgba(204,204,204,1) solid;
+    padding: 2rem 0;
+    border-radius: 1rem;
+    -webkit-box-shadow: -9px 10px 5px 0px rgba(0,0,0,0.11);
+    -moz-box-shadow: -9px 10px 5px 0px rgba(0,0,0,0.11);
+    box-shadow: -9px 10px 5px 0px rgba(0,0,0,0.11);
+    background-color: rgba(255,255,255,0.6)
+
+}
+
+.info {
+    max-width: 50%;
+    text-align: center;
 }
 
 .character-name {
@@ -175,9 +203,11 @@ header {
 
 }
 
-/* .character-img{
+.character-img{
+    display: flex;
     width: 60%;
-} */
+    margin: 0 auto;
+}
 
 
 /* #img-carousel {
@@ -185,6 +215,14 @@ header {
     height: 50vh;
     background-size: cover;
 } */
+
+/*ID*/
+
+/* Characters */
+
+#character-page {
+    margin: 2rem 0;
+}
 
 .landing {
     display: flex;
