@@ -1,7 +1,8 @@
 const catalogButton = document.getElementById('catalog');
 const logo = document.getElementById('logo');
 const data = window.RICKANDMORTY.results;
-
+const searchInput = document.getElementById('search');
+const searchButton = document.getElementById('search-button');
 //trying to build carousel
 
 // const playCarousel = () => {
@@ -25,15 +26,8 @@ const data = window.RICKANDMORTY.results;
 
 //HIDE & SHOW
 
-const hideSection = (id) => {
-    document.getElementById(id).classList.add('hide');
-}
-
-
-const showSection = (id) => {
-    document.getElementById(id).classList.remove('hide');
-
-}
+const hideSection = id => document.getElementById(id).classList.add('hide');
+const showSection = id => document.getElementById(id).classList.remove('hide');
 
 const showCatalog = () => {
     hideSection('landing-page');
@@ -66,3 +60,14 @@ const showData = () => {
 }
 
 showData();
+
+const eraseSearch = () => searchInput.value = '';
+
+const eraseSearchEnter = () => {
+    if (event.keyCode == 13) {
+        eraseSearch();
+    }
+}
+
+searchButton.addEventListener('click', eraseSearch);
+searchInput.addEventListener('keyup', eraseSearchEnter);
