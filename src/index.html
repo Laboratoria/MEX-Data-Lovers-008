@@ -2,30 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-   
+    <link rel="shortcut icon" href="PM-icon-207.png">
     <link rel="shortcut icon" href="https://scontent-mia3-2.cdninstagram.com/vp/3f268ef7e4cbdf16b0b298535fb3a095/5D98AB2E/t51.2885-15/sh0.08/e35/s640x640/60896059_363526267614915_9022280140086626890_n.jpg?_nc_ht=scontent-mia3-2.cdninstagram.com"/>
-    <title>Data Lovers</title>
+
+    <title>Rick & Morty API Universe</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- <script src="./data/steam/steam.js"></script> -->
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
   </head>
   <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    
 
-    <!-- sección Presentación -->
-    <aside>
-      <!-- <div id="contenedor- texto"  class="contenedor-texto">
-        <div  class="Texto">
-          <h2>Presentación</h2>
-          <textarea name="empezar" rows="15" cols="60" id="empezar"></textarea>
-          <input type="submit" id="btn-submit" value="Empezar">
-           <button id="Empezar" class="boton_empezar"><a href="#empezar">Empezar</a></button> -->
-            </div> -->
-      <div>
+    
          <h1>  Ricky y Morty</h1>
       </div>
       <div class="información">
@@ -46,9 +34,7 @@
     <div class="Textear"></div>
      <h2>  Personajes favoritos</h2>
       <textarea name="compartir" rows="5" cols="60" id="compartir"></textarea>
-      <div><a href="#" class="btn-continuar">Continuar</a></div>
-      <br>
-      <div><a href="#" class="btn-empezar">Empezar</a></div>
+
         </div>
 </nav>
     <br>
@@ -60,6 +46,7 @@
     <br>
     <br>
     <br>
+  
 
 <!-- sección video -->
 <section>
@@ -72,19 +59,38 @@
             
         </div>
 
-        <script>
-          var reproductor = videojs ('fm-video',{
-              fluid: true
-          });
-      </script>
+</section>
+
+<section id="caracteristicas" class="hide">
+  <div class="content">
+    <!-- <div class="boton?">
+      <select name="filtrar o escoger" id="filtrar o escoger?"> -->
+
+      <option value="filtrar">Filtrar</option>
+      <option value="name">Nombre</option>
+      <option value="species">Especies</option>
+      <option value="location.name">Dimensión</option>
+      <option value="origin-name">Origen</option>
+      <option value="status">Vivo o Muerto</option>
+      </select>
+
+    </div>
+
+<select name="orden" id="orden">
+  <option value="orden">Ordenar</option>
+  <option value="a-z">de A-Z</option>
+  <option value="z-a">de Z-A</option>
+
+</select>
+</div>
+<section class="data" id='data'>
 
 </section>
 
-
 </section>
-
-    
     <script src="data.js"></script>
+
     <script src="main.js"></script>
+    <script src="data.js"></script>
   </body>
 </html>

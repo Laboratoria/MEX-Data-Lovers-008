@@ -1,6 +1,7 @@
-body{
-    background-image: url('imagen5.jpg');
-    background-size: 1500px 700px;
+body {
+    background: url("fondo22.jpg") no-repeat center top fixed;
+    background-size: cover;
+   
 }
 
 h1{
