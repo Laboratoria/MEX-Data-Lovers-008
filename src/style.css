@@ -69,7 +69,7 @@ a:hover{
 
 #container-filter{
   background-color: black;
-  height: 600px;
+  height: 450px;
   margin-top: 0%;
   color: white;
 }
@@ -120,6 +120,6 @@ font-family: 'Coiny', cursive;
 
 li{
   margin: 10px;
-  width: 29%;
+  width: 25%;
   text-align: center;
 }
