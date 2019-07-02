@@ -68,7 +68,7 @@ a:hover{
 
 #container-filter{
   background-color: blue;
-  height: 1000px;
+  height: 600px;
   margin-top: 0%;
 }
 
@@ -93,6 +93,31 @@ font-family: 'Coiny', cursive;
   text-align: center;
 }
 
-/* .lista_de_pokemones{
-  display: none;
-} */
+.lista_de_pokemones{
+  background-color: #ccc;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+#mostrando_lista_pokemones ul{
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    width: 98%;
+    height: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: scroll;
+    list-style: none;
+}
+
+#lista ul li{
+  margin: 10px;
+  width: 29%;
+  text-align: center;
+}
