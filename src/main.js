@@ -23,9 +23,9 @@ let contador = 0;
 // Funciones puras 
 // Esta función sirve para que al darle click a un botón pueda mostar a los pokemones de uno en uno. El contador avanza en 1 por cada click.
 const showOnexOne = () => {
-  name.innerHTML = "Nombre:" + " " + window.pikachu.pokemon[contador].name;
   img.src = window.pikachu.pokemon[contador].img;
   type.innerHTML="Tipo:" + " " +  window.pikachu.pokemon[contador].type;
+  name.innerHTML = "Nombre:" + " " + window.pikachu.pokemon[contador].name;
   candy.innerHTML ="Caramelo:" + " " +  window.pikachu.pokemon[contador].candy;
   weaknesses.innerHTML = "Debilidades:" + " " + window.pikachu.pokemon[contador].weaknesses;
   contador=contador+1;
@@ -33,9 +33,9 @@ const showOnexOne = () => {
 
 // Esta función sirve para que al darle click a un botón "atrás" pueda mostar a los pokemones de uno en uno pero en reversa. El contador disminuye en 1 por cada click.
 const showOnexOneReverse = () => {
-  name.innerHTML = "Nombre:" + " " + window.pikachu.pokemon[contador].name;
   img.src = window.pikachu.pokemon[contador].img;
   type.innerHTML="Tipo:" + " " +  window.pikachu.pokemon[contador].type;
+  name.innerHTML = "Nombre:" + " " + window.pikachu.pokemon[contador].name;
   candy.innerHTML ="Caramelo:" + " " +  window.pikachu.pokemon[contador].candy;
   weaknesses.innerHTML = "Debilidades:" + " " + window.pikachu.pokemon[contador].weaknesses;
   contador=contador-1;
