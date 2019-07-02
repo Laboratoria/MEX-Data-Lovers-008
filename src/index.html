@@ -1,70 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="PM-icon-207.png">
-    <link rel="shortcut icon" href="https://scontent-mia3-2.cdninstagram.com/vp/3f268ef7e4cbdf16b0b298535fb3a095/5D98AB2E/t51.2885-15/sh0.08/e35/s640x640/60896059_363526267614915_9022280140086626890_n.jpg?_nc_ht=scontent-mia3-2.cdninstagram.com"/>
 
-    <title>Rick & Morty API Universe</title>
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="PM-icon-207.png">
+  <link rel="shortcut icon"
+    href="https://scontent-mia3-2.cdninstagram.com/vp/3f268ef7e4cbdf16b0b298535fb3a095/5D98AB2E/t51.2885-15/sh0.08/e35/s640x640/60896059_363526267614915_9022280140086626890_n.jpg?_nc_ht=scontent-mia3-2.cdninstagram.com" />
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Titillium+Web&display=swap" rel="stylesheet">
+  <title>Rick & Morty API Universe</title>
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <script src="./data/rickandmorty/rickandmorty.js"></script>
-  </head>
-  <body>
+  <!-- <script src="./data/steam/steam.js"></script> -->
+  <script src="./data/rickandmorty/rickandmorty.js"></script>
+</head>
 
-    
-    
-      <h1>  Ricky y Morty</h1>
-      
-      <div class="información">
-        <div class="Textear"></div>
-        <p>Rick es un brillante científico un tanto borracho que secuestra
-          <br> 
-          a su irritable nieto adolescente Morty para vivir aventuras en 
-          <br>
-          otros mundos y en dimensiones alternativas, te animas
-          <br>
-          a conocer mas sobre estos y otros personajes.</p> 
-         
-        </div> 
-    </aside>
+<body>
+  <div class="información">
 
-<nav>
-   <div class="contenedor-Personajes">
-    <div class="Textear"></div>
-     <h2>  Personajes favoritos</h2>
+    <section class="informacion">
+      <div class="Textear"></div>
+      <p>Rick es un brillante científico un tanto borracho que secuestra
+        <br>
+        a su irritable nieto adolescente Morty para vivir aventuras en
+        <br>
+        otros mundos y en dimensiones alternativas, te animas
+        <br>
+        a conocer mas sobre estos y otros personajes.</p>
+
+  </div>
+
+  <nav>
+    <div class="contenedor-Personajes">
+      <div class="Textear"></div>
+      <h2> Personajes favoritos</h2>
       <textarea name="compartir" rows="5" cols="60" id="compartir"></textarea>
 
-        </div>
-</nav>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  
+    </div>
+  </nav>
 
-<!-- sección video -->
-<section>
-  <h3>Nueva temporada</h3>
+  <!-- <div><a href="#" class="btn-empezar">Empezar</a></div> -->
+  </section>
 
-        <div id="video"  class="contenedor-video">
-            <video width="40%" class="fm-video video-js vjs-16-9  vjs-big-play-centered" data-setup="{}" controls preload="auto">
-                <source src="video/rick_y_morty_temp4.mp4" type="video/mp4">
-            </video>
-            
-        </div>
 
-</section>
+  <table class="table">
+    <thead>
+      <th>TOP RANKING</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tabla">Rick Sánchez</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td class="tabla">Morty Smith</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td class="tabla">Mr. Poopybutthole</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td class="tabla">Evil Morty</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td class="tabla">Squanchy</td>
+        <td>5</td>
+      </tr>
+    </tbody>
+    <tfoot>
 
-<section id="caracteristicas" class="hide">
-  <div class="content">
-    <!-- <div class="boton?">
+    </tfoot>
+  </table>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <!-- sección video -->
+  <section>
+    <h3>Nueva temporada</h3>
+
+    <div id="video" class="contenedor-video">
+      <video width="40%" class="fm-video video-js vjs-16-9  vjs-big-play-centered" data-setup="{}" controls
+        preload="auto">
+        <source src="video/rick_y_morty_temp4.mp4" type="video/mp4">
+      </video>
+
+    </div>
+
+  </section>
+
+  <section id="caracteristicas" class="hide">
+    <div class="content">
+      <!-- <div class="boton?">
       <select name="filtrar o escoger" id="filtrar o escoger?"> -->
 
       <option value="filtrar">Filtrar</option>
@@ -77,21 +114,19 @@
 
     </div>
 
-<select name="orden" id="orden">
-  <option value="orden">Ordenar</option>
-  <option value="a-z">de A-Z</option>
-  <option value="z-a">de Z-A</option>
+    <select name="orden" id="orden">
+      <option value="orden">Ordenar</option>
+      <option value="a-z">de A-Z</option>
+      <option value="z-a">de Z-A</option>
 
-</select>
-</div>
-<section class="data" id='data'>
+    </select>
+    </div>
+    <section class="data" id="data">
 
-</section>
-
-
-   
+    </section>
 
     <script src="main.js"></script>
     <script src="data.js"></script>
-  </body>
+</body>
+
 </html>
