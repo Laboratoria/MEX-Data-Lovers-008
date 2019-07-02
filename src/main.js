@@ -52,7 +52,8 @@ const allData = document.getElementById('all-data'); //Sección contenedora de l
 //FUNCIÓN
 const showData = () => { 
     let items = ''; //Variable vacía donde se imprimira cada elemento del data
-    data.forEach(element => {
+    data.forEach(element => { 
+
         items += 
         `<div class="data-card">
                 <div class="card">
@@ -82,3 +83,4 @@ const eraseSearchEnter = () => {
 
 searchButton.addEventListener('click', eraseSearch);
 searchInput.addEventListener('keyup', eraseSearchEnter);
+
