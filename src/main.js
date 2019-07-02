@@ -1,8 +1,11 @@
-const catalogButton = document.getElementById('catalog'); // Botón catalogo
-const logo = document.getElementById('logo'); // Botón del logo
-const data = window.RICKANDMORTY.results; // Llamar la data R&M
-const searchInput = document.getElementById('search'); // Barra de búsqueda
-const searchButton = document.getElementById('search-button'); // Botón buscar
+//CONST
+const catalogButton = document.getElementById('catalog'); // catalog button
+const logo = document.getElementById('logo'); // logo element
+const data = window.RICKANDMORTY.results; // Call data R&M
+const searchInput = document.getElementById('search'); // Search bar
+const searchButton = document.getElementById('search-button'); // Search button
+const filterButton = document.getElementById('filter'); //Filter options button
+const orderButton = document.getElementById('order'); //Order options button 
 
 /*trying to build carousel
 
@@ -40,21 +43,20 @@ const returnToIndex = () => {
     showSection('landing-page');
 }
 
-
 catalogButton.addEventListener('click', showCatalog);
 logo.addEventListener('click', returnToIndex);
 
 
 
-// Showing data first try
-const allData = document.getElementById('all-data'); //Sección contenedora de la data
+// Showing data
+const allData = document.getElementById('all-data'); //Section where data is going to appear
 
-//FUNCIÓN
-const showData = () => { 
+//FUNCTION to show data
+const showData = () => {
     let items = ''; //Variable vacía donde se imprimira cada elemento del data
     data.forEach(element => {
-        items += 
-        `<div class="data-card">
+        items +=
+            `<div class="data-card">
                 <div class="card">
                     <div class="img">
                          <img class="character-img" src="${element.image}" />
@@ -71,7 +73,7 @@ const showData = () => {
 }
 
 showData();
-
+//Function to clear inputs of Search Bar
 const eraseSearch = () => searchInput.value = '';
 
 const eraseSearchEnter = () => {
@@ -82,3 +84,7 @@ const eraseSearchEnter = () => {
 
 searchButton.addEventListener('click', eraseSearch);
 searchInput.addEventListener('keyup', eraseSearchEnter);
+
+//Working with filter button
+
+// filterButton.addEventListener();
