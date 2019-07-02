@@ -9,7 +9,8 @@
 // window.example = example;
 //---------------------------------------------------------------
 const allPokemones = document.getElementById("allPokemones");
-
+const hamburguesa = document.getElementById("hamburguesa");
+const opciones = document.getElementById("opciones");
 const firstButton = document.getElementById("siguiente");
 const buttonAtras = document.getElementById("atras");
 const name = document.getElementById("name");
@@ -28,6 +29,20 @@ const weaknesses = document.getElementById("weaknesses");
 const next_evolution = document.getElementById("next_evolution");
 let contador = 0;
 
+function showMenu() {
+  
+  if (opciones.classList.contains("disabled-menu")){
+    opciones.classList.remove("disabled-menu");
+    opciones.classList.add("enabled-menu")
+  }
+  else{
+    opciones.classList.remove("enables-menu");
+    opciones.classList.add("disabled-menu")
+  }
+
+}
+
+hamburguesa.addEventListener("click",showMenu);
 
 firstButton.addEventListener("click", () => {
   name.innerHTML = "Nombre:" + " " + window.pikachu.pokemon[contador].name;
