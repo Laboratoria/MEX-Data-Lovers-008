@@ -27,7 +27,8 @@ a{
 }
 
 li:hover{
-  background-color: blue;
+  background-color: black;
+  color: white;
 }
 
 a:hover{
