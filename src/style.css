@@ -73,12 +73,12 @@ margin: 0%;
     height: 80%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     overflow: scroll;
     list-style: none;
 }
 
-#lista ul li{
+li{
   margin: 10px;
   width: 29%;
   text-align: center;
