@@ -1,75 +1,66 @@
 <!DOCTYPE html>
 <html>
- <head>
-     <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
-   <meta charset="utf-8">
-   <title>Data Lovers</title>
-   <link rel="stylesheet" href="style.css" />
- </head>
- <body>
+  <head>
+      <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="hamburguesa" >
+      <hr>
+      <hr>
+      <hr>
+    </button>
+
+    <nav id="opciones" class="disabled-menu">
+      <ul id=ul>
+        <li><a href="">Agua</a></li>
+        <li><a href="">Fuego</a></li>
+        <li><a href="">Aire</a></li>
+        <li><a href="">Tierra</a></li>
+      </ul>
+    </nav>
 
 
-   <div id="root"></div>
+    <div id="root"></div>
 
-   <div id="welcome">
-     <img id="pokemon-title" src="pokemon.png" alt="">
-     <img id="pokeboll" src="pokebola.gif" alt="">
-   </div>
+    <div id="welcome">
+      <img id="pokemon-title" src="pokemon.png" alt="">
+      <img id="pokeboll" src="pokebola.gif" alt="">
+    </div>
 
-   <div id="initial-question">
-     <h1>Bienvenidx Maestrx Pokémon, ¿A quién quieres investigar?</h1>
-   </div>
+    <div id="initial-question">
+      <h1>Bienvenidx Maestrx Pokémon, ¿A quién quieres investigar?</h1>
+    </div>
 
 
-   <center id="container">
-       <center id="pokemones-unoxuno">
-             <center class="ocultar">
-               <h2 id="name">¿Conocés a todos estos pokémon?</h2><br>
-               <img id="img" height="300" width="300" src="pikachuu.jpg"><br>
-             </center>
-             <center>
-                 <button id="atras" class="button_unoxuno">Atrás</button>
-                 <button id="siguiente" class="button_unoxuno">Siguiente</button>
-             </center>
-       </center>
-   </center>
+    <center id="container">
+        <center id="pokemones-unoxuno">
+              <center class="ocultar"> 
+                <h2 id="name">¿Conocés a todos estos pokémon?</h2><br>
+                <img id="img" height="300" width="300" src="pikachuu.jpg"><br>
+              </center>
+              <center>
+                  <button id="atras" class="button_unoxuno">Atrás</button>
+                  <button id="siguiente" class="button_unoxuno">Siguiente</button>
+              </center>
+        </center>
+    </center>
 
-   <section class="lista_de_pokemones">
-     <div id="mostrando_lista_pokemones">
-     </div>
-   </section>
+    <section class="lista_de_pokemones">
+      <div id="mostrando_lista_pokemones">
+      </div>
+    </section>
 
-   <section class=section2>
-     <label for="filter">Filtrar pokemones</label>
+    <section class=section2>
+      <label for="filter">Filtrar pokemones</label>
+    </section>
 
+
+    <script src="./data/pokemon/pokemon.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
     
- 
- 
- 
- 
-     <div id="header">
-     <ul class="nav"><br>
-
-
-
-
-
-       
-     </ul>
-
- </div>
-   </section>
-
-
-   <script src="./data/pokemon/pokemon.js"></script>
-   <script src="data.js"></script>
-   <script src="main.js"></script>
-
-
-
-  
- </body>
+  </body>
 </html>
-
-
-
