@@ -87,14 +87,14 @@ searchInput.addEventListener('keyup', eraseSearchEnter);
 
 
 //Working with filter button
-const getFilterValue = event => {
-    let filterValue = event.target.value;
-    let splitFilterValue = filterValue.split('.');
-    let key = splitFilterValue[0];
-    let value = splitFilterValue[1];
-    console.log(filterValue);
-    let result = window.filterData(key, value);
-    allData.innerHTML = result;
+const getFilterValue = event => { 
+    let filterValue = event.target.value; //Se guarda el valor de los option del html
+    let splitFilterValue = filterValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
+    let key = splitFilterValue[0];//aqui se guarda la propiedad ej. "name"
+    let value = splitFilterValue[1];//aqui se guarda el valor ej."Rick"
+
+    let result = window.filterData(key, value); //variable vacía que guarda el resultado de la función ya ejecutada
+    allData.innerHTML = result; //imprime el resultado dentro de la sección allData
 }
 
 
