@@ -1,13 +1,56 @@
+
 #welcome{
   background-color: white;
   text-align: center;
   padding-bottom: 4%;
 }
 
+*{
+  padding:0px;
+  margin:0px;
+}
+
+#header{
+ margin:auto;
+ width:1400px;
+}
+
+ul,ol{
+  list-style:none;
+}
+
+.nav .filtrarPoke a {
+  background-color: blue;
+  color:yellow;
+  text-decoration: none;
+  padding:10px 15px;
+  display:block;
+
+}
+
+.nav .filtrarPoke  a:hover{
+  background-color:black;
+}
 
 li:hover{
   background-color: black;
   color: white;
+ 
+
+}
+
+.nav > .filtrarPoke {
+  float: left;
+}
+
+.nav .filtrarPoke ul {
+  display:none;
+  position:absotute;
+  min-width: 140px;
+}
+
+.nav .filtrarPoke:hover > ul {
+  display:block;
 }
 
 
