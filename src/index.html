@@ -54,18 +54,20 @@
         <section id="characters-page" class="hide">
             <div class="content">
                 <div class="order-and-filter-button">
-                    <select name="filter" id="filter">
-                       <option value="filter">Filtrar</option>
-                       <option value="rick">Todos los Ricks</option>
-                       <option value="morty">Todos los Morty</option>
-                       <option value="location.name">Dimensiones</option>
-                       <option value="species">Especies</option>
-                       <option value="origin.name">Lugar de origen</option>
-                       <option value="gender.Female">Mujer</option>
-                       <option value="gender.Male">Hombre</option>
-                       <option value="status">Vivo</option>
-                       <option value="status">Muerto</option>
-                    </select>
+                    <form name="filt-data">
+                        <select name="filter" id="filter">
+                            <option value="filter">Filtrar</option>
+                            <option value="rick">Todos los Ricks</option>
+                            <option value="morty">Todos los Morty</option>
+                            <option value="location.name">Dimensiones</option>
+                            <option value="species">Especies</option>
+                            <option value="origin.name">Lugar de origen</option>
+                            <option value="gender.Female">Mujer</option>
+                            <option value="gender.Male">Hombre</option>
+                            <option value="status">Vivo</option>
+                            <option value="status">Muerto</option>
+                        </select>    
+                    </form>
                     <h2>Personajes</h2>
                     <select name="order" id="order">
                         <option value="order">Ordenar</option>

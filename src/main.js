@@ -88,5 +88,9 @@ searchInput.addEventListener('keyup', eraseSearchEnter);
 
 //Working with filter button
 
-// filterButton.addEventListener();
+const experimento = () => {
+    console.log(document.filt-data.filter.selected.value);
+}
+
+filterButton.addEventListener('change', experimento);
 

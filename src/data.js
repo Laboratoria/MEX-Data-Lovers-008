@@ -2,7 +2,7 @@
 // puedes ver como agregamos la función a nuestro objeto global window
 
 const filterData = (input) => {
-
+    
 }
 
 
