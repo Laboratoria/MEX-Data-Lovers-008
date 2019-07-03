@@ -1,9 +1,10 @@
 for(personajes in RICKANDMORTY.results){
-  
   // console.log(RICKANDMORTY.results[personajes].image);
+hanya
   
   //console.log(RICKANDMORTY.results[personajes].gender);
   
+
 }
 const data = RICKANDMORTY.results
 // const data RICKANDMORTY.results
@@ -19,7 +20,8 @@ const muestraData = () => {
     <p> Status: ${element.status} </p>
     <p> Especie: ${element.species} </p>
     <p> tamaño: ${element.origin.name} </p>
-  </div>`
+    <p> ${element.location.name}</p>
+    </div>`
   });
 
   paraPintar.innerHTML = str;
@@ -28,4 +30,5 @@ const muestraData = () => {
 
 muestraData()
 // printdata();
+
 
