@@ -3,7 +3,10 @@
 //Seleccionando a los elementos del HTML con ayuda de su Id.
 const firstButton = document.getElementById("siguiente");
 const buttonAtras = document.getElementById("atras");
+<<<<<<< HEAD
 
+=======
+>>>>>>> e6039aa5fc0cddb3d79ce245ee6838514fb5a9db
 const name = document.getElementById("name");
 const img = document.getElementById("img");
 const type = document.getElementById("type");
@@ -19,7 +22,6 @@ const multipliers = document.getElementById("multipliers");
 const weaknesses = document.getElementById("weaknesses");
 const next_evolution = document.getElementById("next_evolution");
 let contador = 0;
-
 
 
 
