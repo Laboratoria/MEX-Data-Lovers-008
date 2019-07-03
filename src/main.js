@@ -7,26 +7,7 @@ const searchButton = document.getElementById('search-button'); // Search button
 const filterButton = document.getElementById('filter'); //Filter options button
 const orderButton = document.getElementById('order'); //Order options button 
 
-/*trying to build carousel
 
- const playCarousel = () => {
-     let myIndex = 0;
-     let image = document.getElementsByClassName('slide');
-     hide images
-     for (let i = 0; i < image.length; i++) {
-         image[i].style.display = "none";
-     }
-     reset index to show firtst image
-     if (myIndex >= image.length) {
-         myIndex = 0;
-     }
-
-     image[myIndex].style.display = 'block';
-     myIndex++;
-     setTimeout(playCarousel, 1000);
- }
-
- playCarousel();*/
 
 //HIDE & SHOW
 
@@ -88,13 +69,29 @@ searchInput.addEventListener('keyup', eraseSearchEnter);
 
 //Working with filter button
 const getFilterValue = event => { 
-    let filterValue = event.target.value; //Se guarda el valor de los option del html
-    let splitFilterValue = filterValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
-    let key = splitFilterValue[0];//aqui se guarda la propiedad ej. "name"
-    let value = splitFilterValue[1];//aqui se guarda el valor ej."Rick"
+    const filterValue = event.target.value; //Se guarda el valor de los option del html
+    const splitFilterValue = filterValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
+    const key = splitFilterValue[0];//aqui se guarda la propiedad ej. "name"
+    const value = splitFilterValue[1];//aqui se guarda el valor ej."Rick"
 
-    let result = window.filterData(key, value); //variable vacía que guarda el resultado de la función ya ejecutada
-    allData.innerHTML = result; //imprime el resultado dentro de la sección allData
+    let result = window.filterData(key, value, data); //variable vacía que guarda el resultado de la función ya ejecutada
+    const cards = result.map(element => // result = array. .map itera items
+        //Al cumplirse con la condición, ejecutar el siguiente código.
+                `<div class="data-card">
+                <div class="card">
+                    <div class="img">
+                         <img class="character-img" src="${element.image}" />
+                    </div>
+                    <div class="info">
+                        <p class="character-name"> ${element.name}</p>
+                        <p>Especie: ${element.species}</p>
+                        <p>Dimensión: ${element.origin.name}</p>
+                    </div>
+                </div>
+            </div>`
+            );
+        
+    allData.innerHTML = cards.join(''); //imprime el resultado dentro de la sección allData. .join concatena los elementos de un array.
 }
 
 
