@@ -79,10 +79,8 @@ for(let pokemon of POKEMON.pokemon){
   <p><strong>spawn_chance:</strong>${pokemon.spawn_chance}</p>
   <p><strong>avg_spawns:</strong>${pokemon.avg_spawns}</p>
   <p><strong>spawn_time:</strong>${pokemon.spawn_time}</p>
-  <p><strong>multipliers:</strong>${pokemon.multipliers}</p>
   <p><strong>weaknesses:</strong>${pokemon.weaknesses}</p>
-  <p><strong>next_evolution:</strong>${pokemon.next_evolution}</p>
-  <p><strong>next_evolution:</strong>${pokemon.next_evolution}</p>
+  <p><strong>multipliers:</strong>${pokemon.multipliers}</p>
   </li> `
 }
 mostrar.innerHTML=`<ul>${template}</ul>`
