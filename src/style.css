@@ -56,13 +56,17 @@ main {
 
     .navigation-bar  {
         width: 1200px;
+        margin: 0 auto;
     }
 
     .content {
         width: 1200px;
+        margin: 0 auto;
     }
 
 }
+
+
 
 img {
     width: 100%;
@@ -92,7 +96,6 @@ header {
 .navigation-bar {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     margin: 0 auto;
     align-items: center;
     /* background-color: aqua; */
@@ -144,7 +147,6 @@ header {
 .content {
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: center;
     /* background-color: blue; */
     border: none;
@@ -154,11 +156,18 @@ header {
 
 /* BOTONES */
 
-.navigation-bar button {
+.navigation-bar button, .carousel a  {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 100%;
     margin-left: -2.3rem;
+}
+
+.carousel a {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
 }
 
 .button {
@@ -200,6 +209,11 @@ header {
     margin: 3rem auto;
     justify-content: center;
     text-align: center;
+    display: flex;
+}
+
+.slide {
+    width: 80%;
     display: flex;
 }
 
