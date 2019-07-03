@@ -87,10 +87,18 @@ searchInput.addEventListener('keyup', eraseSearchEnter);
 
 
 //Working with filter button
-
-const experimento = () => {
-    console.log(document.filt-data.filter.selected.value);
+const getFilterValue = event => {
+    let filterValue = event.target.value;
+    let splitFilterValue = filterValue.split('.');
+    let key = splitFilterValue[0];
+    let value = splitFilterValue[1];
+    console.log(filterValue);
+    let result = window.filterData(key, value);
+    allData.innerHTML = result;
 }
 
-filterButton.addEventListener('change', experimento);
+
+
+
+filterButton.addEventListener('change', getFilterValue);
 
