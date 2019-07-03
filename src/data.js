@@ -1,6 +1,7 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 
+
 const filterData = (key, value) => {
     let items = data.filter(element => element[key].indexOf(value) > -1)
     console.log(items);
