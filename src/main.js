@@ -71,6 +71,18 @@ for(let pokemon of POKEMON.pokemon){
   <img src="${pokemon.img}">
   <p><strong>Nombre:</strong> ${pokemon.name}</p>
   <p><strong>Tipo:</strong>${pokemon.type}</p>
+  <p><strong>Altura:</strong>${pokemon.height}</p>
+  <p><strong>Peso:</strong>${pokemon.weight}</p>
+  <p><strong>Candy:</strong>${pokemon.candy}</p>
+  <p><strong>Candy_count:</strong>${pokemon.candy_count}</p>
+  <p><strong>Egg:</strong>${pokemon.egg}</p>
+  <p><strong>spawn_chance:</strong>${pokemon.spawn_chance}</p>
+  <p><strong>avg_spawns:</strong>${pokemon.avg_spawns}</p>
+  <p><strong>spawn_time:</strong>${pokemon.spawn_time}</p>
+  <p><strong>multipliers:</strong>${pokemon.multipliers}</p>
+  <p><strong>weaknesses:</strong>${pokemon.weaknesses}</p>
+  <p><strong>next_evolution:</strong>${pokemon.next_evolution}</p>
+  <p><strong>next_evolution:</strong>${pokemon.next_evolution}</p>
   </li> `
 }
 mostrar.innerHTML=`<ul>${template}</ul>`
