@@ -7,6 +7,7 @@
 
 // window.example = example
 
+//descomentar para mostrar data//
 const root = document.getElementById('root')
 
 
@@ -23,7 +24,6 @@ data.forEach(element => {
   <p>${species}</p>
   <img src=${image} alt="">
 </div>`
-
 
 });
 

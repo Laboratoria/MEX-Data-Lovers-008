@@ -1,8 +1,22 @@
 
 .prueba{
-    color: red;
+    color: rgb(0, 17, 255);
     font-size: 3em;
 }
 
+.p{
+ color: brown
+}
+
+body{
+background-image: url("../img/fondoblue.jpeg");
+background-size: cover;
+    
+}
+
+#pistola{
+    width: 70px;
+    left: 80%;
+}
 
 
