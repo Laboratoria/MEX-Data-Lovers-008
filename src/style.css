@@ -27,8 +27,15 @@ ul,ol{
 
 }
 
-.nav .filtrarPoke a:hover{
+.nav .filtrarPoke  a:hover{
   background-color:black;
+}
+
+li:hover{
+  background-color: black;
+  color: white;
+ 
+
 }
 
 .nav > .filtrarPoke {
@@ -44,7 +51,6 @@ ul,ol{
 .nav .filtrarPoke:hover > ul {
   display:block;
 }
-
 
 
 #pokeboll{
