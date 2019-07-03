@@ -41,21 +41,15 @@ hamburguesa.addEventListener("click",showMenu);
 // Funciones puras 
 // Esta función sirve para que al darle click a un botón pueda mostar a los pokemones de uno en uno. El contador avanza en 1 por cada click.
 const showOnexOne = () => {
+  name.innerHTML = "nombre:" + " " + window.pikachu.pokemon[contador].name;
   img.src = window.pikachu.pokemon[contador].img;
-  type.innerHTML="Tipo:" + " " +  window.pikachu.pokemon[contador].type;
-  name.innerHTML = "Nombre:" + " " + window.pikachu.pokemon[contador].name;
-  candy.innerHTML ="Caramelo:" + " " +  window.pikachu.pokemon[contador].candy;
-  weaknesses.innerHTML = "Debilidades:" + " " + window.pikachu.pokemon[contador].weaknesses;
   contador=contador+1;
 }
 
 // Esta función sirve para que al darle click a un botón "atrás" pueda mostar a los pokemones de uno en uno pero en reversa. El contador disminuye en 1 por cada click.
 const showOnexOneReverse = () => {
+  name.innerHTML = "nombre:" + " " + window.pikachu.pokemon[contador].name;
   img.src = window.pikachu.pokemon[contador].img;
-  type.innerHTML="Tipo:" + " " +  window.pikachu.pokemon[contador].type;
-  name.innerHTML = "Nombre:" + " " + window.pikachu.pokemon[contador].name;
-  candy.innerHTML ="Caramelo:" + " " +  window.pikachu.pokemon[contador].candy;
-  weaknesses.innerHTML = "Debilidades:" + " " + window.pikachu.pokemon[contador].weaknesses;
   contador=contador-1;
 }
 
@@ -75,10 +69,16 @@ for(let pokemon of POKEMON.pokemon){
   //mostrar.innerHTML += `<ul><li>
   template +=`<li>
   <img src="${pokemon.img}">
-  <p><strong>Numero:</strong>${pokemon.num}</p>
   <p><strong>Nombre:</strong> ${pokemon.name}</p>
+  <p><strong>Tipo:</strong>${pokemon.type}</p>
   </li> `
 }
 mostrar.innerHTML=`<ul>${template}</ul>`
 }
 imprimir();
+
+//----------------------------------------------------------------
+//Función para filtrar
+
+//func
+//filter.addEventListener('keyup', filterTasks);
