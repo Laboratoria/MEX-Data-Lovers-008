@@ -85,6 +85,7 @@ const eraseSearchEnter = () => {
 searchButton.addEventListener('click', eraseSearch);
 searchInput.addEventListener('keyup', eraseSearchEnter);
 
+
 //Working with filter button
 const getFilterValue = event => {
     let filterValue = event.target.value;
@@ -98,4 +99,6 @@ const getFilterValue = event => {
 
 
 
+
 filterButton.addEventListener('change', getFilterValue);
+
