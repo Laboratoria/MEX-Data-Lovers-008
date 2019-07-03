@@ -4,45 +4,12 @@
   padding-bottom: 4%;
 }
 
-#hamburguesa{
-  width: 40px;
-  height: 40px;
-}
-
-
-#opciones{
-  width: 60%;
-  margin-left: 20%;
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  height: 20%;
-}
-
-#ul{
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-}
 
 li:hover{
   background-color: black;
   color: white;
 }
 
-
-a:hover{
-  color: rgb(235, 236, 231);
-}
-
-.enabled-menu{
-  display: block;
-}
-
-.disabled-menu{
-  display: none;
-}
 
 #pokeboll{
   height: 15%;

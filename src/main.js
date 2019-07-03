@@ -3,8 +3,7 @@
 //Seleccionando a los elementos del HTML con ayuda de su Id.
 const firstButton = document.getElementById("siguiente");
 const buttonAtras = document.getElementById("atras");
-const hamburguesa = document.getElementById("hamburguesa")
-const opciones = document.getElementById("opciones")
+
 const name = document.getElementById("name");
 const img = document.getElementById("img");
 const type = document.getElementById("type");
@@ -20,20 +19,6 @@ const multipliers = document.getElementById("multipliers");
 const weaknesses = document.getElementById("weaknesses");
 const next_evolution = document.getElementById("next_evolution");
 let contador = 0;
-
-function showMenu() {
-  if (opciones.classList.contains("disabled-menu")){
-   opciones.classList.remove("disabled-menu");
-   opciones.classList.add("enabled-menu")
- }
- else{
-   opciones.classList.remove("enabled-menu");
-   opciones.classList.add("disabled-menu")
- }
-
-}
-
-hamburguesa.addEventListener("click",showMenu);
 
 
 
@@ -67,7 +52,7 @@ let imprimir = () => {
   let template='';
 for(let pokemon of POKEMON.pokemon){
   //mostrar.innerHTML += `<ul><li>
-  template +=`<li>
+  template +=`<li class=".collection-item">
   <img src="${pokemon.img}">
   <p><strong>Nombre:</strong> ${pokemon.name}</p>
   <p><strong>Tipo:</strong>${pokemon.type}</p>
@@ -89,23 +74,25 @@ imprimir();
 
 //----------------------------------------------------------------
 //Función para filtrar
-
-//const filter = document.getElementById("filter");
-
-//function loadEventListeners() {
-//filter.addEventListener('keyup', filterTasks);
-//}
-
-// // Filter Tasks
-// function filterTasks(e) {
-//   const text = e.target.value.toLowerCase();
-
-//   document.querySelectorAll('.collection-item').forEach(function(task){
-//     const item = task.firstChild.textContent;
-//     if(item.toLowerCase().indexOf(text) != -1){
-//       task.style.display = 'block';
-//     } else {
-//       task.style.display = 'none';
-//     }
-//   });
+// funcion que imprime toda la data en la section1
+// let filtrar = () => {
+//   //llamar section donde se imprime la data
+//   let mostrar = document.getElementById('section2');
+//   mostrar.innerHTML = '';
+//   let template='';
+// for(let pokemon of POKEMON.pokemon){
+//   //mostrar.innerHTML += `<ul><li>
+//   template +=`<li class=".collection-item">
+//   <img src="${pokemon.img}">
+//   <p><strong>Nombre:</strong> ${pokemon.name}</p>
+//   <p><strong>Tipo:</strong>${pokemon.type}</p>
+//   </li> `
 // }
+// mostrar.innerHTML=`<ul>${template}</ul>`
+// }
+
+
+// filtrar();
+// var newArray = POKEMON.filter(function (){
+//   return (el.name)
+// })
