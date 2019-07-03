@@ -35,22 +35,6 @@ ul,ol{
 li:hover{
   background-color: black;
   color: white;
- 
-
-}
-
-.nav > .filtrarPoke {
-  float: left;
-}
-
-.nav .filtrarPoke ul {
-  display:none;
-  position:absotute;
-  min-width: 140px;
-}
-
-.nav .filtrarPoke:hover > ul {
-  display:block;
 }
 
 
