@@ -2061,8 +2061,8 @@ window.RICKANDMORTY = {
         "id": 109,
         "name": "Duck With Muscles",
         "status": "Dead",
-        "species": "Parasite",
-        "type": "Alien",
+        "species": "Alien",
+        "type": "Parasite",
         "gender": "Male",
         "origin": {
             "name": "unknown",
