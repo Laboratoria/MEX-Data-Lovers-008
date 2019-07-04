@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+  <section class="flex-container">
+  
+    <header class="row">
+    <figure class="flex-container">
+      <a href="">
+        <img src="images/banner1.png" alt="Rick and Morty Lovers">
+      </a>
+    </figure>
+    </header>
+
+    <section id="pantalla-bienvenida">
+      <div name="buttons">
+        <div id="button-inicio-div" class="flex-container"><input type="image" id="button-inicio" alt="Inicio"src="images/portal png 1.gif"></div>
+        <div id="button-personajes-div" class="flex-container"><input type="image" id="button-personajes" alt="Personajes" src="images/rick-spinning.giphy.gif"></div>
+        <div id="button-planetas-div" class="flex-container"><input type="image" id="button-planetas" alt="Planetas" src="images/yell.giphy.gif"></div>
+        <div id="button-explorar-div" class="flex-container"><input type="image" id="button-explorar" alt="Explorar" src="images/giphy(4).gif"></div>
+        <div id="button-ayuda-div" class="flex-container"><input type="image" id="button-ayuda" alt="Explorar" src="images/morty.gif"></div>
+      </div>
+    </section>
+
+    <section id="pantalla-personajes" style="display:none">
+      <h1 style="font-size:10vw">Personajes</h1>  
+      <div id="card-personajes" class="card-personajes" class="flex-container"></div>
+    </section>
+
+    <section id="pantalla-planetas" style="display:none">
+    <!--OJO!!! No pinta el texto en la página-->  <h1 style="font-size:10vw">Planetas y Dimensiones</h1> 
+    </section>
+
+    <section id="pantalla-explorar" style="display:none">
+      <h1 style="font-size:10vw">Explorar</h1>
+    </section>
+
+    <section id="pantalla-ayuda" style="display:none">
+      <h1 style="font-size:10vw"> Sobre Rick and Morty Lovers</h1>
+    </section>
+
+    <footer id="footer" style="display:none" class="flex-container">
+        <div id="button-inicio-div"><input type="image" id="button-reinicio" alt="Inicio"src="images/portal png 1.gif"></div>
+    </footer>
+
+
+  </section>
+
     <script src="./data/rickandmorty/rickandmorty.js"></script>
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
     <script src="data.js"></script>
     <script src="main.js"></script>
+    
+  </main>
   </body>
 </html>
