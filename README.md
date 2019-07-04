@@ -9,7 +9,8 @@ Crear un sitio web agradable y fácil de entender enfocado a nuevos fans de la s
 El prototipo de baja fidelidad de escritorio y celular son muy parecidos, salvo el tamaño de los botones.
 
 ### Primer prototipo celular
-![prototipo-celular]()
+![prototipo-celular](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/Pantalla%20mobile%201.2.png)
+![prototipo-celular2](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/Pantalla%20mobile%201.3.png)
 
 ### Primer prototipo escritorio
 ![prototipo-escritorio](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%201.png)
@@ -28,8 +29,8 @@ una imagen estática y agregar dos botones para avanzar y regresar para mostrar 
 Nuestra segunda propuesta es:
 
 ### Segundo prototipo celular
-![segundo-prototipo-celular]()
-![segundo-prototipo-celular2]()
+![segundo-prototipo-celular](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/Pantalla%20mobile%201.png)
+![segundo-prototipo-celular2](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/Pantalla%20mobile%201%20%E2%80%93%201.png)
 
 ### Segundo prototipo de escritorio
 ![segundo-prototipo-escritorio](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%201.2.png)

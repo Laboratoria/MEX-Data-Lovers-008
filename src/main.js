@@ -54,8 +54,9 @@ const showData = () => {
 };
 
 showData();
+
 //Function to clear inputs of Search Bar
-const eraseSearch = () => searchInput.value = '';
+/*const eraseSearch = () => searchInput.value = '';
 
 const eraseSearchEnter = () => {
     if (event.keyCode == 13) {
@@ -65,7 +66,7 @@ const eraseSearchEnter = () => {
 
 searchButton.addEventListener('click', eraseSearch);
 searchInput.addEventListener('keyup', eraseSearchEnter);
-
+*/
 
 //Working with filter button
 const getFilterValue = event => {
@@ -98,3 +99,5 @@ const getFilterValue = event => {
 
 
 filterButton.addEventListener('change', getFilterValue);
+
+window.orderData(data);
