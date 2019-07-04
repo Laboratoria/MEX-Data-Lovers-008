@@ -41,6 +41,7 @@ main {
 /*RESPONSIVE*/
 
 @media only screen and (min-width:768px) {
+    
     header {
         width: 100%;
         height: auto;
@@ -93,25 +94,21 @@ header {
     /* background-color: aqua; */
 }
 
-.navigation-bar div {
+/* .navigation-bar div {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 2rem 0;
     height: 2.5rem;
-}
+} */
 
 #logo {
-    width: 35%;
+    width: 10rem;
+    justify-content: center;
 }
 
-@media only screen and (min-width:768px) {
-    #logo {
-        width: 8rem;
-    }
-}
 
-#search {
+/* #search {
     margin-right: 0px;
     width: 3.5rem;
     height: 2.5rem;
@@ -122,15 +119,20 @@ header {
 #search:hover {
     width: 15rem;
     -webkit-transition: width 0.5s;
-    /* For Safari 3.1 to 6.0 */
+    /* For Safari 3.1 to 6.0 
     transition: width 0.5s;
 }
 
 #search:focus {
     width: 15rem;
     outline: none;
-}
+} */
 
+@media only screen and (min-width:768px) {
+    #logo {
+        width: 8rem;
+    }
+}
 
 /* MAIN */
 
@@ -209,8 +211,25 @@ header {
 }
 
 .slide {
-    width: 80%;
+    width: 100%;
     display: flex;
+    background-image: url(img/fondo-slide.jpg);
+    /* background-size: cover; */
+
+}
+
+#facts {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    background-color: #9BF2BA;
+    
+}
+
+@media only screen and (min-width:768px) {
+    .slide {
+        width: 80%;
+    }
 }
 
 
@@ -298,7 +317,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 25%;
+    margin: 25% 0 0 0;
 }
 
 
