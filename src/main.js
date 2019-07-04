@@ -84,5 +84,3 @@ buttonPersonajes.addEventListener("click", screenPersonajes);
 buttonPlanetas.addEventListener("click", screenPlanetas);
 buttonExplorar.addEventListener("click", screenExplorar);
 buttonAyuda.addEventListener("click", screenAyuda);
-
-
