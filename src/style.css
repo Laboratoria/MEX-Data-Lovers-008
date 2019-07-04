@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: black;
+  }
+ 
+.row{
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+  
+.row:before, .row:after{
+    content:"";
+    display:table;
+  }
+
+.row:after{
+    clear:both;
+  }
+
+[class*= "col-" ] {
+    float: left;
+    min-height: 10px;
+    /* gutters */
+    padding: 12px;
+  }
+
+  /*100/12 * num-col */
+
+.col-1{width: 8.333333333333332%;}
+.col-2{width: 16.666666666666664%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33333333333333%;}
+.col-5{width: 41.66666666666667%;}
+.col-6{width: 50%;}
+.col-7{width: 58.333333333333336%;}
+.col-8{width: 66.66666666666666%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33333333333334%;}
+.col-11{width: 91.66666666666666%;}
+.col-12{width: 100%;}
+
+@media all and (max-width: 450px){
+    [class*= "col-"]{
+      width: 100vh;
+    }
+  } 
+
+#pantalla-bienvenida {
+    background-image: url(images/background-stars.jpeg)
+}
+
+header {
+   display: flex;
+   flex-wrap: wrap;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    background-image: url(images/background-stars.jpeg)
+}
+
+#button-inicio-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+#buttons-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*#button-personajes-div {
+    display: flex;
+    flex-direction: row;
+}
+#button-planetas-div {
+    display: flex;
+    flex-direction: row;
+}
+#button-explorar-div {
+    display: flex;
+    flex-direction: row;
+}
+#button-ayuda-div {
+    display: flex;
+    flex-direction: row;
+}*/
+
+article {
+    display: flex;
+    width: 100%;
+    height: auto;
+    color: #81CD53;
+}
+
+img {
+    max-width: 100%;
+}
+
+div.card-personajes {
+    display: flex;
+    overflow-y: scroll;
+    background-color: whitesmoke;
+    height: 100vh;
+    align-content: center;
+}
+
+.card {
+    background-color: blueviolet;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    align-items: baseline;
+    justify-content: center;
+    margin: 0 auto;
+    bottom: 0;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#button-reinicio {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    margin: 0 auto;
+    bottom: 3vh;
+    text-align: center;
+    order: initial;
+}
