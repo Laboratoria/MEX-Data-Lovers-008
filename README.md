@@ -10,9 +10,10 @@ El prototipo de baja fidelidad de escritorio y celular son muy parecidos, salvo 
 
 ### Primer prototipo celular
 ![prototipo-celular]()
-### Primer prototipo escritorio
-![prototipo-escritorio]()
 
+### Primer prototipo escritorio
+![prototipo-escritorio](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%201.png)
+![prototipo-escritorio2](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%203.png)
 ### Problemas encontrados en primer testeo
 
 Pudimos notar gracias al feedback de nuestros usuarios que, en primer instancia, a algunos de ellos les gustaría encontrar un espacio donde ellos puedan escribir o leer a otros fans, es decir, la implementación de un foro, sin embargo optamos por no implementarlo en nuestro sitio web. También nos comentaron que les gustaría poder agregar un filtrado extra a una categoría específica. Por ejemplo, si están en todos los personajes que son mujeres,
@@ -28,8 +29,11 @@ Nuestra segunda propuesta es:
 
 ### Segundo prototipo celular
 ![segundo-prototipo-celular]()
+
 ### Segundo prototipo de escritorio
-![segundo-prototipo-escritorio]()
+![segundo-prototipo-escritorio](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%201.2.png)
+![segundo-prototipo-escritorio2](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%203.2.png)
+![segundo-prototipo-escritorio3](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%203.3.png)
 
 Decidimos tomar el segundo prototipo, como el prototipo final.
 
