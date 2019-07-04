@@ -94,13 +94,13 @@ header {
     /* background-color: aqua; */
 }
 
-/* .navigation-bar div {
-    display: flex;
+.navigation-bar li {
+    list-style: none;
     justify-content: flex-end;
-    align-items: center;
-    padding: 2rem 0;
-    height: 2.5rem;
-} */
+    text-align: center;
+}
+
+
 
 #logo {
     width: 10rem;
@@ -161,11 +161,20 @@ header {
     text-decoration: none;
 }
 
+.navigation-bar li a {
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+
+} 
 .carousel i {
     vertical-align: center;
 }
 
-.button, #filter, #order {
+.button, #filter, #order, .navigation-bar li a  {
     border-color: #00B3CC;
     cursor: pointer;
     color: white;
@@ -176,7 +185,7 @@ header {
     transition: 1ms;
 }
 
-.button:hover, #filter:hover, #order:hover {
+.button:hover, #filter:hover, #order:hover, .navigation-bar li a:hover {
     background-color: #9BF2BA;
     border-color: rgb(133, 208, 150);
     color: black;
