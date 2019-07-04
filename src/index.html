@@ -1,52 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Rick and Morty Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  <section class="flex-container">
+<!--div class = "container"
+    div class = "col-1, -2, -3, ... -12"
+    div class = row"
+-->
+
+  <section class="container" id="container">
   
-    <header class="row">
-    <figure class="flex-container">
+    <header clas="row col-12">
+    <figure>
       <a href="">
         <img src="images/banner1.png" alt="Rick and Morty Lovers">
       </a>
     </figure>
     </header>
 
-    <section id="pantalla-bienvenida">
-      <div name="buttons">
-        <div id="button-inicio-div" class="flex-container"><input type="image" id="button-inicio" alt="Inicio"src="images/portal png 1.gif"></div>
-        <div id="button-personajes-div" class="flex-container"><input type="image" id="button-personajes" alt="Personajes" src="images/rick-spinning.giphy.gif"></div>
-        <div id="button-planetas-div" class="flex-container"><input type="image" id="button-planetas" alt="Planetas" src="images/yell.giphy.gif"></div>
-        <div id="button-explorar-div" class="flex-container"><input type="image" id="button-explorar" alt="Explorar" src="images/giphy(4).gif"></div>
-        <div id="button-ayuda-div" class="flex-container"><input type="image" id="button-ayuda" alt="Explorar" src="images/morty.gif"></div>
+    <section id="pantalla-bienvenida" class="row col-12">
+      <div id="button-inicio-div" class="flex-item"><input type="image" id="button-inicio" alt="Inicio"src="images/portal png 1.gif"></div>
+      <div name="buttons" id="buttons-div" class="row">
+        <div id="button-personajes-div" class="flex-item"><input type="image" id="button-personajes" alt="Personajes" src="images/rick-spinning.giphy.gif"></div>
+        <div id="button-planetas-div" class="flex-item"><input type="image" id="button-planetas" alt="Planetas" src="images/yell.giphy.gif"></div>
+        <div id="button-explorar-div" class="flex-item"><input type="image" id="button-explorar" alt="Explorar" src="images/rick-morty-watch-giphy.gif"></div>
+        <div id="button-ayuda-div" class="flex-item"><input type="image" id="button-ayuda" alt="Explorar" src="images/morty.gif"></div>
       </div>
     </section>
 
-    <section id="pantalla-personajes" style="display:none">
-      <h1 style="font-size:10vw">Personajes</h1>  
-      <div id="card-personajes" class="card-personajes" class="flex-container"></div>
+    <section id="pantalla-personajes" style="display:none" class="row col-12">
+      <article class="row"><h1>Personajes</h1> </article>
+      
+      <div class="card-personajes">
+          <div id="cards" class="card">
+            <div class="data-card-personajes">
+              <div class="name"></div>
+              <div class="card-image"></div>
+              <div class="species"></div>
+
+            </div>
+
+
+          </div>
+      </div> 
     </section>
 
-    <section id="pantalla-planetas" style="display:none">
-    <!--OJO!!! No pinta el texto en la página-->  <h1 style="font-size:10vw">Planetas y Dimensiones</h1> 
+    <section id="pantalla-planetas" style="display:none" class="row col-12">
+    <!--OJO!!! No pinta el texto en la página--> <article class="row"><h1>Planetas y dimensiones</h1></article>  
     </section>
 
-    <section id="pantalla-explorar" style="display:none">
-      <h1 style="font-size:10vw">Explorar</h1>
+    <section id="pantalla-explorar" style="display:none" class="row col-12">
+      <article class="row"><h1>Explorar</h1></article>      
     </section>
 
-    <section id="pantalla-ayuda" style="display:none">
-      <h1 style="font-size:10vw"> Sobre Rick and Morty Lovers</h1>
+    <section id="pantalla-ayuda" style="display:none" clas="row col-12">
+      <article class="row"><h1>Sobre Rick and Morty Lovers</h1></article>
     </section>
 
-    <footer id="footer" style="display:none" class="flex-container">
-        <div id="button-inicio-div"><input type="image" id="button-reinicio" alt="Inicio"src="images/portal png 1.gif"></div>
-    </footer>
-
+    <section id="button-reinicio" style="display:none">
+    <div><input type="image" alt="Inicio"src="images/portal png 1.gif"></div>
+    </section>
+    
+    <footer id="footer" style="display:none" class="row col-12"><h6>Rick and Morty Lovers - 2019</h6></footer>
 
   </section>
 
