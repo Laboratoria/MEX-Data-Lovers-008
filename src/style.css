@@ -28,9 +28,9 @@ body {
 }
 
 main {
-    width: 100%;
+    width: 100vw;
     height: auto;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     background-color: rgba(204, 204, 204, 1);
     -webkit-box-shadow: 0px 53px 16px 12px rgba(155, 242, 185, 0.177);
     -moz-box-shadow: 0px 53px 16px 12px rgba(155, 242, 185, 0.177);
@@ -148,16 +148,13 @@ header {
 
 /* BOTONES */
 
-.navigation-bar button,
+/* .navigation-bar button, */
 .carousel a {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 100%;
     margin-left: -2.3rem;
     text-align: center;
-}
-
-.carousel a {
     font-size: 2rem;
     display: flex;
     justify-content: space-between;
@@ -168,7 +165,7 @@ header {
     vertical-align: center;
 }
 
-.button {
+.button, #filter, #order {
     border-color: #00B3CC;
     cursor: pointer;
     color: white;
@@ -179,7 +176,7 @@ header {
     transition: 1ms;
 }
 
-.button:hover {
+.button:hover, #filter:hover, #order:hover {
     background-color: #9BF2BA;
     border-color: rgb(133, 208, 150);
     color: black;
@@ -202,9 +199,9 @@ header {
 /* CAROUSEL */
 
 .carousel {
-    width: 1000px;
-    height: 70vh;
-    margin: 3rem auto;
+    width: 70vw;
+    height: 50vh;
+    margin: 1.5rem auto;
     justify-content: space-between;
     text-align: center;
     display: flex;
@@ -219,16 +216,30 @@ header {
 }
 
 #facts {
-    width: 50%;
-    height: 50%;
+    width: 90%;
+    height: 90%;
     margin: auto;
     background-color: #9BF2BA;
     
 }
 
 @media only screen and (min-width:768px) {
+    .carousel {
+        width: 1000px;
+    }
+
+    .carousel a {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
     .slide {
         width: 80%;
+    }
+
+    #facts {
+            width: 50%;
+            height: 50%;
     }
 }
 
@@ -241,8 +252,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 2rem;
-    width: 1200px;
-    height: 1000px;
+    width: 90vw;
+    height: 100vh;
     overflow: scroll;
     /* align-items: space-between;
     justify-items: space-between; */
@@ -267,11 +278,15 @@ header {
 }
 
 .data-card {
-    width: 30%;
+    width: 45%;
     margin: auto;
     align-items: center;
     border: #00B3CC 0.5rem;
+    /* justify-content: space-between; */
+
 }
+
+
 
 .card {
     display: flex;
@@ -301,7 +316,16 @@ header {
     width: 60%;
     margin: 0 auto;
 }
+ @media only screen and (min-width:768px){
+     .all-data {
+         width: 1200px;
+         height: 1000px;
+     }
 
+     .data-card {
+        width: 30%;
+     }
+ }
 
 /* #img-carousel {
     width: 100%;
@@ -320,7 +344,29 @@ header {
     margin: 25% 0 0 0;
 }
 
+#filter, #order {
+    width: 6rem;
+    height: 3.5rem;
+    margin: 1rem 1rem; 
+    border-radius: 2rem;
+    padding-left: 0.5rem;
+    font-weight: 600;  
+}
 
+option {
+    background-color: white;
+    color: black;
+}
+
+
+@media only screen and (min-width:768px){
+    all-data {
+    width: 1200px;
+    height: 1000px;
+    }
+
+
+}
 /* Characters */
 
 #character-page {
