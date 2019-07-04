@@ -71,14 +71,17 @@ searchInput.addEventListener('keyup', eraseSearchEnter);
 //Working with filter button
 const getFilterValue = event => {
     const filterValue = event.target.value; //Se guarda el valor de los option del html
-    const splitFilterValue = filterValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
-    const key = splitFilterValue[0]; //aqui se guarda la propiedad ej. "name"
-    const value = splitFilterValue[1]; //aqui se guarda el valor ej."Rick"
+    if (filterValue === 'all') {
+        showData();
+    } else {
+        const splitFilterValue = filterValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
+        const key = splitFilterValue[0]; //aqui se guarda la propiedad ej. "name"
+        const value = splitFilterValue[1]; //aqui se guarda el valor ej."Rick"
 
-    let result = window.filterData(key, value, data); //variable vacía que guarda el resultado de la función ya ejecutada
-    const cards = result.map(element => // result = array. .map itera items
-        //Al cumplirse con la condición, ejecutar el siguiente código.
-        `<div class="data-card">
+        let result = window.filterData(key, value, data); //variable vacía que guarda el resultado de la función ya ejecutada
+        const cards = result.map(element => // result = array. .map itera items
+            //Al cumplirse con la condición, ejecutar el siguiente código.
+            `<div class="data-card">
                 <div class="card">
                     <div class="img">
                          <img class="character-img" src="${element.image}" />
@@ -90,9 +93,11 @@ const getFilterValue = event => {
                     </div>
                 </div>
             </div>`
-    );
+        );
 
-    allData.innerHTML = cards.join(''); //imprime el resultado dentro de la sección allData. .join concatena los elementos de un array.
+        allData.innerHTML = cards.join('');
+    }
+    //imprime el resultado dentro de la sección allData. .join concatena los elementos de un array.
 };
 
 
