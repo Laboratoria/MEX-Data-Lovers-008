@@ -399,7 +399,7 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
       lines y branches.
 - [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
 - [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+- [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
 - [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
       en `README.md`.

@@ -5,6 +5,76 @@ Get Swifty promete ayudar a los nuevos fans de la Serie Rick and Morty a conocer
 ## Objetivo del proyecto
 Crear un sitio web agradable y fácil de entender enfocado a nuevos fans de la serie Rick y Morty que les gustaría saber más de sus personajes favoritos.
 
+## Prototipo de baja fidelidad
+El prototipo de baja fidelidad de escritorio y celular son muy parecidos, salvo el tamaño de los botones.
+
+### Primer prototipo celular
+![prototipo-celular]()
+### Primer prototipo escritorio
+![prototipo-escritorio]()
+
+### Problemas encontrados en primer testeo
+
+Pudimos notar gracias al feedback de nuestros usuarios que, en primer instancia, a algunos de ellos les gustaría encontrar un espacio donde ellos puedan escribir o leer a otros fans, es decir,
+la implementación de un foro. También nos comentaron que les gustaría poder agregar un filtrado extra a una categoría específica. Por ejemplo, si están en todos los personajes que son mujeres,
+pudieran saber cual de ellas es un Alien. De acuerdo a estos feedback decidimos implementar un tercer botón que aparezca cuando se elija una categoría en la que podrán aplicar un segundo filtro por especie.
+Mencionaron que el botón de filtrar también debería de darte la opción de regresar a ver todos los personajes, no solo como primer instancia.
+
+También decidimos por la complejidad del trabajo no darle prioridad al buscador, por lo tanto lo eliminamos. Recibimos la sugerencia de implementar un scrollbar dentro de la caja de la data para así evitar una
+página inmensa y que la información se centrará en un espacio determinado, permitiéndole al usuario filtrar u ordenar desde cualquier  punto de la información.
+Finalmente encontramos el problema que no teníamos un espacio donde colocar las estadísticas por lo que decidimos cambiar el carrusel dinámico de imagenes, por 
+una imagen estática y agregar dos botones para avanzar y regresar para mostrar las estadísticas como datos curiosos.
+
+Nuestra segunda propuesta es:
+
+### Segundo prototipo celular
+![segundo-prototipo-celular]()
+### Segundo prototipo de escritorio
+![segundo-prototipo-escritorio]()
+
+Decidimos tomar el segundo prototipo, como el prototipo final.
+
+## Prototipo de alta fidelidad
+![prototipo-celular-alta-f]()
+![prototipo-escritorio-alta-f]()
+
+## Historias de usuario
+
+Primer acercamiento a Get Schwifty
+
+1. El usuario recibe recomendaciones por parte de sus compañeros del trabajo sobre la serie.
+2. El usuario busca en internet plataformas de stream o de contenido multimedia dónde pueda ver la serie.
+3. Se percata que las primeras 2 temporadas de la serie estan en Netflix.
+4. Después de ver y disfrutar las temporadas, el usuario se muestra confundido con algunos personajes o pasajes de la serie.
+5. El usuario decide buscar información de los personajes en internet desde su celular.
+6. El usuario se encuentra con Get Schwifty.
+
+Estadística
+
+1. El usuario entra a Get Schwifty.
+2. La primer sección con la que interactua es la de Sabías Que.
+3. La sección ofrece curiosidades al usuario sobre la serie de Rick and Morty.
+4. El usuario puede elegir por medio de botones ver las curiosidades de la serie. 
+5. La sección menciona la existencia de la tercer temporada y proporciona un link para verla en streaming.
+6. La historia termina cuando el usuario accede al catálogo o al link de la tercer temporada.
+
+Visualización de la data
+
+1. El usuario hace click en el catálogo.
+2. La historia termina cuando el usuario observa todos los personajes.
+
+Filtrar data
+
+1. El usuario selecciona entre las diferentes opciones de filtrado una de las categorías.
+2. La página muestra los personajes que cumplan con dicha condición.
+3. El usuario decide agregar un segundo filtro a los personajes mostrados, por la clasificación de especies.
+4. La historia termina cuando el usuario obtiene los personajes deseados.
+
+Ordenar data
+
+1. El usuario selecciona entre las diferentes opciones de ordenado.
+2. La página muestra los personajes que cumplan con dicha condición.
+
 ## Investigación
 
 ### Resultado de primer encuesta:
@@ -84,33 +154,5 @@ En conclusión, nuestro usuario promedio es un hombre mayor de edad (menor de 40
 
 ![](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/userPersona.png)
 
-## User Journey
-Primer acercamiento a Get Schwifty
-
-1. El usuario recibe recomendaciones por parte de sus compañeros del trabajo sobre la serie.
-2. El usuario busca en internet plataformas de stream o de contenido multimedia dónde pueda ver la serie.
-3. Se percata que las primeras 2 temporadas de la serie estan en Netflix.
-4. Después de ver y disfrutar las temporadas, el usuario se muestra confundido con algunos personajes o pasajes de la serie.
-5. El usuario decide buscar información de los personajes en internet desde su celular.
-6. El usuario se encuentra con Get Schwifty.
-
-Dentro de Get Schwifty-Filtrando data
-1. El usuario accede al sitio Get Shcwifty.
-2. Comienza a buscar información relacionada con la cantidad de ricks que hay, los multiversos en los que se organizan, etc.
-3. El usuario decide concentrarse en un personaje y filtrar la data con la opción de filtrado de la página.
-4. El usuario resuelve sus dudas respecto a dicho personaje.
-
-Ordenando data en Get Schwifty
-1. El usuario decide buscar un personaje pero le es díficil encontrarlo por su nombre.
-2. El usuario descubre un botón que ordena los nombres en orden alfabetico.
-3. El usuario utiliza el botón y encuentra a su personaje rápidamente.
-
-Curiosidad en Get Schwifty
-1. Al ver algunos personajes, nota que no pertenecen a la primera o segunda temporada, y se percata que ya existe la tercer temporada.
-2. Dentro Get Schwifty descubre que hay un apartado de la tercer temporada.
-3. Dentro del apartado nota que se comparten enlaces donde el puede ver la tercera temporada de manera gratuita.
-4. El usuario sale de Get Schwifty al dar click en cualquiera de los enlaces.
-    - https://www.adultswim.com/streams/rick-and-morty
-    - https://www.youtube.com/playlist?list=PLsw7NzOFmtU5a3chL7Q5xT_K6SSIyzWkN
 
 Al notar lo que ofrece Get Schwifty a los nuevos fans de Rick and Morty y su fácil manejo de la información, la página es compartida con otros nuevos fanaticos de la serie.
