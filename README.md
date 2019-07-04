@@ -32,8 +32,7 @@ Nuestra segunda propuesta es:
 
 ### Segundo prototipo de escritorio
 ![segundo-prototipo-escritorio](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%201.2.png)
-![segundo-prototipo-escritorio2](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%203.2.png)
-![segundo-prototipo-escritorio3](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%203.3.png)
+![segundo-prototipo-escritorio2](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%203.3.png)
 
 Decidimos tomar el segundo prototipo, como el prototipo final.
 
@@ -77,6 +76,21 @@ Ordenar data
 
 1. El usuario selecciona entre las diferentes opciones de ordenado.
 2. La página muestra los personajes que cumplan con dicha condición.
+
+## Necesidades técnicas
+
+Este proyecto se realizó con HTML, JavaScript y CSS.
+
+### ¿Cómo ejecutar este proyecto?
+Solo necesitas un navegador y dar click en el siguiente link: https://iselareyesperdomo94.github.io/MEX-Data-Lovers-008/src/
+
+## ¿Cómo puedo descargar, instalar y ejecutar este proyecto?
+Necesitas forkear este repositorio y clonarlo en tu computadora.
+Tener un editor de texto.
+Instalar Node.js y la librería de Mocha y demas dependecias con el comando npm install (esto asume que ya tienes instalado Node.js)
+Para ejecutar los test, debes correr en tu terminal npm test y para evaluar el html ejecutas en la terminal npm pretest.
+Fin de la conversación
+Escribe un mensaje...
 
 ## Investigación
 
