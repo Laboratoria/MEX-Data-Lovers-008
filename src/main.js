@@ -6,7 +6,7 @@ for(personajes in RICKANDMORTY.results){
   
 
 }
-const data = RICKANDMORTY.results
+const data = RICKANDMORTY.results;
 // const data RICKANDMORTY.results
 const paraPintar = document.getElementById ('data');
 
@@ -26,7 +26,7 @@ const muestraData = () => {
     <p> Status: ${element.status} </p>
     <p> Especie: ${element.species} </p>
     <p> tamaño: ${element.origin.name} </p>
-    <p> ${element.location.name}</p>
+    <p> Otro: ${element.location.name}</p>
     </div>
     </div>`
   });
@@ -36,6 +36,12 @@ const muestraData = () => {
 }
 
 muestraData()
-// printdata();
+
+
+// let filterType = (fl) => {
+//   const typeValue = fl.target.value; //Guardando el valor del selector de tipo
+//   const filterType = window.dataManager.filterByType(data,typeValue); //llamando la funcion desde el objeto global window para filtrar tipos
+//   printData(filterType); // Reutilizando la funcion para imprimir por tipo sobre las tarjetas
+// };
 
 
