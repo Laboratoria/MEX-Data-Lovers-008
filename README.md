@@ -15,8 +15,7 @@ El prototipo de baja fidelidad de escritorio y celular son muy parecidos, salvo 
 
 ### Problemas encontrados en primer testeo
 
-Pudimos notar gracias al feedback de nuestros usuarios que, en primer instancia, a algunos de ellos les gustaría encontrar un espacio donde ellos puedan escribir o leer a otros fans, es decir,
-la implementación de un foro. También nos comentaron que les gustaría poder agregar un filtrado extra a una categoría específica. Por ejemplo, si están en todos los personajes que son mujeres,
+Pudimos notar gracias al feedback de nuestros usuarios que, en primer instancia, a algunos de ellos les gustaría encontrar un espacio donde ellos puedan escribir o leer a otros fans, es decir, la implementación de un foro, sin embargo optamos por no implementarlo en nuestro sitio web. También nos comentaron que les gustaría poder agregar un filtrado extra a una categoría específica. Por ejemplo, si están en todos los personajes que son mujeres,
 pudieran saber cual de ellas es un Alien. De acuerdo a estos feedback decidimos implementar un tercer botón que aparezca cuando se elija una categoría en la que podrán aplicar un segundo filtro por especie.
 Mencionaron que el botón de filtrar también debería de darte la opción de regresar a ver todos los personajes, no solo como primer instancia.
 
