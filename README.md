@@ -29,6 +29,7 @@ Nuestra segunda propuesta es:
 
 ### Segundo prototipo celular
 ![segundo-prototipo-celular]()
+![segundo-prototipo-celular2]()
 
 ### Segundo prototipo de escritorio
 ![segundo-prototipo-escritorio](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%201.2.png)
