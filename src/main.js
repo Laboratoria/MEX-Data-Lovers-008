@@ -5,7 +5,7 @@ const data = window.RICKANDMORTY.results; // Call data R&M
 const searchInput = document.getElementById('search'); // Search bar
 const searchButton = document.getElementById('search-button'); // Search button
 const filterButton = document.getElementById('filter'); //Filter options button
-//const orderButton = document.getElementById('order'); //Order options button 
+const orderButton = document.getElementById('order'); //Order options button 
 
 
 
@@ -100,9 +100,47 @@ const getFilterValue = event => {
     //imprime el resultado dentro de la sección allData. .join concatena los elementos de un array.
 };
 
+const getOrdervalue = event => {
+    const orderValue = event.target.value;
 
+    if (orderValue === 'a-z') {
+        let result = window.orderData(data);
+        const card = result.map(element =>
+            `<div class="data-card">
+                <div class="card">
+                    <div class="img">
+                         <img class="character-img" src="${element.image}" />
+                    </div>
+                    <div class="info">
+                        <p class="character-name"> ${element.name}</p>
+                        <p>Especie: ${element.species}</p>
+                        <p>Dimensión: ${element.origin.name}</p>
+                    </div>
+                </div>
+            </div>`
+        );
+        allData.innerHTML = card.join('');
+    } else if (orderValue === 'z-a') {
+        let result = window.orderDataZA(data);
+        const card = result.map(element =>
+            `<div class="data-card">
+                <div class="card">
+                    <div class="img">
+                         <img class="character-img" src="${element.image}" />
+                    </div>
+                    <div class="info">
+                        <p class="character-name"> ${element.name}</p>
+                        <p>Especie: ${element.species}</p>
+                        <p>Dimensión: ${element.origin.name}</p>
+                    </div>
+                </div>
+            </div>`
+        );
+        allData.innerHTML = card.join('');
+    }
+};
 
 
 filterButton.addEventListener('change', getFilterValue);
-
-window.orderData(data);
+orderButton.addEventListener('change', getOrdervalue);
+// window.orderData(data);

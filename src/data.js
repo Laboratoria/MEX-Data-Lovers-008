@@ -9,17 +9,35 @@ const filterData = (key, value, data) => { //2 parámetros. Value del index tien
 };
 
 const orderData = (data) => {
-        let items = data.map(element => element.name)
-        items.sort();
-        // return items.reverse();
-        console.log(items.reverse());
-    }
-    //(a,b) => {
-    /*     return a-b
-        })
-        console.log(items);
-        return items
-    }*/
+    data.sort((a, b) => {
+        let nameA = a.name.toUpperCase();
+        let nameB = b.name.toUpperCase();
+        if (nameA < nameB) {
+            return -1;
+        }
+        if (nameA > nameB) {
+            return 1
+        }
+        return 0;
+    })
+    return data;
+}
+
+const orderDataZA = () => {
+    data.sort((a, b) => {
+        let nameA = a.name.toUpperCase();
+        let nameB = b.name.toUpperCase();
+        if (nameA < nameB) {
+            return -1;
+        }
+        if (nameA > nameB) {
+            return 1
+        }
+        return 0;
+    })
+    return data.reverse();
+}
 
 window.orderData = orderData;
+window.orderDataZA = orderDataZA;
 window.filterData = filterData; //Guarda la función en el global para poder ser invocada de donde sea
