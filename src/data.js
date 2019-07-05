@@ -1,15 +1,17 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+const data = RICKANDMORTY;
+console.log(data);
+const card = document.getElementById ("rick-mory-card")
 
-const example = () => {
-  return 'example';
-};
+const dataSee = (data)=>{
+ let str = ''
+   data.results.forEach(element => {
+     console.log(element )
+    str +=`<div class="card"><p>${element.name}<p>
+    <p>${element.status}<p>
+    <p> specie: ${element.species}<p> <p>${element.gender}<p><p>${element.origin.name}<p><p>${element.location.name}<p>
+    <img src = "${element.image}"> </di>`
 
-window.example = example;
-
-
-for (let i = 0; i < RICKANDMORTY.results.length; i++){
-  console.log(RICKANDMORTY.results[i].name)
-
+  });
+  card.innerHTML = str
 }
-
+dataSee(data)

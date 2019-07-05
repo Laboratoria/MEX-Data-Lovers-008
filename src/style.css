@@ -39,7 +39,7 @@ h2{
     text-align: center;
 }
 h3{
-    font-family:'Boogaloo', cursive;;
+    font-family:'Boogaloo', cursive;
     color: dodgerblue;
     font-size: 25px;
     text-align: center;
@@ -66,4 +66,9 @@ h3{
 #card {
   width: 50%;
   height 30vh;
+}
+p{
+   color:  chartreuse;
+   width: 100%;
+   font-family: 'Boogaloo', cursive;
 }
