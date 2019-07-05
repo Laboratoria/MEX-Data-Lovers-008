@@ -77,6 +77,20 @@ body {
     
   }
  
+ .down{
+  position: fixed;
+  bottom: 15px;
+  right:15px;
+  width: 50px;
+  height: 50px;
+  background: aliceblue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  cursor: pointer;
+  }
 
 .btn-empezar{
   position: relative;
@@ -100,12 +114,15 @@ body {
   position: relative;
   display: inline-block;
   border: 2px solid blue;
-  padding: 40 px 80px;
+  padding: 20px 40px;
   color:greenyellow;
-  font-weight: 700;
+  font-weight: 150;
+  font-size: 30px;
+  font-weight: bold;
   text-decoration:none;
   background-color:rgb(124, 110, 245);
-  text-align: left; 
+  text-align: right; 
+  border-radius: 40px;
 }
 
 .btn-continuar:hover{
