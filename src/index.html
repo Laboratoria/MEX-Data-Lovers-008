@@ -7,14 +7,15 @@
   </head>
   <body>
   <section class="container" id="container">
+    
     <header class="row col-12">
       <figure>
         <a href="">
           <img src="images/banner1.png" alt="Rick and Morty Lovers">
         </a>
       </figure>
-      <div class="opciones-filter-personajes">
-          <select name="filter-personajes" id="filter-personajes">
+      <!--<div class="opciones-filter-personajes">
+          <select name="filter-personajes" id="filter-personajes" style="display:none">
             <option value="filter">Filtrar</option>
             <option value="all">Todos</option>
             <option value="allAlive">Vivos</option>
@@ -22,7 +23,7 @@
             <option value="allMale">Masculinos</option>
             <option value="allFemale">Femeninos</option>
           </select>
-        </div>
+        </div>-->
     </header>
 
     <!--PANTALLA DE BIENVENIDA-->
@@ -64,7 +65,17 @@
     <div><input type="image" alt="Inicio"src="images/portal png 1.gif"></div> 
     </section>
     
-    <footer id="footer" class="row col-12"><h4>Rick and Morty Lovers - 2019</h4>    
+    <footer id="footer" class="row col-12"><h4>Rick and Morty Lovers - 2019</h4>
+      <div class="opciones-filter-personajes">
+          <select class="input-filter-personajes" name="filter-personajes" id="filter-personajes" style="display:none">
+            <option value="filter">Filtrar</option>
+            <option value="all">Todos</option>
+            <option value="allAlive">Vivos</option>
+            <option value="allDead">Muertos</option>
+            <option value="allMale">Masculinos</option>
+            <option value="allFemale">Femeninos</option>
+          </select>
+        </div>   
     </footer>
 
   </section>

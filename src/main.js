@@ -4,7 +4,7 @@ const buttonPersonajes = document.getElementById("button-personajes");
 const buttonPlanetas = document.getElementById("button-planetas");
 const buttonExplorar = document.getElementById("button-explorar");
 const buttonAyuda = document.getElementById("button-ayuda");
-const buttonFilter = document.getElementById("filter-personajes"); 
+const buttonFilter = document.getElementById("filter-personajes");
 
 const screenBienvenida = () => {
     document.getElementById("pantalla-bienvenida").style.display="block";
@@ -13,6 +13,7 @@ const screenBienvenida = () => {
     document.getElementById("pantalla-explorar").style.display= "none";
     document.getElementById("pantalla-ayuda").style.display= "none";
     document.getElementById('button-reinicio').style.display= "none";
+    const buttonFilter = document.getElementById("filter-personajes").style.display= "none";
 }
 
 const screenPersonajes = () => {
@@ -22,6 +23,7 @@ const screenPersonajes = () => {
     document.getElementById("pantalla-explorar").style.display= "none";
     document.getElementById("pantalla-ayuda").style.display= "none";
     document.getElementById('button-reinicio').style.display= "block";
+    const buttonFilter = document.getElementById("filter-personajes").style.display= "block";
 }
 
 let printDataPersonajes = () => {
@@ -78,6 +80,7 @@ const screenPlanetas = () => {
     document.getElementById("pantalla-explorar").style.display= "none";
     document.getElementById("pantalla-ayuda").style.display= "none";
     document.getElementById('button-reinicio').style.display= "block";
+    const buttonFilter = document.getElementById("filter-personajes").style.display= "none";
 }
 
 const screenExplorar = () => {
@@ -87,6 +90,7 @@ const screenExplorar = () => {
     document.getElementById("pantalla-explorar").style.display= "block";
     document.getElementById("pantalla-ayuda").style.display= "none";
     document.getElementById('button-reinicio').style.display= "block";
+    const buttonFilter = document.getElementById("filter-personajes").style.display= "none";
 }
 
 const screenAyuda = () => {
@@ -96,6 +100,7 @@ const screenAyuda = () => {
     document.getElementById("pantalla-explorar").style.display= "none";
     document.getElementById("pantalla-ayuda").style.display= "block";
     document.getElementById('button-reinicio').style.display= "block";
+    const buttonFilter = document.getElementById("filter-personajes").style.display= "none";
 }
 
 buttonInicio.addEventListener("click", screenBienvenida);
