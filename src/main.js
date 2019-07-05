@@ -1,3 +1,4 @@
+
 for(personajes in RICKANDMORTY.results){
   // console.log(RICKANDMORTY.results[personajes].image);
 
@@ -37,7 +38,15 @@ const muestraData = () => {
 
 muestraData()
 
+// movimiento boton ir abajo
+// $(document).ready(funtion(){
 
+//   $('.ir-abajo').click(funtion(){
+//     $('body.html').animate({
+
+//     },300);
+//     });
+// });
 
 
 

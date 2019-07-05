@@ -28,14 +28,12 @@ Los principales usuarios del producto según los resultados arrojados por la ent
 ## ¿Qué tan fan eres de Ricky and Morty?
 Cabe mencionar que la encuesta también nos arrojo lo siguiente 40.7 % son muy fans del Ricky y Morty, al 37 % le gusta, 3.8% No tanto y el 18.5 % no los conoce, estos resultados se puede observar en la segunda gráfica.
 
-  
 
 ![](./src/imagenes/imagen2.png)
 
 ## ¿Qué te interesa conocer de la Ricky and Morty?
 
  Los objetivos de estos usuarios en relación con el producto es conocer acerca de los personajes de la serie y de esta forma sacar algunas conclusiones hechas sobre esta serie por parte de los usuarios.
-
 
 
 ## ¿Qué te interesa ver en una App de Ricky and Morty?
@@ -53,6 +51,7 @@ El resultado total de las encuestas nos arroja que se tiene una amplia gama de u
   
 
 ## Proto-Persona
+
 Revisando información obtenida a través de redes sociales nos percatamos que en cuanto a genero en su mayoría son hombres con un 65% en comparación de las mujeres que representan un total de 35%.
 
 Se vio que el contenido que se observa en las paginas y redes sociales de Ricky and Morty son principalmente memes, mercadotecnia y por ultimo la creación de hipótesis o teorías sobre los personajes de la serie.

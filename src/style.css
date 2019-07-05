@@ -35,9 +35,11 @@ body {
   flex-direction: column;
   position: relative;
   left: 70px;
-    width: 300px; 
-    margin: left;
-    
+  width: 300px; 
+  margin: left;
+  bottom: 20px;
+  right: 20px;
+   
 }
 
   th, td { 
@@ -111,7 +113,7 @@ body {
 .btn-continuar{
   position: relative;
   display: inline-block;
-  border: 2px solid blue;
+  border: 2px solid  rgb(214, 216, 112);
   padding: 20px 40px;
   color:greenyellow;
   font-weight: 150;
@@ -143,6 +145,20 @@ background-color: transparent;
   color: blue ;
   background-color: transparent;
   }
+
+  .icon-circle-down:before {
+    content: "\ea43";
+    display: inline-block;
+    padding: 20px;
+    background: rgb(214, 216, 112);;
+    font-size: 30px;
+    color:blue;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
 
   h1{
   text-align: right;
