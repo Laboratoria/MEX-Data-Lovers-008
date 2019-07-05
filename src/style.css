@@ -146,12 +146,13 @@ footer {
 }
 
 #button-reinicio {
-    display: flex;
+   display: flex;
     align-items: center;
     width: 100%;
     height: auto;
     position: fixed;
     margin: 0 auto;
     bottom: 3vh;
+    order: initial;
     text-align: center;
 }

@@ -4,6 +4,7 @@ const buttonPersonajes = document.getElementById("button-personajes");
 const buttonPlanetas = document.getElementById("button-planetas");
 const buttonExplorar = document.getElementById("button-explorar");
 const buttonAyuda = document.getElementById("button-ayuda");
+const buttonFilter = document.getElementById("filter-personajes"); 
 
 const screenBienvenida = () => {
     document.getElementById("pantalla-bienvenida").style.display="block";
@@ -32,7 +33,7 @@ let printDataPersonajes = () => {
       let gender = element.gender;
       let origin = element.origin.name
       let status = element.status;
-      str += `<div>
+      str += `<div id="cards">
         <div class="card row">
             <img class="imagen-personaje" src=${image}>
                 <div class="card-info">
@@ -48,6 +49,27 @@ let printDataPersonajes = () => {
     document.getElementById("cards").innerHTML = str;
     }
     printDataPersonajes();
+
+let filterData1 = () => {
+    let result = "";
+    let filterValue = buttonFilter.value;
+    if (filterValue === "all") {
+    let result = printDataPersonajes();
+    } else if (filterValue === "allAlive") {
+    let result = window.allAlive;
+    console.log(result);
+    } else if (filterValue === "allDead") {
+    let result = window.allDead;
+    console.log(result);
+    } else if (filterValue === "allMale") {
+        let result = window.allMale;
+        console.log(result);
+    } else if (filterValue === "allFemale") {
+        let result = window.allFemale;
+        console.log(result);
+    }    
+    return result;
+};
 
 const screenPlanetas = () => {
     document.getElementById("pantalla-bienvenida").style.display="none";
@@ -82,3 +104,4 @@ buttonPersonajes.addEventListener("click", screenPersonajes);
 buttonPlanetas.addEventListener("click", screenPlanetas);
 buttonExplorar.addEventListener("click", screenExplorar);
 buttonAyuda.addEventListener("click", screenAyuda);
+buttonFilter.addEventListener("change", filterData1);

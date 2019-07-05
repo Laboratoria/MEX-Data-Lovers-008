@@ -20,6 +20,11 @@ const filterName = () => {
 }
 filterName();
 
+window.allAlive = allAlive;
+window.allDead = allDead;
+window.allMale = allMale;
+window.allFemale = allFemale;
+
 
 
 

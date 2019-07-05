@@ -13,6 +13,16 @@
           <img src="images/banner1.png" alt="Rick and Morty Lovers">
         </a>
       </figure>
+      <div class="opciones-filter-personajes">
+          <select name="filter-personajes" id="filter-personajes">
+            <option value="filter">Filtrar</option>
+            <option value="all">Todos</option>
+            <option value="allAlive">Vivos</option>
+            <option value="allDead">Muertos</option>
+            <option value="allMale">Masculinos</option>
+            <option value="allFemale">Femeninos</option>
+          </select>
+        </div>
     </header>
 
     <!--PANTALLA DE BIENVENIDA-->
@@ -30,7 +40,7 @@
     <section id="pantalla-personajes" style="display:none" class="row col-12">
       <article class=""><h1>Personajes</h1> </article>
       <div class="cards-display row col-12">
-          <div id="cards" class="card col-3"></div>
+          <div id="cards" class="row card col-3"></div>
       </div>
     </section>
 
@@ -50,11 +60,12 @@
     </section>
 
      <!--BOTÓN REINICIO-->
-    <section id="button-reinicio" style="display:none">
-    <div><input type="image" class="button-reinicio" alt="Inicio"src="images/portal png 1.gif"></div>
+    <section id="button-reinicio" class="button-reinicio" style="display:none">
+    <div><input type="image" alt="Inicio"src="images/portal png 1.gif"></div> 
     </section>
     
-    <footer id="footer" class="row col-12"><h4>Rick and Morty Lovers - 2019</h4></footer>
+    <footer id="footer" class="row col-12"><h4>Rick and Morty Lovers - 2019</h4>    
+    </footer>
 
   </section>
 
