@@ -33,7 +33,7 @@
     padding: 12px;
   }
 
-  /*100/12 * num-col */
+/*fórmula=100/12 * num-col */
 
 .col-1{width: 8.333333333333332%;}
 .col-2{width: 16.666666666666664%;}
@@ -59,8 +59,8 @@
 }
 
 header {
-   display: flex;
-   flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     position: fixed;
     justify-content: center;
@@ -70,15 +70,29 @@ header {
 #button-inicio-div {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    margin-top: 10rem;
+}
+
+/*
+article {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: whitesmoke;
+}
+.flex-item {
+    display: flex;
+    flex-wrap: wrap;
 }
 #buttons-div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-/*#button-personajes-div {
+#button-personajes-div {
     display: flex;
     flex-direction: row;
 }
@@ -93,19 +107,7 @@ header {
 #button-ayuda-div {
     display: flex;
     flex-direction: row;
-}*/
-
-article {
-    display: flex;
-    width: 100%;
-    height: auto;
-    color: #81CD53;
 }
-
-img {
-    max-width: 100%;
-}
-
 div.card-personajes {
     display: flex;
     overflow-y: scroll;
@@ -113,10 +115,20 @@ div.card-personajes {
     height: 100vh;
     align-content: center;
 }
+*/
+
+.cards-display {
+    /*justify-content: center;*/
+    text-align: center;
+    color: whitesmoke;
+    flex-direction: row;
+    flex-flow: column;
+    background-color: #222222;
+}
 
 .card {
-    background-color: blueviolet;
-    text-align: center;
+    padding: 2rem 0;
+    border-radius: 1rem;
 }
 
 footer {
@@ -134,13 +146,17 @@ footer {
 }
 
 #button-reinicio {
-    display: flex;
+   display: flex;
     align-items: center;
     width: 100%;
     height: auto;
     position: fixed;
     margin: 0 auto;
     bottom: 3vh;
-    text-align: center;
     order: initial;
+    text-align: center;
 }
+
+/*.input-filter-personajes {
+    
+}*/
