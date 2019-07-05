@@ -31,6 +31,10 @@ data.forEach(element => {
 
 });
 
-
+//llamar botones de nombre//
+function GuardarValor()
+{
+  document.getElementById("receive-name").value = document.getElementById("input-name").value;
+}
 
 root.innerHTML = str

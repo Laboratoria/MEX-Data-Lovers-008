@@ -8,10 +8,9 @@
  color: brown
 }
 
-body{
-background-image:url("../img/espacio.jpg");
-background-repeat: no-repeat;
-background-clip: padding-box;
+#portal{
+background-image:url("../img/fondogalactico2.png");
+background-repeat: no-repeat fixed center;
 image-orientation: from-image;
 }
 
@@ -25,5 +24,17 @@ h1{
     color: green;
     text-align: center;
     font-size: 200%
+    
+}
+
+#rickmolesto{
+    width: 300px;
+    left: 120;
+}
+
+#rickfiltra{
+    background-image: url("../img/oficina\ de\ rick.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     
 }
