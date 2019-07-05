@@ -9,9 +9,10 @@
 }
 
 body{
-background-image: url("../img/fondoblue.jpeg");
-background-size: cover;
-    
+background-image:url("../img/espacio.jpg");
+background-repeat: no-repeat;
+background-clip: padding-box;
+image-orientation: from-image;
 }
 
 #pistola{
@@ -19,4 +20,10 @@ background-size: cover;
     left: 80%;
 }
 
-
+h1{
+    font-family: 'Covered By Your Grace', cursive;
+    color: green;
+    text-align: center;
+    font-size: 200%
+    
+}

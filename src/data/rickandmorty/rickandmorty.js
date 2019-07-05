@@ -1,3 +1,5 @@
+
+
 const RICKANDMORTY = {
   "info": {
     "count": 493,
@@ -15,6 +17,7 @@ const RICKANDMORTY = {
     "origin": {
       "name": "Earth (C-137)",
       "url": "https://rickandmortyapi.com/api/location/1"
+   
     },
     "location": {
       "name": "Earth (Replacement Dimension)",
