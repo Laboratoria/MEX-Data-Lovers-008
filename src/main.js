@@ -2,7 +2,7 @@
 for(personajes in RICKANDMORTY.results){ 
   // console.log(RICKANDMORTY.results[personajes].image); 
   //console.log(RICKANDMORTY.results[personajes].gender); 
-
+}
 for(personajes in RICKANDMORTY.results){
   // console.log(RICKANDMORTY.results[personajes].image); 
   //console.log(RICKANDMORTY.results[personajes].gender);
@@ -38,6 +38,11 @@ const muestraData = () => {
 
 muestraData()
 
+// movimiento boton ir abajo
+// $(document).ready(funtion(){
+
+//   $('.ir-abajo').click(funtion(){
+//     $('body.html').animate({
 
 // let filterType = (fl) => {
 //   const typeValue = fl.target.value; //Guardando el valor del selector de tipo
