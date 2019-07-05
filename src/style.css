@@ -4,8 +4,11 @@
     font-size: 3em;
 }
 
-.p{
- color: brown
+#p1{
+    font-family: 'Covered By Your Grace', cursive;
+    color:rgb(46, 240, 39);
+    text-align: center;
+    font-size: 180%
 }
 
 #portal{
@@ -21,9 +24,9 @@ image-orientation: from-image;
 
 h1{
     font-family: 'Covered By Your Grace', cursive;
-    color: green;
+    color:rgb(46, 240, 39);
     text-align: center;
-    font-size: 200%
+    font-size: 180%
     
 }
 
@@ -36,5 +39,8 @@ h1{
     background-image: url("../img/oficina\ de\ rick.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
+    
+}
+#input-name{
     
 }
