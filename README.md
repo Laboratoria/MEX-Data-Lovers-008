@@ -1,5 +1,5 @@
-README Data Lovers
-Morty+Morty
+# README Data Lovers
+## Morty+Morty
 
 Descripción del producto
 Morty+Morty es una aplicación de visualización de tarjetas con información de los personajes de Rick & Morty. Incluye un buscador general así como tres secciones temáticas, una sobre las versiones de Rick, otra sobre las versiones de Morty, y una tercera sobre personajes secundarios o incidentales.
@@ -10,14 +10,14 @@ Identificación del problema. No existe ninguna página ni aplicación que conte
 
 Necesidades de usuario. Encontrar un espacio virtual con una interfaz clara que le permita buscar información sistematizada sobre datos concretos de Rick & Morty.
 
-Research
+* Research
 Rick & Morty es una serie televisiva que se estrenó en 2013, trata sobre las aventuras de un científico Rick y su nieto Morty a través de diferentes realidades dimensionales a través de un multiverso donde se pueden encontrar diversas versiones de sus propias vidas y familias; de éste modo, se genera una serie de infinitas posibilidades de versiones de los personajes que a su vez toman una personalidad, cualidades e historias propias.
 
 A lo largo de las temporadas existentes, los personajes principales se van encontrando con versiones de sí mismos, haciendo que exista una amplia planilla de Ricks y Mortys que los televidentes identifican como personajes independientes.
 
 Pese a ser animación, es considerada una serie para adultos dado su contenido cargado de referencias al uso de drogas, sexo e incluso políticas, amén de un humor ácido e irreverente.                                                  
 
-Benchmark
+* Benchmark
 
 Para análisis de competencia y búsqueda de inspiración revisamos diversos recursos en internet.
 
@@ -35,14 +35,14 @@ Encontramos grupos de Facebook donde pusimos hacernos de una visión general de 
 https://www.facebook.com/OfficialPocketMortys/*
 https://www.facebook.com/pg/OfficialPocketMortys/community/
 
-Encuesta
+* Encuesta
 Coincidimos en la necesidad de incluir en nuestra encuesta aspectos demográficos, así como consideraciones generales sobre la serie.
 
 https://forms.gle/VcpdjbzvdaHyDfdb9
 
 Observaciones. La encuesta careció de representatividad, ya que fue aleatoria y hubo un sesgo desde la construcción de las preguntas, lo cual detectamos avanzada la recolección de datos. Se recomienda corregirlo.
 
-User Persona
+* User Persona
 
 
 “Pedro”:
@@ -77,7 +77,8 @@ Los espacios virtuales de búsqueda son tediosos
 
 Card Sorting
 
-Sketches
+* Sketches
+![índice](https://user-images.githubusercontent.com/51386692/60368554-cb92bd80-99b6-11e9-88e8-8a2d4495780d.jpeg)
 
 
 # Data Lovers
