@@ -1,11 +1,11 @@
 
+for(personajes in RICKANDMORTY.results){ 
+  // console.log(RICKANDMORTY.results[personajes].image); 
+  //console.log(RICKANDMORTY.results[personajes].gender); 
+}
 for(personajes in RICKANDMORTY.results){
-  // console.log(RICKANDMORTY.results[personajes].image);
-
-  
+  // console.log(RICKANDMORTY.results[personajes].image); 
   //console.log(RICKANDMORTY.results[personajes].gender);
-  
-
 }
 const data = RICKANDMORTY.results;
 // const data RICKANDMORTY.results
@@ -44,9 +44,10 @@ muestraData()
 //   $('.ir-abajo').click(funtion(){
 //     $('body.html').animate({
 
-//     },300);
-//     });
-// });
+// let filterType = (fl) => {
+//   const typeValue = fl.target.value; //Guardando el valor del selector de tipo
+//   const filterType = window.dataManager.filterByType(data,typeValue); //llamando la funcion desde el objeto global window para filtrar tipos
+//   printData(filterType); // Reutilizando la funcion para imprimir por tipo sobre las tarjetas
+// };
 
-
-
+}

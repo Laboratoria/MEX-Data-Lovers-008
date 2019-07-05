@@ -4,6 +4,8 @@ body {
    
 }
 
+
+
 #contenedor-texto{
   width: 100%;
   max-width: 500px;
@@ -77,20 +79,6 @@ body {
     
   }
  
- .down{
-  position: fixed;
-  bottom: 15px;
-  right:15px;
-  width: 50px;
-  height: 50px;
-  background: aliceblue;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color:white;
-  cursor: pointer;
-  }
 
 .btn-empezar{
   position: relative;
@@ -116,13 +104,10 @@ body {
   border: 2px solid  rgb(214, 216, 112);
   padding: 20px 40px;
   color:greenyellow;
-  font-weight: 150;
-  font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration:none;
   background-color:rgb(124, 110, 245);
-  text-align: right; 
-  border-radius: 40px;
+  text-align: left; 
 }
 
 .btn-continuar:hover{
