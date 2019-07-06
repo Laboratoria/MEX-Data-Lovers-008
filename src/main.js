@@ -12,9 +12,6 @@ const backButton = document.getElementById('back');
 
 const speciesButton = document.getElementById('species'); // Species options button
 
-
-
-
 //HIDE & SHOW
 
 const hideSection = id => document.getElementById(id).classList.add('hide');
@@ -39,45 +36,34 @@ const carousel = () => {
 
 }
 
-
 // Showing data
 const allData = document.getElementById('all-data'); //Section where data is going to appear
+const templateStringForCards = (element) => {
+    return `<div class="data-card">
+<div class="card">
+    <div class="img">
+         <img class="character-img" src="${element.image}" />
+    </div>
+    <div class="info">
+        <p class="character-name"> ${element.name}</p>
+        <p>Especie: ${element.species}</p>
+        <p>Dimensión: ${element.origin.name}</p>
+    </div>
+</div>
+</div>`
+}
 
 //FUNCTION to show data
 const showData = () => {
     let items = ''; //Variable vacía donde se imprimira cada elemento del data
     data.forEach(element => {
         items +=
-            `<div class="data-card">
-                <div class="card">
-                    <div class="img">
-                         <img class="character-img" src="${element.image}" />
-                    </div>
-                    <div class="info">
-                        <p class="character-name"> ${element.name}</p>
-                        <p>Especie: ${element.species}</p>
-                        <p>Dimensión: ${element.origin.name}</p>
-                    </div>
-                </div>
-            </div>`;
+            templateStringForCards(element);
     });
     allData.innerHTML = items;
 };
 
 showData();
-
-//Function to clear inputs of Search Bar
-/*const eraseSearch = () => searchInput.value = '';
-
-const eraseSearchEnter = () => {
-    if (event.keyCode == 13) {
-        eraseSearch();
-    }
-};
-
-searchButton.addEventListener('click', eraseSearch);
-searchInput.addEventListener('keyup', eraseSearchEnter);
-*/
 
 //Working with filter button
 const getFilterValue = event => {
@@ -90,23 +76,8 @@ const getFilterValue = event => {
         const value = splitFilterValue[1]; //aqui se guarda el valor ej."Rick"
 
         let result = window.filterData(key, value, data); //variable vacía que guarda el resultado de la función ya ejecutada
-        const cards = result.map(element => // result = array. .map itera items
-            //Al cumplirse con la condición, ejecutar el siguiente código.
-            `<div class="data-card">
-                <div class="card">
-                    <div class="img">
-                         <img class="character-img" src="${element.image}" />
-                    </div>
-                    <div class="info">
-                        <p class="character-name"> ${element.name}</p>
-                        <p>Especie: ${element.species}</p>
-                        <p>Dimensión: ${element.origin.name}</p>
-                    </div>
-                </div>
-            </div>`
-        );
-
-        allData.innerHTML = cards.join('');
+        const cards = result.map(element => templateStringForCards(element)); // result = array. .map itera items
+        allData.innerHTML = cards.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.   
     }
     //imprime el resultado dentro de la sección allData. .join concatena los elementos de un array.
 };
@@ -116,41 +87,14 @@ const getOrdervalue = event => {
 
     if (orderValue === 'a-z') {
         let result = window.orderData(data);
-        const card = result.map(element =>
-            `<div class="data-card">
-                <div class="card">
-                    <div class="img">
-                         <img class="character-img" src="${element.image}" />
-                    </div>
-                    <div class="info">
-                        <p class="character-name"> ${element.name}</p>
-                        <p>Especie: ${element.species}</p>
-                        <p>Dimensión: ${element.origin.name}</p>
-                    </div>
-                </div>
-            </div>`
-        );
+        const card = result.map(element => templateStringForCards(element));
         allData.innerHTML = card.join('');
     } else if (orderValue === 'z-a') {
         let result = window.orderDataZA(data);
-        const card = result.map(element =>
-            `<div class="data-card">
-                <div class="card">
-                    <div class="img">
-                         <img class="character-img" src="${element.image}" />
-                    </div>
-                    <div class="info">
-                        <p class="character-name"> ${element.name}</p>
-                        <p>Especie: ${element.species}</p>
-                        <p>Dimensión: ${element.origin.name}</p>
-                    </div>
-                </div>
-            </div>`
-        );
+        const card = result.map(element => templateStringForCards(element));
         allData.innerHTML = card.join('');
     }
 };
-
 
 const getSpeciesValue = event => {
     const speciesValue = event.target.value; //Se guarda el valor de los option del html
@@ -162,24 +106,9 @@ const getSpeciesValue = event => {
         const value = splitSpeciesValue[1]; //aqui se guarda el valor ej."Rick"
 
         let result = window.filterData(key, value, data); //variable vacía que guarda el resultado de la función ya ejecutada
-        const card = result.map(element => // result = array. .map itera items
-            //Al cumplirse con la condición, ejecutar el siguiente código.
-            `<div class="data-card">
-                <div class="card">
-                    <div class="img">
-                         <img class="character-img" src="${element.image}" />
-                    </div>
-                    <div class="info">
-                        <p class="character-name"> ${element.name}</p>
-                        <p>Especie: ${element.species}</p>
-                        <p>Dimensión: ${element.origin.name}</p>
-                    </div>
-                </div>
-            </div>`
-        );
-        allData.innerHTML = card.join('');
+        const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
+        allData.innerHTML = card.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.
     }
-
 }
 
 filterButton.addEventListener('change', getFilterValue);
