@@ -2,13 +2,11 @@
 const catalogButton = document.getElementById('catalog'); // catalog button
 const logo = document.getElementById('logo'); // logo element
 const data = window.RICKANDMORTY.results; // Call data R&M
-const searchInput = document.getElementById('search'); // Search bar
-const searchButton = document.getElementById('search-button'); // Search button
 const filterButton = document.getElementById('filter'); //Filter options button
 const orderButton = document.getElementById('order'); //Order options button 
 
-const nextButton = document.getElementById('next');
-const backButton = document.getElementById('back');
+//const nextButton = document.getElementById('next');
+//const backButton = document.getElementById('back');
 
 const speciesButton = document.getElementById('species'); // Species options button
 
@@ -32,9 +30,9 @@ logo.addEventListener('click', returnToIndex);
 
 //Carousel
 
-const carousel = () => {
+// const carousel = () => {
 
-}
+// }
 
 // Showing data
 const allData = document.getElementById('all-data'); //Section where data is going to appear
@@ -50,8 +48,8 @@ const templateStringForCards = (element) => {
         <p>Dimensión: ${element.origin.name}</p>
     </div>
 </div>
-</div>`
-}
+</div>`;
+};
 
 //FUNCTION to show data
 const showData = () => {
@@ -109,7 +107,7 @@ const getSpeciesValue = event => {
         const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
         allData.innerHTML = card.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.
     }
-}
+};
 
 filterButton.addEventListener('change', getFilterValue);
 orderButton.addEventListener('change', getOrdervalue);
