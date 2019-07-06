@@ -154,14 +154,17 @@ const getOrdervalue = event => {
 
 const getSpeciesValue = event => {
     const speciesValue = event.target.value; //Se guarda el valor de los option del html
-    const splitSpeciesValue = speciesValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
-    const key = splitSpeciesValue[0]; //aqui se guarda la propiedad ej. "name"
-    const value = splitSpeciesValue[1]; //aqui se guarda el valor ej."Rick"
+    if (speciesValue === 'all' || speciesValue === 'species') {
+        showData();
+    } else {
+        const splitSpeciesValue = speciesValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
+        const key = splitSpeciesValue[0]; //aqui se guarda la propiedad ej. "name"
+        const value = splitSpeciesValue[1]; //aqui se guarda el valor ej."Rick"
 
-    let result = window.filterData(key, value, data); //variable vacía que guarda el resultado de la función ya ejecutada
-    const card = result.map(element => // result = array. .map itera items
-        //Al cumplirse con la condición, ejecutar el siguiente código.
-        `<div class="data-card">
+        let result = window.filterData(key, value, data); //variable vacía que guarda el resultado de la función ya ejecutada
+        const card = result.map(element => // result = array. .map itera items
+            //Al cumplirse con la condición, ejecutar el siguiente código.
+            `<div class="data-card">
                 <div class="card">
                     <div class="img">
                          <img class="character-img" src="${element.image}" />
@@ -173,8 +176,10 @@ const getSpeciesValue = event => {
                     </div>
                 </div>
             </div>`
-    );
-    allData.innerHTML = card.join('');
+        );
+        allData.innerHTML = card.join('');
+    }
+
 }
 
 filterButton.addEventListener('change', getFilterValue);
