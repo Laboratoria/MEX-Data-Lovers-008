@@ -2,6 +2,7 @@
 const catalogButton = document.getElementById('catalog'); // catalog button
 const logo = document.getElementById('logo'); // logo element
 const data = window.RICKANDMORTY.results; // Call data R&M
+const dataOrder = data;
 const filterButton = document.getElementById('filter'); //Filter options button
 const orderButton = document.getElementById('order'); //Order options button 
 
@@ -84,11 +85,11 @@ const getOrdervalue = event => {
     const orderValue = event.target.value;
 
     if (orderValue === 'a-z') {
-        let result = window.orderData(data);
+        let result = window.orderData(dataOrder);
         const card = result.map(element => templateStringForCards(element));
         allData.innerHTML = card.join('');
     } else if (orderValue === 'z-a') {
-        let result = window.orderDataZA(data);
+        let result = window.orderDataZA(dataOrder);
         const card = result.map(element => templateStringForCards(element));
         allData.innerHTML = card.join('');
     }
