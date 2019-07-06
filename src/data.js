@@ -15,12 +15,12 @@ const orderData = (data) => {
             return -1;
         }
         if (nameA > nameB) {
-            return 1
+            return 1;
         }
         return 0;
-    })
+    });
     return data;
-}
+};
 
 const orderDataZA = (data) => {
     data.sort((a, b) => {
@@ -30,12 +30,12 @@ const orderDataZA = (data) => {
             return -1;
         }
         if (nameA > nameB) {
-            return 1
+            return 1;
         }
         return 0;
-    })
+    });
     return data.reverse();
-}
+};
 
 window.orderData = orderData;
 window.orderDataZA = orderDataZA;
