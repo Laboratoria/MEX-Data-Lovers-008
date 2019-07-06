@@ -235,7 +235,8 @@ header {
     width: 90%;
     height: 90%;
     margin: auto;
-    background-color: #9BF2BA;
+    background-color: rgba(255, 255, 255, .9);
+    border: #9BF2BA 0.3rem solid;
 }
 
 @media only screen and (min-width:768px) {
@@ -250,8 +251,8 @@ header {
         width: 80%;
     }
     #facts {
-        width: 50%;
-        height: 50%;
+        width: 80%;
+        height: 80%;
     }
 }
 
@@ -265,7 +266,7 @@ header {
     justify-content: space-around;
     margin: 2rem;
     width: 90vw;
-    height: 100vh;
+    height: 90vh;
     overflow: scroll;
     /* align-items: space-between;
     justify-items: space-between; */

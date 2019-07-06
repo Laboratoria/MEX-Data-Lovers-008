@@ -6,7 +6,12 @@ const searchInput = document.getElementById('search'); // Search bar
 const searchButton = document.getElementById('search-button'); // Search button
 const filterButton = document.getElementById('filter'); //Filter options button
 const orderButton = document.getElementById('order'); //Order options button 
+
+const nextButton = document.getElementById('next');
+const backButton = document.getElementById('back');
+
 const speciesButton = document.getElementById('species'); // Species options button
+
 
 
 
@@ -28,6 +33,11 @@ const returnToIndex = () => {
 catalogButton.addEventListener('click', showCatalog);
 logo.addEventListener('click', returnToIndex);
 
+//Carousel
+
+const carousel = () => {
+
+}
 
 
 // Showing data
