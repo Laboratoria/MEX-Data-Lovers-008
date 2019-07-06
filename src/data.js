@@ -23,7 +23,7 @@ const orderData = (data) => {
     return data;
 }
 
-const orderDataZA = () => {
+const orderDataZA = (data) => {
     data.sort((a, b) => {
         let nameA = a.name.toUpperCase();
         let nameB = b.name.toUpperCase();
