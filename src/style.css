@@ -93,14 +93,11 @@ header {
     /* background-color: aqua; */
 }
 
-
 .navigation-bar li {
     list-style: none;
     justify-content: flex-end;
     text-align: center;
 }
-
-
 
 #logo {
     width: 10rem;
@@ -171,14 +168,17 @@ header {
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
+}
 
-} 
 .carousel i {
     vertical-align: center;
 }
 
-
-.button, #filter, #order, .navigation-bar li a  {
+.button,
+#filter,
+#order,
+.navigation-bar li a,
+#species {
     border-color: #00B3CC;
     cursor: pointer;
     color: white;
@@ -189,8 +189,11 @@ header {
     transition: 1ms;
 }
 
-
-.button:hover, #filter:hover, #order:hover, .navigation-bar li a:hover {
+.button:hover,
+#filter:hover,
+#order:hover,
+.navigation-bar li a:hover,
+#species:hover {
     background-color: #9BF2BA;
     border-color: rgb(133, 208, 150);
     color: black;
@@ -299,7 +302,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     /* border: 1px rgba(204, 204, 204, 1) solid; */
     padding: 2rem 0;
     border-radius: 1rem;
@@ -307,6 +310,12 @@ header {
     -moz-box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
     box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
     background-color: rgba(255, 255, 255, 0.6)
+}
+
+.card:hover {
+    border: #00B3CC 0.3rem solid;
+    transform: scale(1.1);
+    transition: transform 0.1s;
 }
 
 .info {
@@ -353,7 +362,8 @@ header {
 }
 
 #filter,
-#order {
+#order,
+#species {
     width: 8rem;
     height: 3.5rem;
     margin: 1rem 1rem;
