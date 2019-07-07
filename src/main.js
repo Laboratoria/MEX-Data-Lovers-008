@@ -1,8 +1,4 @@
 
-for(personajes in RICKANDMORTY.results){ 
-  // console.log(RICKANDMORTY.results[personajes].image); 
-  //console.log(RICKANDMORTY.results[personajes].gender); 
-}
 for(personajes in RICKANDMORTY.results){
   // console.log(RICKANDMORTY.results[personajes].image); 
   //console.log(RICKANDMORTY.results[personajes].gender);
@@ -27,7 +23,7 @@ const muestraData = () => {
     <p> Status: ${element.status} </p>
     <p> Especie: ${element.species} </p>
     <p> tamaño: ${element.origin.name} </p>
-    <p> Otro: ${element.location.name}</p>
+    <p> Origen: ${element.location.name}</p>
     </div>
     </div>`
   });
