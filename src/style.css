@@ -4,8 +4,6 @@ body {
    
 }
 
-
-
 #contenedor-texto{
   width: 100%;
   max-width: 500px;
@@ -40,8 +38,7 @@ body {
   width: 300px; 
   margin: left;
   bottom: 20px;
-  right: 20px;
-   
+  right: 20px;  
 }
 
   th, td { 
@@ -76,29 +73,9 @@ body {
     font-size: 20px;
     color:black;
     background-color: rgb(214, 216, 112);
-    
-  }
- 
-
-.btn-empezar{
-  position: relative;
-  display: inline-block;
-  border: 2px solid blue;
-  padding: 40 px 80px;
-  color:greenyellow;
-  font-weight: 700;
-  text-decoration:none;
-  background-color:rgb(124, 110, 245);
-  object-position: right;
-}
-
-.btn-empezar:hover{
-  color: blue ;
-  background-color: transparent;
   }
 
-
-.btn-continuar{
+/* .btn-continuar{
   position: relative;
   display: inline-block;
   border: 2px solid  rgb(214, 216, 112);
@@ -113,38 +90,20 @@ body {
 .btn-continuar:hover{
 color: blue ;
 background-color: transparent;
+} */
+.abajo a {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 100%;
+  margin-left: 115rem;
+  text-align: center;
+  font-size: 6rem;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color:  rgb(214, 216, 112);
 }
-
-.btn-temporada{
-  position: relative;
-  display: inline-block;
-  border: 2px solid blue;
-  padding: 40 px 80px;
-  color:greenyellow;
-  font-weight: 700;
-  text-decoration:none;
-  background-color:rgb(124, 110, 245);
-  text-align: left; 
-}
-.btn-temporada:hover{
-  color: blue ;
-  background-color: transparent;
-  }
-
-  .icon-circle-down:before {
-    content: "\ea43";
-    display: inline-block;
-    padding: 20px;
-    background: rgb(214, 216, 112);;
-    font-size: 30px;
-    color:blue;
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
   
-
   h1{
   text-align: right;
   color: white;
@@ -152,6 +111,17 @@ background-color: transparent;
   font-size: 50px;
   font-weight: bold;
   height: 40px;
+  margin-right: 4%;
+  text-shadow: 5px 5px 5px blue; 
+  }
+
+  h2{
+    text-align: right;
+  color: white;
+  font-family: 'Amatic SC', Verdana;
+  font-size: 50px;
+  font-weight: bold;
+  height: 50px;
   margin-right: 4%;
   text-shadow: 5px 5px 5px blue; 
   }
@@ -195,4 +165,71 @@ background-color: transparent;
     width: 40%;
     margin-left: 50px;
   }
+}
+
+button {
+  outline:none;
+  font-family:'Amatic SC', Verdana; 
+  font-size:35px;
+  font-weight: bold;
+  color: black;
+  text-shadow:-1px -1px 1px rgba(0, 0, 0, 0.7), 1px 1px 1px hsla(350,0%,100%,0.3);
+  display: block; 
+  margin:2em 30px 0px 10px; 
+  text-align: center;
+  padding:10px 15px 10px 15px;
+  cursor:pointer;
+  background-color:rgb(128, 212, 18);
+  background-image:linear-gradient(273deg,rgb(193, 230, 62) 30%, rgb(101, 230, 15) 40%);
+  border:none; 
+  border-radius:16px;
+  box-align: right;
+  box-shadow:
+    inset 0px 0px 1px 1px rgba(99, 116, 5, 0.9),
+    inset 1px 1px 1px 4px rgba(255, 255, 255, 0.8),
+    8px 10px 2px 6px rgba(82, 109, 72, 0.74),
+    0px 0px 3px 2px rgba(45, 158, 17, 0.9),
+    -1px -1px 1px 6px rgba(45, 214, 29, 0.9),
+    0px 0px 2px 11px rgba(11, 70, 34, 0.9);
+}
+
+button:active {
+  color: black; 
+  padding:26px 34px 22px 38px;
+  background-image: linear-gradient(273deg,rgb(75, 136, 216) 50%, rgb(48, 220, 232) 60%);
+  box-shadow: inset 3px 4px 3px 2px rgba(11, 92, 212, 0.55);
+}
+
+. caracteristicas{
+  outline:none;
+  font-family:'Amatic SC', Verdana; 
+  font-size:35px;
+  font-weight: bold;
+  color: black;
+  text-shadow:-1px -1px 1px rgba(0, 0, 0, 0.7), 1px 1px 1px hsla(350,0%,100%,0.3);
+  display: block; 
+  margin:2em 50px 0px 10px; 
+  text-align: center;
+  padding:18px 15px 18px 25px;
+  cursor:pointer;
+  background-color:rgb(128, 212, 18);
+  background-image:linear-gradient(273deg,rgb(193, 230, 62) 30%, rgb(101, 230, 15) 40%);
+  border:none; 
+  border-radius:16px;
+  box-align: right;
+  margin-left: 2em;
+}
+
+
+.info select{
+  background: rgb(60, 60, 61);
+  padding: 10px;
+  width: 200px ;
+  height: 70px;
+  font-family:'Amatic SC', Verdana;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 2em;
+  color: white;
+  border-radius: 16px;
 }
