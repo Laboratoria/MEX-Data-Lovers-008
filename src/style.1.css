@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Creepster|Finger+Paint|Forum&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.hide {
+    display: none;
+}
+#navegador {
+    list-style-type: none;
+    text-align: right;
+    display: inline;
+ }
+ #navegador li{
+    display: inline;
+    text-align:right;
+    margin: 0 10px 0 0;
+ }
+ #navegador li a {
+    padding: 2px 7px 2px 7px;
+    color: chartreuse;
+    font-family:'Finger Paint', cursive;
+    background-color: transparent;
+    text-decoration: none;
+    
+ }
+ #navegador li a:hover{
+    background-color: dodgerblue;
+    color: #ffffff;
+ }
+h1 {
+    font-family:'Creepster', cursive;
+    color: chartreuse;
+    text-align: center;
+    font-size: 60px;
+}
+h2{
+    font-family:'Creepster', cursive;
+    color: dodgerblue;
+    font-size: 50px;
+    text-align: center;
+}
+#buscador{
+    text-align: center;
+    margin: 25px;
+}
+h3{
+    font-family:'Finger Paint', cursive;
+    color: dodgerblue;
+    font-size: xx-large;
+    font-weight: 500;
+}
+label{
+    color: chartreuse;
+    font-family: 'Finger Paint', cursive;
+    font-size: medium;
+}
+
