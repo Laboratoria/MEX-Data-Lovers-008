@@ -10,7 +10,6 @@ const screenPlanetas = document.getElementById("pantalla-planetas");
 const screenExplorar = document.getElementById("pantalla-explorar");
 const screenAyuda = document.getElementById("pantalla-ayuda");
 const buttonInicio = document.getElementById("button-inicio");
-
 const pantallaBienvenida = () => {
     screenBienvenida.classList.remove("disappear");
     screenPersonajes.classList.add("disappear");
@@ -29,6 +28,24 @@ const pantallaPersonajes = () => {
     screenAyuda.classList.add("disappear");
     buttonReinicio.classList.remove("disappear");
     buttonFilter.classList.remove("disappear");
+const screenBienvenida = () => {
+    document.getElementById("pantalla-bienvenida").style.display="block";
+    document.getElementById("pantalla-personajes").style.display="none";
+    document.getElementById("pantalla-planetas").style.diplay= "none";
+    document.getElementById("pantalla-explorar").style.display= "none";
+    document.getElementById("pantalla-ayuda").style.display= "none";
+    document.getElementById('button-reinicio').style.display= "none";
+    document.getElementById("filter-personajes").style.display= "none";
+}
+
+const screenPersonajes = () => {
+    document.getElementById("pantalla-bienvenida").style.display="none";
+    document.getElementById("pantalla-personajes").style.display="block";
+    document.getElementById("pantalla-planetas").style.diplay= "none";
+    document.getElementById("pantalla-explorar").style.display= "none";
+    document.getElementById("pantalla-ayuda").style.display= "none";
+    document.getElementById('button-reinicio').style.display= "block";
+    document.getElementById("filter-personajes").style.display= "block";
 }
 
 let printDataPersonajes = () => {
@@ -108,6 +125,36 @@ const pantallaAyuda = () => {
     screenAyuda.classList.remove("disappear");
     buttonReinicio.classList.remove("disappear");
     buttonFilter.classList.add("disappear");
+=======
+const screenPlanetas = () => {
+    document.getElementById("pantalla-bienvenida").style.display="none";
+    document.getElementById("pantalla-personajes").style.display="none";
+    document.getElementById("pantalla-planetas").style.diplay= "block";
+    document.getElementById("pantalla-explorar").style.display= "none";
+    document.getElementById("pantalla-ayuda").style.display= "none";
+    document.getElementById('button-reinicio').style.display= "block";
+    document.getElementById("filter-personajes").style.display= "none";
+}
+
+const screenExplorar = () => {
+    document.getElementById("pantalla-bienvenida").style.display="none";
+    document.getElementById("pantalla-personajes").style.display="none";
+    document.getElementById("pantalla-planetas").style.diplay= "none";
+    document.getElementById("pantalla-explorar").style.display= "block";
+    document.getElementById("pantalla-ayuda").style.display= "none";
+    document.getElementById('button-reinicio').style.display= "block";
+    document.getElementById("filter-personajes").style.display= "none";
+}
+
+const screenAyuda = () => {
+    document.getElementById("pantalla-bienvenida").style.display="none";
+    document.getElementById("pantalla-personajes").style.display="none";
+    document.getElementById("pantalla-planetas").style.diplay= "none";
+    document.getElementById("pantalla-explorar").style.display= "none";
+    document.getElementById("pantalla-ayuda").style.display= "block";
+    document.getElementById('button-reinicio').style.display= "block";
+    docuument.getElementById("filter-personajes").style.display= "none";
+
 }
 
 buttonReinicio.addEventListener("click", pantallaBienvenida);
