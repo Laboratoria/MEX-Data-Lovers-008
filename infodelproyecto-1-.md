@@ -401,12 +401,12 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 - [x] Incluye historias de usuario en `README.md`.
 - [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
-- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+- [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
       en `README.md`.
 - [x] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
 - [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
-- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
+- [x] UI: Permite ordenar data por uno o más campos (asc y desc).
 - [x] UI: Permite filtrar data en base a una condición.
 
 ## Checklist (Hacker Edition)

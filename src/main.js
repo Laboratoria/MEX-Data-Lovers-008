@@ -33,7 +33,7 @@ const curiosities = [
     "A lo largo de las 3 temporadas de Rick and Morty han aparecido múltiples variables de los protagonistas, pero curiosamente existen <b>73 Ricks</b> y solo <b>44 Mortys.</b>",
     "Solo hay 73 mujeres en toda la serie de Rick and Morty.",
     "En todo el universo de Rick and Morty solo existen 10 especies."
-]
+];
 
 let changer = 0;
 curiosity.innerHTML = curiosities[changer];
@@ -41,12 +41,12 @@ curiosity.innerHTML = curiosities[changer];
 const next = () => {
     changer++;
     carousel();
-}
+};
 
 const back = () => {
     changer--;
     carousel();
-}
+};
 
 const carousel = () => {
     if (changer > curiosities.length - 1) {
@@ -55,7 +55,7 @@ const carousel = () => {
         changer = curiosities.length - 1;
     }
     curiosity.innerHTML = curiosities[changer];
-}
+};
 
 
 nextButton.addEventListener('click', next);
