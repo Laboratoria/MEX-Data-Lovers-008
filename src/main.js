@@ -12,6 +12,7 @@ const muestraData = () => {
   data.forEach(element => {
     console.log(element)
     str += `<div class="tarjeta">
+    <div class= "caras">
     <div class="nombre">
     <p> ${element.name}</p></div>
     <br>
@@ -19,11 +20,11 @@ const muestraData = () => {
     <img src="${element.image}"></img>
     </div>
  <div class= "info">
- 
     <p> Status: ${element.status} </p>
     <p> Especie: ${element.species} </p>
     <p> tamaño: ${element.origin.name} </p>
     <p> Origen: ${element.location.name}</p>
+    </div>
     </div>
     </div>`
   });
@@ -34,16 +35,33 @@ const muestraData = () => {
 
 muestraData()
 
-// movimiento boton ir abajo
-// $(document).ready(funtion(){
+const filtrarData = (prop, val) => {
+  let str = '';
+  data.forEach(element => {
+    
+    //console.log(element[prop])
+    
+    if(element[prop] == val) {
+      str += `<div class="tarjeta">
+          <div class="nombre">
+          <p> ${element.name}</p></div>
+          <br>
+          <div class="img"> 
+          <img src="${element.image}"></img>
+          </div>
+       <div class= "info">
+          <p> Status: ${element.status} </p>
+          <p> Especie: ${element.species} </p>
+          <p> tamaño: ${element.origin.name} </p>
+          <p> Origen: ${element.location.name}</p>
+          </div>
+          </div>`  
+    }
+    
+    
+  });
 
-//   $('.ir-abajo').click(funtion(){
-//     $('body.html').animate({
+  console.log(str);
 
-// let filterType = (fl) => {
-//   const typeValue = fl.target.value; //Guardando el valor del selector de tipo
-//   const filterType = window.dataManager.filterByType(data,typeValue); //llamando la funcion desde el objeto global window para filtrar tipos
-//   printData(filterType); // Reutilizando la funcion para imprimir por tipo sobre las tarjetas
-// };
-
-
+}
+filtrarData('status', 'Alive')
