@@ -228,6 +228,7 @@ header {
     width: 100%;
     display: flex;
     background-image: url(img/fondo-slide.jpg);
+    transform-style: preserve-3d;
     /* background-size: cover; */
 }
 
@@ -237,6 +238,22 @@ header {
     margin: auto;
     background-color: rgba(255, 255, 255, .9);
     border: #9BF2BA 0.3rem solid;
+}
+
+#facts h2 {
+    font-size: 2rem;
+}
+
+#facts p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1rem;
+    margin-bottom: 10%;
+}
+
+#facts img {
+    width: 2rem;
+
 }
 
 @media only screen and (min-width:768px) {
@@ -253,6 +270,11 @@ header {
     #facts {
         width: 80%;
         height: 80%;
+    }
+    
+    #facts p {
+        font-size: 1.5rem;
+        
     }
 }
 
