@@ -9,6 +9,7 @@
     margin: 0 auto;
     display: flex;
     background-color: black;
+    display: flex;
   }
  
 .row{
@@ -54,81 +55,24 @@
     }
   } 
 
+.disappear {
+    display: none;
+}
+
 #pantalla-bienvenida {
+    margin-top: 10vh;
+    padding: 10vh;
     background-image: url(images/background-stars.jpeg)
 }
 
 header {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
     position: fixed;
     justify-content: center;
     background-image: url(images/background-stars.jpeg)
-}
-
-#button-inicio-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    margin-top: 10rem;
-}
-
-/*
-article {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: whitesmoke;
-}
-.flex-item {
-    display: flex;
-    flex-wrap: wrap;
-}
-#buttons-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-#button-personajes-div {
-    display: flex;
-    flex-direction: row;
-}
-#button-planetas-div {
-    display: flex;
-    flex-direction: row;
-}
-#button-explorar-div {
-    display: flex;
-    flex-direction: row;
-}
-#button-ayuda-div {
-    display: flex;
-    flex-direction: row;
-}
-div.card-personajes {
-    display: flex;
-    overflow-y: scroll;
-    background-color: whitesmoke;
-    height: 100vh;
-    align-content: center;
-}
-*/
-
-.cards-display {
-    /*justify-content: center;*/
-    text-align: center;
-    color: whitesmoke;
-    flex-direction: row;
-    flex-flow: column;
-    background-color: #222222;
-}
-
-.card {
-    padding: 2rem 0;
-    border-radius: 1rem;
 }
 
 footer {
@@ -146,17 +90,118 @@ footer {
 }
 
 #button-reinicio {
-   display: flex;
     align-items: center;
     width: 100%;
     height: auto;
     position: fixed;
     margin: 0 auto;
-    bottom: 3vh;
-    order: initial;
+    bottom: 2vh;
     text-align: center;
+    flex-wrap: wrap;
 }
 
-/*.input-filter-personajes {
-    
+#button-inicio-div #button-personajes-div #button-planetas-div #button-explorar-div #button-ayuda-div {
+    margin: 1vh;
+    padding: 1vh;
+}
+
+/*#button-inicio-div {
+    margin-top: 10rem;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+
+#button-personajes-div {
+    margin-top: 10rem;
+    justify-content: space-around;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#button-planetas-div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#button-explorar-div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#button-ayuda-div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }*/
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    color: black;
+    font-size: 1rem;
+    padding: 1rem 0;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0;
+    width: 20rem;
+}
+
+
+.card-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #222222;
+    overflow-y: scroll;
+    align-content: center;
+    width: 100%;
+}
+
+.imagen-personaje {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width:768px) {
+    .all-data {
+        width: 1200px;
+        height: 1000px;
+    }
+    .data-card {
+        width: 30%;
+    }
+}
+
+section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1vh;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10vh;
+}
+
+
+/*.input-filter-personajes {
+}
+
+article {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: whitesmoke;
+}
+
+/*
+
