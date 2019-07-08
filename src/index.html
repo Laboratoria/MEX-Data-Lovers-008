@@ -66,35 +66,39 @@
                 <h2>Personajes</h2>
                 <!-- <h3>Da click en tu personaje para saber más sobre el</h3> -->
                 <div class="order-and-filter-button">
-                    <select name="filter" id="filter">
-                        <option value="filter">Filtrar</option>
-                        <option value="all">Todos</option>
-                        <option value="name.Rick">Todos los Ricks</option>
-                        <option value="name.Morty">Todos los Morty</option>
-                        <option value="gender.Female">Mujer</option>
-                        <option value="gender.Male">Hombre</option>
-                        <option value="status.Alive">Vivo</option>
-                        <option value="status.Dead">Muerto</option>
-                    </select>
+                    <div class="order-filter">    
+                        <select name="filter" id="filter">
+                            <option value="filter">Filtrar</option>
+                            <option value="all">Todos</option>
+                            <option value="name.Rick">Todos los Ricks</option>
+                            <option value="name.Morty">Todos los Morty</option>
+                            <option value="gender.Female">Mujer</option>
+                            <option value="gender.Male">Hombre</option>
+                            <option value="status.Alive">Vivo</option>
+                            <option value="status.Dead">Muerto</option>
+                        </select>
                     <select name="order" id="order">
                         <option value="order">Ordenar</option>
                         <option value="a-z">de la A a la Z</option>
                         <option value="z-a">de la Z a la A</option>
                     </select>
-                    <select name="species" id="species">
-                            <option value="species">Especies</option>
-                            <option value="all">Todas</option>
-                            <option value="species.Human">Humanos</option>
-                            <option value="species.Humanoid">Humanoide</option>
-                            <option value="species.Vampire">Vampiro</option>
-                            <option value="species.Alien">Alien</option>
-                            <option value="species.unknown">Desconocida</option>
-                            <option value="species.Cronenberg">Cronenberg</option>
-                            <option value="species.Poopybutthole">Poopybutthole</option>
-                            <option value="species.Robot">Robot</option>
-                            <option value="species.Disease">Disease</option>
-                            <option value="species.Animal">Animal</option>
-                        </select>
+                    </div>
+                    <div class="specie">
+                        <select name="species" id="species">
+                                <option value="species">Especies</option>
+                                <option value="all">Todas</option>
+                                <option value="species.Human">Humanos</option>
+                                <option value="species.Humanoid">Humanoide</option>
+                                <option value="species.Vampire">Vampiro</option>
+                                <option value="species.Alien">Alien</option>
+                                <option value="species.unknown">Desconocida</option>
+                                <option value="species.Cronenberg">Cronenberg</option>
+                                <option value="species.Poopybutthole">Poopybutthole</option>
+                                <option value="species.Robot">Robot</option>
+                                <option value="species.Disease">Disease</option>
+                                <option value="species.Animal">Animal</option>
+                            </select>
+                    </div>
                 </div>
             </div>
             <section class="all-data" id="all-data">
