@@ -128,19 +128,28 @@
 <br>
 <br>
 
-<!-- filtrar -->
- <!-- <section id="info" class="hide"> -->
+<section id="info" class="hide">
   <div class=" info">
-      <select name="filtrar o escoger" id="filtrar o escoger?"> 
-      <option value="filtrar">Filtrar</option>
-      <option value="name">Nombre</option>
-      <option value="species">Especies</option>
+    <div class= "ordenar-boton">
+      <select name="filter" id="filter"> 
+      <option value="filter">Filtrar</option>
+      <option value="nombre.name">Nombre</option>
+      <option value="species.species">Especies</option>
       <option value="location.name">Dimensión</option>
-      <option value="origin-name">Origen</option>
+      <option value="origin.name">Origen</option>
       </select>
+
+      <select id="choose-fruit-multiple" multiple>
+          <option value="1">Apple</option>
+          <option value="2">Orange</option>
+          <option value="3">Banana</option>
+          <option value="4">Guava</option>
+          <option value="5">Grapes</option>
+        </select>
     </div>
-<!-- boton filtrar -->
-<button>Filtrar</button>
+    </div>
+<!-- boton filtrar 
+<button>Filtrar</button>-->
 
     <!-- ordenar por nombre -->
 <!-- <select name="orden" id="orden">
@@ -163,9 +172,9 @@
 <br>
 <br>
 <br>
-
-<section class="data" id='data'>
-
+<div id="contenedor">
+  <section class="data" id='data'>
+</div>
 </section>
 
     <script src="main.js"></script>

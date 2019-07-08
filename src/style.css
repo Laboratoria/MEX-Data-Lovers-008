@@ -126,13 +126,11 @@ background-color: transparent;
   text-shadow: 5px 5px 5px blue; 
   }
   
-  #contenedor{
-    margin: center;
-  }
 
+  
   #data{
     font-family: 'Amatic SC', Verdana;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 30px;
     font-weight: bold;
     text-shadow: 5px 5px 5px blue; 
@@ -200,7 +198,7 @@ button:active {
   box-shadow: inset 3px 4px 3px 2px rgba(11, 92, 212, 0.55);
 }
 
-. caracteristicas{
+.caracteristicas{
   outline:none;
   font-family:'Amatic SC', Verdana; 
   font-size:35px;
