@@ -1,7 +1,8 @@
-// traer data
+
 const data = RICKANDMORTY;
 console.log(data);
 const card = document.getElementById ("rick-mory-card")
+
 
 
 const dataSee = (data)=>{
@@ -18,3 +19,4 @@ const dataSee = (data)=>{
    card.innerHTML = str
 }
 dataSee(data)
+
