@@ -121,6 +121,24 @@ font-family: 'Coiny', cursive;
     list-style: none;
 }
 
+.lista_de_pokemones::-webkit-scrollbar {
+  background-color: RGB(52, 189, 211);
+  height: 0px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.lista_de_pokemones::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 1rem;
+}
+
+.lista_de_pokemones::-webkit-scrollbar-thumb:hover {
+  background: black;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
 #filtered_by_type{
   margin: 15px;
     padding: 10px;
@@ -268,4 +286,8 @@ li:hover{
 #pokemons_filtered{
   width: 60%;
   float: left;
+}
+
+#global_container{
+  width: 100%;
 }
