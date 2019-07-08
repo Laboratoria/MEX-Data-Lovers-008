@@ -4,12 +4,11 @@ const logo = document.getElementById('logo'); // logo element
 const data = window.RICKANDMORTY.results; // Call data R&M
 const dataOrder = data;
 const filterButton = document.getElementById('filter'); //Filter options button
-const orderButton = document.getElementById('order'); //Order options button 
-
-//const nextButton = document.getElementById('next');
-//const backButton = document.getElementById('back');
-
 const speciesButton = document.getElementById('species'); // Species options button
+const orderButton = document.getElementById('order'); //Order options button 
+const nextButton = document.getElementById('next');
+const backButton = document.getElementById('back');
+const curiosity = document.getElementById('curiosity');
 
 //HIDE & SHOW
 
@@ -30,10 +29,38 @@ catalogButton.addEventListener('click', showCatalog);
 logo.addEventListener('click', returnToIndex);
 
 //Carousel
+const curiosities = [
+    "A lo largo de las 3 temporadas de Rick and Morty han aparecido múltiples variables de los protagonistas, pero curiosamente existen <b>73 Ricks</b> y solo <b>44 Mortys.</b>",
+    "Solo hay 73 mujeres en toda la serie de Rick and Morty.",
+    "En todo el universo de Rick and Morty solo existen 10 especies."
+]
 
-// const carousel = () => {
+let changer = 0;
+curiosity.innerHTML = curiosities[changer];
 
-// }
+const next = () => {
+    changer++;
+    carousel();
+}
+
+const back = () => {
+    changer--;
+    carousel();
+}
+
+const carousel = () => {
+    if (changer > curiosities.length - 1) {
+        changer = 0;
+    } else if (changer < 0) {
+        changer = curiosities.length - 1;
+    }
+    curiosity.innerHTML = curiosities[changer];
+}
+
+
+nextButton.addEventListener('click', next);
+backButton.addEventListener('click', back);
+
 
 // Showing data
 const allData = document.getElementById('all-data'); //Section where data is going to appear
