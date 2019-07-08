@@ -39,9 +39,14 @@ Nuestra segunda propuesta es:
 Decidimos tomar el segundo prototipo, como el prototipo final.
 
 ## Prototipo de alta fidelidad
-![prototipo-celular-alta-f]()
-![prototipo-escritorio-alta-f]()
 
+### Celular
+![prototipo-celular-alta-f](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/altafidelidadmovil.jpg)
+![prototipo-celular-alta-f2](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/altafidelidadmovil2.jpg)
+
+### Escritorio
+![prototipo-escritorio-alta-f](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/altafidelidad.jpg)
+![prototipo-escritorio-alta-f2](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/altafidelidad1.jpg)
 ## Historias de usuario
 
 Primer acercamiento a Get Schwifty
