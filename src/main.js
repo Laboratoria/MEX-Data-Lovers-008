@@ -80,6 +80,7 @@ let filterData1 = () => {
     return result;
 };
 
+
 const pantallaPlanetas = () => {
     screenBienvenida.classList.add("disappear");
     screenPersonajes.classList.add("disappear");

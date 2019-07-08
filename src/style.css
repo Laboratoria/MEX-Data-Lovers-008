@@ -8,8 +8,7 @@
     max-width: 100%;
     margin: 0 auto;
     display: flex;
-    background-color: black;
-    display: flex;
+    background-color: #222222;
   }
  
 .row{
@@ -62,7 +61,8 @@
 #pantalla-bienvenida {
     margin-top: 10vh;
     padding: 10vh;
-    background-image: url(images/background-stars.jpeg)
+    width: 100%;
+    background-image: url(images/background-stars.jpeg);
 }
 
 header {
@@ -72,7 +72,7 @@ header {
     width: 100%;
     position: fixed;
     justify-content: center;
-    background-image: url(images/background-stars.jpeg)
+    background-image: url(images/background-stars.jpeg);
 }
 
 footer {
@@ -90,20 +90,26 @@ footer {
 }
 
 #button-reinicio {
-    align-items: center;
+    flex-direction: row;
     width: 100%;
     height: auto;
     position: fixed;
     margin: 0 auto;
-    bottom: 2vh;
+    bottom: 1vh;
     text-align: center;
-    flex-wrap: wrap;
+    /*background-color: #222222;*/
 }
 
 #button-inicio-div #button-personajes-div #button-planetas-div #button-explorar-div #button-ayuda-div {
     margin: 1vh;
     padding: 1vh;
 }
+
+/*#filter-personajes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}*/
 
 /*#button-inicio-div {
     margin-top: 10rem;
@@ -151,16 +157,16 @@ footer {
     width: 20rem;
 }
 
-
 .card-display {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #222222;
-    overflow-y: scroll;
-    align-content: center;
+    height: 100vh;
+    margin: 25vh 5vh 5vh;
     width: 100%;
+    overflow: scroll;
+    background-color: green;
+    align-content: center;
 }
 
 .imagen-personaje {
@@ -181,8 +187,7 @@ footer {
 
 section {
     flex-direction: row;
-    flex-wrap: wrap;
-    margin: 1vh;
+    background-color: #222222;
 }
 
 article {
@@ -190,18 +195,9 @@ article {
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 10vh;
+    background-color: #222222;
 }
 
 
-/*.input-filter-personajes {
-}
 
-article {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: whitesmoke;
-}
-
-/*
 

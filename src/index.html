@@ -5,9 +5,9 @@
     <title>Rick and Morty Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-  <section class="container" id="container">
-    
+  <body class="container" id="container">
+
+  
     <header class="row col-12">
       <figure>
         <a href="">
@@ -28,7 +28,7 @@
      <!--PANTALLA DE PERSONAJES-->
     <section id="pantalla-personajes" class="row disappear">
       <article class="row col-12"><h1>Personajes</h1></article>
-      <div class="card-display row col-12">
+      <div class="card-display row">
           <div id="card-display"></div>
       </div>
     </section>
@@ -48,31 +48,29 @@
      <article class="row col-6"><h1>Sobre Rick and Morty Lovers</h1></article>
     </section>
 
-    <div id="filter-personajes" class="row disappear">
-        <select>
-                <option value="filter">Filtrar</option>
-                <option value="all">Todos</option>
-                <option value="allAlive">Vivos</option>
-                <option value="allDead">Muertos</option>
-                <option value="allMale">Masculinos</option>
-                <option value="allFemale">Femeninos</option>
-        </select>
+     <!--BOTÓN REINICIO-->
+    <div id="button-reinicio" class="disappear row"> 
+      <div><input type="image" alt="Inicio" src="images/portal png 1.gif">
+      </div>
     </div>
 
-     <!--BOTÓN REINICIO-->
-     <div id="button-reinicio" class="row disappear">
-       <input type="image" alt="Inicio" src="images/portal png 1.gif">
-     </div>
-
-    <footer id="footer" class="row col-12"><h4>Rick and Morty Lovers - 2019</h4>   
+    <div id="filter-personajes" class="disappear">
+              <select> 
+                      <option value="filter">Filtrar</option>
+                      <option value="all">Todos</option>
+                      <option value="allAlive">Vivos</option>
+                      <option value="allDead">Muertos</option>
+                      <option value="allMale">Masculinos</option>
+                      <option value="allFemale">Femeninos</option>
+              </select>
+    </div>
+    
+    <footer id="footer" class="row"><h4>Rick and Morty Lovers - 2019</h4>   
     </footer>
-
-  </section>
 
     <script src="./data/rickandmorty/rickandmorty.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
-    
-  </main>
+
   </body>
 </html>
