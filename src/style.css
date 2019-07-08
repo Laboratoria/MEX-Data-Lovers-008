@@ -8,7 +8,7 @@
     max-width: 100%;
     margin: 0 auto;
     display: flex;
-    background-color: black;
+    background-color: #222222;
   }
  
 .row{
@@ -54,81 +54,25 @@
     }
   } 
 
+.disappear {
+    display: none;
+}
+
 #pantalla-bienvenida {
-    background-image: url(images/background-stars.jpeg)
+    margin-top: 10vh;
+    padding: 10vh;
+    width: 100%;
+    background-image: url(images/background-stars.jpeg);
 }
 
 header {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
     position: fixed;
     justify-content: center;
-    background-image: url(images/background-stars.jpeg)
-}
-
-#button-inicio-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    margin-top: 10rem;
-}
-
-/*
-article {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: whitesmoke;
-}
-.flex-item {
-    display: flex;
-    flex-wrap: wrap;
-}
-#buttons-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-#button-personajes-div {
-    display: flex;
-    flex-direction: row;
-}
-#button-planetas-div {
-    display: flex;
-    flex-direction: row;
-}
-#button-explorar-div {
-    display: flex;
-    flex-direction: row;
-}
-#button-ayuda-div {
-    display: flex;
-    flex-direction: row;
-}
-div.card-personajes {
-    display: flex;
-    overflow-y: scroll;
-    background-color: whitesmoke;
-    height: 100vh;
-    align-content: center;
-}
-*/
-
-.cards-display {
-    /*justify-content: center;*/
-    text-align: center;
-    color: whitesmoke;
-    flex-direction: row;
-    flex-flow: column;
-    background-color: #222222;
-}
-
-.card {
-    padding: 2rem 0;
-    border-radius: 1rem;
+    background-image: url(images/background-stars.jpeg);
 }
 
 footer {
@@ -146,17 +90,110 @@ footer {
 }
 
 #button-reinicio {
-   display: flex;
-    align-items: center;
+    flex-direction: row;
     width: 100%;
     height: auto;
     position: fixed;
     margin: 0 auto;
-    bottom: 3vh;
-    order: initial;
+    bottom: 1vh;
     text-align: center;
+    /*background-color: #222222;*/
 }
 
-/*.input-filter-personajes {
-    
+#button-inicio-div #button-personajes-div #button-planetas-div #button-explorar-div #button-ayuda-div {
+    margin: 1vh;
+    padding: 1vh;
+}
+
+/*#filter-personajes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }*/
+
+/*#button-inicio-div {
+    margin-top: 10rem;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+
+#button-personajes-div {
+    margin-top: 10rem;
+    justify-content: space-around;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#button-planetas-div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#button-explorar-div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#button-ayuda-div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}*/
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    color: black;
+    font-size: 1rem;
+    padding: 1rem 0;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0;
+    width: 20rem;
+}
+
+.card-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100vh;
+    margin: 25vh 5vh 5vh;
+    width: 100%;
+    overflow: scroll;
+    background-color: green;
+    align-content: center;
+}
+
+.imagen-personaje {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width:768px) {
+    .all-data {
+        width: 1200px;
+        height: 1000px;
+    }
+    .data-card {
+        width: 30%;
+    }
+}
+
+section {
+    flex-direction: row;
+    background-color: #222222;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10vh;
+    background-color: #222222;
+}
