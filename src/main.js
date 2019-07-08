@@ -49,4 +49,13 @@ console.log(filterBest1);*/
 
 
 printData()
+const az = document.getElementById("az");
+//const inicio = document.getElementById("inicio");
+const ordenAlfab = document.getElementById("root");
 
+const irAOrdenAlfab = () => {
+  ordenAlfab.classList.remove('disappear');
+  az.classList.add('disappear');
+}
+
+irAOrdenAlfab.addEventListener('click',az);
