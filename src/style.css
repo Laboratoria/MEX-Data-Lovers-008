@@ -207,8 +207,8 @@ header {
 }
 
 .order-and-filter-button {
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 0 auto;
     cursor: pointer;
 }
 
@@ -274,9 +274,15 @@ header {
     
     #facts p {
         font-size: 1.5rem;
-        
-    }
+  }
+  
+   .order-and-filter-button {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+  } 
 }
+
 
 
 /*DATA*/
@@ -388,7 +394,7 @@ header {
 #species {
     width: 8rem;
     height: 3.5rem;
-    margin: 1rem 1rem;
+    margin: 0.5rem 0rem 0.5rem 1rem;
     border-radius: 2rem;
     padding-left: 0.5rem;
     font-weight: 600;
@@ -410,7 +416,7 @@ option {
 /* Characters */
 
 #character-page {
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .landing {
