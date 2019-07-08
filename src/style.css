@@ -1,0 +1,64 @@
+.disappear{
+    display: none
+
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+#fondo {
+background: url("imagenes/fondo1.jpg"); center center no-repeat;
+background-size: 100px;
+}
+html{
+background: url("imagenes/fondo1.jpg");
+min-height: 100%;
+background-size: cover;
+}
+header {
+background: #0C181F;
+text-align: center;
+height: 130px;
+
+}
+header #logo  {
+size: inherit;
+width: 25%;
+}
+p.text{
+	font-family:PT Serif ;
+	font-weight: bold;
+	font-size:2rem ;
+	color:#C8A971 ;
+
+}
+.boton{
+
+	overflow:hidden;
+	padding: 80px;
+}
+
+.btn{
+	font-family:PT Serif ;
+	font-weight: bold;
+	font-size:2rem ;
+	border: 3px solid #33CCCC;
+	background-color:#0C181F; 
+	color:#C8A971 ;
+
+}
+
+footer {
+bottom: 0px;
+height: 50px;
+background: #0C181F;
+text-align: center;
+position:fixed;
+color: #fff;
+}
+
+.pie-pag{
+font-family: arial;
+
