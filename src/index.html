@@ -14,57 +14,68 @@
           <img src="images/banner1.png" alt="Rick and Morty Lovers">
         </a>
       </figure>
+      <!--<div class="opciones-filter-personajes">
+          <select name="filter-personajes" id="filter-personajes" style="display:none">
+            <option value="filter">Filtrar</option>
+            <option value="all">Todos</option>
+            <option value="allAlive">Vivos</option>
+            <option value="allDead">Muertos</option>
+            <option value="allMale">Masculinos</option>
+            <option value="allFemale">Femeninos</option>
+          </select>
+        </div>-->
     </header>
 
     <!--PANTALLA DE BIENVENIDA-->
-    <section id="pantalla-bienvenida" class="row">
+    <section id="pantalla-bienvenida" class="row col-12">
+      <div id="button-inicio-div" class=""><input type="image" id="button-inicio" alt="Inicio"src="images/portal png 1.gif"></div>
+        <div name="buttons" id="buttons-div" class="">
         <div id="button-personajes-div" class=""><input type="image" id="button-personajes" alt="Personajes" src="images/rick-spinning.giphy.gif"></div>
         <div id="button-planetas-div" class=""><input type="image" id="button-planetas" alt="Planetas" src="images/yell.giphy.gif"></div>
-        <div id="button-inicio-div" class=""><input type="image" id="button-inicio" alt="Inicio"src="images/portal png 1.gif"></div>
         <div id="button-explorar-div" class=""><input type="image" id="button-explorar" alt="Explorar" src="images/rick-morty-watch-giphy.gif"></div>
         <div id="button-ayuda-div" class=""><input type="image" id="button-ayuda" alt="Explorar" src="images/morty.gif"></div>
+      </div>
     </section>  
 
      <!--PANTALLA DE PERSONAJES-->
-    <section id="pantalla-personajes" class="row disappear">
-      <article class="row col-12"><h1>Personajes</h1></article>
-      <div class="card-display row col-12">
-          <div id="card-display"></div>
+    <section id="pantalla-personajes" style="display:none" class="row col-12">
+      <article class=""><h1>Personajes</h1> </article>
+      <div class="cards-display row col-12">
+          <div id="cards" class="row card col-3"></div>
       </div>
     </section>
 
      <!--PANTALLA DE PLANETAS-->
-    <section id="pantalla-planetas" class="row disappear">
-    <article class="row col-12"><h1>Planetas y dimensiones</h1></article>  
+    <section id="pantalla-planetas" style="display:none" class="row col-12">
+    <!--OJO!!! No pinta el texto en la página--> <article class=""><h1>Planetas y dimensiones</h1></article>  
     </section>
 
      <!--PANTALLA DE EXPLORAR-->
-    <section id="pantalla-explorar" class="row disappear">
-      <article class="row col-12"><h1>Explorar</h1></article>      
+    <section id="pantalla-explorar" style="display:none" class="row col-12">
+      <article class=""><h1>Explorar</h1></article>      
     </section>
 
      <!--PANTALLA DE AYUDA-->
-    <section id="pantalla-ayuda" class="row disappear">
-     <article class="row col-6"><h1>Sobre Rick and Morty Lovers</h1></article>
+    <section id="pantalla-ayuda" style="display:none" clas="row col-12">
+     <article><h1>Sobre Rick and Morty Lovers</h1></article>
     </section>
 
-    <div id="filter-personajes" class="row disappear">
-        <select>
-                <option value="filter">Filtrar</option>
-                <option value="all">Todos</option>
-                <option value="allAlive">Vivos</option>
-                <option value="allDead">Muertos</option>
-                <option value="allMale">Masculinos</option>
-                <option value="allFemale">Femeninos</option>
-        </select>
-    </div>
-
      <!--BOTÓN REINICIO-->
-     <div id="button-reinicio" class="row disappear">
-       <input type="image" alt="Inicio" src="images/portal png 1.gif">
-     </div>
-
-    <footer id="footer" class="row col-12"><h4>Rick and Morty Lovers - 2019</h4>   
+    <section id="button-reinicio" class="button-reinicio" style="display:none">
+    <div><input type="image" alt="Inicio"src="images/portal png 1.gif"></div> 
+    </section>
+    
+    <footer id="footer" class="row col-12"><h4>Rick and Morty Lovers - 2019</h4>
+      <div class="opciones-filter-personajes">
+          <select class="input-filter-personajes" name="filter-personajes" id="filter-personajes" style="display:none">
+            <option value="filter">Filtrar</option>
+            <option value="all">Todos</option>
+            <option value="allAlive">Vivos</option>
+            <option value="allDead">Muertos</option>
+            <option value="allMale">Masculinos</option>
+            <option value="allFemale">Femeninos</option>
+          </select>
+        </div>   
     </footer>
 
   </section>
