@@ -61,7 +61,6 @@ main {
     }
 }
 
-
 img {
     width: 100%;
 }
@@ -104,8 +103,6 @@ header {
     width: 6rem;
     justify-content: center;
 }
-
-
 
 @media only screen and (min-width:768px) {
     #logo {
@@ -195,7 +192,6 @@ header {
 }
 
 
-
 /* CAROUSEL */
 
 .carousel {
@@ -231,7 +227,7 @@ header {
     width: 80%;
     margin: 0 auto;
     font-size: 1rem;
-    margin-bottom: 10%;
+    margin-bottom: 1rem;
 }
 
 #facts img {
@@ -253,11 +249,9 @@ header {
         width: 80%;
         height: 80%;
     }
-
     #facts h2 {
         font-size: 2rem;
     }
-
     #facts p {
         font-size: 1.5rem;
     }
@@ -273,13 +267,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1rem;
-
 }
 
 .specie {
     display: flex;
     justify-content: center;
 }
+
 
 /*DATA*/
 
@@ -288,7 +282,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin:2rem;
+    margin: 2rem;
     width: 90vw;
     height: 80vh;
     overflow: scroll;
@@ -328,7 +322,6 @@ header {
     border: #00B3CC 0.5rem;
     background-color: transparent;
     perspective: 1000px;
-    
 }
 
 .flip-card-inner {
@@ -337,14 +330,11 @@ header {
     vertical-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    
 }
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
-
-
 
 .flip-card-front,
 .flip-card-back {
@@ -364,7 +354,7 @@ header {
 
 .flip-card-front {
     position: absolute;
-  } 
+}
 
 .flip-card-back {
     background-color: #EBEBEB;
@@ -374,7 +364,6 @@ header {
     border-radius: 1rem;
     position: relative;
 }
-
 
 .info {
     max-width: 50%;
@@ -399,8 +388,7 @@ header {
     margin: 0 auto;
 }
 
-
-.dimension {  
+.dimension {
     font-weight: 600;
     color: rgb(38, 39, 39);
 }
@@ -413,7 +401,7 @@ header {
     .flip-card {
         width: 30%;
     }
-    .flip-card-front{
+    .flip-card-front {
         height: auto;
     }
     .flip-card-front,
@@ -422,19 +410,15 @@ header {
         margin-bottom: 5rem;
         height: 450px;
     }
-
-    
     .info {
-    margin-top: 1rem;
+        margin-top: 1rem;
     }
-
     .flip-card-back .info {
         height: 100%;
     }
-
     .icon {
         display: flex;
-       justify-content: center;
+        justify-content: center;
         align-items: baseline;
         width: 30px;
         margin: 0 auto;
@@ -460,8 +444,6 @@ header {
     margin: 25% 0 0 0;
 }
 
-
-
 #filter,
 #order,
 #species {
@@ -472,10 +454,12 @@ header {
     font-weight: 600;
 }
 
-#fiilter, #order {
+#fiilter,
+#order {
     flex: wrap;
     margin-left: 0.5rem;
 }
+
 option {
     background-color: white;
     color: black;
@@ -486,12 +470,11 @@ option {
         width: 1200px;
         height: 1000px;
     }
-
     #filter,
     #order,
     #species {
-    margin: 0 0.5rem;
-}
+        margin: 0 0.5rem;
+    }
 }
 
 
