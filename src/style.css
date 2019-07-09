@@ -9,6 +9,7 @@
     margin: 0 auto;
     display: flex;
     background-color: #222222;
+    justify-content: center;
   }
  
 .row{
@@ -90,14 +91,13 @@ footer {
 }
 
 #button-reinicio {
-    flex-direction: row;
-    width: 100%;
+    justify-content: center;
     height: auto;
     position: fixed;
-    margin: 0 auto;
     bottom: 1vh;
-    text-align: center;
-    /*background-color: #222222;*/
+    /*margin: 0;
+    padding: 0;
+    border: 0;*/
 }
 
 #button-inicio-div #button-personajes-div #button-planetas-div #button-explorar-div #button-ayuda-div {
@@ -105,11 +105,7 @@ footer {
     padding: 1vh;
 }
 
-/*#filter-personajes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}*/
+
 
 /*#button-inicio-div {
     margin-top: 10rem;
@@ -155,6 +151,7 @@ footer {
     align-items: center;
     margin: 1.5rem 0;
     width: 20rem;
+    text-align: center;
 }
 
 .card-display {
