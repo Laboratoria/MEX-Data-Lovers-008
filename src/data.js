@@ -4,6 +4,19 @@ const filterData = (key, value, data) => { //2 parámetros. Value del index tien
     return items;
 };
 
+
+const statisticsPercentage = (key, value, data) => {
+    let total = data.length;
+    let items = data.filter(element => element[key].indexOf(value) > -1);
+    let result = (items.length * 100) / total;
+    return Math.round(result);
+}
+
+const statisticsValue = (key, value, data) => {
+    let items = data.filter(element => element[key].indexOf(value) > -1);
+    return items.length;
+}
+
 const orderData = (data) => {
     data.sort((a, b) => {
         let nameA = a.name.toUpperCase();
@@ -34,6 +47,9 @@ const orderDataZA = (data) => {
     return data.reverse();
 };
 
+
 window.orderData = orderData;
 window.orderDataZA = orderDataZA;
 window.filterData = filterData; //Guarda la función en el global para poder ser invocada de donde sea
+window.statisticsPercentage = statisticsPercentage;
+window.statisticsValue = statisticsValue;
