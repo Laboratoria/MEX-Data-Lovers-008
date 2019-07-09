@@ -10,12 +10,12 @@ const statisticsPercentage = (key, value, data) => {
     let items = data.filter(element => element[key].indexOf(value) > -1);
     let result = (items.length * 100) / total;
     return Math.round(result);
-}
+};
 
 const statisticsValue = (key, value, data) => {
     let items = data.filter(element => element[key].indexOf(value) > -1);
     return items.length;
-}
+};
 
 const orderData = (data) => {
     data.sort((a, b) => {

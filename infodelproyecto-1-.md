@@ -393,9 +393,9 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 
 - [x] Usa VanillaJS.
 - [x] No hace uso de `this`.
-- [ ] Pasa linter (`npm pretest`)
-- [ ] Pasa tests (`npm test`)
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+- [x] Pasa linter (`npm pretest`)
+- [x] Pasa tests (`npm test`)
+- [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
 - [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
 - [x] Incluye historias de usuario en `README.md`.
