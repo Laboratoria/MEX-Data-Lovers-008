@@ -90,7 +90,8 @@ section {
 
 #pantalla-bienvenida {
     justify-content: center;
-    margin: 10vh 0 0 0;
+    position: initial;
+    margin: 17vh 0;
     padding: 10vh 1vh 0 1vh;
     width: 100%;
     background-image: url(images/background-stars.jpeg);
@@ -114,7 +115,7 @@ section {
     color: violet;
 }
 #button-inicio-div :hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
   }
 #button-inicio-div :hover > div {
     
@@ -124,13 +125,13 @@ section {
     transform: scale(1.1);
   }
 #button-planetas-div :hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
   }
 #button-explorar-div :hover {
     transform: scale(1.1);
   }
 #button-ayuda-div :hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
   }
 
 

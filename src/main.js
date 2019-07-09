@@ -34,29 +34,23 @@ const pantallaPersonajes = () => {
 let printDataPersonajes = (data) => {
     let str = "";
     data.forEach(element => {
-      let image = element.image;
-      let name = element.name;
-      let species = element.species;
-      let gender = element.gender;
-      let origin = element.origin.name
-      let status = element.status;
       str += `<div id="cards">
         <div class="col-10">
             <div class="row">
-                <img class="imagen-personaje" src=${image}>
+                <img class="imagen-personaje" src=${element.image}>
             </div>
             <div class="row data-personajes">
-                    <h3 class="nombre-personaje">${name}</h3>
-                    <p>Especie: ${species}</p>
-                    <p>Género: ${gender}</p>
-                    <p>Origen: ${origin}</p>
-                    <p>Estatus: ${status}</p>
+                    <h3 class="nombre-personaje">${element.name}</h3>
+                    <p>Especie: ${element.species}</p>
+                    <p>Género: ${element.gender}</p>
+                    <p>Origen: ${element.origin.name}</p>
+                    <p>Estatus: ${element.status}</p>
             </div>
         </div>
     </div>`
     });
     document.getElementById("card-display").innerHTML = str;
-    };
+    }
     printDataPersonajes(data);
 
 let filterData1 = () => {
@@ -84,8 +78,15 @@ let filterData1 = () => {
         printDataPersonajes(filterResult);
     }
     console.log(filterResult);
-    return filterResult
-    };
+    return filterResult;
+}
+
+/*let filterData2 = () => {
+    let filterResult = "";
+    let filterValue = buttonFilter.value;
+    let filterResult = window.filterPersonajes(data,filterValue);
+    printDataPersonajes(filterResult);
+    console.log(filterData2);*/
 
 const pantallaPlanetas = () => {
     screenBienvenida.classList.add("disappear");
