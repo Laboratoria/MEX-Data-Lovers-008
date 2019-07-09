@@ -55,11 +55,12 @@ main {
         width: 1200px;
         margin: 0 auto;
     }
-    .content {
+    div.content {
         width: 1200px;
         margin: 0 auto;
     }
 }
+
 
 img {
     width: 100%;
@@ -105,25 +106,6 @@ header {
 }
 
 
-/* #search {
-    margin-right: 0px;
-    width: 3.5rem;
-    height: 2.5rem;
-    border-radius: 3rem;
-    border: #00B3CC solid 0.15rem;
-}
-
-#search:hover {
-    width: 15rem;
-    -webkit-transition: width 0.5s;
-    /* For Safari 3.1 to 6.0 
-    transition: width 0.5s;
-}
-
-#search:focus {
-    width: 15rem;
-    outline: none;
-} */
 
 @media only screen and (min-width:768px) {
     #logo {
@@ -272,6 +254,10 @@ header {
         height: 80%;
     }
 
+    #facts h2 {
+        font-size: 2rem;
+    }
+
     #facts p {
         font-size: 1.5rem;
     }
@@ -302,7 +288,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 2rem;
+    margin:2rem;
     width: 90vw;
     height: 80vh;
     overflow: scroll;
@@ -338,20 +324,20 @@ header {
 
 .flip-card {
     width: 45%;
-    margin: 2rem auto;
     align-items: center;
     border: #00B3CC 0.5rem;
     background-color: transparent;
     perspective: 1000px;
-
+    
 }
 
 .flip-card-inner {
+    width: 100%;
     text-align: center;
     vertical-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-
+    
 }
 
 .flip-card:hover .flip-card-inner {
@@ -368,14 +354,13 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 2rem 0;
+    height: 100%;
     border-radius: 1rem;
     -webkit-box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
     -moz-box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
     box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
     background-color: rgba(255, 255, 255, 0.6);
 }
-
-
 
 .flip-card-front {
     position: absolute;
@@ -391,15 +376,17 @@ header {
 }
 
 
-/* .card:hover {
-    border: #00B3CC 0.3rem solid;
-    transform: scale(1.1);
-    transition: transform 0.1s;
-} */
-
 .info {
     max-width: 50%;
     text-align: center;
+}
+
+.icon {
+    display: none;
+}
+
+.character-page {
+    width: 100vw;
 }
 
 .character-name {
@@ -412,6 +399,12 @@ header {
     margin: 0 auto;
 }
 
+
+.dimension {  
+    font-weight: 600;
+    color: rgb(38, 39, 39);
+}
+
 @media only screen and (min-width:768px) {
     .all-data {
         width: 1200px;
@@ -419,6 +412,33 @@ header {
     }
     .flip-card {
         width: 30%;
+    }
+    .flip-card-front{
+        height: auto;
+    }
+    .flip-card-front,
+    .flip-card-back {
+        width: 100%;
+        margin-bottom: 5rem;
+        height: 450px;
+    }
+
+    
+    .info {
+    margin-top: 1rem;
+    }
+
+    .flip-card-back .info {
+        height: 100%;
+    }
+
+    .icon {
+        display: flex;
+       justify-content: center;
+        align-items: baseline;
+        width: 30px;
+        margin: 0 auto;
+        padding: 0.5rem 0;
     }
 }
 
@@ -462,7 +482,7 @@ option {
 }
 
 @media only screen and (min-width:768px) {
-    all-data {
+    .all-data {
         width: 1200px;
         height: 1000px;
     }
