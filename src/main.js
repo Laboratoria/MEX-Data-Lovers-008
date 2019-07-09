@@ -1,6 +1,4 @@
 
-
-
 for(personajes in RICKANDMORTY.results){ 
   // console.log(RICKANDMORTY.results[personajes].image); 
   //console.log(RICKANDMORTY.results[personajes].gender); 
@@ -13,10 +11,8 @@ for(personajes in RICKANDMORTY.results){
   // console.log(RICKANDMORTY.results[personajes].image); 
   //console.log(RICKANDMORTY.results[personajes].gender);
 
-  
-
-
-
+}
+}
 }
 const data = RICKANDMORTY.results;
 // const data RICKANDMORTY.results
@@ -63,10 +59,10 @@ const filtrarData = (prop, val) => {
           <div class="nombre">
           <p> ${element.name}</p></div>
           <br>
-          <div class="img"> 
+          <div class="img" id="img"> 
           <img src="${element.image}"></img>
           </div>
-       <div class= "info">
+       <div class= "info" id="info">
 
           <p> Status: ${element.status} </p>
           <p> Especie: ${element.species} </p>
