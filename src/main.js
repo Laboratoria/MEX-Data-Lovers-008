@@ -30,7 +30,7 @@ logo.addEventListener('click', returnToIndex);
 
 //Carousel
 const curiosities = [
-    "A lo largo de las 3 temporadas de Rick and Morty han aparecido múltiples variables de los protagonistas, pero curiosamente existen <b>73 Ricks</b> y solo <b>44 Mortys.</b>",
+    "A lo largo de las 3 temporadas de Rick and Morty han aparecido múltiples versiones de los protagonistas, pero curiosamente existen <b>73 Ricks</b> y solo <b>44 Mortys.</b>",
     "Solo hay 73 mujeres en toda la serie de Rick and Morty.",
     "En todo el universo de Rick and Morty solo existen 10 especies."
 ];
@@ -65,7 +65,28 @@ backButton.addEventListener('click', back);
 // Showing data
 const allData = document.getElementById('all-data'); //Section where data is going to appear
 const templateStringForCards = (element) => {
-    return `<div class="data-card">
+    return `<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="img">
+        <img class="character-img" src="${element.image}"/>
+        </div>
+        <div class="info">
+            <p class="character-name">${element.name}</p>
+           <p>Especie: ${element.species}</p>
+           <p>Dimensión origen: ${element.origin.name}</p>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <p> ${element.name} </p>
+        <p> Dimensión actual: ${element.location.name} </p>
+        <p> Tipo: ${element.type} </p>
+        <p> Género:  ${element.gender} </p>
+        <p> Estatus: ${element.status} </p>
+      </div>
+    </div>
+    </div>`;
+    /*`<div class="data-card">
 <div class="card">
     <div class="img">
          <img class="character-img" src="${element.image}" />
@@ -76,7 +97,7 @@ const templateStringForCards = (element) => {
         <p>Dimensión: ${element.origin.name}</p>
     </div>
 </div>
-</div>`;
+</div>`;*/
 };
 
 //FUNCTION to show data
