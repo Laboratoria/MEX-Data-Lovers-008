@@ -110,6 +110,23 @@ section {
     align-content: center;
 }*/
 
+#button-inicio-div :hover {
+    transform: scale(1.1);
+  }
+#button-personajes-div :hover {
+    transform: scale(1.1);
+  }
+#button-planetas-div :hover {
+    transform: scale(1.1);
+  }
+#button-explorar-div :hover {
+    transform: scale(1.1);
+  }
+#button-ayuda-div :hover {
+    transform: scale(1.1);
+  }
+
+
 #pantalla-personajes {
     flex-direction: column;
     justify-content: center;

@@ -3,7 +3,7 @@ const buttonPersonajes = document.getElementById("button-personajes");
 const buttonPlanetas = document.getElementById("button-planetas");
 const buttonExplorar = document.getElementById("button-explorar");
 const buttonAyuda = document.getElementById("button-ayuda");
-const buttonFilter = document.getElementById("filter-personajes");
+const buttonFilter = document.getElementById("input-filter-personajes");
 const screenBienvenida = document.getElementById("pantalla-bienvenida");
 const screenPersonajes = document.getElementById("pantalla-personajes");
 const screenPlanetas = document.getElementById("pantalla-planetas");
@@ -29,8 +29,9 @@ const pantallaPersonajes = () => {
     screenAyuda.classList.add("disappear");
     buttonReinicio.classList.remove("disappear");
     buttonFilter.classList.remove("disappear");
+}
 
-let printDataPersonajes = () => {
+let printDataPersonajes = (data) => {
     let str = "";
     data.forEach(element => {
       let image = element.image;
@@ -56,20 +57,18 @@ let printDataPersonajes = () => {
     });
     document.getElementById("card-display").innerHTML = str;
     };
-printDataPersonajes();
-}
+    printDataPersonajes(data);
 
 let filterData1 = () => {
     let filterResult = "";
     let filterValue = buttonFilter.value;
     console.log(filterValue);
-    if (filterValue === "all") {
-    let filterResult = printDataPersonajes();
-    } else if (filterValue === "allAlive") {
+    if (filterValue === "allAlive") {
     let filterResult = window.allAlive;
     console.log(filterResult);
     } else if (filterValue === "allDead") {
     let filterResult = window.allDead;
+    printDataPersonajes(filterResult);
     console.log(filterResult);
     } else if (filterValue === "allMale") {
         let filterResult = window.allMale;
@@ -77,10 +76,13 @@ let filterData1 = () => {
     } else if (filterValue === "allFemale") {
         let filterResult = window.allFemale;
         console.log(filterResult);
+    } else if (filterValue === "all") {
+        let filterResult = printDataPersonajes();
     }
-    document.getElementById("card-display").innerHTML = filterResult;     
+    console.log(filterResult);
+    return filterResult
+        
     };
-    filterData1();
 
 const pantallaPlanetas = () => {
     screenBienvenida.classList.add("disappear");
