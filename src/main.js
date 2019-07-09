@@ -158,3 +158,48 @@ for (let i = 0; i < buttonArray.length; i++){
     clicksButtonType(buttonArray[i]);
     clicksButtonType2(buttonArray[i]);
 }
+
+
+//------- Ordenando por nombre 
+
+//
+
+// const getOrdervalue = () => {
+//   let result = window.sortData(dataOrder);
+//       // const card = result.map(element => templateStringForCards(element));
+      // allData.innerHTML = card.join('');
+
+     
+        //   //llamar section donde se imprime la data
+  //  const showDataByName = document.getElementById('mostrando_lista_pokemones');
+  //  mostrar.innerHTML = '';
+  //  let template='';
+  //       for(let pokemon of POKEMON.pokemon){
+        
+  //         //mostrar.innerHTML += `<ul><li>
+  //         template += result.map(
+//             `<li>
+//           <img src="${pokemon.img}">
+//           <p><strong>Nombre:</strong> ${pokemon.name}</p>
+//           <p><strong>Tipo:</strong>${pokemon.type}</p>
+//           <p><strong>Candy:</strong>${pokemon.candy}</p>
+//           </li> `
+//           )
+//         }
+//         mostrar.innerHTML= `<ul>${template}</ul>`;
+//         // }
+// };
+//-------
+
+const getOrdervalue = () => {
+      let result = window.sortData(dataOrder);
+      const card = result.map(element => imprimir(element));
+      return card;
+};
+
+
+
+//--------------ORDENAR POR NOMBRE
+const buttonAZ = document.getElementById("filer_by_name");
+buttonAZ.addEventListener("click", getOrdervalue);
+
