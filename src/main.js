@@ -1,3 +1,4 @@
+
 // const data = window.RICKANDMORTY.rickandmorty;
 //
 // const card = document.getElementById("rick-card")
@@ -23,3 +24,4 @@
 //       card.innerHTML = str
 // }
 // dataSee(data)
+
