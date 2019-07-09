@@ -59,21 +59,16 @@
     display: none;
 }
 
-#pantalla-bienvenida {
-    margin-top: 10vh;
-    padding: 10vh;
-    width: 100%;
-    background-image: url(images/background-stars.jpeg);
-}
-
 header {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
     position: fixed;
+    top: 0;
     justify-content: center;
     background-image: url(images/background-stars.jpeg);
+    margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -81,64 +76,46 @@ footer {
     width: 100%;
     height: auto;
     position: fixed;
-    align-items: baseline;
     justify-content: center;
     margin: 0 auto;
     bottom: 0;
     background-color: black;
     color: whitesmoke;
-    text-align: center;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+#pantalla-bienvenida {
+    justify-content: center;
+    margin: 10vh 0 0 0;
+    padding: 10vh 1vh 0 1vh;
+    width: 100%;
+    background-image: url(images/background-stars.jpeg);
 }
 
 #button-reinicio {
     justify-content: center;
-    height: auto;
     position: fixed;
-    bottom: 1vh;
-    /*margin: 0;
-    padding: 0;
-    border: 0;*/
+    bottom: 0;
 }
 
-#button-inicio-div #button-personajes-div #button-planetas-div #button-explorar-div #button-ayuda-div {
+
+/*#button-inicio-div #button-personajes-div #button-planetas-div #button-explorar-div #button-ayuda-div {
+    display: flex;
     margin: 1vh;
     padding: 1vh;
-}
-
-/*#button-inicio-div {
-    margin-top: 10rem 0rem 0rem 0rem;
-    flex-direction: row;
     align-content: center;
-    justify-content: space-around;
-}
-
-#button-personajes-div {
-    margin-top: 10rem;
-    justify-content: space-around;
-    flex-flow: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-#button-planetas-div {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-#button-explorar-div {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-#button-ayuda-div {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }*/
 
+#pantalla-personajes {
+    flex-direction: column;
+    justify-content: center;
+}
 #cards {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-color: whitesmoke;
     border-radius: 1rem;
     color: black;
@@ -148,33 +125,35 @@ footer {
     flex-direction: column;
     align-items: center;
     margin: 1.5rem 0;
-    width: 20rem;
+    height: 18rem;
+    width: 15rem;
     text-align: center;
 }
 
-#pantalla-personajes {
-    justify-content: center;
-}
-
-#filter-personajes{
-    align-self: flex-start;
-}
 .card-display {
     display: flex;
     flex-direction: row;
+    position: fixed;
+    padding: 0;
     justify-content: space-around;
-    height: 100vh;
-    margin-top: 20vh;
+    /*position: relative;*/
+    height: 80vh;
     width: 100%;
     overflow: scroll;
     background-color: green;
     align-content: center;
+    margin: 0;
 }
 
 .imagen-personaje {
     display: flex;
     width: 70%;
     margin: 0 auto;
+}
+
+#filter-personajes {
+    background-color: green;
+    position: fixed;
 }
 
 @media only screen and (min-width:768px) {
@@ -187,9 +166,23 @@ footer {
     }
 }
 
-section {
+article {
     flex-direction: row;
-    background-color: #222222;
+    margin: 0;
+    padding: 16vh 0vh 0vh 0vh;
+    position: initial;
+    color: black;
+    background-color:green;
+    font-size: 3rem;
 }
+
+.section-header {
+    padding: 1vh;
+    flex-wrap: wrap;
+}
+
+
+
+
 
 
