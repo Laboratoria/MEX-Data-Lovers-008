@@ -72,37 +72,35 @@ const allData = document.getElementById('all-data'); //Section where data is goi
 const templateStringForCards = (element) => {
     return `<div class="flip-card">
     <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <div class="img">
-        <img class="character-img" src="${element.image}"/>
+        <div class="flip-card-front">
+            <div class="img">
+                <img class="character-img" src="${element.image}" alt="${element.name}"/>
+            </div>
+            <div class="info">
+                <p class="character-name">${element.name}</p>
+                <p>Especie: ${element.species}</p>
+                <p class="dimension"> Dimensión origen: </p>
+                <p>${element.origin.name}</p>
+            </div>
+            <div class="icon">
+                <img src="img/rmicon.svg" alt="">
+            </div>
         </div>
-        <div class="info">
-            <p class="character-name">${element.name}</p>
-           <p>Especie: ${element.species}</p>
-           <p>Dimensión origen: ${element.origin.name}</p>
+        <div class="flip-card-back">
+            <div class="info">
+                <p class="character-name"> ${element.name} </p>
+                <p class="dimension"> Dimensión actual: <p> 
+                <p>${element.location.name}</p>
+                <p> Tipo: ${element.type} </p>
+                <p> Género:  ${element.gender} </p>
+                <p> Estatus: ${element.status} </p>
+            </div>
+            <div class="icon">
+                <img src="img/rmiconB.svg" alt="">
+            </div>
         </div>
-      </div>
-      <div class="flip-card-back">
-        <p> ${element.name} </p>
-        <p> Dimensión actual: ${element.location.name} </p>
-        <p> Tipo: ${element.type} </p>
-        <p> Género:  ${element.gender} </p>
-        <p> Estatus: ${element.status} </p>
-      </div>
     </div>
-    </div>`;
-    /*`<div class="data-card">
-<div class="card">
-    <div class="img">
-         <img class="character-img" src="${element.image}" />
-    </div>
-    <div class="info">
-        <p class="character-name"> ${element.name}</p>
-        <p>Especie: ${element.species}</p>
-        <p>Dimensión: ${element.origin.name}</p>
-    </div>
-</div>
-</div>`;*/
+</div>`
 };
 
 //FUNCTION to show data
