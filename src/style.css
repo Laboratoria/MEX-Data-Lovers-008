@@ -109,10 +109,17 @@ section {
     padding: 1vh;
     align-content: center;
 }*/
-
+  
+.nombre-secciones {
+    color: violet;
+}
 #button-inicio-div :hover {
     transform: scale(1.1);
   }
+#button-inicio-div :hover > div {
+    
+  }
+
 #button-personajes-div :hover {
     transform: scale(1.1);
   }
