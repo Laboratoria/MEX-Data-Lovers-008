@@ -128,48 +128,35 @@
 <br>
 <br>
 
-<!-- filtrar -->
- <!-- <section id="info" class="hide"> -->
+<section id="info" class="hide">
   <div class=" info">
-      <select name="filtrar o escoger" id="filtrar o escoger?"> 
-      <option value="filtrar">Filtrar</option>
-      <option value="name">Nombre</option>
-      <option value="species">Especies</option>
+    <div class= "ordenar-boton">
+      <select name="filter" id="filter"> 
+      <option value="filter">Filtrar</option>
+      <option value="nombre.name">Nombre</option>
+      <option value="species.species">Especies</option>
       <option value="location.name">Dimensión</option>
-      <option value="origin-name">Origen</option>
+      <option value="origin.name">Origen</option>
       </select>
+
+      <select id="choose-fruit-multiple" multiple>
+          <option value="1">Apple</option>
+          <option value="2">Orange</option>
+          <option value="3">Banana</option>
+          <option value="4">Guava</option>
+          <option value="5">Grapes</option>
+        </select>
     </div>
-<!-- boton filtrar -->
-
-
-
- <!-- ordenar por nombre
-  <div> class="name" 
-  <select name="orden" id="orden">-->
-<!-- <select name="orden" id="orden">-->
-
- <!-- <option value="orden">Ordenar</option>
-  <option value="a-z">de A-Z</option>
-  <option value="z-a">de Z-A</option> 
-  </div> -->
-
-  <!-- <div class="input-field">  Para ordenar
-    <select id="selectOrder">
-       <option value="seleccione_opcion">Ordenar</option>
-       <option value="a-z">Ordenar A-Z</option>  
-       <option value="z-a">Ordenar Z-A</option>
-       <option value="1-493">Ordenar por número</option>
-    </select> -->
-
+    </div>
 
 </select>
 </div>
 <br>
 <br>
 <br>
-
-<section class="data" id='data'>
-
+<div id="contenedor">
+  <section class="data" id='data'>
+</div>
 </section>
 
     <script src="main.js"></script>

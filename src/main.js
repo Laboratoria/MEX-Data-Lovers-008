@@ -22,10 +22,11 @@ const data = RICKANDMORTY.results;
 // const data RICKANDMORTY.results
 const paraPintar = document.getElementById ('data');
 
+//filtrar data
+
 const muestraData = () => {
   let str = '';
   data.forEach(element => {
-    console.log(element)
     str += `<div class="tarjeta">
     <div class= "caras">
     <div class="nombre">
@@ -47,9 +48,10 @@ const muestraData = () => {
   paraPintar.innerHTML = str;
 
 }
+muestraData();
 
-muestraData()
 
+//Filtrar
 const filtrarData = (prop, val) => {
   let str = '';
   data.forEach(element => {
@@ -65,6 +67,7 @@ const filtrarData = (prop, val) => {
           <img src="${element.image}"></img>
           </div>
        <div class= "info">
+
           <p> Status: ${element.status} </p>
           <p> Especie: ${element.species} </p>
           <p> tamaño: ${element.origin.name} </p>
@@ -75,6 +78,7 @@ const filtrarData = (prop, val) => {
     
     
   });
+
 
   console.log(str);
 
