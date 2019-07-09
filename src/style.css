@@ -1,3 +1,6 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap');
+</style>
 .disappear{
     display: none
 
@@ -8,37 +11,66 @@ margin: 0;
 padding: 0;
 }
 
-#fondo {
-background: url("imagenes/fondo1.jpg"); center center no-repeat;
-background-size: 100px;
-}
+
 html{
 background: url("imagenes/fondo1.jpg");
 min-height: 100%;
 background-size: cover;
 }
-header {
+
+
+.menu-logo{
+position: absolute;
+}
+
+.pleca-sup {
 background: #0C181F;
 text-align: center;
 height: 130px;
 
+
 }
-header #logo  {
-size: inherit;
-width: 25%;
+#logo-lol  {
+width: 250px;
+margin-top: -8px;
+
 }
+
+
 p.text{
-	font-family:PT Serif ;
-	font-weight: bold;
+	font-family:PT Serif bold;
+
 	font-size:2rem ;
 	color:#C8A971 ;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
 
 }
-.boton{
 
-	overflow:hidden;
-	padding: 80px;
+.principal{
+
+	display: flex;
+	justify-content: space-around;
 }
+
+.menu{
+	float: left;
+	padding: 100px 0px 80px 0px;
+	width: min-content;
+	height: min-content;
+}
+.jugar-lol{
+	float: left;
+	padding: 100px 0px 0px 0px;
+	}
+
+
+
+.favoritos{
+       float: left;
+       padding: 100px 0px 80px 0px;
+        }
 
 .btn{
 	font-family:PT Serif ;
@@ -47,18 +79,62 @@ p.text{
 	border: 3px solid #33CCCC;
 	background-color:#0C181F; 
 	color:#C8A971 ;
+	line-height: 50px;
+	text-align: center;
+	width: 150px;
+	margin-top: -3px;
+	cursor: pointer
 
 }
 
-footer {
-bottom: 0px;
+table{
+	text-align: center;
+	border-collapse: collapse;
+	border: #33CCCC 3px solid;
+	background-color:#0C181F;
+
+}
+tr{
+	border:#33CCCC 3px solid;
+	text-align: center;
+	margin left: 5px;
+}
+th{
+	margin: 5px;
+}
+ td{
+	 text-align: center;
+}
+
+.pie {
+bottom: 10px;
 height: 50px;
 background: #0C181F;
 text-align: center;
 position:fixed;
 color: #fff;
+font-family: arial;
 }
 
-.pie-pag{
-font-family: arial;
 
+
+.roles{
+background: #2589AD;
+border: 6px solid #33CCCC;
+text-align: center;
+height: 80px;
+margin-top: 80px;
+
+}
+h2{
+	font-family:PT Serif bold ;
+	font-weight: bold;
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.data{
+
+}

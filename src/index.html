@@ -3,63 +3,61 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="imagenes/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body>
-    <div id="root"></div>
-         
-    <header>
-    <img  id=logo  src="imagenes/logo-lol.png">
-    </header>
-       
-        <!--- menu lado izquierdo --->
+  <body  class="fondo">
     
-    <section>
-      <button class="button" id="rol"> Roles</button>
-      <button class="btn" id= "alfa">A-Z</button>
-       
-        </section>
-       
-        <!--- campeones favoritos --->
-       
-        <section>
-       <table>
-        <th colspan="2"><p class="text">Campeones</p></th>
-        <tr>
-          <td><p class="text">1</td>
-          <td>img</td>
-        </tr>
-        <tr>
-          <td><p class="text">2</td>
-          <td><img src="https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png
-       https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png
-       "/></td>
-        </tr>
-         <tr>
-          <td><p class="text">3</td>
-          <td>img3</td>
-        </tr>
-       </table>
-       
-        </section>
-       
-        <footer>
-          <p class="pie-pag">
-        Riot games</p></footer>
+    <div class="pleca-sup">
+      
+      <img id="logo-lol"  src="imagenes/logo-lol.png" alt="lol">
+      
+    </div>
+    <!--- menu lado izquierdo --->
+    <div class="principal">
+      <div class="menu"> 
+        <button class="btn"> Roles</button>
+        <button class="btn" id="campeones">A-Z</button>
+        <button class="btn">Noticias</button>
+      </div>
+      <!---pantalla ir a jugar--->
+      <div class="jugar-lol" style="height: 300px">
+      <a title="League of legends" href="https://signup.lan.leagueoflegends.com/es/signup/index#/">  <img  src="imagenes/juego.jpg" alt="play-lol" width="480px" height="300px">  </a>
+      </div> 
+      <!--- campeones favoritos --->
+      <div class="favoritos"> 
+        <table>
+          <th colspan="2"><p class="text">Campeones </br>Favoritos</p></th>
+          <tr>
+            <td><p class="text">1</td>
+            <td><img src="imagenes/Jax.jpg" width="50%"> </td>
+          </tr>
+          <tr>
+            <td><p class="text">2</td>
+            <td><img src="imagenes/Ahri.png
+            "  width="50%"/></td>
+          </tr>
+          <tr>
+            <td><p class="text">3</td>
+            <td><img src="imagenes/Yasuo.png
+            "  width="50%"/></td>
+          </tr>
+        </table>
+      </div>
 
-            
+    </div>
+  <div id="root" class="" ></div>
 
-  </section>
+    <div class="pie">
+   
+      Riot games
+      
+ 
+    </div>
+    <script src="./data/lol/lol.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
 
-  <!--- campeones favoritos --->
-  
- </section>
-
-  <footer>
-    <p class="pie-pag">
-  Riot games</p></footer>
-  <!-- <script src="./data/lol/lol.js"></script>
-   <script src="data.js"></script>
- <script src="main.js"></script>-->
