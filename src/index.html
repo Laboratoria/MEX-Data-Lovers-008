@@ -5,22 +5,25 @@
     <title>Rick and Morty Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="container" id="container"> 
-    <header class="row">
-      <figure>
-        <a href="">
-          <img src="images/banner1.png" alt="Rick and Morty Lovers">
-        </a>
-      </figure>
-    </header>
+  <body> 
+    <main class="container" id="container">
+      <section class="row">
+        <header>
+          <a href="">
+            <img class="col-12 header" src="images/banner1.png" alt="Rick and Morty Lovers">
+          </a>       
+        </header>
+      </section>
 
     <!--PANTALLA DE BIENVENIDA-->
-    <section id="pantalla-bienvenida" class="row">
+    <section class="row">
+      <div id="pantalla-bienvenida" class="col-12">
         <div id="button-personajes-div" class=""><input type="image" id="button-personajes" alt="Personajes" src="images/rick-spinning.giphy.gif" :hover><div class="nombre-secciones">Personajes</div></div>
         <div id="button-planetas-div" class=""><input type="image" id="button-planetas" alt="Planetas" src="images/yell.giphy.gif" :hover><div class="nombre-secciones">Planetas y dimensiones</div></div>
         <div id="button-inicio-div" class=""><input type="image" id="button-inicio" alt="Inicio"src="images/portal png 1.gif" :hover><div class="nombre-secciones">Inicio</div></div>
         <div id="button-explorar-div" class=""><input type="image" id="button-explorar" alt="Explorar" src="images/rick-morty-watch-giphy.gif" :hover><div class="nombre-secciones">Explorar</div></div>
         <div id="button-ayuda-div" class=""><input type="image" id="button-ayuda" alt="Explorar" src="images/morty.gif" :hover><div class="nombre-secciones">Ayuda</div></div>
+      </div>    
     </section>  
 
      <!--PANTALLA DE PERSONAJES-->
@@ -30,7 +33,7 @@
           <h1>Personajes</h1>
         </div>        
       </article>
-      <div class="row card-display">
+      <div class="col-12 row card-display">
         <div id="card-display"></div>
       </div>
       <div class="col-2" id="filter-personajes">
@@ -80,6 +83,7 @@
     <script src="./data/rickandmorty/rickandmorty.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
-
+    
+  </main>
   </body>
 </html>

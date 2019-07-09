@@ -13,18 +13,25 @@ console.log(allFemale);
 const allMale = data.filter(element => element.gender === "Male");
 console.log(allMale);
 
-const filterName = () => {
-  let allRick = data.filter(element => element.name === "Rick Sanchez");
-  console.log(allRick);
-  return allRick;
-}
-filterName();
+const ordenarData = () => {
+let newArray = data.forEach (element => element.name);
+console.log(newArray)}
+ordenarData();
 
 
 window.allAlive = allAlive;
 window.allDead = allDead;
 window.allMale = allMale;
 window.allFemale = allFemale;
+
+
+
+/*const filterName = () => {
+  let allRick = data.filter(element => element.name === "Rick Sanchez");
+  console.log(allRick);
+  return allRick;
+}
+filterName();*/
 
 /*const filterPersonajes = (data, filterValue) => {
   let filterData = data.filter (element => element.status == filterValue);
@@ -62,6 +69,14 @@ selectType.addEventListener('change', () => {
 /*const newArray = data.filter( element => console.log(element.key[0])) (regresa cada uno de los elementos del array, con el key invocado)
 
 const pokemonEgg = newArray.filter(pokemonEgg => console.log(havegg))*/
+
+
+/*let filterData2 = () => {
+    let filterResult = "";
+    let filterValue = buttonFilter.value;
+    let filterResult = window.filterPersonajes(data,filterValue);
+    printDataPersonajes(filterResult);
+    console.log(filterData2);*/
 
 
 

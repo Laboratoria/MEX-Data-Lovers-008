@@ -81,13 +81,6 @@ let filterData1 = () => {
     return filterResult;
 }
 
-/*let filterData2 = () => {
-    let filterResult = "";
-    let filterValue = buttonFilter.value;
-    let filterResult = window.filterPersonajes(data,filterValue);
-    printDataPersonajes(filterResult);
-    console.log(filterData2);*/
-
 const pantallaPlanetas = () => {
     screenBienvenida.classList.add("disappear");
     screenPersonajes.classList.add("disappear");
