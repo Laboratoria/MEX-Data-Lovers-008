@@ -12,5 +12,27 @@ window.pokemons = {
       }
       return filtered;
   },
+
+  //Esta función ordena los pokemones de A-Z
+
+
+
   
 }
+
+const sortData = (data) => {
+  data.sort((a, b) => {
+      let nameA = a.name.toUpperCase();
+      let nameB = b.name.toUpperCase();
+      if (nameA < nameB) {
+          return -1;
+      }
+      if (nameA > nameB) {
+          return 1;
+      }
+      return 0;
+  });
+  return data;
+};
+
+window.sortData = sortData;
