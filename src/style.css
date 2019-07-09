@@ -105,10 +105,8 @@ footer {
     padding: 1vh;
 }
 
-
-
 /*#button-inicio-div {
-    margin-top: 10rem;
+    margin-top: 10rem 0rem 0rem 0rem;
     flex-direction: row;
     align-content: center;
     justify-content: space-around;
@@ -154,12 +152,19 @@ footer {
     text-align: center;
 }
 
+#pantalla-personajes {
+    justify-content: center;
+}
+
+#filter-personajes{
+    align-self: flex-start;
+}
 .card-display {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     height: 100vh;
-    margin: 25vh 5vh 5vh;
+    margin-top: 20vh;
     width: 100%;
     overflow: scroll;
     background-color: green;
@@ -187,10 +192,4 @@ section {
     background-color: #222222;
 }
 
-article {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 10vh;
-    background-color: #222222;
-}
+
