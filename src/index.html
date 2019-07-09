@@ -1,32 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>Rick and Morty</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+	  <link rel="stylesheet" href="fonts.css">
     <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-  </head>
   <body>
-    <!--Primer sección de bienvenida-->
+<!--Primer sección bienvenida-->
     <section id="portal">
-     <h1 id="encabezado"><center>El portal de Rick and Morty</center></h1>
-     <center><img src="../img/1491535581123.gif" alt="Pixel Art"></center>
-     <p id="p1">IDENTIFICATE</p>
-    <!--en el siguiente imput agregan su nombre-->
-     <label for=""></label>
-     <center><input id="input-name" type="text" placeholder="">
-      <img id="pistola" src="../img/pistolaverde.png"alt="">
-     </center>
+      <h1 id="encabezado"><center>El portal de Rick and Morty</center></h1>
+      <center><img src="../img/1491535581123.gif" alt="Pixel Art"></center>
+      <p id="p1">IDENTIFICATE</p>
+<!--en el siguiente imput agregan su nombre-->
+      <label for=""></label>
+        <center><input id="input-name" type="text" placeholder="">
+      <a class="pistola" id="pistolaportal" href="#">
+        <img src="../img/pistola.png"alt="pistolita" width="50px" height="50px">
+      </a>
+      </center>
     </section>
-    <!--Segunda sección aqui se filtra-->
+<!--Segunda sección se filtra-->
     <section id="rickfiltra">
       <h1>Conoce los experimentos de Rick</h1>
-      <img id= "rickmolesto" src="../img/ricksinfondo.png" alt="alt="Pixel Art">
-          <label for=""></label>
-
-      <input id="receive-name" type="text">
+<!--Menu con filtrado segunda sección-->
+  <title>Menu</title>
+  </head>
+  <header>
+    <div class="menu_bar">
+    <a href="#" class="bt-menu"><span class="icon-list2"></span>Menú</a>
+    </div>
+    <nav>
+     <ul>
+      <li><a href="#"><span class="icon-house"></span>Inicio</a></li>
+			<li><a href="#"><span class="icon-suitcase"></span>Trabajos</a></li>
+      <li class="submenu">
+      <a href="#"><span class="icon-rocket"></span>Conoce los experimentos de Rick<span class="caret icon-arrow-down6"></span></a>
+      <ul class="children">
+        <li><a href="#">Nombre  <span class="icon-dot"></span></a></li>
+        <li><a href="#">Estado  <span class="icon-dot"></span></a></li>
+        <li><a href="#">Especie <span class="icon-dot"></span></a></li>
+        <li><a href="#">Genero  <span class="icon-dot"></span></a></li>
+        <li><a href="#">Origen  <span class="icon-dot"></span></a></li>
+      </ul>
+      </li>
+      </ul>
+      </nav> 
+  </header>
+  <!--Rick saluda-->
+  <img id= "rickmolesto" src="../img/superrick.png"alt="Pixel Art">
+  <!--se agregua viñeta-->
+      <div class="vineta">
+          <p class="globo">
+          ¡Hola humano!    
+      </div>
     </section>
     <section>
+  <!--Tercera sección resultado-->
       <div id="root"></div>
       <!-- <script src="./data/injuries/injuries.js"></script> -->
       <!-- <script src="./data/pokemon/pokemon.js"></script> -->
@@ -36,6 +68,8 @@
       <script src="./data/rickandmorty/rickandmorty.js"></script>
       <script src="data.js"></script>
       <script src="main.js"></script>
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+	    <script src="main.js"></script>
      </section>
     
   </body>
