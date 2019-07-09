@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
 .container{
     max-width: 100%;
     margin: 0 auto;
@@ -11,13 +11,13 @@
     background-color: #222222;
     justify-content: center;
   }
- 
+
 .row{
     margin: auto;
     width: 100%;
     height: auto;
   }
-  
+
 .row:before, .row:after{
     content:"";
     display:table;
@@ -53,7 +53,7 @@
     [class*= "col-"]{
       width: 100vh;
     }
-  } 
+  }
 
 .disappear {
     display: none;
@@ -109,28 +109,27 @@ section {
     padding: 1vh;
     align-content: center;
 }*/
-  
+
 .nombre-secciones {
-    color: violet;
+    color: green;
+    text-align: left;
+    font-size: 30px;
 }
 #button-inicio-div :hover {
-    transform: scale(1.1);
-  }
-#button-inicio-div :hover > div {
-    
+    transform: scale(1.2);
   }
 
 #button-personajes-div :hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 #button-planetas-div :hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 #button-explorar-div :hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 #button-ayuda-div :hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 
 
@@ -204,9 +203,3 @@ article {
     padding: 1vh;
     flex-wrap: wrap;
 }
-
-
-
-
-
-
