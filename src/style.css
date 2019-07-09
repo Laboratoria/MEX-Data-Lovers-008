@@ -307,29 +307,16 @@ li:hover{
   background-color: black;
 }
 
-.contieneResponsive{
-  width: 80%;
-  max-width: 1000px;
-  marginal:0 auto;
-  overflow:hidden;
-  }
   
-  @media screen and (max-width: 800px){
-         body{
-            background:#8a8784;
-         }
-  }
-  
-  }
 
-  .contieneResponsive{
-width: 80%;
-max-width: 1000px;
+.contieneResponsive{
+width: 100%;
+max-width: 100%;
 marginal:0 auto;
 overflow:hidden;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 100%){
        body{
           background:#8a8784;
        }
