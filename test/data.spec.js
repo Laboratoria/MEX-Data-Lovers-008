@@ -7,7 +7,7 @@ describe('filterData', () => {
     });
 
     it('returns `Rick Sanchez`', () => {
-        expect(filterData(name, Rick, data)).toBe('Rick Sanchez');
+        expect(window.filterData(name, 'Rick', window.RICKANDMORTY)[0]).toBe === ('Rick Sanchez');
     });
 });
 
