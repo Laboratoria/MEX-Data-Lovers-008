@@ -1,8 +1,9 @@
 body {
     background: url("fondo22.jpg") no-repeat center top fixed;
     background-size: cover;
-   
 }
+
+
 
 #contenedor-texto{
   width: 100%;
@@ -52,8 +53,7 @@ body {
     font-weight: 600px;
     font-size: 20px;
     color: black;
-    background-color: rgb(186, 225, 248);
-    
+    background-color: rgb(186, 225, 248);  
   }
   tr:first-child {
  
@@ -62,8 +62,7 @@ body {
     font-weight: 600px;
     font-size: 20px;
     color: black;
-    background-color: rgb(186, 225, 248) ;
-    
+    background-color: rgb(186, 225, 248) ;  
   }
   tr:nth-child(even) { 
     
@@ -108,7 +107,7 @@ background-color: transparent;
   text-align: right;
   color: white;
   font-family: 'Amatic SC', Verdana;
-  font-size: 50px;
+  font-size: 80px;
   font-weight: bold;
   height: 40px;
   margin-right: 4%;
@@ -127,8 +126,20 @@ background-color: transparent;
   }
   
 
+  #contenedor{
+    margin-left: 20px;
+  }
+
+
+  .data{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
   
   #data{
+
     font-family: 'Amatic SC', Verdana;
     color: rgb(255, 255, 255);
     font-size: 30px;
@@ -146,6 +157,7 @@ background-color: transparent;
   text-align: center;
   box-sizing: border-box;
   border:2px solid blue;
+  display:flex;
  }
   .nombre{
   width: 100%;
@@ -154,7 +166,17 @@ background-color: transparent;
   background: rgb(10, 8, 8);
   border-radius: 40px;
   text-align: center;
+  flex-direction: row;
+  align-items: flex-end;
  }
+ .element-img{
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  min-width: 100px;
+  flex-direction: row;
+  align-items: flex-end;
+}
  .tarjeta:hover{
    opacity: 0.9;
  }
@@ -165,39 +187,27 @@ background-color: transparent;
   }
 }
 
-button {
-  outline:none;
-  font-family:'Amatic SC', Verdana; 
-  font-size:35px;
-  font-weight: bold;
-  color: black;
-  text-shadow:-1px -1px 1px rgba(0, 0, 0, 0.7), 1px 1px 1px hsla(350,0%,100%,0.3);
-  display: block; 
-  margin:2em 30px 0px 10px; 
-  text-align: center;
-  padding:10px 15px 10px 15px;
-  cursor:pointer;
-  background-color:rgb(128, 212, 18);
-  background-image:linear-gradient(273deg,rgb(193, 230, 62) 30%, rgb(101, 230, 15) 40%);
-  border:none; 
-  border-radius:16px;
-  box-align: right;
-  box-shadow:
-    inset 0px 0px 1px 1px rgba(99, 116, 5, 0.9),
-    inset 1px 1px 1px 4px rgba(255, 255, 255, 0.8),
-    8px 10px 2px 6px rgba(82, 109, 72, 0.74),
-    0px 0px 3px 2px rgba(45, 158, 17, 0.9),
-    -1px -1px 1px 6px rgba(45, 214, 29, 0.9),
-    0px 0px 2px 11px rgba(11, 70, 34, 0.9);
-}
+.contenedor-video{
+  
+  background-color: rgb(0, 0, 0);
+  width: 1300px; 
+  display: webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center; 
+          background: black;
+          border: 1px solid blue;
+          border-radius: 30px;
+          box-shadow: 0 0 10px blue, 0 0 10px blue inset;  
+          transition: all .2s linear;
 
-button:active {
-  color: black; 
-  padding:26px 34px 22px 38px;
-  background-image: linear-gradient(273deg,rgb(75, 136, 216) 50%, rgb(48, 220, 232) 60%);
-  box-shadow: inset 3px 4px 3px 2px rgba(11, 92, 212, 0.55);
+}          
+.contenedor-video:hover {
+box-shadow: 0 0 20px green, 0 0 25px green ;
 }
-
+        
 .caracteristicas{
   outline:none;
   font-family:'Amatic SC', Verdana; 
@@ -218,16 +228,16 @@ button:active {
   margin-left: 2em;
 }
 
-
 .info select{
   background: rgb(60, 60, 61);
   padding: 10px;
-  width: 200px ;
-  height: 70px;
+  width: 300px ;
+  height: 90px;
   font-family:'Amatic SC', Verdana;
-  font-size: 30px;
+  justify-content: center;
+  font-size: 40px;
   font-weight: bold;
-  margin-left: 2em;
+  margin-left: 20em;
   color: white;
   border-radius: 16px;
 }
