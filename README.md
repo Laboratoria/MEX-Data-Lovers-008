@@ -1,9 +1,9 @@
 ﻿# Get Schwifty
 
 ## Descripción del proyecto
-Get Swifty promete ayudar a los nuevos fans de la Serie Rick and Morty a conocer mejor los personajes, su cronología dentro de la serie, multiversos y sus diferentes cambios dentro de la misma.
+Get Swifty promete ayudar a los nuevos fans de la Serie Rick and Morty a conocer mejor los personajes, sus dimensiones de origen y actuales, especies, tipos, estatus y género.
 ## Objetivo del proyecto
-Crear un sitio web agradable y fácil de entender enfocado a nuevos fans de la serie Rick y Morty que les gustaría saber más de sus personajes favoritos.
+Crear un sitio web agradable, responsivo y fácil de entender enfocado a nuevos fans de la serie Rick y Morty que les gustaría saber más de sus personajes favoritos.
 
 ## Prototipo de baja fidelidad
 El prototipo de baja fidelidad de escritorio y celular son muy parecidos, salvo el tamaño de los botones.
@@ -15,14 +15,16 @@ El prototipo de baja fidelidad de escritorio y celular son muy parecidos, salvo 
 ### Primer prototipo escritorio
 ![prototipo-escritorio](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%201.png)
 ![prototipo-escritorio2](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%203.png)
+
 ### Problemas encontrados en primer testeo
 
-Pudimos notar gracias al feedback de nuestros usuarios que, en primer instancia, a algunos de ellos les gustaría encontrar un espacio donde ellos puedan escribir o leer a otros fans, es decir, la implementación de un foro, sin embargo optamos por no implementarlo en nuestro sitio web. También nos comentaron que les gustaría poder agregar un filtrado extra a una categoría específica. Por ejemplo, si están en todos los personajes que son mujeres,
-pudieran saber cual de ellas es un Alien. De acuerdo a estos feedback decidimos implementar un tercer botón que aparezca cuando se elija una categoría en la que podrán aplicar un segundo filtro por especie.
-Mencionaron que el botón de filtrar también debería de darte la opción de regresar a ver todos los personajes, no solo como primer instancia.
+Pudimos notar gracias al feedback de nuestros usuarios que, en primer instancia, a algunos de ellos les gustaría encontrar un espacio donde pudieran escribir o leer a otros fans, es decir, la implementación de un foro, sin embargo optamos por no implementarlo en nuestro sitio web y redirigirlos a un foro externo de la WikiFANDOM. También nos comentaron que les gustaría poder agregar un filtrado extra a una categoría específica. Por ejemplo, si están en todos los personajes que son mujeres,
+pudieran saber cual de ellas es un Alien. De acuerdo con este feedback decidimos implementar un tercer botón donde se elija una categoría en la que podrán aplicar un segundo filtro por especie.
 
-También decidimos por la complejidad del trabajo no darle prioridad al buscador, por lo tanto lo eliminamos. Recibimos la sugerencia de implementar un scrollbar dentro de la caja de la data para así evitar una
-página inmensa y que la información se centrará en un espacio determinado, permitiéndole al usuario filtrar u ordenar desde cualquier  punto de la información.
+Mencionaron que el botón de filtrar también debería de darte la opción de regresar a ver todos los personajes, desde cualquier momento, por lo que agregamos dicha opción.
+
+También decidimos por la complejidad del trabajo no darle prioridad al buscador, por lo tanto lo eliminamos. Recibimos la sugerencia de implementar un scrollbar dentro de la caja de la data para así evitar una página inmensa y que la información se centrará en un espacio determinado, permitiéndole al usuario filtrar u ordenar desde cualquier  punto de la información.
+
 Finalmente encontramos el problema que no teníamos un espacio donde colocar las estadísticas por lo que decidimos cambiar el carrusel dinámico de imagenes, por 
 una imagen estática y agregar dos botones para avanzar y regresar para mostrar las estadísticas como datos curiosos.
 
@@ -47,6 +49,7 @@ Decidimos tomar el segundo prototipo, como el prototipo final.
 ### Escritorio
 ![prototipo-escritorio-alta-f](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/altafidelidad.jpg)
 ![prototipo-escritorio-alta-f2](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/altafidelidad1.jpg)
+
 ## Historias de usuario
 
 Primer acercamiento a Get Schwifty
@@ -58,19 +61,26 @@ Primer acercamiento a Get Schwifty
 5. El usuario decide buscar información de los personajes en internet desde su celular.
 6. El usuario se encuentra con Get Schwifty.
 
+Foro 
+
+1. El usuario entra a Get Schwifty.
+2. El usuario observa que en la parte superior de la pantalla esta la opción de foro.
+3. La historia termina cuando el usuario da click o toca el botón de foro.
+
 Estadística
 
 1. El usuario entra a Get Schwifty.
 2. La primer sección con la que interactua es la de Sabías Que.
 3. La sección ofrece curiosidades al usuario sobre la serie de Rick and Morty.
 4. El usuario puede elegir por medio de botones ver las curiosidades de la serie. 
-5. La sección menciona la existencia de la tercer temporada y proporciona un link para verla en streaming.
-6. La historia termina cuando el usuario accede al catálogo o al link de la tercer temporada.
+5. La historia termina cuando el usuario accede al catálogo o al foro.
 
 Visualización de la data
 
 1. El usuario hace click en el catálogo.
-2. La historia termina cuando el usuario observa todos los personajes.
+2. El usuario coloca su cursor sobre el personaje que le interesa.
+3. El usuario nota que más información es mostrada.
+2. La historia termina cuando el usuario decide filtrar u ordenar.
 
 Filtrar data
 
