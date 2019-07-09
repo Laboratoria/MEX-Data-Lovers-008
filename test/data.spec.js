@@ -7,7 +7,7 @@ require('../src/data/rickandmorty/rickandmorty.js'); //data
 
 describe('filterData', () => { //describe = palabra reservada que contiene las funciones para ejecutar los test.
     it('is a function', () => { // it = palabra reservada que contiene el enunciado en caso de que el test sea correcto o incorrecto (sentencia).
-        expect(typeof filterData).toBe('function');//test dentro de la palabra reservada expect.
+        expect(typeof filterData).toBe('function'); //test dentro de la palabra reservada expect.
     });
 
     it('returns `Rick Sanchez`', () => { //segunda sentencia
@@ -45,7 +45,39 @@ describe('orderDataZA', () => {
 
     it('returns `Should return: Zick Zack, Zeta Alpha Rick y Zeep Xanflorp as the firts three items from the array.`', () => {
         expect(window.orderDataZA(window.RICKANDMORTY.results)[0].name).toBe('Zick Zack');
-        expect(window.orderDataZA(window.RICKANDMORTY.results)[1].name).toBe('Zeta Alpha Rick');        
+        expect(window.orderDataZA(window.RICKANDMORTY.results)[1].name).toBe('Zeta Alpha Rick');
         expect(window.orderDataZA(window.RICKANDMORTY.results)[2].name).toBe('Zeep Xanflorp');
+    });
+});
+
+
+//Estadística con porcentajes
+
+describe('statisticsPercentage', () => {
+    it('is a function', () => {
+        expect(typeof statisticsPercentage).toBe('function');
+    });
+
+    it('returns `Should return 15 % when asking porcentage of total Ricks`', () => {
+        expect(window.statisticsPercentage('name', 'Rick', window.RICKANDMORTY.results)).toBe(15);
+    });
+
+    it('returns`Should return 60% when asking porcentage of Humans`', () => {
+        expect(window.statisticsPercentage('species', 'Human', window.RICKANDMORTY.results)).toBe(60);
+    });
+});
+
+//Estadística con valores
+describe('statisticsValue', () => {
+    it('is a function', () => {
+        expect(typeof statisticsValue).toBe('function');
+    });
+
+    it('returns `Should return 372 when asking value of total men`', () => {
+        expect(window.statisticsValue('gender', 'Male', window.RICKANDMORTY.results)).toBe(372);
+    });
+
+    it('returns`Should return 133 when asking porcentage of Humans`', () => {
+        expect(window.statisticsValue('species', 'Alien', window.RICKANDMORTY.results)).toBe(133);
     });
 });

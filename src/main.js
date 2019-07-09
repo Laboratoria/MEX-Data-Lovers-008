@@ -33,10 +33,10 @@ const percentage = window.statisticsPercentage;
 const value = window.statisticsValue;
 
 const curiosities = [
-    `A lo largo de las 3 temporadas de Rick and Morty han aparecido múltiples versiones de los protagonistas, por ejemplo existen <b>${value('name', 'Rick', data)} Ricks</b> es decir el ${percentage('name', 'Rick', data)} % de todos los personajes.`,
-    `Solo hay <b>${value('gender', 'Female', data)} mujeres</b> en toda la serie de Rick and Morty en contraste con <b> ${value('gender', 'Male', data)} de hombres</b>.<span>¡Solo el <b>${percentage('gender', 'Female', data)} %</b> son mujeres!</span>`,
-    `La especie que más se repite en Rick and Morty es <b>Humano</b>, equivalente al ${percentage('species', 'Human', data)}% de la población y <b>Alien </b> le pisa los talones con el ${percentage('species', 'Alien', data)}%.`,
-    `Se desconoce el estatus de vida de <b>${value('status', 'unknown', data)}</b> personajes. Lo equivalente al ${percentage('status', 'unknown', data)} %.`,
+    `A lo largo de las 3 temporadas de Rick and Morty han aparecido múltiples versiones de los protagonistas, por ejemplo existen <b>${value('name', 'Rick', data)} Ricks</b> es decir el <b>${percentage('name', 'Rick', data)}%</b> de todos los personajes.`,
+    `Solo hay <b>${value('gender', 'Female', data)} mujeres</b> en toda la serie de Rick and Morty en contraste con <b> ${value('gender', 'Male', data)} de hombres</b>.<p>¡Solo el <b>${percentage('gender', 'Female', data)} %</b> son mujeres!</p>`,
+    `La especie que más se repite en Rick and Morty es <b>Humano</b>, equivalente al <b>${percentage('species', 'Human', data)}%</b> de la población y <b>Alien </b> le pisa los talones con el <b>${percentage('species', 'Alien', data)}%.</b>`,
+    `Se desconoce el estatus de vida de <b>${value('status', 'unknown', data)}</b> personajes. <p>Lo equivalente al <b>${percentage('status', 'unknown', data)} %.</p></b>`,
     //`El número de personas que viven en Earth (Replacement Dimension) son ${value('location.name', 'Earth (Replacement Dimension)', data)}.`,
 ];
 
