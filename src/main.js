@@ -1,16 +1,21 @@
-<<<<<<< HEAD
+
+
 
 for(personajes in RICKANDMORTY.results){ 
   // console.log(RICKANDMORTY.results[personajes].image); 
   //console.log(RICKANDMORTY.results[personajes].gender); 
-=======
+
 for(personajes in RICKANDMORTY.results){
   // console.log(RICKANDMORTY.results[personajes].image);
 
-  
+
+for(personajes in RICKANDMORTY.results){
+  // console.log(RICKANDMORTY.results[personajes].image); 
   //console.log(RICKANDMORTY.results[personajes].gender);
+
   
->>>>>>> a5f3048058a510ce41e67a3c3550fb539d37e3ac
+
+
 
 }
 const data = RICKANDMORTY.results;
@@ -22,6 +27,7 @@ const muestraData = () => {
   data.forEach(element => {
     console.log(element)
     str += `<div class="tarjeta">
+    <div class= "caras">
     <div class="nombre">
     <p> ${element.name}</p></div>
     <br>
@@ -29,11 +35,11 @@ const muestraData = () => {
     <img src="${element.image}"></img>
     </div>
  <div class= "info">
- 
     <p> Status: ${element.status} </p>
     <p> Especie: ${element.species} </p>
     <p> tamaño: ${element.origin.name} </p>
-    <p> Otro: ${element.location.name}</p>
+    <p> Origen: ${element.location.name}</p>
+    </div>
     </div>
     </div>`
   });
@@ -44,7 +50,33 @@ const muestraData = () => {
 
 muestraData()
 
+const filtrarData = (prop, val) => {
+  let str = '';
+  data.forEach(element => {
+    
+    //console.log(element[prop])
+    
+    if(element[prop] == val) {
+      str += `<div class="tarjeta">
+          <div class="nombre">
+          <p> ${element.name}</p></div>
+          <br>
+          <div class="img"> 
+          <img src="${element.image}"></img>
+          </div>
+       <div class= "info">
+          <p> Status: ${element.status} </p>
+          <p> Especie: ${element.species} </p>
+          <p> tamaño: ${element.origin.name} </p>
+          <p> Origen: ${element.location.name}</p>
+          </div>
+          </div>`  
+    }
+    
+    
+  });
 
+  console.log(str);
 
-
-
+}
+filtrarData('status', 'Alive')

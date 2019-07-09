@@ -6,17 +6,41 @@
     <link rel="shortcut icon" href="https://scontent-mia3-2.cdninstagram.com/vp/3f268ef7e4cbdf16b0b298535fb3a095/5D98AB2E/t51.2885-15/sh0.08/e35/s640x640/60896059_363526267614915_9022280140086626890_n.jpg?_nc_ht=scontent-mia3-2.cdninstagram.com"/>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Titillium+Web&display=swap" rel="stylesheet">
     <title>Rick & Morty API Universe</title>
-    <!-- <link rel="stylesheet" href="iconos-web/style.css" /> -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="fontello.css" />
 
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,600&display=swap" rel="stylesheet">
+
+         
     <!-- <script src="./data/steam/steam.js"></script> -->
     <script src="./data/rickandmorty/rickandmorty.js"></script>
   </head>
   <body>
 
+    <!-- Icono ir abajo -->
+    <span class="icon-circle-down"></span>
     
-        
+  <!-- redes sociales -->
+  <div class="wrapper">
+    <div class="title">
+      <p>Simple hover effect only use CSS3</p>
+    </div>
+    <div class="buttons">
+      <div class="button button-fb">
+        <i class="fa fa-facebook"></i>
+      </div>
+      <div class="button button-tw">
+        <i class="fa fa-twitter"></i>
+      </div>
+      <div class="button button-go">
+        <i class="fa fa-google-plus"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- presentación pagina -->
       <section class="informacion">
         <div class="Textear"></div>
         <p>Rick es un brillante científico un tanto borracho que secuestra
@@ -32,7 +56,7 @@
           <!-- <div><a href="#" class="btn-empezar">Empezar</a></div> -->
         </section> 
     
-
+        <!-- tabla -->
         <table class="table">
           <thead>
               <th>TOP RANKING</th>
@@ -59,12 +83,20 @@
               <td>5</td>
             </tr>
           </tbody>
-          <tfoot>
-            
+          
+          <tfoot>  
           </tfoot>
         </table>
-    
-    <h6><span class="icon point-down"></span></h6>
+        <!-- boton abajo -->
+      <div class="abajo">
+        <a href="" id="down" class="button"><i class="far fa-arrow-alt-circle-down"></i></a>
+        <div class="slide">
+            <div id="facts">
+            </div>
+      </div>
+      
+
+     
     <br>
     <br>
     <br>
@@ -73,23 +105,17 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <div clas="down">
-      <span class="icon icon-down-open"></span>
-    </div>
     <br>
     <br>
     <br>
   
-
 <!-- sección video -->
 <section>
   <h1>Avances de la nueva temporada</h1>
+  <h2>Noviembre 2019</h2>
 
         <div id="video"  class="contenedor-video">
-            <video width="40%" class="fm-video video-js vjs-16-9  vjs-big-play-centered" data-setup="{}" controls preload="auto">
+            <video width= "1200px" height="1000px" class="fm-video video-js vjs-16-9  vjs-big-play-centered" data-setup="{}" controls preload="auto">
                 <source src="video/rick_y_morty_temp4.mp4" type="video/mp4">
             </video>
             
@@ -102,29 +128,32 @@
 <br>
 <br>
 
-<section id="caracteristicas" class="hide">
-  <div class="content">
-    <!-- <div class="boton?">
-      <select name="filtrar o escoger" id="filtrar o escoger?"> -->
-
+<!-- filtrar -->
+ <!-- <section id="info" class="hide"> -->
+  <div class=" info">
+      <select name="filtrar o escoger" id="filtrar o escoger?"> 
       <option value="filtrar">Filtrar</option>
       <option value="name">Nombre</option>
       <option value="species">Especies</option>
       <option value="location.name">Dimensión</option>
       <option value="origin-name">Origen</option>
-      <option value="status">Vivo o Muerto</option>
       </select>
-
     </div>
+<!-- boton filtrar -->
 
 
-<!-- <select name="orden" id="orden">
-  <option value="orden">Ordenar</option>
+
+ <!-- ordenar por nombre
+  <div> class="name" 
+  <select name="orden" id="orden">-->
+<!-- <select name="orden" id="orden">-->
+
+ <!-- <option value="orden">Ordenar</option>
   <option value="a-z">de A-Z</option>
-  <option value="z-a">de Z-A</option> -->
+  <option value="z-a">de Z-A</option> 
+  </div> -->
 
-<!--Para que aparezcan ordenados-->
-  <!-- <div class="input-field">  
+  <!-- <div class="input-field">  Para ordenar
     <select id="selectOrder">
        <option value="seleccione_opcion">Ordenar</option>
        <option value="a-z">Ordenar A-Z</option>  
@@ -133,15 +162,12 @@
     </select> -->
 
 
-<!-- boton continuar -->
-<a href="#"  class="btn-continuar" >Continuar</a>
-
 </select>
 </div>
 <br>
 <br>
 <br>
-<!-- La data de rickandmorty -->
+
 <section class="data" id='data'>
 
 </section>
@@ -150,3 +176,5 @@
     <script src="data.js"></script>
   </body>
 </html>
+
+

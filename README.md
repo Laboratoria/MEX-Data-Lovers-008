@@ -15,34 +15,34 @@ Realizar un sitio que sea amigable, agradable y de fácil manejo y entendimiento
 Para poder determinar a los usuarios que serían los indicados para tener una app de Ricky and Morty se realizaron encuestas en línea y presenciales, esta fue resuelta por 27 personas, 13 hombres y 14 mujeres, la cual no s arrojo lo siguiente:
 
  
- 
+ **
 
 ## ¿Qué edad tienes?
 **
 Los principales usuarios del producto según los resultados arrojados por la entrevista realizada en cuanto edades de los usuarios se muestran en la primera gráfica, al 55.6 oscila entre los 25 a 35 años, el 33.3 oscila entre los 15 a 25 años y solo el 11.1 mas de 35 años. Algo que nos hizo darnos cuenta que no solo los jóvenes son los principales consumidores potenciales de la app, sino que también a personas maduras les resulta atractivo contar con una app de Ricky and Morty.
 
-![](./src/imagenes/imagen1.png)
+          ![](./src/imagenes/imagen1.png)
 
-
-
+**
+**
 ## ¿Qué tan fan eres de Ricky and Morty?
 Cabe mencionar que la encuesta también nos arrojo lo siguiente 40.7 % son muy fans del Ricky y Morty, al 37 % le gusta, 3.8% No tanto y el 18.5 % no los conoce, estos resultados se puede observar en la segunda gráfica.
 
-  
 
-![](./src/imagenes/imagen2.png)
+          ![](./src/imagenes/imagen2.png)
+**
 
 ## ¿Qué te interesa conocer de la Ricky and Morty?
 
  Los objetivos de estos usuarios en relación con el producto es conocer acerca de los personajes de la serie y de esta forma sacar algunas conclusiones hechas sobre esta serie por parte de los usuarios.
 
-
-
+**
 ## ¿Qué te interesa ver en una App de Ricky and Morty?
 Los resultados arrojados por la entrevista realizada se muestran en la tercera gráfica, a los entrevistados les interesa ver en un 66.7% el nombre, especie y la procedencia de los personajes que son parte de Ricky and Morty. A un 18.5% solo les interesa ver la procedencia, a un 7.4% únicamente la especie y al resto de los encuestados no les interesa, o bien, quieren saber cuando sale la nueva temporada.
 
-![](./src/imagenes/imagen3.png)
 
+          ![](./src/imagenes/imagen3.png)
+- **
 
 
 ## ¿Cuándo utilizan o utilizarían el producto?
@@ -51,8 +51,10 @@ Los resultados que arrojo la encuesta nos dice que el usuario ocuparia la app pa
 
 El resultado total de las encuestas nos arroja que se tiene una amplia gama de usuarios a los que les interesa y les llama la atención el uso de una app de Ricky and Morty. Por lo que se concluyo que sin duda es una buena oportunidad de desarrollo web una app de Ricky and Morty.
   
+  **
 
 ## Proto-Persona
+
 Revisando información obtenida a través de redes sociales nos percatamos que en cuanto a genero en su mayoría son hombres con un 65% en comparación de las mujeres que representan un total de 35%.
 
 Se vio que el contenido que se observa en las paginas y redes sociales de Ricky and Morty son principalmente memes, mercadotecnia y por ultimo la creación de hipótesis o teorías sobre los personajes de la serie.
@@ -64,8 +66,8 @@ Con todo lo anterior deducimos que nuestra proto-persona son jóvenes y adultos 
 Cabe mensionar que la proto-persona no se diseño con forme a una edad en especifico dado que Ricky and Morty cuenta con una gama muy amplia en cuanto a edad por lo que se diseño principalmente por el gusto que tienen las personas por Ricky y Morty mas que por edad
 
 
-![](./src/imagenes/Usuario.png)
-
+          ![](./src/imagenes/Usuario.png)
+**
 
 # Problematica
 
@@ -73,16 +75,18 @@ Una vez que se analizo los datos obtenidos en las encuestas definimos lo siguien
 
 El usuario(a) requiere una aplicación que muestre a los personajes de Ricky and Morty así como los datos mas relevantes sobre estos,al igual que las temporadas sobre estas y un avance sobre la nueva temporada  de Ricky and Morty.
 
-
+**
 ## Historias de Usuario
 A continuación algunas historias de usuarios que comenzamos a definir:
 
-![](./src/imagenes/Hist-usuario.png)
+          ![](./src/imagenes/Hist-usuario.png)
+**
 
-
+**
 ## PROTOTIPADO
 
 Una vez concluido nuestra investigación con los usuarios se paso al prototipo de App de Ricky and Morty, el cual se mostró a nuevos usuarios para que nos retroalimentaran sobre su expectativa sobre esta, se realizaron los cambios mencionados según la información de los usuarios y el resultado con el que los usuarios satisface sus necesidades es el siguiente:
   
 
-![](./src/imagenes/Prototipo.png)
+          ![](./src/imagenes/Prototipo.png)
+**
