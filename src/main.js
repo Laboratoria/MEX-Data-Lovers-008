@@ -64,24 +64,27 @@ let filterData1 = () => {
     let filterValue = buttonFilter.value;
     console.log(filterValue);
     if (filterValue === "allAlive") {
-    let filterResult = window.allAlive;
-    console.log(filterResult);
+        let filterResult = window.allAlive;
+        printDataPersonajes(filterResult);
+        console.log(filterResult);
     } else if (filterValue === "allDead") {
-    let filterResult = window.allDead;
-    printDataPersonajes(filterResult);
-    console.log(filterResult);
+        let filterResult = window.allDead;
+        printDataPersonajes(filterResult);
+        console.log(filterResult);
     } else if (filterValue === "allMale") {
         let filterResult = window.allMale;
+        printDataPersonajes(filterResult);
         console.log(filterResult);
     } else if (filterValue === "allFemale") {
         let filterResult = window.allFemale;
+        printDataPersonajes(filterResult);
         console.log(filterResult);
     } else if (filterValue === "all") {
         let filterResult = printDataPersonajes();
+        printDataPersonajes(filterResult);
     }
     console.log(filterResult);
     return filterResult
-        
     };
 
 const pantallaPlanetas = () => {
