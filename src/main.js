@@ -1,7 +1,22 @@
 
+
+
+for(personajes in RICKANDMORTY.results){ 
+  // console.log(RICKANDMORTY.results[personajes].image); 
+  //console.log(RICKANDMORTY.results[personajes].gender); 
+
+for(personajes in RICKANDMORTY.results){
+  // console.log(RICKANDMORTY.results[personajes].image);
+
+
 for(personajes in RICKANDMORTY.results){
   // console.log(RICKANDMORTY.results[personajes].image); 
   //console.log(RICKANDMORTY.results[personajes].gender);
+
+  
+
+
+
 }
 const data = RICKANDMORTY.results;
 // const data RICKANDMORTY.results
