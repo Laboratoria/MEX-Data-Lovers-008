@@ -9,7 +9,7 @@ const screenPersonajes = document.getElementById("pantalla-personajes");
 const screenPlanetas = document.getElementById("pantalla-planetas");
 const screenExplorar = document.getElementById("pantalla-explorar");
 const screenAyuda = document.getElementById("pantalla-ayuda");
-const buttonInicio = document.getElementById("button-inicio");
+//const buttonInicio = document.getElementById("button-inicio");
 
 const pantallaBienvenida = () => {
     screenBienvenida.classList.remove("disappear");
@@ -17,7 +17,7 @@ const pantallaBienvenida = () => {
     screenPlanetas.classList.add("disappear");
     screenExplorar.classList.add("disappear");
     screenAyuda.classList.add("disappear");
-    buttonReinicio.classList.add("disappear");
+    buttonReinicio.classList.remove("disappear");
     buttonFilter.classList.add("disappear");
 }
 
@@ -111,7 +111,7 @@ const pantallaAyuda = () => {
     buttonFilter.classList.add("disappear");
 }
 
-buttonInicio.addEventListener("click", pantallaBienvenida);
+//buttonInicio.addEventListener("click", pantallaBienvenida);
 buttonReinicio.addEventListener("click", pantallaBienvenida);
 buttonPersonajes.addEventListener("click", pantallaPersonajes);
 buttonPlanetas.addEventListener("click", pantallaPlanetas);
