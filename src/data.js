@@ -1,5 +1,5 @@
 const filterData = (key, value, data) => { //2 parámetros. Value del index tiene 2 palabras (valor.propiedad)
-    let items = data.filter(element => element[key].indexOf(value) > -1); //Varaible vacia donde se guardara c/elemento que cumpla con la condición. -1 = index inexistente = false
+    let items = data.filter(element => element[key].indexOf(value) > -1); //Variable vacia donde se guardara c/elemento que cumpla con la condición. -1 = index inexistente = false
 
     return items;
 };
