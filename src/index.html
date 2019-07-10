@@ -7,37 +7,35 @@
   </head>
   <body> 
     <main class="container" id="container">
-      <section class="row">
-        <header>
+      <header class="row">
+        <figure>
           <a href="">
-            <img class="col-12 header" src="images/banner1.png" alt="Rick and Morty Lovers">
-          </a>       
-        </header>
-      </section>
+            <img src="images/banner1.png" alt="Rick and Morty Lovers">
+          </a>
+        </figure>
+      </header>
 
     <!--PANTALLA DE BIENVENIDA-->
-    <section class="row">
-      <div id="pantalla-bienvenida" class="col-12">
-        <div id="button-personajes-div" class=""><input type="image" id="button-personajes" alt="Personajes" src="images/rick-spinning.giphy.gif" :hover><div class="nombre-secciones">Personajes</div></div>
-        <div id="button-planetas-div" class=""><input type="image" id="button-planetas" alt="Planetas" src="images/yell.giphy.gif" :hover><div class="nombre-secciones">Planetas y dimensiones</div></div>
-        <div id="button-inicio-div" class=""><input type="image" id="button-inicio" alt="Inicio"src="images/portal png 1.gif" :hover><div class="nombre-secciones">Inicio</div></div>
-        <div id="button-explorar-div" class=""><input type="image" id="button-explorar" alt="Explorar" src="images/rick-morty-watch-giphy.gif" :hover><div class="nombre-secciones">Explorar</div></div>
-        <div id="button-ayuda-div" class=""><input type="image" id="button-ayuda" alt="Explorar" src="images/morty.gif" :hover><div class="nombre-secciones">Ayuda</div></div>
-      </div>    
-    </section>  
+    <section id="pantalla-bienvenida" class="row">
+        <div id="button-personajes-div" class="col-1"><input type="image" id="button-personajes" alt="Personajes" src="images/rick-spinning.giphy(2).gif" :hover><div class="nombre-secciones">Personajes</div></div>
+        <div id="button-planetas-div" class="col-3"><input type="image" id="button-planetas" alt="Planetas" src="images/yell.giphy.gif" :hover><div class="nombre-secciones">Planetas y dimensiones</div></div>
+        <div id="button-inicio-div" class="col-8"><input type="image" id="button-inicio" alt="Inicio"src="images/portal png 1(6).gif" :hover><div class="nombre-secciones">Inicio</div></div>
+        <div id="button-explorar-div" class="col-1"><input type="image" id="button-explorar" alt="Explorar" src="images/rick-morty-watch-giphy(2).gif" :hover><div class="nombre-secciones">Explorar</div></div>
+        <div id="button-ayuda-div" class="col-4"><input type="image" id="button-ayuda" alt="Explorar" src="images/morty(2).gif" :hover><div class="nombre-secciones">Ayuda</div></div>
+    </section>
 
      <!--PANTALLA DE PERSONAJES-->
     <section id="pantalla-personajes" class="row disappear">
       <article>
         <div class="section-header">
           <h1>Personajes</h1>
-        </div>        
+        </div>
       </article>
       <div class="col-12 row card-display">
         <div id="card-display"></div>
       </div>
       <div class="col-2" id="filter-personajes">
-        <select id="input-filter-personajes"> 
+        <select id="input-filter-personajes">
           <option value="filter">Filtrar</option>
           <option value="all">Todos</option>
           <option value="allAlive">Vivos</option>
@@ -45,21 +43,21 @@
           <option value="allMale">Masculinos</option>
           <option value="allFemale">Femeninos</option>
         </select>
-      </div>  
+      </div>
     </section>
 
      <!--PANTALLA DE PLANETAS-->
     <section id="pantalla-planetas" class="row disappear">
       <article class="header">
         <h1>Planetas y dimensiones</h1>
-      </article>  
+      </article>
     </section>
 
      <!--PANTALLA DE EXPLORAR-->
     <section id="pantalla-explorar" class="row disappear">
       <article class="header">
         <h1>Explorar</h1>
-      </article>      
+      </article>
     </section>
 
      <!--PANTALLA DE AYUDA-->
@@ -70,14 +68,14 @@
     </section>
 
      <!--BOTÓN REINICIO-->
-    <div id="button-reinicio" class="disappear"> 
+    <div id="button-reinicio" class="disappear">
       <div>
-        <input id="portal" type="image" alt="Inicio" src="images/portal png 1.gif">
+        <input id="portal" type="image" alt="Inicio" src="images/portal png 1(3).gif">
       </div>
     </div>
-  
+
     <footer id="footer" class="row">
-      <h3>Rick and Morty Lovers - 2019</h3>   
+      <h3>Rick and Morty Lovers - 2019</h3>
     </footer>
 
     <script src="./data/rickandmorty/rickandmorty.js"></script>
