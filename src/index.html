@@ -3,9 +3,6 @@
   <head>
     <title>Rick and Morty</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-	  <link rel="stylesheet" href="fonts.css">
     <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   <body>
@@ -30,47 +27,53 @@
   </head>
   <header>
     <div class="menu_bar">
-    <a href="#" class="bt-menu"><span class="icon-list2"></span>Menú</a>
     </div>
     <nav>
      <ul>
-      <li><a href="#"><span class="icon-house"></span>Inicio</a></li>
-			<li><a href="#"><span class="icon-suitcase"></span>Trabajos</a></li>
-      <li class="submenu">
-      <a href="#"><span class="icon-rocket"></span>Conoce los experimentos de Rick<span class="caret icon-arrow-down6"></span></a>
-      <ul class="children">
-        <li><a href="#">Nombre  <span class="icon-dot"></span></a></li>
-        <li><a href="#">Estado  <span class="icon-dot"></span></a></li>
-        <li><a href="#">Especie <span class="icon-dot"></span></a></li>
-        <li><a href="#">Genero  <span class="icon-dot"></span></a></li>
-        <li><a href="#">Origen  <span class="icon-dot"></span></a></li>
-      </ul>
+        <li class="menudesplegable">
+            <a href="#"><span class="icon-rocket"></span>Estado<span class="caret icon-arrow-down6"></span></a>
+            <ul class="children">
+              <li><a href="#">Vivo <span class="icon-dot"></span></a></li>
+              <li><a href="#">Muerto <span class="icon-dot"></span></a></li>
+              <li><a href="#">Desconocido <span class="icon-dot"></span></a></li>
+            </ul>
+        </li>
+        <li class="menudesplegable2">
+            <a href="#"><span class="icon-rocket"></span>Especie<span class="caret icon-arrow-down6"></span></a>
+            <ul class="children">
+              <li><a href="#">Humano<span class="icon-dot"></span></a></li>
+              <li><a href="#">Alien <span class="icon-dot"></span></a></li>
+              <li><a href="#">Humanoide<span class="icon-dot"></span></a></li>
+              <li><a href="#">Mitologico<span class="icon-dot"></span></a></li>
+              <li><a href="#">Animal<span class="icon-dot"></span></a></li>
+              <li><a href="#">Humanoide<span class="icon-dot"></span></a></li>
+            </ul>
+        </li>
+       <li class="menudesplegable3">
+            <a href="#"><span class="icon-rocket"></span>Género<span class="caret icon-arrow-down6"></span></a>
+            <ul class="children">
+              <li><a href="#">Hombre <span class="icon-dot"></span></a></li>
+              <li><a href="#">Mujer  <span class="icon-dot"></span></a></li>
+           </ul>
       </li>
-      </ul>
+    </ul>
       </nav> 
   </header>
   <!--Rick saluda-->
   <img id= "rickmolesto" src="../img/superrick.png"alt="Pixel Art">
-  <!--se agregua viñeta-->
+  <!--se agregua v-->
       <div class="vineta">
-          <p class="globo">
+          <p class="globo abajo-izquierda">
           ¡Hola humano!    
       </div>
     </section>
     <section>
   <!--Tercera sección resultado-->
-      <div id="root"></div>
-      <!-- <script src="./data/injuries/injuries.js"></script> -->
-      <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-      <!-- <script src="./data/steam/steam.js"></script> -->
-      <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-      <!-- <script src="./data/lol/lol.js"></script> -->
+      <div id="root">
+      </div>
       <script src="./data/rickandmorty/rickandmorty.js"></script>
       <script src="data.js"></script>
       <script src="main.js"></script>
-      <script src="http://code.jquery.com/jquery-latest.js"></script>
-	    <script src="main.js"></script>
      </section>
-    
   </body>
 </html>
