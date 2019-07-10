@@ -253,12 +253,14 @@ for(let index = 0; index < btnPok.length; index++){
   const btnAZ = document.getElementById("enlace");
   const newDataAZ = [];
 
-  
-    btnAZ.addEventListener("click", () => {
-      // console.log(btnPok[index])
-      const newArray = data.sortData(pokemon => pokemon.name)
+  const orderAZ = () => {
+    let result = window.sortData(data);
+    // newDataAZ = result;
+    imprimir(result);
+  }
 
-      newDataAZ = newArray;
-      imprimir(newDataAZ);
-    })
+  btnAZ.addEventListener("click", orderAZ);
+
+    
   
+    
