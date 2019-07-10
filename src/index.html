@@ -56,8 +56,8 @@
                 <a id="next" class="button"><i class="fas fa-angle-right"></i></a>
 
             </div>
-            <h4>Ver a los personajes</h4>
-            <input type="button" class="button" value="Catálogo" id="catalog">
+
+            <input type="button" class="button" value="Personajes" id="catalog">
         </section>
 
         <!-- CHARACTERS -->
@@ -87,7 +87,7 @@
                     <div class="specie">
                         <select name="species" id="species">
                                 <option value="species">Especies</option>
-                                <option value="all">Todas</option>
+                                <!-- <option value="all">Todas</option> -->
                                 <option value="species.Human">Humanos</option>
                                 <option value="species.Humanoid">Humanoide</option>
                                 <option value="species.Vampire">Vampiro</option>
@@ -101,6 +101,9 @@
                             </select>
                     </div>
                 </div>
+            </div>
+            <div class="counter">
+                <h3>Se encontraron <span id="counter"></span> personajes.</h3>
             </div>
             <section class="all-data" id="all-data">
             </section>
