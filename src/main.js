@@ -9,7 +9,7 @@ const orderButton = document.getElementById('order'); //Order options button
 const nextButton = document.getElementById('next');
 const backButton = document.getElementById('back');
 const curiosity = document.getElementById('curiosity');
-
+const counter = document.getElementById('counter');
 //HIDE & SHOW
 
 const hideSection = id => document.getElementById(id).classList.add('hide');
@@ -110,6 +110,8 @@ const showData = () => {
         items +=
             templateStringForCards(element);
     });
+    let counterValue = data.length;
+    counter.innerHTML = counterValue;
     allData.innerHTML = items;
 };
 
@@ -119,6 +121,7 @@ showData();
 const getFilterValue = event => {
     const filterValue = event.target.value; //Se guarda el valor de los option del html
     if (filterValue === 'all') {
+        newData = data;
         showData();
     } else {
         const splitFilterValue = filterValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
@@ -127,6 +130,8 @@ const getFilterValue = event => {
 
         let result = window.filterData(key, value, data); //variable vacía que guarda el resultado de la función ya ejecutada
         newData = result;
+        let counterValue = newData.length;
+        counter.innerHTML = counterValue;
         const cards = result.map(element => templateStringForCards(element)); // result = array. .map itera items
         allData.innerHTML = cards.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.   
     }
@@ -139,20 +144,28 @@ const getOrdervalue = event => {
     if (orderValue === 'a-z') {
         if (newData !== '') {
             let result = window.orderData(newData);
+            let counterValue = result.length;
+            counter.innerHTML = counterValue;
             const card = result.map(element => templateStringForCards(element));
             allData.innerHTML = card.join('');
         } else {
             let result = window.orderData(data);
+            let counterValue = result.length;
+            counter.innerHTML = counterValue;
             const card = result.map(element => templateStringForCards(element));
             allData.innerHTML = card.join('');
         };
     } else if (orderValue === 'z-a') {
         if (newData !== '') {
             let result = window.orderDataZA(newData);
+            let counterValue = result.length;
+            counter.innerHTML = counterValue;
             const card = result.map(element => templateStringForCards(element));
             allData.innerHTML = card.join('');
         } else {
             let result = window.orderDataZA(data);
+            let counterValue = result.length;
+            counter.innerHTML = counterValue;
             const card = result.map(element => templateStringForCards(element));
             allData.innerHTML = card.join('');
         }
@@ -169,6 +182,8 @@ const getSpeciesValue = event => {
         const value = splitSpeciesValue[1]; //aqui se guarda el valor ej."Rick"
 
         let result = window.filterData(key, value, newData); //variable vacía que guarda el resultado de la función ya ejecutada
+        let counterValue = result.length;
+        counter.innerHTML = counterValue;
         const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
         allData.innerHTML = card.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.
     } else {
@@ -177,6 +192,8 @@ const getSpeciesValue = event => {
         const value = splitSpeciesValue[1]; //aqui se guarda el valor ej."Rick"
 
         let result = window.filterData(key, value, data); //variable vacía que guarda el resultado de la función ya ejecutada
+        let counterValue = result.length;
+        counter.innerHTML = counterValue;
         const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
         allData.innerHTML = card.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.
     }
