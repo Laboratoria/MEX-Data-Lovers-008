@@ -251,14 +251,31 @@ for(let index = 0; index < btnPok.length; index++){
   //----------------------------------------------------
   //FUNCION PARA ORDENAR DE A-Z
   const btnAZ = document.getElementById("enlace");
-  const newDataAZ = [];
 
-  
-    btnAZ.addEventListener("click", () => {
-      // console.log(btnPok[index])
-      const newArray = data.sortData(pokemon => pokemon.name)
+  const orderAZ = () => {
+    let result = window.sortData(data);
+    // newDataAZ = result;
+    imprimir(result);
+  }
 
-      newDataAZ = newArray;
-      imprimir(newDataAZ);
-    })
+  btnAZ.addEventListener("click", orderAZ);
+
+  //------------------------------------------------------
+  //FUNCIÓN PARA ORDENAR DE Z-A
+  const btnZA = document.getElementById("orderZ_A");
   
+
+
+  const orderZA = () => {
+    let result = window.sortDataZA(data);
+    // newDataAZ = result;
+    imprimir(result);
+  }
+
+  btnZA.addEventListener("click", orderZA);
+
+
+
+    
+  
+    
