@@ -123,23 +123,19 @@ font-family: 'Coiny', cursive;
     list-style: none;
 }
 
-.lista_de_pokemones::-webkit-scrollbar {
-  background-color: RGB(52, 189, 211);
+/* .lista_de_pokemones::-webkit-scrollbar {
+  background-color: black;
   height: 0px;
   border-radius: 1rem;
   cursor: pointer;
 }
 
 .lista_de_pokemones::-webkit-scrollbar-thumb {
-  background: white;
-  border-radius: 1rem;
-}
-
-.lista_de_pokemones::-webkit-scrollbar-thumb:hover {
   background: black;
   border-radius: 1rem;
-  cursor: pointer;
-}
+} */
+
+
 
 #filtered_by_type{
   margin: 15px;
@@ -226,10 +222,10 @@ h2{
 } */
 #filer_by_name,
 .enlace{
-  border-color: #00B3CC;
+  border-color: RGB(146, 2, 225)  ;
   cursor: pointer;
   color: white;
-  background-color: #00B3CC;
+  background-color: RGB(146, 2, 225)  ;
   width: 7rem;
   font-family: 'Coiny', cursive;
   font-size: 1.25rem;
@@ -276,7 +272,7 @@ li{
 }
 
 li:hover{
-  border: RGB(52, 189, 211)   0.3rem solid;
+  border: RGB(146, 2, 225)    0.3rem solid;
   transform: scale(1.1);
   transition: transform 0.1s;
 }
