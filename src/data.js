@@ -1,24 +1,21 @@
-//aquí van las funciones de filtrados
-window.pokemons = {
-  // Esta funcion filtra todos los pokemones por el tipo
-  filterByType: (allPokemon, condition) => {
-      let filtered = [];
-      for (let i = 0; i < allPokemon.length; i++){
-          for (let e = 0; e < allPokemon[i].type.length; e++) {
-              if(allPokemon[i].type[e] === condition){
-                  filtered.push(allPokemon[i]);
-              }
-          }
-      }
-      return filtered;
-  },
+// //aquí van las funciones de filtrados
+// window.pokemons = {
+//   // Esta funcion filtra todos los pokemones por el tipo
+//   filterByType: (allPokemon, condition) => {
+//       let filtered = [];
+//       for (let i = 0; i < allPokemon.length; i++){
+//           for (let e = 0; e < allPokemon[i].type.length; e++) {
+//               if(allPokemon[i].type[e] === condition){
+//                   filtered.push(allPokemon[i]);
+//               }
+//           }
+//       }
+//       return filtered;
+//   },
 
-  //Esta función ordena los pokemones de A-Z
-
-
-
+//   //Esta función ordena los pokemones de A-
   
-}
+// }
 
 const sortData = (data) => {
   data.sort((a, b) => {
@@ -36,3 +33,14 @@ const sortData = (data) => {
 };
 
 window.sortData = sortData;
+
+//--------------------------------------------------------------
+//Función para filtrar por tipo de Pokemon 
+
+const filterByType = (data, condition) => {
+  let conditionTrue = data.filter(pokemon => pokemon.type[0] == condition || pokemon.type[1] == condition || pokemon.type[2] == condition);
+
+  return conditionTrue;
+}
+
+window.filterByType = filterByType;
