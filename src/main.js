@@ -2,7 +2,7 @@
 const catalogButton = document.getElementById('catalog'); // catalog button
 const logo = document.getElementById('logo'); // logo element
 const data = window.RICKANDMORTY.results; // Call data R&M
-const dataOrder = data;
+let newData = '';
 const filterButton = document.getElementById('filter'); //Filter options button
 const speciesButton = document.getElementById('species'); // Species options button
 const orderButton = document.getElementById('order'); //Order options button 
@@ -126,6 +126,7 @@ const getFilterValue = event => {
         const value = splitFilterValue[1]; //aqui se guarda el valor ej."Rick"
 
         let result = window.filterData(key, value, data); //variable vacía que guarda el resultado de la función ya ejecutada
+        newData = result;
         const cards = result.map(element => templateStringForCards(element)); // result = array. .map itera items
         allData.innerHTML = cards.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.   
     }
@@ -136,13 +137,25 @@ const getOrdervalue = event => {
     const orderValue = event.target.value;
 
     if (orderValue === 'a-z') {
-        let result = window.orderData(dataOrder);
-        const card = result.map(element => templateStringForCards(element));
-        allData.innerHTML = card.join('');
+        if (newData !== '') {
+            let result = window.orderData(newData);
+            const card = result.map(element => templateStringForCards(element));
+            allData.innerHTML = card.join('');
+        } else {
+            let result = window.orderData(data);
+            const card = result.map(element => templateStringForCards(element));
+            allData.innerHTML = card.join('');
+        };
     } else if (orderValue === 'z-a') {
-        let result = window.orderDataZA(dataOrder);
-        const card = result.map(element => templateStringForCards(element));
-        allData.innerHTML = card.join('');
+        if (newData !== '') {
+            let result = window.orderDataZA(newData);
+            const card = result.map(element => templateStringForCards(element));
+            allData.innerHTML = card.join('');
+        } else {
+            let result = window.orderDataZA(data);
+            const card = result.map(element => templateStringForCards(element));
+            allData.innerHTML = card.join('');
+        }
     }
 };
 
@@ -150,6 +163,14 @@ const getSpeciesValue = event => {
     const speciesValue = event.target.value; //Se guarda el valor de los option del html
     if (speciesValue === 'all' || speciesValue === 'species') {
         showData();
+    } else if (newData !== '') {
+        const splitSpeciesValue = speciesValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
+        const key = splitSpeciesValue[0]; //aqui se guarda la propiedad ej. "name"
+        const value = splitSpeciesValue[1]; //aqui se guarda el valor ej."Rick"
+
+        let result = window.filterData(key, value, newData); //variable vacía que guarda el resultado de la función ya ejecutada
+        const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
+        allData.innerHTML = card.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.
     } else {
         const splitSpeciesValue = speciesValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
         const key = splitSpeciesValue[0]; //aqui se guarda la propiedad ej. "name"
