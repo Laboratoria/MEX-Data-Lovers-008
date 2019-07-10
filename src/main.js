@@ -9,7 +9,7 @@ const screenPersonajes = document.getElementById("pantalla-personajes");
 const screenPlanetas = document.getElementById("pantalla-planetas");
 const screenExplorar = document.getElementById("pantalla-explorar");
 const screenAyuda = document.getElementById("pantalla-ayuda");
-const buttonInicio = document.getElementById("button-inicio");
+//const buttonInicio = document.getElementById("button-inicio");
 
 const pantallaBienvenida = () => {
     screenBienvenida.classList.remove("disappear");
@@ -17,7 +17,7 @@ const pantallaBienvenida = () => {
     screenPlanetas.classList.add("disappear");
     screenExplorar.classList.add("disappear");
     screenAyuda.classList.add("disappear");
-    buttonReinicio.classList.add("disappear");
+    buttonReinicio.classList.remove("disappear");
     buttonFilter.classList.add("disappear");
 }
 
@@ -34,29 +34,23 @@ const pantallaPersonajes = () => {
 let printDataPersonajes = (data) => {
     let str = "";
     data.forEach(element => {
-      let image = element.image;
-      let name = element.name;
-      let species = element.species;
-      let gender = element.gender;
-      let origin = element.origin.name
-      let status = element.status;
       str += `<div id="cards">
         <div class="col-10">
             <div class="row">
-                <img class="imagen-personaje" src=${image}>
+                <img class="imagen-personaje" src=${element.image}>
             </div>
             <div class="row data-personajes">
-                    <h3 class="nombre-personaje">${name}</h3>
-                    <p>Especie: ${species}</p>
-                    <p>Género: ${gender}</p>
-                    <p>Origen: ${origin}</p>
-                    <p>Estatus: ${status}</p>
+                    <h3 class="nombre-personaje">${element.name}</h3>
+                    <p>Especie: ${element.species}</p>
+                    <p>Género: ${element.gender}</p>
+                    <p>Origen: ${element.origin.name}</p>
+                    <p>Estatus: ${element.status}</p>
             </div>
         </div>
     </div>`
     });
     document.getElementById("card-display").innerHTML = str;
-    };
+    }
     printDataPersonajes(data);
 
 let filterData1 = () => {
@@ -84,8 +78,8 @@ let filterData1 = () => {
         printDataPersonajes(filterResult);
     }
     console.log(filterResult);
-    return filterResult
-    };
+    return filterResult;
+}
 
 const pantallaPlanetas = () => {
     screenBienvenida.classList.add("disappear");
@@ -117,7 +111,7 @@ const pantallaAyuda = () => {
     buttonFilter.classList.add("disappear");
 }
 
-buttonInicio.addEventListener("click", pantallaBienvenida);
+//buttonInicio.addEventListener("click", pantallaBienvenida);
 buttonReinicio.addEventListener("click", pantallaBienvenida);
 buttonPersonajes.addEventListener("click", pantallaPersonajes);
 buttonPlanetas.addEventListener("click", pantallaPlanetas);
