@@ -1,6 +1,5 @@
 const root = document.getElementById('root')
 
-
 const data = RICKANDMORTY.results
 let str = ''
 data.forEach(element => {

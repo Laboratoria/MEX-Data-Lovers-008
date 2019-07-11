@@ -16,4 +16,15 @@
 //}
 
 //)
+//const newArray= RICKANDMORTY.filter()
+//newData=newArray
+//console.log(newArray);
+
+
+const ordenar= newArray(data.name);
+ordenar.sort();
+console.log(name);
+
+//for(var i=0; i<ordenar.length; i++){
+ // innerHTML.write(.data[i]);
 
