@@ -19,6 +19,25 @@ describe('filterData', () => { //describe = palabra reservada que contiene las f
     });
 });
 
+//TEST filterHuman
+
+describe('filterHuman', () => { //describe = palabra reservada que contiene las funciones para ejecutar los test.
+    it('is a function', () => { // it = palabra reservada que contiene el enunciado en caso de que el test sea correcto o incorrecto (sentencia).
+        expect(typeof filterHumans).toBe('function'); //test dentro de la palabra reservada expect.
+    });
+
+    it('returns `There ere 244 Humans`', () => { //segunda sentencia
+        expect(window.filterHumans(window.RICKANDMORTY.results).length).toBe(244); //Llama la función de filterData. Tiene 3 parametros(key, value, data)
+    });
+
+    it('returns `Should return Rick Sanchez, Morty Smith and Summer Smith as first humans`', () => {
+        expect(window.filterHumans(window.RICKANDMORTY.results)[0].name).toBe('Rick Sanchez');
+        expect(window.filterHumans(window.RICKANDMORTY.results)[1].name).toBe('Morty Smith');
+        expect(window.filterHumans(window.RICKANDMORTY.results)[2].name).toBe('Summer Smith');
+    });
+});
+
+
 
 //TEST orderData
 
