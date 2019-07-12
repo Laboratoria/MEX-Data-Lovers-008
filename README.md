@@ -55,12 +55,12 @@ Una vez corregidos estos errores, decidimos tomar el tercer prototipo, como el p
 ## Prototipo de alta fidelidad
 
 ### Celular
-![prototipo-celular-alta-f](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/altafidelidadmovil.jpg)
-![prototipo-celular-alta-f2](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/altafidelidadmovil2.jpg)
+![prototipo-celular-alta-f](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/highmobile1.jpg)
+![prototipo-celular-alta-f2](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/highmobile2.jpg)
 
 ### Escritorio
-![prototipo-escritorio-alta-f](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/altafidelidad.jpg)
-![prototipo-escritorio-alta-f2](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/altafidelidad1.jpg)
+![prototipo-escritorio-alta-f](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/highfidelitydesktop1.jpg)
+![prototipo-escritorio-alta-f2](https://github.com/IselaReyesPerdomo94/MEX-Data-Lovers-008/blob/master/src/img/highfidelitydesktop2.jpg)
 
 ## Historias de usuario
 
