@@ -76,7 +76,7 @@ header {
 }
 
 #logo {
-    width: 6rem;
+    width: 4rem;
     justify-content: center;
 }
 
@@ -155,12 +155,17 @@ header {
     border-radius: 15px;
 }
 
-.order-and-filter-button {
+/* .order-and-filter-button {
     justify-content: space-around;
     margin: 0 auto;
     cursor: pointer;
-}
+} */
 
+.order-and-filter-button {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
 
 /* CAROUSEL */
 
@@ -224,9 +229,9 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 2rem;
+    margin: 0.8rem 2rem;
     width: 90vw;
-    height: 80vh;
+    height: 60vh;
     overflow: scroll;
     /* align-items: space-between;
     justify-items: space-between; */
@@ -251,12 +256,13 @@ header {
 }
 
 
-/* .data-card {
-    width: 45%;
+ .data-card {
+    width: 45%; 
     margin: auto;
     align-items: center;
     border: #00B3CC 0.5rem;
-    /* justify-content: space-between; }*/
+    justify-content: space-between; 
+}
 
 .flip-card {
     width: 45%;
@@ -337,12 +343,6 @@ header {
 }
 
 
-/* #img-carousel {
-    width: 100%;
-    height: 50vh;
-    background-size: cover;
-} */
-
 
 /*ID*/
 
@@ -352,13 +352,16 @@ header {
     align-items: center;
     text-align: center;
     margin: 25% 0 0 0;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 #filter,
 #order,
 #species {
-    width: 8rem;
-    height: 3.5rem;
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.8rem;
     border-radius: 2rem;
     padding-left: 0.5rem;
     font-weight: 600;
@@ -367,8 +370,13 @@ header {
 #fiilter,
 #order {
     flex: wrap;
-    margin-left: 0.5rem;
+    margin:0 1rem;
 }
+
+h3 {
+    margin: 0;
+}
+
 
 option {
     background-color: white;
@@ -442,11 +450,7 @@ option {
     #facts p {
         font-size: 1.5rem;
     }
-    .order-and-filter-button {
-        display: flex;
-        justify-content: space-between;
-        cursor: pointer;
-    }
+
     .all-data {
         width: 1200px;
         height: 1000px;
@@ -484,6 +488,9 @@ option {
     #filter,
     #order,
     #species {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 1rem;
         margin: 0 0.5rem;
     }
 }
