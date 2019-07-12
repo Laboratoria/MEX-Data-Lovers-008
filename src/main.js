@@ -35,9 +35,8 @@ const value = window.statisticsValue;
 const curiosities = [
     `A lo largo de las 3 temporadas de Rick and Morty han aparecido múltiples versiones de los protagonistas, por ejemplo existen <b>${value('name', 'Rick', data)} Ricks</b> es decir el <b>${percentage('name', 'Rick', data)}%</b> de todos los personajes.`,
     `Solo hay <b>${value('gender', 'Female', data)} mujeres</b> en toda la serie de Rick and Morty en contraste con <b> ${value('gender', 'Male', data)} de hombres</b>.<p>¡Solo el <b>${percentage('gender', 'Female', data)} %</b> son mujeres!</p>`,
-    `La especie que más se repite en Rick and Morty es <b>Humano</b>, equivalente al <b>${percentage('species', 'Human', data)}%</b> de la población y <b>Alien </b> le pisa los talones con el <b>${percentage('species', 'Alien', data)}%.</b>`,
+    `La especie que menos se repite en Rick and Morty es <b>Vampiro</b>, con solo <b>${value('species', 'Vampire', data)}</b> ejemplares en todo el universo y <b>Poopybutthole</b> le pisa los talones con <b>${value('species', 'Poopybutthole', data)}</b> ejemplares.`,
     `Se desconoce el estatus de vida de <b>${value('status', 'unknown', data)}</b> personajes. <p>Lo equivalente al <b>${percentage('status', 'unknown', data)} %.</p></b>`,
-    //`El número de personas que viven en Earth (Replacement Dimension) son ${value('location.name', 'Earth (Replacement Dimension)', data)}.`,
 ];
 
 let changer = 0;
@@ -100,7 +99,7 @@ const templateStringForCards = (element) => {
             </div>
         </div>
     </div>
-</div>`
+</div>`;
 };
 
 //FUNCTION to show data
@@ -154,7 +153,7 @@ const getOrdervalue = event => {
             counter.innerHTML = counterValue;
             const card = result.map(element => templateStringForCards(element));
             allData.innerHTML = card.join('');
-        };
+        }
     } else if (orderValue === 'z-a') {
         if (newData !== '') {
             let result = window.orderDataZA(newData);
@@ -174,28 +173,42 @@ const getOrdervalue = event => {
 
 const getSpeciesValue = event => {
     const speciesValue = event.target.value; //Se guarda el valor de los option del html
-    if (speciesValue === 'all' || speciesValue === 'species') {
-        showData();
-    } else if (newData !== '') {
-        const splitSpeciesValue = speciesValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
-        const key = splitSpeciesValue[0]; //aqui se guarda la propiedad ej. "name"
-        const value = splitSpeciesValue[1]; //aqui se guarda el valor ej."Rick"
+    if (newData !== '') {
+        if (speciesValue === 'species.Human') {
+            let result = window.filterHumans(newData);
+            let counterValue = result.length;
+            counter.innerHTML = counterValue;
+            const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
+            allData.innerHTML = card.join('');
+        } else {
+            const splitSpeciesValue = speciesValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
+            const key = splitSpeciesValue[0]; //aqui se guarda la propiedad ej. "name"
+            const value = splitSpeciesValue[1]; //aqui se guarda el valor ej."Rick"
 
-        let result = window.filterData(key, value, newData); //variable vacía que guarda el resultado de la función ya ejecutada
-        let counterValue = result.length;
-        counter.innerHTML = counterValue;
-        const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
-        allData.innerHTML = card.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.
+            let result = window.filterData(key, value, newData); //variable vacía que guarda el resultado de la función ya ejecutada
+            let counterValue = result.length;
+            counter.innerHTML = counterValue;
+            const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
+            allData.innerHTML = card.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.
+        }
     } else {
-        const splitSpeciesValue = speciesValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
-        const key = splitSpeciesValue[0]; //aqui se guarda la propiedad ej. "name"
-        const value = splitSpeciesValue[1]; //aqui se guarda el valor ej."Rick"
+        if (speciesValue === 'species.Human') {
+            let result = window.filterHumans(data);
+            let counterValue = result.length;
+            counter.innerHTML = counterValue;
+            const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
+            allData.innerHTML = card.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.
+        } else {
+            const splitSpeciesValue = speciesValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
+            const key = splitSpeciesValue[0]; //aqui se guarda la propiedad ej. "name"
+            const value = splitSpeciesValue[1]; //aqui se guarda el valor ej."Rick"
 
-        let result = window.filterData(key, value, data); //variable vacía que guarda el resultado de la función ya ejecutada
-        let counterValue = result.length;
-        counter.innerHTML = counterValue;
-        const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
-        allData.innerHTML = card.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.
+            let result = window.filterData(key, value, data); //variable vacía que guarda el resultado de la función ya ejecutada
+            let counterValue = result.length;
+            counter.innerHTML = counterValue;
+            const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
+            allData.innerHTML = card.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.
+        }
     }
 };
 
