@@ -100,7 +100,7 @@ const templateStringForCards = (element) => {
             </div>
         </div>
     </div>
-</div>`
+</div>`;
 };
 
 //FUNCTION to show data
@@ -154,7 +154,7 @@ const getOrdervalue = event => {
             counter.innerHTML = counterValue;
             const card = result.map(element => templateStringForCards(element));
             allData.innerHTML = card.join('');
-        };
+        }
     } else if (orderValue === 'z-a') {
         if (newData !== '') {
             let result = window.orderDataZA(newData);

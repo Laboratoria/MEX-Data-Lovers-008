@@ -16,7 +16,9 @@ El prototipo de baja fidelidad de escritorio y celular son muy parecidos, salvo 
 ![prototipo-escritorio](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%201.png)
 ![prototipo-escritorio2](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%203.png)
 
-### Problemas encontrados en primer testeo
+## Problemas encontrados
+
+### Primer testeo
 
 Pudimos notar gracias al feedback de nuestros usuarios que, en primer instancia, a algunos de ellos les gustaría encontrar un espacio donde pudieran escribir o leer a otros fans, es decir, la implementación de un foro, sin embargo optamos por no implementarlo en nuestro sitio web y redirigirlos a un foro externo de la WikiFANDOM. También nos comentaron que les gustaría poder agregar un filtrado extra a una categoría específica. Por ejemplo, si están en todos los personajes que son mujeres,
 pudieran saber cual de ellas es un Alien. De acuerdo con este feedback decidimos implementar un tercer botón donde se elija una categoría en la que podrán aplicar un segundo filtro por especie.
@@ -38,7 +40,17 @@ Nuestra segunda propuesta es:
 ![segundo-prototipo-escritorio](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%201.2.png)
 ![segundo-prototipo-escritorio2](https://github.com/SolGee/MEX-Data-Lovers-008/blob/solanyi-branch/src/img/pantalla%203.3.png)
 
-Decidimos tomar el segundo prototipo, como el prototipo final.
+
+### Segundo testeo
+
+En este segundo testeo nos dimos cuenta que los usuarios no sabían a que nos referiamos con el botón "Catálogo" así que optamos por cambiarle el nombre por "Personajes". 
+Por otra parte, nos hicieron ver que el carrusel estaba muy estrecho haciendo dificil la legibilidad de los datos curiosos.
+
+### Tercer testeo
+
+En esta iteración nos enfocamos en la versión mobile, en la cual nos comentaron que los botones de filtrado y ordenado eran muy grandes y eso disminuia el tamaño de la pantalla para visualizar las tarjetas de los personajes, además que la barra de navegación era muy grande y causaba el mismo conflicto.
+
+Una vez corregidos estos errores, decidimos tomar el tercer prototipo, como el prototipo final.
 
 ## Prototipo de alta fidelidad
 
