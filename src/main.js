@@ -234,9 +234,6 @@ imprimir(data);
 
 const btnPok = document.getElementsByClassName("btnPok");
 let newData = [];
-// // const mostrar = document.getElementById('mostrando_lista_pokemones');
-
-
 
 for(let index = 0; index < btnPok.length; index++){
     btnPok[index].addEventListener("click", () => {
@@ -261,7 +258,7 @@ for(let index = 0; index < btnPok.length; index++){
   btnAZ.addEventListener("click", orderAZ);
 
   //------------------------------------------------------
-  //FUNCIÓN PARA ORDENAR DE Z-A
+  //LLAMANDO A LA FUNCIÓN SORTDATAZA PARA ORDENAR DE Z-A
   const btnZA = document.getElementById("orderZ_A");
   
 
@@ -273,6 +270,26 @@ for(let index = 0; index < btnPok.length; index++){
   }
 
   btnZA.addEventListener("click", orderZA);
+
+  //----------------------------------------------------------
+//   //LLAMANDO A LA FUNCIÓN PARA CALCULAR LA CANTIDAD DE POKE X TIPO
+//   const btnCantidad = document.getElementsByClassName("calculated");
+// let newDataCalculated = [];
+// // // const mostrar = document.getElementById('mostrando_lista_pokemones');
+
+
+
+// for(let i = 0; i < btnCantidad.length; i++){
+//     btnCantidad[i].addEventListener("click", () => {
+//       console.log(btnCantidad[i])
+//       const idCantidad = event.target.id;
+//       const newArrayCalculated = data.filter(pokemon => pokemon.type[0] == idTarget || pokemon.type[1] == idTarget || pokemon.type[2] == idTarget)
+//       newData = newArray;
+//       console.log(newData)
+//       imprimir(newData);
+//     })
+//   }
+
 
 
 
