@@ -13,10 +13,7 @@
 //       return filtered;
 //   },
 
-//   //Esta función ordena los pokemones de A-
-  
-// }
-
+//Esta función ordena los pokemones de A-Z
 const sortData = (data) => {
   data.sort((a, b) => {
       let nameA = a.name.toUpperCase();
@@ -27,11 +24,11 @@ const sortData = (data) => {
       if (nameA > nameB) {
           return 1;
       }
-      return 0;
   });
   return data;
 };
 
+//Esta función ordena los pokemones de Z-A
 const sortDataZA = (data) => {
   data.sort((a, b) => {
       let nameA = a.name.toUpperCase();
@@ -42,7 +39,6 @@ const sortDataZA = (data) => {
       if (nameA > nameB) {
           return 1;
       }
-      return 0;
   });
   return data.reverse();
 };
@@ -62,3 +58,18 @@ const filterByType = (data, condition) => {
 }
 
 window.filterByType = filterByType;
+
+//----------------------------------------------------------------
+//Funciones para estadisticas reduce 
+// const score = 0;
+// const calculate = (data, condition) => {
+//   let conditionTrue = data.reduce(pokemon => pokemon.type[0] == condition || pokemon.type[1] == condition || pokemon.type[2] == condition);
+//   if(conditionTrue == true){
+//     score = score + 1;
+//   }
+
+//   return score;
+// }
+
+// window.calculate = calculate;
+//----------------------------------------------------------------
