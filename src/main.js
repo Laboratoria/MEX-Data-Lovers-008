@@ -1,3 +1,4 @@
+const data = window.RICKANDMORTY.results;
 const buttonReinicio = document.getElementById("button-reinicio");
 const buttonPersonajes = document.getElementById("button-personajes");
 const buttonPlanetas = document.getElementById("button-planetas");
@@ -53,33 +54,26 @@ let printDataPersonajes = (data) => {
     }
     printDataPersonajes(data);
 
-let filterData1 = () => {
-    let filterResult = "";
+let filterData2 = () => {
     let filterValue = buttonFilter.value;
     console.log(filterValue);
-    if (filterValue === "allAlive") {
-        let filterResult = window.allAlive;
-        printDataPersonajes(filterResult);
-        console.log(filterResult);
-    } else if (filterValue === "allDead") {
-        let filterResult = window.allDead;
-        printDataPersonajes(filterResult);
-        console.log(filterResult);
-    } else if (filterValue === "allMale") {
-        let filterResult = window.allMale;
-        printDataPersonajes(filterResult);
-        console.log(filterResult);
-    } else if (filterValue === "allFemale") {
-        let filterResult = window.allFemale;
-        printDataPersonajes(filterResult);
-        console.log(filterResult);
-    } else if (filterValue === "all") {
-        let filterResult = printDataPersonajes();
-        printDataPersonajes(filterResult);
-    }
+    let splitFilterValue = filterValue.split(".");
+    let key = splitFilterValue[0];
+    console.log(key);
+    let value = splitFilterValue[1]; //String(value);
+    console.log(value);
+    let filterResult = window.filterData(data, key, value);
     console.log(filterResult);
-    return filterResult;
+    printDataPersonajes(filterResult);
+};
+filterData2();
+
+/*let sortData = () => {
+    let name = data.name;
+    console.log(name);
 }
+sortData();*/
+
 
 const pantallaPlanetas = () => {
     screenBienvenida.classList.add("disappear");
@@ -111,10 +105,11 @@ const pantallaAyuda = () => {
     buttonFilter.classList.add("disappear");
 }
 
-//buttonInicio.addEventListener("click", pantallaBienvenida);
 buttonReinicio.addEventListener("click", pantallaBienvenida);
 buttonPersonajes.addEventListener("click", pantallaPersonajes);
 buttonPlanetas.addEventListener("click", pantallaPlanetas);
 buttonExplorar.addEventListener("click", pantallaExplorar);
 buttonAyuda.addEventListener("click", pantallaAyuda);
-buttonFilter.addEventListener("change", filterData1);
+buttonFilter.addEventListener("change", filterData2);
+
+//buttonInicio.addEventListener("click", pantallaBienvenida);
