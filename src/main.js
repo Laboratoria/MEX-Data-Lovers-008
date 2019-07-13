@@ -59,11 +59,10 @@ const filtrarData = (prop, val) => {
           <div class="nombre">
           <p> ${element.name}</p></div>
           <br>
-          <div class="img" id="img"> 
+          <div class="img"> 
           <img src="${element.image}"></img>
           </div>
-       <div class= "info" id="info">
-
+          <div class= "info">
           <p> Status: ${element.status} </p>
           <p> Especie: ${element.species} </p>
           <p> tamaño: ${element.origin.name} </p>
