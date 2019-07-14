@@ -56,14 +56,14 @@ let printDataPersonajes = (data) => {
 
 let filterData2 = () => {
     let filterValue = buttonFilter.value;
-    console.log(filterValue);
+    //console.log(filterValue);
     let splitFilterValue = filterValue.split(".");
     let key = splitFilterValue[0];
-    console.log(key);
-    let value = splitFilterValue[1]; //String(value);
-    console.log(value);
+    //console.log(key);
+    let value = splitFilterValue[1];
+    //console.log(value);
     let filterResult = window.filterData(data, key, value);
-    console.log(filterResult);
+    //console.log(filterResult);
     printDataPersonajes(filterResult);
 };
 filterData2();
@@ -111,5 +111,4 @@ buttonPlanetas.addEventListener("click", pantallaPlanetas);
 buttonExplorar.addEventListener("click", pantallaExplorar);
 buttonAyuda.addEventListener("click", pantallaAyuda);
 buttonFilter.addEventListener("change", filterData2);
-
 //buttonInicio.addEventListener("click", pantallaBienvenida);
