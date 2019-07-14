@@ -11,8 +11,9 @@
       
     </head>
     <body>
-      <section id="section_pokebola">
-        <div id="welcomee">
+      <div class= "container">
+      <section id="section_pokebola" class="row">
+        <div id="welcomee" class="col-12 color">
           <img id="pokemon-title" src="pokemon.png" alt="">
           <img id="pokeboll" src="pokebola.gif" alt="">
         </div>
@@ -20,18 +21,23 @@
       </section>
 
       <header>
-        <div id="initial-question">
-          <h1>Bienvenidx Maestrx Pokémon, ¿A quién quieres investigar?</h1>
-        </div>
+        
+            <div id="initial-question" class="row">
+                <div class="col-12 color">
+                 <h1>Bienvenidx Maestrx Pokémon, ¿A quién quieres investigar?</h1>
+                </div>
+              </div>
+        
+        
       
-        <div id="container">
-          <div id="pokemones-unoxuno">
+        <div id="container" class="row">
+          <div id="pokemones-unoxuno" class="col-12 color">
             <div class="ocultar"> 
               <h2 id="name">¿Conocés a todos estos pokémon?</h2><br>
               <img id="img" height="250" width="250" src="pikachuuu.png"><br>
             </div>
         
-           <div>
+           <div class="row">
             <button id="atras" class="button_unoxuno">Atrás</button>
             <button id="siguiente" class="button_unoxuno">Siguiente</button>
            </div>
@@ -41,8 +47,8 @@
       </header>
 
       <main>
-       <section class="lista_de_pokemones">
-          <div id="nav">
+       <section class="lista_de_pokemones" class="row">
+          <div id="nav" class="col-12 color">
               <button class="enlace btnPok"  type="button" id="Ice">ice</button>
               <button class="enlace btnPok" type="button" id="Fire">fire</button>
               <button class="enlace btnPok" type="button" id="Water">water</button>
@@ -66,7 +72,8 @@
       </main>
         
       <footer>This is the footer</footer>
-
+    </div>
+    
       <script src="./data/pokemon/pokemon.js"></script>
       <script src="main.js"></script>
       <script src="data.js"></script>
