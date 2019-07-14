@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "LOL!";
+  src: url(fonts/LOL!.ttf);
+}
+/*Para ocultar y mostrar secciones*/
+.hide{
+  display : none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#homePage {
+  background-image: url(../img/maxresdefault-2.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  overflow: hidden;
+  background-color: gray;
+  background: url(background-photo.jpg) center center cover no-repeat fixed;
+}
+#logoHome {
+  margin: auto;
+  margin-top: -50px;
+  display: block;
+}
+#buttonEnter {
+  border: 2px rgb(239, 184, 16) outset;
+  font-family: "LOL!";
+  font-size: 20px;
+  color: rgb(239, 184, 16);
+  background-color: black;
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  bottom: 5px;
+  right: 580px;
+  border-radius: 4px;
+}
+
+.champion {
+  width: 95px;
+  height:95px;
+}
