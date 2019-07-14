@@ -69,6 +69,13 @@
     }
   }
 
+  @media screen and (max-width: 320px){
+   
+    .color {
+      width: 100%;
+    }
+  }
+
   @media screen and (max-width: 375px){
    
     .color {
