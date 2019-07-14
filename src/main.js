@@ -290,9 +290,36 @@ for(let index = 0; index < btnPok.length; index++){
 //     })
 //   }
 
+//LLAMANDO A LA FUNCIÓN SORTDATAZA PARA ORDENAR DE Z-A
+// const btnCuantosFire = document.getElementById("Firee");
+  
 
 
+// const cuantosFire = () => {
+//   let result = window.calculate(data);
+//   // newDataAZ = result;
+//   imprimir(result);
+// }
+
+// btnCuantosFire.addEventListener("click", cuantosFire);
+
+// const btnAZ = document.getElementById("enlace");
+
+//   const orderAZ = () => {
+//     let result = window.sortData(data);
+//     // newDataAZ = result;
+//     imprimir(result);
+//   }
+
+  // btnAZ.addEventListener("click", orderAZ);
 
     
-  
+
+   const porcentageFire = () => {
+     let result = windows.statisticsPercentage(data);
+     imprimir("Tienes este porcentaje de fire" + result);
+   }
+
+   const btnPorcentageFire = document.getElementById("Firee");
+
     

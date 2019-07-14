@@ -28,6 +28,8 @@ const sortData = (data) => {
   return data;
 };
 
+
+
 //Esta función ordena los pokemones de Z-A
 const sortDataZA = (data) => {
   data.sort((a, b) => {
@@ -73,3 +75,22 @@ window.filterByType = filterByType;
 
 // window.calculate = calculate;
 //----------------------------------------------------------------
+ // FUNCIÓN QUE ANALIZA CUANTOS POKEMONS DE TYPO TAL EXISTEN EN EL ARRAY
+// const calculate = data.reduce((accumulator, pokemonType) => {
+//   if(pokemon.type[0] == pokemonType || pokemon.type[1] == pokemonType || pokemon.type[2] == pokemonType){
+//     accumulator = accumulator + 1;
+//   }
+//   return accumulator;
+//   });
+
+//   window.accumulator = accumulator;
+
+
+const statisticsPercentage = (key, value, data) => {
+  let total = data.length;
+  let items = data.filter(element => element[key].indexOf(value) > -1);
+  let result = (items.length * 100) / total;
+  return Math.round(result);
+};
+
+window.statisticsPercentage = statisticsPercentage;
