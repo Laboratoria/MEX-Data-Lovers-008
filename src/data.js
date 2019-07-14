@@ -1,4 +1,4 @@
-// //aquí van las funciones de filtrados
+// Primera función para filtrar, al final hicimos otra.
 // window.pokemons = {
 //   // Esta funcion filtra todos los pokemones por el tipo
 //   filterByType: (allPokemon, condition) => {
@@ -12,6 +12,7 @@
 //       }
 //       return filtered;
 //   },
+//----------------------------------------------------------------
 
 //Esta función ordena los pokemones de A-Z
 const sortData = (data) => {
@@ -28,7 +29,7 @@ const sortData = (data) => {
   return data;
 };
 
-
+//----------------------------------------------------------------
 
 //Esta función ordena los pokemones de Z-A
 const sortDataZA = (data) => {
@@ -47,8 +48,6 @@ const sortDataZA = (data) => {
 
 window.sortData = sortData;
 window.sortDataZA = sortDataZA;
-
-
 
 //--------------------------------------------------------------
 //Función para filtrar por tipo de Pokemon 
