@@ -62,7 +62,21 @@
     padding: 12px;
   }
 
-  @media screen and (max-width: 778px){
+  @media screen and (max-width: 768px){
+   
+    .color {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 375px){
+   
+    .color {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 425px){
    
     .color {
       width: 100%;
