@@ -468,19 +468,17 @@ li:hover{
 }
 
 
-/*#pokeboll{
- height: 10%;
- width: 10%;
- float: right;
- padding-right: 35%;
+#pokeboll{
+ width: 70%;
+ float: left;
 }
 
+
 #pokemon-title{
- height: 20%;
- width: 20%;
+  width: 40%;
  padding-left: 20%;
 }
-*/
+
 #initial-question{
  background-color: black;
  color: white;
