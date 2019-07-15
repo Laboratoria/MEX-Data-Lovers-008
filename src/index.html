@@ -15,30 +15,14 @@
          
     <!-- <script src="./data/steam/steam.js"></script> -->
     <script src="./data/rickandmorty/rickandmorty.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
 
     <!-- Icono ir abajo -->
     <span class="icon-circle-down"></span>
     
-  <!-- redes sociales -->
-  <div class="wrapper">
-    <div class="title">
-      <p>Simple hover effect only use CSS3</p>
-    </div>
-    <div class="buttons">
-      <div class="button button-fb">
-        <i class="fa fa-facebook"></i>
-      </div>
-      <div class="button button-tw">
-        <i class="fa fa-twitter"></i>
-      </div>
-      <div class="button button-go">
-        <i class="fa fa-google-plus"></i>
-      </div>
-    </div>
-  </div>
-
 
   <!-- presentación pagina -->
       <section class="informacion">
@@ -114,20 +98,95 @@
 <br>
 <br>
 <br>
-
-<section id="menu" class="hide">
+ 
   
+ <form>
     <div class= "ordenar-boton">
       <select name="filter" id="filter"> 
-      <option value="filter">Filtrar</option>
-      <option value="nombre.name">Nombre</option>
-      <option value="species.species">Especies</option>
-      <option value="location.name">Dimensión</option>
-      <option value="origin.name">Origen</option>
+      <option disabled selected>Filtrar</option>
+      <!----<option disabled>-----Especies-----</option>
+      <option value= "Human">Human</option>
+      <option value= "Alien">Alien</option>
+      <option value= "Robot">Robot</option>
+      <option value= "Vampire">Vampire</option>
+      <option value= "Humanoid">Humanoid</option>
+      <option value= "Cronenberg">Cronenberg</option>
+      <option value= "Mytholog">Mytholog</option>
+      <option value= "Poopybutthole">Poopybutthole</option>
+      <option value= "Parasite">Parasite</option>--->
+      <option disabled>-----Origen-----</option>
+      <option value= "unknown">unknown</option>
+      <option value= "Earth (C-137)">Earth (C-137)</option>
+      <option value= "Earth (J-22)">Earth (J-22)</option>
+      <option value= "Earth (K-22)">Earth (K-22)</option>
+      <option value= "Earth (K-83)">Earth (K-83)</option>
+      <option value= "Earth (S-126)">Earth (S-126)</option>
+      <option value= "Earth (C-500A)">Earth (C500A)</option>
+      <option value= "Earth (D716)">Earth (D716)</option>
+      <option value= "Earth (D716-B)">Earth (D716-B)</option>
+      <option value= "Earth (D716-C)">Earth (D716-C)</option>
+      <option value= "Earth (J19ζ7)">Earth (J19ζ7)</option>
+      <option value= "Earth (D99)">Earth (D99)</option>
+      <option value= "Earth (K-83)">Earth (D716-C)</option>
+      <option value= "Earth (Chair Dimension)">Earth (Chair Dimension)</option>
+      <option value= "Earth (Replace Dimension)">Earth (Replace Dimension)</option>
+      <option value= "Earth (Phone Dimension)">Earth (Phone Dimension)</option>
+      <option value= "Earth (Pizza Dimension)">Earth (Pizza Dimension)</option>
+      <option value= "Earth (Evil Rick's Target Dimension)">Earth (Evil Rick's Target Dimension)</option>
+      <option value= "Earth (Giant Telepathic Spiders Dimension)">Earth (Giant Telepathic Spiders Dimension)</option>
+      <option value= "Post Apocalyptic Earth">Post Apocalyptic Earth</option>
+      <option value= "Cronenberg Earth">Cronenberg Earth</option>
+      <option value= "Citadel of Rick's">Citadel of Rick's</option>
+      <option value= "Árboles Mentirosos">Árboles Mentirosos</option>
+      <option value= "Roy: A life Well Lived">Roy: A life Well Lived</option>
+      <option value= "Gear World">Gear World</option>
+      <option value= "Testicle Monster Dimension">Testicle Monster Dimension</option>
+      <option value= "Pluto">Pluto</option>
+      <option value= "Greasy Grandma World">Greasy Grandma World</option>
+      <option value= "Interdimensional Cable">Interdimensional Cable</option>
+      <option value= "Giant's Town">Giant's Town</option>
+      <option value= "Snuffle's Dream">Snuffle's Dream</option>
+      <option value= "Mr. Goldenfold's Dream">Mr. Goldenfold's Dream</option>
+      <option value= "Girvonesk">Girvonesk</option>
+      <option value= "Rick's Battery Microverse">Rick's Battery Microverse</option>
+      <option value= "Nuptia 4">Nuptia 4</option>
+      <option value= "Gazorpazorp">Gazorpazorp</option>
+      <option value= "Plopstar">Plopstar</option>
+      <option value= "Resort Planet">Resort Planet</option>
+      <option value= "Trunk World">Trunk World</option>
+      <option value= "Kyle's Teenyverse">Kyle's Teenyverse</option>
+      <option value= "Krootabulon">Krootabulon</option>
+      <option value= "Detoxifier">Detoxifier</option>
+      <option value= "Unity's Planet">Unity's Planet</option>
+      <option value= "Zeep Xanflorp's Miniverse">Zeep Xanflorp's Miniverse</option>
+      <option value= "Planet Squanch">Planet Squanch</option>
+      <option value= "Fantasy World">Fantasy World</option>
+      <option value= "Purge Planet">Purge Planet</option>
+      <option value= "Mega Gargantuan Kingdom">Mega Gargantuan Kingdom</option>
+      <option value= "Mr. Meeseks Box">Mr. Meeseks Box</option>
+      <option value= "Alphabetrium">Alphabetrium</option>
+      <option value= "Larva Alien's Planet">Larva Alien's Planet</option>
+      <option value= "Zeep Xanflorp's Miniverse">Zeep Xanflorp's Miniverse</option>
+      <option value= "Hamster in Butt World">Hamster in Butt World</option>
+      <option value= "Glaagablaaga">Glaagablaaga</option>
+      <option value= "Eric Stoltz Mask Earth">Eric Stoltz Mask Earth</option>
+      <option value= "Anathomy Park">Anathomy Park</option>
+      <option value= "Hideout Planet">Hideout Planet</option>
+      <option value= "The Menagerie">The Menagerie</option>
+      <option value= "Grom Flom Prime">Grom Flom Prime</option>
+      <option value= "Bird World">Bird World</option>
+      <option value= "Bepis 9">Bepis 9</option>
+      <option value= "Venzenulon 7">Venzenulon 7</option>
+      <option value= "Signus Expanse">Signus Expanse</option>
+      <option value= "Abadango">Abadango</option>
+     
+
+      
+
       </select>
 
-    </div>
-    </div>
+    
+      </form>
 
 </select>
 </div>
@@ -144,4 +203,17 @@
   </body>
 </html>
 
+
+<!--<option disabled selected>Filtrar</option>
+      <option disabled>-----Especies-----</option>
+      <option value= "Human">Human</option>
+      <option value= "Alien">Alien</option>
+      <option value= "Robot">Robot</option>
+      <option value= "Vampire">Vampire</option>
+      <option value= "Humanoid">Humanoid</option>
+      <option value= "Cronenberg">Cronenberg</option>
+      <option value= "Mytholog">Mytholog</option>
+      <option value= "Poopybutthole">Poopybutthole</option>
+      <option value= "unknow">unknow</option>
+      <option value= "Parasite">Parasite</option>-->
 
