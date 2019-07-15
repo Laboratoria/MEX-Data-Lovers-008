@@ -5,7 +5,31 @@ const paraPintar = document.getElementById ('data');
 // console.log(personajes)
 //MOSTRAR 
 
-//Para eliminar espacios y caracteres
+
+
+//Para eliminar espacios y caracteres origen
+function getCleanedStringSpecies(filterSpecies){
+  // Definimos los caracteres que queremos eliminar
+  var special = "!@#$^&%*()+=-[]\/{}|:<>?,.ζáéíóúÁÉÍÓÚü´'" ;
+  
+  // Los eliminamos todos
+  for (var i = 0; i < special.length; i++) {
+    filterSpecies= filterSpecies.replace(new RegExp("\\" + special[i], 'gi'), '');
+  }   
+  
+  // Lo queremos devolver limpio en minusculas
+  filterSpecies = filterSpecies.toLowerCase();
+  
+  // Quitamos espacios y los sustituimos por _ porque nos gusta mas asi
+  filterSpecies = filterSpecies.replace(/ /g,"_");
+  //console.log(filterSpecies);
+  return filterSpecies;
+}
+
+
+
+
+//Para eliminar espacios y caracteres origen
 function getCleanedString(filter){
   // Definimos los caracteres que queremos eliminar
   var specialChars = "!@#$^&%*()+=-[]\/{}|:<>?,.ζáéíóúÁÉÍÓÚü´'" ;
@@ -27,13 +51,13 @@ function getCleanedString(filter){
 const muestraData = () => {
   let str = '';
   personajes.forEach(element => {
-    //let species= getCleanedString(element.species);
+    let species= getCleanedStringSpecies(element.species);
     let origin= getCleanedString(element.origin.name);
     str += `<div class="tarjeta ${element.species} ${origin}">
     <div class= "caras">
     <div class="nombre">
     <p> ${element.name}</p></div>
-    <br>
+    <br>  
     <div class="img"> 
     <img src="${element.image}"></img>
     </div>
@@ -53,7 +77,8 @@ const muestraData = () => {
 muestraData();
 
 
-//FILTRAR
+
+
 
 
 

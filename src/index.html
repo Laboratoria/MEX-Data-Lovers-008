@@ -72,13 +72,10 @@
           <tfoot>  
           </tfoot>
         </table>
-        <!-- boton abajo -->
-      <div class="abajo">
-        <a href="" id="down" class="button"><i class="far fa-arrow-alt-circle-down"></i></a>
-        <div class="slide">
-            <div id="facts">
-            </div>
-      </div>
+        <br>
+        <br>
+        <a href="#" class= "button" id="vota">¡VOTA!</a>
+       
     
 <!-- sección video -->
 <section>
@@ -86,7 +83,7 @@
   <h2>Noviembre 2019</h2>
 
         <div id="video"  class="contenedor-video">
-            <video width= "1100px" height="900px" class="fm-video video-js vjs-16-9  vjs-big-play-centered" data-setup="{}" controls preload="auto">
+            <video width= "70%" height="600px" class="fm-video video-js vjs-16-9  vjs-big-play-centered" data-setup="{}" controls preload="auto">
                 <source src="video/rick_y_morty_temp4.mp4" type="video/mp4">
             </video>
             
@@ -101,20 +98,23 @@
  
   
  <form>
-    <div class= "ordenar-boton">
+
+    <select name="filterSpecie" id="species"> 
+        <option disabled selected>Especies</option>
+        <option value= "Human">Human</option>
+        <option value= "Alien">Alien</option>
+        <option value= "Robot">Robot</option>
+        <option value= "Vampire">Vampire</option>
+        <option value= "Humanoid">Humanoid</option>
+        <option value= "Cronenberg">Cronenberg</option>
+        <option value= "Mytholog">Mytholog</option>
+        <option value= "Poopybutthole">Poopybutthole</option>
+        <option value= "Parasite">Parasite</option>
+    </select>
+ </form>
+    <form>
       <select name="filter" id="filter"> 
-      <option disabled selected>Filtrar</option>
-      <!----<option disabled>-----Especies-----</option>
-      <option value= "Human">Human</option>
-      <option value= "Alien">Alien</option>
-      <option value= "Robot">Robot</option>
-      <option value= "Vampire">Vampire</option>
-      <option value= "Humanoid">Humanoid</option>
-      <option value= "Cronenberg">Cronenberg</option>
-      <option value= "Mytholog">Mytholog</option>
-      <option value= "Poopybutthole">Poopybutthole</option>
-      <option value= "Parasite">Parasite</option>--->
-      <option disabled>-----Origen-----</option>
+      <option disabled selected>Origen</option>
       <option value= "unknown">unknown</option>
       <option value= "Earth (C-137)">Earth (C-137)</option>
       <option value= "Earth (J-22)">Earth (J-22)</option>
@@ -188,8 +188,11 @@
     
       </form>
 
-</select>
-</div>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>

@@ -25,7 +25,23 @@ let info = tarjeta.children[0].childNodes[7]; //se crea un avariable nueva que v
   
 }
 
+//FILTRAR POR ESPECIE
+let selectorSpecies = document.getElementById("species"); //Variable para buscar en HTML el selector
+let filterSpecies= function() { 
+  let seleccionSpecies= getCleanedStringSpecies(selectorSpecies.value); //Variable para obtener el valor de la selección del selector
+  console.log(seleccionSpecies);
+  for(let i = 0 ; i < tarjetas.length; i++){ //Ocultar tarjetas
+    tarjetas[i].style.display = 'none'
+  }
+  let tarjetasSpecies= document.getElementsByClassName(seleccionSpecies); //Variable que busca las misma clase del valor del selector. Devuelve un arreglo
+  for(let i = 0 ; i < tarjetasSpecies.length; i++){
+    tarjetasSpecies[i].style.display = 'block' //Se recorre el arreglo y se muestra 
+  }
+}
+selectorSpecies.addEventListener('change', filterSpecies); //Se llama al evento "change" que sirve para obtener el valor del selector cuando cambia
 
+
+//FILTRAR POR ORIGEN
 let selector = document.getElementById("filter"); //Variable para buscar en HTML el selector
 let filter= function() { 
   let seleccion= getCleanedString(selector.value); //Variable para obtener el valor de la selección del selector
