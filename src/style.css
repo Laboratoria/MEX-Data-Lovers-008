@@ -664,6 +664,7 @@ h2{
  box-shadow: -9px 10px 16px -7px rgba(82, 73, 82, 0.68);
  transition: 1ms;
 } */
+
 #filer_by_name,
 .enlace{
  border-color: RGB(146, 2, 225)  ;
@@ -673,31 +674,31 @@ h2{
  width: 7rem;
  font-family: 'Coiny', cursive;
  font-size: 1.25rem;
-
+}
 /* --------------------------------- */
 
  /* display: flex; */
    /* flex-direction: column; */
-   align-items: center;
+   /* align-items: center;
    margin: 1.5rem 0;
    padding: 1rem 0;
    border-radius: 1rem;
    align-content: center;
  
-}
+} */
 
 .enlace:hover{
  background-color: black;
  border-color: white;
  color: white;
  }
+
 li{
  margin: 10px;
  width: 40%;
  text-align: center;
  background-color: rgb(88,88,88,0.5);
  border-radius: 10px;
-
 }
 
 li{
