@@ -492,10 +492,10 @@ li:hover{
 }
 
 #container{
- background-image: url("imagenes/universe.jpg");
+ background-image: url("imagenes/universepokemon.jpg");
  background-size: cover;
  height: 700px;
- width: 84%;
+ width: 79%;
  margin-top: 0%;
  color: white;
  align-content: center;
