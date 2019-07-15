@@ -4,15 +4,88 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
+    <div id = "root">
+    <script src="./data/pokemon/pokemon.js"></script>
+    <!--LOGO-->
+    <section id="superior" class="seccion">
+      <a href= "index.html">
+        <img id="logo" src="https://fontmeme.com/permalink/190707/b0be9d80d889c9a54348361c1c8e7522.png" alt="Logo WIKIGO" />
+      </a>
+      <!--MENU-->
+      <nav>
+      <ul>
+        <li><a href="#seccion-listado">LISTA DE POKEMONES</a></li>
+        <li><a href="#seccion-buscar">+ INFORMACIÓN</a></li>
+        <!-- <li><a href="#seccion-estadisticas">PREGUNTAS COMUNES</a></li> -->
+      </ul>
+      </nav>
+    </section>
+    <!--VIDEO POKEMON GO-->
+    <section id="cabecera" class="seccion">
+      <iframe width="760" height="395" src="https://www.youtube.com/embed/HdkWhoBs8BE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </section>
+      <!-- SECCION LISTA DE POKEMONES -->
+      <section id = "seccion-listado" class = "seccion">
+        <h2 id = "listado" >Lista de Pokemones</h2>
+          <button class = "button" id = "btn-az">Pokemones de la A a la Z</button>
+          <button class = "button" id = "btn-za">Pokemones de la Z a la A</button>
+        <div id = "lista-pokes" class = "caja-lista"></div>
+      </section>
+      <!-- SECCION DE BUSQUEDA POR NOMBRE Y TIPO -->
+      <section id = "seccion-buscar" class = "seccion">
+          <h2 id = "buscar">Información sobre tu Pokémon</h2>
+          <form>
+            <label for = "txt-name">Nombre:</label>
+            <input id = "txt-name" type = "text" class = "caja-texto" placeholder="escribe el nombre..." required>
+            <input id = "btn-name" class = "button" type="submit" value="Go!">
+          </form>
+          <form>
+            <label for = "select-tipo">ó selecciona un tipo:</label>
+            <select id = "select-tipo" class = "select">
+              <option value = "Bug" selected>Bug</option> 
+              <option value = "Dark" >Dark</option>
+              <option value = "Dragon">Dragon</option>              
+              <option value = "Electric">Electric</option>
+              <option value = "Fairy">Fairy</option>
+              <option value = "Fighting">Fighting</option>
+              <option value = "Fire">Fire</option> 
+              <option value = "Flying">Flying</option>
+              <option value = "Ghost">Ghost</option>              
+              <option value = "Grass">Grass</option>
+              <option value = "Ground">Ground</option>
+              <option value = "Ice">Ice</option>
+              <option value = "Normal">Normal</option> 
+              <option value = "Poison" >Poison</option>
+              <option value = "Psychic">Psychic</option>              
+              <option value = "Rock">Rock</option>
+              <option value = "Steel">Steel</option>
+              <option value = "Water">Water</option>
+            </select>
+          </form>
+          <div id = "result-buscar" class="caja-lista"></div>
+      </section>
+      <!-- SECCION ESTADÍSTICAS -->
+      <!-- <section id = "seccion-estadisticas" class = "seccion">
+          <h2 id = "estadisticas">Preguntas comunes:</h2>
+          <ul>
+            <li class = "estadisticas">¿Sabes cuantos tipos de Pokémon hay?
+                <button class = "button" id = "btn-tipos">?</button></li>
+            <li class = "estadisticas">¿Sabes cual es el tipo de Pokémon más popular?
+              <button class = "button" id = "btn-tipos">?</button></li>
+          </ul>
+      </section> -->
+      <!-- SECCION ADOPTA -->
+      <!-- <section id = "seccion-adopta" class = "seccion"> -->
+          <!-- proceso a seguir para adoptar, carta de adopcion -->
+      <!-- </section> -->
+      </div>
     <script src="data.js"></script>
     <script src="main.js"></script>
-  </body>
+ </body>
 </html>

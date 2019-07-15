@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/313601e64d.js"></script>
+  </head>
+
+    <!--LOGO-->
+
+        <section class="superior"><img id="logo" src="https://fontmeme.com/permalink/190707/b0be9d80d889c9a54348361c1c8e7522.png" alt="Logo WIKIGO">
+
+          <!--MENU-->
+          <nav>
+          <ul>
+          <li><a href="#primero">CONOCE</a></li>
+          <li><a href="#segundo">BUSQUEDA</a></li>
+          <li><a href="#tercero">ESTADISTICAS</a></li>
+          </ul>
+          </nav>
+        </section>
+
+  <body>
+    <div id = "root"></div>
+    <!-- <script src="./data/injuries/injuries.js"></script> -->
+    <script src="./data/pokemon/pokemon.js"></script>
+    <!-- <script src="./data/steam/steam.js"></script> -->
+    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
+    <!-- <script src="./data/lol/lol.js"></script> -->
+
+<!--VIDEO POKEMON GO-->
+
+<section class="cabecera" style="text-align: center;"><iframe width="760" height="395" src="https://www.youtube.com/embed/HdkWhoBs8BE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
+
+<!--SECCION ELEGIR A TU POKEMON-->
+
+<section id="primero" class="seccion">
+  <h1>ELIGE A TU POKEMON </h1>
+  <a href="index.html"><i class="arriba fas fa-arrow-alt-circle-up"></i></a>
+
+
+
+
+<!--<div id = "caja" class = "box">-->
+
+
+      <!-- <p class = "titulo">Selecciona un Pókemon para mostrarte su info: </p>
+        <p><label for = "lista-nombres">
+            <select id = "lista-nombres" autofocus>
+              <option value = "0" selected>Selecciona 1...</option>
+            </select>
+           </label>
+        </p> -->
+
+      <!--p><label class = "titulo" for = "Resultado">Poke ~ ficha:</label></p-->
+      <div id = "lista-nombres"  class = "caja-texto"></div>
+      </section>
+
+    <!-- SECCION LISTA DE POKEMONES -->
+
+
+    <section id = "seccion-listado" class = "seccion">
+      <h2>Elige a tu POKEMON</h2>
+      <div id = "lista-pokes" class = "caja-lista"></div></section>
+
+
+    <!-- SECCION DE BUSQUEDA POR NOMBRE Y TIPO -->
+
+    <section id = "seccion-buscar" class = "seccion">
+        <form  method="get">
+          <label for = "name">Nombre:</label>
+          <input id = "txt-name" type = "text" class = "caja-texto" placeholder="escribe el nombre..." required>
+
+          <!-- <button id = "btn-name" class = "button">go!</button> -->
+
+          <input id = "btn-name" class = "button" type="submit" value="Go!">
+        </form>
+        <form  method="get">
+          <label for = "select-tipo">ó selecciona un tipo:</label>
+          <select name = "select-tipo" class = "select">
+            <option value = "Water" selected>Water</option>
+            <option value = "Fire" >Fire</option>
+            <option value = "Grass">Grass</option>
+            <option value = "Ground">Ground</option>
+            <option value = "Rock">Rock</option>
+            <option value = "Steel">Steel</option>
+          </select>
+          <input id = "btn-tipo" class = "button" type="submit" value="Go!">
+          <!-- <button id = "btn-type" class="button-type">AGUA</button> -->
+        </form>
+        <div id = "result-buscar"></div>
+    </section>
+
+    <!-- SECCION ESTADÍSTICAS -->
+    <section id = "seccion-estadisticas" class = "seccion"></section>
+
+    <!-- SECCION ADOPTA -->
+
+    <section id = "seccion-adopta" class = "seccion">
+                <!-- proceso a seguir para adoptar, carta de adopcion -->
+    </section>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+
+
+    <h2 id="segundo">FILTRA POKEMON</h2>
+
+    <!--Busqueda POKEMON-->
+
+      <section id="busqueda">
+          <label for="nombre">Nombre Pokemon:</label>
+          <input type="text" name="nombre" id="nombre-pokemon">
+          <button id="buscar">Busqueda</button>
+      </section>
+
+
+
+<footer class="pie">
+  <a href="index.html"><i a href class="home fas fa-home"></i></a>
+  <h4>DERECHOS RESERVADOS WIKIGO 2019</h4>
+</footer>
+
+      <br>
+      <br>
+ </body>
+</html>

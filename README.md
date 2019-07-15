@@ -1,3 +1,148 @@
+# POKEMON GO
+
+Es un vídeojuego de realidad aumentada basado en la localización desarrollado por Niantic, Inc.1​2​ para dispositivos iOS y Android. Es un videojuego gratuito pero contiene microtransacciones. El juego consiste en buscar y capturar personajes de la saga Pokemón escondidos en ubicaciones del mundo real y luchar con ellos, lo que implica desplazarse físicamente por las calles de la ciudad para progresar.
+
+La aplicación comporta un elemento de interacción social, ya que promueve reuniones físicas de los usuarios en distintas ubicaciones de sus poblaciones.
+
+![enter image description here](https://im.ziffdavisinternational.com/ign_es/screenshot/default/pokemongender_rw2m.jpg)
+
+Fuente: Forbes.
+
+Las cifras de 'Pokémon Go' durante el año 2016 han quedado reflejadas en ComScore, una famosa web que proporciona datos y estadísticas de muchas empresas. Ha día de hoy, lejos queda la excelente cifra que alcanzó la aplicación durante sus primeros meses de vida, llegando a los 28,5 millones de usuarios el 7 de Julio. A partir de ese momento el número ha descendido notablemente manteniéndose en una media de aproximadamente 10 millones de usuarios hasta diciembre, que cerró el año con poco más de seis millones.
+
+![enter image description here](https://media.redadn.es/imagenes/pokemon-go-android-ios_305212_post.png)
+
+Pokémon GO alcanza los 2.500 millones de dólares en ingresos a nivel mundial
+Estados Unidos es el país que más gasta en el título de realidad aumentada, con un 35% del total de los ingresos, lo que supone aproximadamente unos 875 millones de dólares. Por su parte, Japón ocupa la segunda posición con un 29% del total, unos 725 millones de dólares. Alemania cierra el podio con un 6% de gasto, lo que supone unos 150 millones de dólares.
+
+En cuanto al gasto por descarga, Japón ocupa la primera posición con un promedio de 42 millones de dólares. Al país asiático le sigue los Estados Unidos de América, con 9,50 millones de dólares. Además, también se confirma que Pokémon GO alcanzó la séptima plaza en cuanto a ingresos mundiales de juegos para móviles.
+
+## PROBLEMA DETECTADO
+
+Usuarios frustrados al no generarse una mayor experiencia después de determinado nivel.
+
+Los jugadores de mayor nivel tampoco reciben una recompensa adecuada que justifique su inversión de tiempo.
+
+El problema de Pokémon Go es que un entrenador de nivel 1 necesita capturar diez criaturas para subir de nivel, mientras que un jugador superior, de nivel 39, requiere de más de 20.000.
+
+No se logro la fidelizacion de los primeros jugadores.
+
+## Testimonios
+
+El juego no premia con más puntos si se cazan a pokémones más evolucionados en los niveles más altos, algo que consideran desalentador para el jugador.
+
+Para subir del nivel 1 al 2 son necesarios mil puntos de experiencia, pero para ir del 10 al 11 son necesarias 10 mil unidades. Para ir del 29 al 30 se requieren 350 mil puntos.
+
+Lo que hace más difícil esto es que se requieren más puntos de experiencia, pero no se aumenta la forma de ganarlos, por lo que es muy complicado subir de nivel, afirman los jugadores.
+
+## Testimonio Puntual
+
+Esto es lo que sucede al llegar al nivel 30 de Pokémon Go.
+
+Un "gamer" narra su experiencia tras 30 niveles y más de 14 mil pokémon capturados.
+
+“Después de una semana de jugar “Pokémon Go” y llegar al nivel 30, decidí tomarme unos días de descanso y compartir con ustedes algunos pensamientos”, escribió Riggnaros, jugador de Pokémon Go, usuario de “Reddit”, y quien presume haber llegado al nivel 30 y tener en su haber más de 4 mil pokémon.
+
+Sin embargo, en este nivel las cosas ya no son sólo halagos para la aplicación sensación en todo el mundo, pues lo que Riggnaros compartió fue una lista con varias quejas sobre el juego, las cuales hablan de lo difícil que es subir de nivel a partir del piso 25 y que también critican la forma en que la geografía decida qué pokémon hay en cada lugar.
+
+Debido a la experiencia que tiene jugando Pokémon Go, el gamer se dio cuenta de las fallas de la aplicación y publicó una carta de quejas para Niantic, la empresa desarrolladora de la app, que comienza a recibir dardos de los jugadores más avanzados.
+
+Y es que no sólo Riggnaros se ha quejado de este juego, Verigood, quien también está en el nivel 30, coincide en que Pokémon Go se vuelve complicado y tedioso conforme llegan a los niveles más avanzados.
+
+Estas son las principales fallas de Pokémon Go, según este gamer.
+
+El juego no premia con más puntos si se cazan a pokémon más evolucionados en los niveles más altos, algo que considera desalentador para el jugador.
+
+Al principio del juego es muy fácil pasar de nivel, pero conforme se avanza, se torna más complicado alcanzar el siguiente escalón. Para subir del nivel 1 al 2 son necesarios mil puntos de experiencia, pero para ir del 10 al 11 son necesarias 10 mil unidades. Ya ni decir de la transición del 29 al 30, donde se requieren 350 mil puntos.
+
+Lo que hace más difícil esto es que se requieren más puntos de experiencia, pero no se aumenta la manera de ganarlos, por lo que es muy complicado subir de nivel. Comento el usuario de Twitter @Klik_Vox.
+
+En encuestas realizadas con usuarios nuevos detectamos, que la experiencia con la tegnologia es divertida y agradable pero al ya no existir alguna otra recompensa los usuarios eligen eliminar la app.
+
+
+## Propuesta
+
+1.- Aumentar la experiencia de la realidad aumentada promoviendo la convivencia, mediante la adopción de un pokemon.
+
+           Fundamento
+
+La realidad aumentada es una forma de visión que se lleva a cabo a través de un dispositivo tecnológico, y en la que se combinan elementos propios del mundo físico con elementos virtuales que el dispositivo proporciona en función de la interacción del usuario con el medio.
+
+Otra cuestión clave de la realidad aumentada es que no sólo no sustituye a la realidad visual física del usuario, sino que ésta es una parte muy importante del funcionamiento del dispositivo. Así, éste se comporta en función de la interacción del usuario con el mundo real. Por eso hablamos de realidad “aumentada”, porque el dispositivo lo que hace es incrementar la información que tenemos del mundo físico en el que nos movemos, y no sustituirlo.
+
+![enter image description here](https://img.depor.com/files/ec_article_multimedia_gallery/uploads/2018/02/22/5a8f11addeaca.jpeg)
+
+![enter image description here](https://img.depor.com/files/ec_article_multimedia_gallery/uploads/2018/02/22/5a8f119e980ad.jpeg)
+
+Joshua Dunlop es un artista conceptual que ha compartido una galería de Pokémon imaginados en un ambiente de la vida real.
+
+La siguiente grafica nos muestra el aumento en el interes acerca de REALIDAD AUMENTADA.
+
+![enter image description here](https://fotos.subefotos.com/ebde3aa732a0f0ea148bd2dad9291f1ao.jpg)
+
+La película Detective Pikachu ha sido la película que más recaudación ha conseguido a nivel mundial, adelantando así a _Avengers: Endgame.
+
+Generando así el deseo y la euforia de convivir con un pokemon, situación que se puede aprovechar para mejorar la convivencia mediante la tegnologia de realidad aumentada para poder cuidar alimentar y convivir con un pokemon.
+
+![enter image description here](https://fotos.subefotos.com/4395fc9be6219a98da00aeaf3e805295o.jpg)
+
+La grafica nos muestra que el interes de la pelicula desperto nuevamente el interes en el juego.
+
+
+2da Propuesta
+
+2.- -Generar Batallas y Misiones promoviendo el uso de tokens go. (Una criptomoneda).
+
+          Fundamento
+
+Los activos en el juego basados ​​en token ofrecen nuevas oportunidades para la creación de valor, mientras que reducir los costos de transacción ofrece márgenes más altos.
+
+Las transacciones con las criptomonedas son instantáneas.
+
+Facilita las transacciones internacionales.
+
+"El mercado de transacciones de criptomonedas todos los dias crece, se expande y más gente invierte en ello. Están creadas para cambiar la forma de consumo de la gente"
+
+las recompensas promoveran la fidelidad y continuidad a la MARCA.
+
+Nuestra interfaz
+
+ PRIMERA FASE
+
+Esta desarrollada, HTML5 nos aporta la estructura básica de nuestro sitio, mejorada y modificada por otras tecnologías como CSS y JavaScript,  CSS u Hojas de Estilo en Cascada (Cascading Style Sheets) se utiliza para controlar la presentación, el formato, y el diseño de nuestra aplicación. Gracias a ella podemos dar forma al estilo que queremos que se muestre.
+
+JavaScript se utiliza para controlar el comportamiento de los diferentes elementos, esto es, aporta funcionalidad, dinámica, a nuestros elementos.
+
+De igual manera se podra visualizar en cualquier dispositivo movil, mediante Media Queries with JavaScript.
+
+Nuestro primer prototipo
+
+![](https://fotos.subefotos.com/b9630a0964da56c3907e07359f9aa623o.jpg)
+
+Obteniendo como retroalimentacion un diseño mas sencillo enfocado en las funciones principales de la primera fase de la interfaz, mostrar, filtrar y ordenar para elegir la adopcion.
+
+PROTOTIPO DE BAJA FIDELIDAD
+
+![](https://fotos.subefotos.com/d80515577147405bdf3ce565fbfd6d3ao.jpg)
+
+PROTOTIPO DE ALTA FIDELIDAD
+
+![](https://fotos.subefotos.com/992c9bb48df5a035a8353f1f44a54dd9o.jpg)
+
+DESPUES DEL PRIMER TESTING ELEGIMOS DARLE IDENTIDAD MEDIANTE UN lOGO
+
+![](https://fontmeme.com/permalink/190707/b0be9d80d889c9a54348361c1c8e7522.png)
+
+HISTORIAS DE USUARIO
+
+1.- EL usuario puede ver a los 151 pokemon de Kanto.
+2.- El usuario puede buscar por nombre a alguno de los 151 pokemon de Kanto.
+3.- El usuario visualiza alguna estadistica de los 151 pokemon de Kanto.
+4.- El usuario puede ver desde cualquier dispositivo movil la appweb.
+
+
+
+
 # Data Lovers
 
 ## Índice
@@ -63,7 +208,7 @@ Estos son datos que te proponemos:
   este [link](https://developer.riotgames.com/api-methods/).
 - [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
   Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com). 
+  Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com).
 
 
 Como entregable final tendrás una página web que permita **visualizar la data,

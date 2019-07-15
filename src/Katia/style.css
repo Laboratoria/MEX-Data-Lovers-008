@@ -1,0 +1,270 @@
+*
+{
+  text-align: center;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body
+{
+  border: 1px white solid;
+	/*width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0px;
+  font-family: sans-serif;*/
+
+  margin-top: 160px;
+  height: 200px;
+}
+
+
+/*.seccion {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}*/
+
+.arriba, .home
+{
+  font-size: 45px;
+  color:#BFBFBF;
+  align-content: center;
+  float: right;
+/*  margin-right: 20px;*/
+}
+
+footer
+{
+    left: 0px;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    text-decoration-color: pink;
+}
+
+h1, h2
+{
+  text-align: center;
+}
+
+nav
+{
+}
+
+ul
+{
+list-style: none;
+padding: 0;
+margin: 0;
+background: #85C1E9;
+line-height: 40px;
+text-align: center;
+}
+
+li
+  {
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  }
+
+a
+{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+a:hover {
+  background: #82E0AA;
+  color:black;
+}
+
+.cuerpo{
+    max-width: 1000px;
+    margin:auto;
+}
+
+ .superior{
+    /*background: white;
+    margin-top: 0px;
+    text-align: center;*/
+    background:white;
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 130px;
+}
+
+#Logo{
+     display:block;
+     margin:auto;
+}
+
+ .cabecera{
+    background-color: #D6EAF8;
+    margin-top:2px;
+    height: 400px;
+}
+
+#caja
+{
+text-align: center;
+background-image: url(https://fotos.subefotos.com/225ae972ac9b4dd22652cc5e2661bb33o.png);
+margin: 1rem;
+padding: 1rem;
+height: 455px;
+}
+
+
+#lista-nombres
+
+{
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+  padding: 1rem;
+  overflow: auto;
+  background:white;
+    width: 90%;
+    height: 150px;
+}
+
+
+#busqueda
+
+  {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  height: 455px;
+}
+
+.box
+{
+  align-content: center;
+
+}
+#lista-nombres
+{
+  align-content: center;
+}
+
+/*CODIGO DE CSS ZELYNA*/
+
+
+/*.caja-lista {
+  background-color: #f3f9fb;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 500px;
+  overflow: auto;
+  justify-content: center;
+  padding: 1%
+  margin:
+}*/
+
+.caja-item {
+
+  margin: 10px;
+  color: #1650B4;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 2px 2px 7px 1px #1C6EA4;
+}
+
+.caja-item:hover{
+  box-shadow: 2px 2px 7px 1px #FF6B25;
+}
+
+
+/*ESTILOS RESPONSIVE*/
+
+@media screen and (max-width:640px){
+  body, .superior, #lista-nombres, #logo
+{
+    background-color:white;
+    width: 100%
+ }
+
+ .cabecera {
+ 	position: relative;
+ 	padding-bottom: 56.25%; /* 16:9 */
+ 	padding-top: 25px;
+ 	height: 0;
+ }
+ .cabecera iframe {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+}
+
+
+
+
+
+
+
+/*.poke-img{
+  padding: 0%;
+  text-align: center;
+  margin: 1%
+  /* width: 25%;
+  height: 25%;   */
+}
+
+/*.poke-num{
+  margin: 1%;
+}
+.poke-name{
+  margin: 5%;
+}*/
+
+
+
+/* ESTILOS RESPONSIVE*/
+
+/*@media all and (max-width: 600px) {
+
+body, footer, #logo {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  position: static;
+  float: none;
+  background-color:#FBFFBA;
+}
+
+#caja
+{
+  background-color:white;
+}
+
+.cabecera {
+	position: relative;
+	padding-bottom: 50%;
+	padding-top: 25px;
+	height: 0;
+}
+
+.cabecera iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+}*/
