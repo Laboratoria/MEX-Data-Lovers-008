@@ -21,6 +21,7 @@ const weaknesses = document.getElementById("weaknesses");
 const next_evolution = document.getElementById("next_evolution");
 const container=document.getElementById("container");
 const pokeboll=document.getElementById("pokeboll");
+const loading = document.getElementById("loading");
 const input=document.getElementById("input");
 const buscar=document.getElementById("buscar");
 const todos=document.getElementById("todos");
@@ -141,6 +142,7 @@ filtrar();
 function cargando(){
  container.classList.remove("ocultar");
  pokeboll.classList.add("ocultar");
+ loading.classList.add("ocultar");
 };
  setTimeout ("cargando()", 7000);
 
