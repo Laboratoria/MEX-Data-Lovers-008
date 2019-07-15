@@ -117,7 +117,6 @@ section {
     transform: scale(1.1);
 }
 
-
 .gif-button :hover {
     transform: scale(1.2);
 }
@@ -163,9 +162,6 @@ section {
     background-color: green;
     align-content: center;
     position: fixed;
-    /*padding: 0;
-    margin: 0;
-    position: relative;*/
 }
 
 .imagen-personaje {
@@ -186,9 +182,8 @@ section {
     
 }
 
-#filter-personajes {
+#inputs-pantalla-personajes {
     background-color: green;
-    position: fixed;
 }
 
 article {
@@ -204,4 +199,11 @@ article {
 .section-header {
     padding: 1vh;
     flex-wrap: wrap;
+}
+
+.texto-pantallas {
+    background-color: green;
+    color: #222222;
+    padding: 3vh;
+    align-content: center;
 }
