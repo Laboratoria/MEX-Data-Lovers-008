@@ -1,34 +1,34 @@
-/* INICIA RESPONSIVE */
+/* INICIA RESPONSIVE
 
-*{
+*{ */
   /* border box le dice a un elemento que todas las propiedades de un elemento, como su padding, va a estar dentro del porcentaje que le asignes, sin border box, toma el padding hacia afuera, por ejemplo. */
-  box-sizing: border-box; 
+  /* box-sizing: border-box; 
   margin: 0;
   padding: 0;
-}
+} */
 
-.container{
+/* .container{
   width: 100%;
   margin: 0px auto;
 }
 
-.row:before, .row:after{
+.row:before, .row:after{ */
   /* Para que no me deje bordes entre una linea y otra linea */
-  content:"";
+  /* content:"";
   display:table;
-}
-.row:after{
+} */
+/* .row:after{
   clear:both;
-}
+} */
 /* A todas las clases que contengan col- le vas a aplicar estos estilos */
-[class*= "col-" ]{
+/* [class*= "col-" ]{
   float: left;
   min-height: 10px;
   padding: 12px;
-}
+} */
 
   
-  .col-1{width: 8.333333333333332%;}
+  /* .col-1{width: 8.333333333333332%;}
   .col-2{width: 16.666666666666664%;}
   .col-3{width: 25%;}
   .col-4{width: 33.33333333333333%;}
@@ -41,13 +41,13 @@
   .col-11{width: 91.66666666666666%;}
   .col-12{width: 100%;}
 
-  
+   */
 
-  .row{
+  /* .row{
     margin: auto;
     width: 100%;
     height: auto;
-  }
+  } */
 
   /* .row:before, .row:after{
     content:"";
@@ -56,52 +56,52 @@
   .row:after{
     clear:both;
   } */
-  [class*= "col-" ]{
+  /* [class*= "col-" ]{
     float: left;
     min-height: 10px;
     padding: 12px;
-  }
+  } */
 
-  @media screen and (max-width: 768px){
+  /* @media screen and (max-width: 768px){
    
     .color {
       width: 100%;
     }
-  }
+  } */
 
-  @media screen and (max-width: 320px){
+  /* @media screen and (max-width: 320px){
    
     .color {
       width: 100%;
     }
-  }
+  } */
 
-  @media screen and (max-width: 375px){
+  /* @media screen and (max-width: 375px){
    
     .color {
       width: 100%;
     }
-  }
+  } */
 
-  @media screen and (max-width: 425px){
+  /* @media screen and (max-width: 425px){
    
     .color {
       width: 100%;
     }
-  }
+  } */
 
   
 /* TERMINA RESPONSIVE */
 
-#welcomee{
+/* #welcomee{
   background-color: rgb(252, 255, 252);
   text-align: center; 
-  padding-bottom: 2.5%;
+  padding-bottom: 2.5%; */
   /* height: 500px; */
-}
+/* }
 
-*{
-  padding:0px;
+*{ */
+  /* padding:0px;
   margin:0px;
 }
 
@@ -112,41 +112,41 @@
 
 ul,ol{
   list-style:none;
-}
+} */
 
-.nav .filtrarPoke a {
+/* .nav .filtrarPoke a {
   background-color: blue;
   color:yellow;
   text-decoration: none;
   padding:10px 15px;
   display:block;
 
-}
+} */
 
-.nav .filtrarPoke  a:hover{
+/* .nav .filtrarPoke  a:hover{
   background-color:black;
 }
 
 li:hover{
   background-color: black;
   color: white;
-}
+} */
 
 
-#pokeboll{
+/* #pokeboll{
   height: 10%;
   width: 10%;
   float: right;
   padding-right: 35%;
-}
+} */
 
-#pokemon-title{
+/* #pokemon-title{
   height: 20%;
   width: 20%;
   padding-left: 20%;
-}
+} */
 
-#initial-question{
+/* #initial-question{
   background-color: black;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -155,16 +155,16 @@ li:hover{
   padding-bottom: 3%;
   padding-top: 3%;
   margin-bottom: 0%;
-}
+} */
 
-#container{
+/* #container{
   background-image: url("imagenes/universe.jpg");
   background-size: cover;
   height: 500px;
   margin-top: 0%;
   color: white;
   align-content: center;
-}
+} */
 
 
 
@@ -172,10 +172,10 @@ li:hover{
   display: none;
 } */
 
-p{
+/* p{
 margin: 0%;
 font-family: 'Coiny', cursive;
-}
+} */
 
 /* #pokemones-unoxuno{
   background-image: url("imagenes/carta.png");
@@ -185,7 +185,7 @@ font-family: 'Coiny', cursive;
   width: 40%;
 } */
 
-#container_allPokemones{
+/* #container_allPokemones{
   text-align: center;
 }
 
@@ -202,9 +202,9 @@ font-family: 'Coiny', cursive;
   margin-bottom: 10px;
   margin-top: 10px;
   margin: blue;
-}
+} */
 
-#mostrando_lista_pokemones ul{
+/* #mostrando_lista_pokemones ul{
     margin: 15px;
     padding: 10px;
     display: flex;
@@ -215,7 +215,7 @@ font-family: 'Coiny', cursive;
     justify-content: space-around;
     overflow: scroll;
     list-style: none;
-}
+} */
 
 /* .lista_de_pokemones::-webkit-scrollbar {
   background-color: black;
@@ -231,7 +231,7 @@ font-family: 'Coiny', cursive;
 
 
 
-#filtered_by_type{
+/* #filtered_by_type{
   margin: 15px;
     padding: 10px;
     display: flex;
@@ -242,17 +242,17 @@ font-family: 'Coiny', cursive;
     justify-content: space-around;
     overflow: scroll;
     list-style: none;
-}
+} */
 
 
 
-h2{
+/* h2{
   margin: 0%;
   padding-top: 1%;
   font-family: 'Coiny', cursive;
-}
+} */
 
-.button_unoxuno{
+/* .button_unoxuno{
   height: 40px;
   width: 130px;
   margin-top: 60px;
@@ -261,17 +261,17 @@ h2{
   color: black;
   font-size: 20px;
   font-family: 'Coiny', cursive;
-}
+} */
 
-.button_unoxuno:hover{
+/* .button_unoxuno:hover{
   background-color: black;
   color: rgb(235, 236, 231);
-}
+} */
 
-.section2{
+/* .section2{
   height: 500px;
   background-color: rgb(194,12,12);
-}
+} */
 
 /* .all-data {
   display: flex;
@@ -314,7 +314,7 @@ h2{
   box-shadow: -9px 10px 16px -7px rgba(82, 73, 82, 0.68);
   transition: 1ms;
 } */
-#filer_by_name,
+/* #filer_by_name,
 .enlace{
   border-color: RGB(146, 2, 225)  ;
   cursor: pointer;
@@ -322,21 +322,21 @@ h2{
   background-color: RGB(146, 2, 225)  ;
   width: 7rem;
   font-family: 'Coiny', cursive;
-  font-size: 1.25rem;
+  font-size: 1.25rem; */
 
  /* --------------------------------- */
 
   /* display: flex; */
     /* flex-direction: column; */
-    align-items: center;
+    /* align-items: center;
     margin: 1.5rem 0;
     padding: 1rem 0;
     border-radius: 1rem;
     align-content: center;
    
-}
+} */
 
-.enlace:hover{
+/* .enlace:hover{
   background-color: black;
   border-color: white;
   color: white;
@@ -347,25 +347,25 @@ li{
   width: 40%;
   text-align: center;
   background-color: rgb(88,88,88,0.5);
-  border-radius: 10px;
+  border-radius: 10px; */
 
-}
+/* } */
 
-li{
+/* li{
   display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1.5rem 0;
     /* border: 1px rgba(204, 204, 204, 1) solid; */
-    padding: 2rem 0;
+    /* padding: 2rem 0;
     border-radius: 1rem;
     -webkit-box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
     -moz-box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
     box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
-    background-color: rgba(255, 255, 255, 0.6)
-}
+    background-color: rgba(255, 255, 255, 0.6) */
+/* } */ 
 
-li:hover{
+/* li:hover{
   border: RGB(146, 2, 225)    0.3rem solid;
   transform: scale(1.1);
   transition: transform 0.1s;
@@ -388,7 +388,7 @@ li:hover{
 
 #section1{
   /* display: none; */
-  background-color: white;
+  /* background-color: white;
 }
 
 #nav{
@@ -397,9 +397,9 @@ li:hover{
   background-color: black;
 }
 
-  
+   */
 
-.contieneResponsive{
+/* .contieneResponsive{
 width: 100%;
 max-width: 100%;
 marginal:0 auto;
@@ -412,6 +412,328 @@ overflow:hidden;
        }
 }
 
+ */
+
+ .col-1{width: 8.333333333333332%;}
+ .col-2{width: 16.666666666666664%;}
+ .col-3{width: 25%;}
+ .col-4{width: 33.33333333333333%;}
+ .col-5{width: 41.66666666666667%;}
+ .col-6{width: 50%;}
+ .col-7{width: 58.333333333333336%;}
+ .col-8{width: 66.66666666666666%;}
+ .col-9{width: 75%;}
+ .col-10{width: 83.33333333333334%;}
+ .col-11{width: 91.66666666666666%;}
+ .col-12{width: 100%;}
+
+
+ #welcomee{
+   background-color: rgb(252, 255, 252);
+   text-align: center;
+   padding-bottom: 2.5%;
+   /* height: 500px; */
+ }
+
+*{
+ padding:0px;
+ margin:0px;
 }
 
+#header{
+margin:auto;
+width:1400px;
+}
+
+ul,ol{
+ list-style:none;
+}
+
+.nav .filtrarPoke a {
+ background-color: blue;
+ color:yellow;
+ text-decoration: none;
+ padding:10px 15px;
+ display:block;
+
+}
+
+.nav .filtrarPoke  a:hover{
+ background-color:black;
+}
+
+li:hover{
+ background-color: black;
+ color: white;
+}
+
+
+/*#pokeboll{
+ height: 10%;
+ width: 10%;
+ float: right;
+ padding-right: 35%;
+}
+
+#pokemon-title{
+ height: 20%;
+ width: 20%;
+ padding-left: 20%;
+}
+*/
+#initial-question{
+ background-color: black;
+ color: white;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ height: 20%;
+ text-align: center;
+ padding-bottom: 3%;
+ padding-top: 3%;
+ margin-bottom: 0%;
+}
+
+#container{
+ background-image: url("imagenes/universe.jpg");
+ background-size: cover;
+ height: 500px;
+ margin-top: 0%;
+ color: white;
+ align-content: center;
+}
+
+.ocultar{
+ display: none;
+}
+
+p{
+margin: 0%;
+font-family: 'Coiny', cursive;
+}
+
+/* #pokemones-unoxuno{
+ background-image: url("imagenes/carta.png");
+ background-repeat: no-repeat;
+ background-size: 70%;
+ height: 50%;
+ width: 40%;
+} */
+
+#container_allPokemones{
+ text-align: center;
+}
+
+.lista_de_pokemones{
+ background-color: #D3D3D3;
+ height: 600px;
+ width: 80%;
+ margin: auto;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ overflow: scroll;
+ scrollbar-color: black;
+ margin-bottom: 10px;
+ margin-top: 10px;
+ margin: blue;
+}
+
+
+#mostrando_lista_pokemones ul{
+   margin: 15px;
+   padding: 10px;
+   display: flex;
+   width: 100%;
+   height: 80%;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   overflow: scroll;
+   list-style: none;
+}
+
+/* .lista_de_pokemones::-webkit-scrollbar {
+ background-color: black;
+ height: 0px;
+ border-radius: 1rem;
+ cursor: pointer;
+}
+
+.lista_de_pokemones::-webkit-scrollbar-thumb {
+ background: black;
+ border-radius: 1rem;
+} */
+
+
+
+#filtered_by_type{
+ margin: 15px;
+   padding: 10px;
+   display: flex;
+   width: 30%;
+   height: 80%;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   overflow: scroll;
+   list-style: none;
+}
+
+
+
+h2{
+ margin: 0%;
+ padding-top: 1%;
+ font-family: 'Coiny', cursive;
+}
+
+.button_unoxuno{
+ height: 40px;
+ width: 130px;
+ margin-top: 60px;
+ background-color: #ccc;
+ border-radius: 10px;
+ color: black;
+ font-size: 20px;
+ font-family: 'Coiny', cursive;
+}
+
+.button_unoxuno:hover{
+ background-color: black;
+ color: rgb(235, 236, 231);
+}
+
+.section2{
+ height: 500px;
+ background-color: rgb(194,12,12);
+}
+
+/* .all-data {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ margin: 2rem;
+ width: 90vw;
+ height: 90vh;
+ overflow: scroll;
+} */
+
+/* .all-data::-webkit-scrollbar {
+ background-color: #00B3CC;
+ height: 0px;
+ border-radius: 1rem;
+ cursor: pointer;
+}
+
+.all-data::-webkit-scrollbar-thumb {
+ background: white;
+ border-radius: 1rem;
+}
+
+.all-data::-webkit-scrollbar-thumb:hover {
+ background: #9BF2BA;
+ border-radius: 1rem;
+ cursor: pointer;
+} */
+
+/* #pretty_button{
+ display: flex;
+     justify-content: space-between;
+     cursor: pointer;
+     border-color: #00B3CC;
+ color: white;
+ background-color: #00B3CC;
+ -webkit-box-shadow: -9px 10px 16px -7px rgba(82, 73, 82, 0.68);
+ -moz-box-shadow: -9px 10px 16px -7px rgba(82, 73, 82, 0.68);
+ box-shadow: -9px 10px 16px -7px rgba(82, 73, 82, 0.68);
+ transition: 1ms;
+} */
+#filer_by_name,
+.enlace{
+ border-color: RGB(146, 2, 225)  ;
+ cursor: pointer;
+ color: white;
+ background-color: RGB(146, 2, 225)  ;
+ width: 7rem;
+ font-family: 'Coiny', cursive;
+ font-size: 1.25rem;
+
+/* --------------------------------- */
+
+ /* display: flex; */
+   /* flex-direction: column; */
+   align-items: center;
+   margin: 1.5rem 0;
+   padding: 1rem 0;
+   border-radius: 1rem;
+   align-content: center;
+ 
+}
+
+.enlace:hover{
+ background-color: black;
+ border-color: white;
+ color: white;
+ }
+li{
+ margin: 10px;
+ width: 40%;
+ text-align: center;
+ background-color: rgb(88,88,88,0.5);
+ border-radius: 10px;
+
+}
+
+li{
+ display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 1.5rem 0;
+   /* border: 1px rgba(204, 204, 204, 1) solid; */
+   padding: 2rem 0;
+   border-radius: 1rem;
+   -webkit-box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
+   -moz-box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
+   box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
+   background-color: rgba(255, 255, 255, 0.6)
+}
+
+li:hover{
+ border: RGB(146, 2, 225)    0.3rem solid;
+ transform: scale(1.1);
+ transition: transform 0.1s;
+}
+
+#mini_container{
+ width: 30%
+}
+
+#pokemons_filtered{
+ width: 60%;
+ float: left;
+}
+
+#global_container{
+ width: 100%;
+}
+
+
+
+#section1{
+ /* display: none; */
+ background-color: white;
+}
+
+#nav{
+ width: 100%;
+ height: 300px;
+ background-color: black;
+}
+
+
+
+
+
+
 /* --- */
+

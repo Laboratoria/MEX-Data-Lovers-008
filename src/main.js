@@ -47,12 +47,13 @@ const showOnexOneReverse = () => {
 firstButton.addEventListener("click", showOnexOne);
 buttonAtras.addEventListener("click", showOnexOneReverse);
 
+//--------------------------------------------------------
 
 let numero=0;
 const numerodepokemones=document.getElementById("numerodepokemones");
 const porcentajedepokemones=document.getElementById("porcentajedepokemones");
 const estadisticas=document.getElementById("estadistica");
-//--------------------------------------------------------
+
 // funcion que imprime toda la data en la section1
 const imprimir = (data) => {
  //llamar section donde se imprime la data
