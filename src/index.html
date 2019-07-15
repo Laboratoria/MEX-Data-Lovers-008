@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -10,70 +10,63 @@
 </head>
 
 <body>
-  <!--Página de inicio-->
   <section id="homePage">
-    <img src="../img/LogoDL.png" id="logoHome">
-    <button type="button" id="buttonEnter" class="button-enter">Enter</button>
+    <img src="../img/LogoDL.png" id="logoHome" alt="Logotipo">
+    <button type="button" id="button-enter">Enter</button>
   </section>
-
-  <!--Página de acción-->
-  <section class="hide" id="champion-list">
+  <section id="pageOne" class="hide">
     <header>
+      <div id="mainLogo">
+        <img src="../img/LogoDL.png" id="logo1" alt="Logotipo"></div>
       <div id="search">
-        <input id="search" type="search" placeholder="Champion name">
+        <input id="buscar" type="search" placeholder="champion name">
         <img src="../img/magnifier.png" id="searchIcon">
       </div>
-      <div id="menu">
-        <nav id="menuNav">
-          <ul>
-            <li id="item"><a href="#">Role</a>
-              <ul id="desple">
-                <li><a class="rol" id="Assasins" href="#">Assasins</a></li>
-                <li><a class="rol" id="Fighther" href="#">Fighther</a></li>
-                <li><a class="rol" id="Mage" href="#">Mage</a></li>
-                <li><a class="rol" id="Marksman" href="#">Marksman</a></li>
-                <li><a class="rol" id="Support" href="#">Support</a></li>
-                <li><a class="rol" id="Tank" href="#">Tank</a></li>
-              </ul>
-            </li>
-    
-          </ul>
-        </nav>
-      </div>
-      <ul>
-          <li id="item"><a value="order" href="#">Order</a>
-          <ul id="desple">
-            <li><a id="az" value="A-Z" href="#">A-Z</a></li>
-            <li><a id="za" value="Z-A" href="#">Z-A</a></li>
-          </ul>
-      </ul>
-      </div>
     </header>
-
-    <h2>Select a champion</h2>
-
-    <div class="square" id="card-summary">
+    <h1>Select a champion</h1>
+    <nav id="menuNav">
+      <ul>
+        <li class="item">Role
+          <ul id="desple">
+            <li class="roleBtn" id="Assassin">Assasins</li>
+            <li class="roleBtn" id="Fighter">Fighter</li>
+            <li class="roleBtn" id="Mage">Mage</li>
+            <li class="roleBtn" id="Marksman">Marksman</li>
+            <li class="roleBtn" id="Support">Support</li>
+            <li class="roleBtn" id="Tank">Tank</li>
+          </ul>
+        </li>
+        <li class="item">Order
+          <ul id="desple">
+            <li class="orderBtn" id="ascendant">A-Z</li>
+            <li class="orderBtn" id="descendant">Z-A</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="allAvatar">
     </div>
-    <!-- Contenido de la tarjeta de cada campeon-->
-    <div class="hide" id="card-champ">
-      <div class="modal-content">
-        <span class="close" id="close-fun">x</span>
-        <div id="printCard">
-
-        </div>
-      </div>
-    </div>
-    
-    <div id="separator"></div>
-
-    
-    <footer>
+    <footer id="foot">
+      <img src="../img/RiotLogo.jpg" alt="logoRiotGames" id="riotLogo">
+      <p>©2019 Riot Games</p>
 
     </footer>
-   
-    
   </section>
+  <section id="rolePage">
 
+  </section>
+  
+  <section id="individualChampion" class="col-8">
+    <img class="iconX" src="../img/delete-button.png">
+
+  </section>
+  <div id="cards-champion">
+
+  </div>
+  <!-- <script src="./data/injuries/injuries.js"></script> -->
+  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+  <!-- <script src="./data/steam/steam.js"></script> -->
+  <!-- <script src="./data/worldbank/worldbank.js"></script> -->
   <script src="./data/lol/lol.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
@@ -81,4 +74,3 @@
 
 </html>
 
-<!-- Comentario -->

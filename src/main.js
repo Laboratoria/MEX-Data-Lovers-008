@@ -1,106 +1,157 @@
-//Declarando las variables para enlazar elementos
-const homePage = document.getElementById('homePage');
-const championList = document.getElementById('champion-list');
-const cardSummary = document.getElementById('card-summary');
-const rol = document.getElementsByClassName('rol');
-const cardChamp = document.getElementById('card-champ');
+// mostrar y ocultar secciones
+
+const enterButton = document.getElementById ('button-enter');
+
+const hideSection = (id)=> {
+  document.getElementById(id).classList.add ('hide');
+}
+
+const showSection =(id) => {
+  document.getElementById(id).classList.remove('hide');
+}
+
+const openPageOne = () => {
+  hideSection ('rolePage');
+  hideSection ('homePage');
+  showSection ('pageOne');
+} 
+
+enterButton.addEventListener ('click', openPageOne);
 
 
-//Declarando las variables para enlazar botones
-const buttonEnter = document.getElementById('buttonEnter');
-const closeFunFacts = document.getElementById('close-fun');
+const openRolePage = () => {
+  showSection ('rolePage');
+  hideSection ('PageOne');
+}
 
 
-const printCard = (champ) => {
-    document.getElementById('printCard').innerHTML = `<h1>${champ.name}</h1>
-  <p class="champion-title">${champ.title}</p>
-  <div class="background-modal" style="background-image:url(${champ.splash})">
-  <h2>${champ.tags[0]}</h2>
-  <h2>${champ.tags[1]} </h2>
-  <p class="champion-stats">Attack: ${champ.info.attack}</p>
-  <p class="champion-stats">Defense: ${champ.info.defense}</p>
-  <p class="champion-stats">Magic: ${champ.info.magic}</p>
-  <p class="champion-stats">Difficulty: ${champ.info.difficulty}</p>
-  <p class="champion-stats">HP: ${champ.stats.hp}</p>
-  <p class="champion-stats">MP: ${champ.stats.mp}</p>
-  <p class="champion-stats">Armor: ${champ.stats.armor}</p>
-  <p class="champion-stats">Crit: ${champ.stats.crit}</p>
-  <p class="champion-stats">Attack Damage: ${champ.stats.attackdamage}</p>
-  <p class="champion-stats">Move Speed: ${champ.stats.movespeed}</p>
-  </div>`;
-};
+// //accediendo a data de aatrox
+// let dataBase = LOL.data
+// let newObject = dataBase.Aatrox.info
+// console.log (newObject)
 
-//Input para buscar por nombre
-let search = document.getElementById('search');
-//Variable para extraer la data
-const lolData = window.LOL.data;
+// //convirtiendo base de datos de un solo campeón a arreglo
+// let dataBase = LOL.data;
+// let newArray = Object.values(dataBase.Aatrox)
+// console.log (newArray)
 
-//Evento del boton Comenzar
-homePage.addEventListener('click', () => {
-    buttonEnter.classList.add('hide');
-    championList.classList.remove('hide');
-    const newArrayChamp = window.lol.showData(lolData);
-    printData(newArrayChamp);
+//pasar toda la base de datos a arreglo
+const dataBase = LOL.data;
+const newArray = Object.values(dataBase);
+//accediendo a Aatrox en el nuevo arreglo 
+//let newDataChamp = newArray[0];
+const showCard = document.getElementById('cards-champion');
+
+//usando la data como array para acceder a datos específicos
+let dataForIndividualCard = '';
+newArray.forEach(element => {
+  const imagenChamp = element.splash
+  const nameChamp = element.id;
+  const titleChamp = element.title
+  const roleChamp = element.tags;
+  const descriptionChamp = element.blurb;
+  //Se muestra en consola lo siguiente:
+  // console.log(nameChamp);
+  // console.log(roleChamp)
+  // console.log(description)
+
+  //Pintar en html
+  dataForIndividualCard += `<article id="cards" class="col-8">
+  <img class="iconX" src="../img/delete-button.png">
+  <img id="absoluteImg" src= "${imagenChamp}" alt="ImagenChampion">
+  <div id= "descChamp">
+  <h2>${nameChamp}</h2> <br>
+  <p>${titleChamp}</p> <br>
+  <p>${roleChamp} </p> <br>
+  <p>${descriptionChamp} </p>
+  </div>
+  </article>`;
 });
 
-//Variable para seleccionar el campeón a visualizar
-const champion = document.getElementsByClassName('champion');
+showCard.innerHTML= dataForIndividualCard;
 
-//Función para imprimir la data en el HTML
-const printData = (newArrayInfo) => {
-    cardSummary.innerHTML = " ";
-    newArrayInfo.forEach(champ => {
-        let result = `<div id='${champ.name}' class="champion"> 
-        <img src="${champ.img}">
-    <h3> ${champ.name} </h3> 
+
+
+
+
+
+
+//Pintar todos los avatares en pantalla solución 1 
+const printAllAvatar = document.getElementById("allAvatar"); 
+
+//En vez de usar forEach, uso for
+
+const showChampions= (newArray) => {
+  let str = "";
+  for (let i = 0; i < newArray.length; i++) {
+    str += `<div  class="img-champions" >
+        <img id="img-avatar" src="${newArray[i].img}">
+        <br>
+      <div>
+       ${newArray[i].name}
+      </div>
     </div>`;
-        cardSummary.insertAdjacentHTML("beforeend", result);
-    });
-
-    for (let i = 0; i < champion.length; i++) {
-        champion[i].addEventListener("click", () => {
-            let champElegido = champion[i].id;
-            const champ = window.lol.toCard(lolData, champElegido);
-            printCard(champ);
-            cardChamp.classList.remove('hide');
-        });
-    }
+  }
+  printAllAvatar.innerHTML = str;
 };
+showChampions(newArray)
 
-//Función para cerrar la tarjeta de los campeones
-closeFunFacts.addEventListener('click', () => {
-    cardChamp.classList.add('hide');
-});
-//Función para cerrar la tarjeta de los campeones dando clic fuera de la tarjeta
-window.addEventListener('click', () => {
-    if (event.target == cardChamp) {
-        cardChamp.classList.add('hide');
-    }
-});
 
-//Funcion para buscar por nombre
-search.addEventListener('keyup', () => {
-    let name2 = search.value;
-    // let search3 = searchByName.toLowerCase();
-    const newArrayChamp = window.lol.showData(lolData);
-    let filtered = window.lol.filterByName(newArrayChamp, name2);
-    if (name2 == "") {
-        printData(newArrayChamp);
-    } else {
-        printData(filtered);
-    }
-});
 
-//Función para seleccionar rol
-const selectRol = () => {
-    for (let i = 0; i < rol.length; i++) {
-        rol[i].addEventListener("click", () => {
-            let rolId = rol[i].id;
-            const newArrayChamp = window.lol.showData(lolData);
-            const arrayFiltered = window.lol.filterByRol(newArrayChamp, rolId);
-            printData(arrayFiltered);
-        });
-    }
-};
-selectRol();
 
+// //empezando a ordenar, primero pruebo sort, sale ordenado raro
+// newArray.sort (console.log);
+
+//array usando una función de comparación, ya se ordena por orden a-z
+// console.log(newArray.sort ((a,b) => a-b));
+
+//usando reverse, pasan a orden Z-A
+// let reversa = newArray.reverse();
+// console.log(reversa);
+
+// //filtrando por tag asesino
+// const onlyAssassins = newArray.filter(championRole => championRole.tags[0] =="Assassin");
+// console.log(onlyAssassins);
+
+const newData= [];
+const rolePage = document.getElementById('rolePage');
+
+const printByRole = (newArray) => {
+  let stringV ='';
+  newArray.forEach(element =>{
+    stringV += `<div class="flip-card">
+    <div class="flip-card-inner">
+        <div id="front-card">
+            <img id="bigImg" src="${element.splash}" alt="imageChampion">
+            <div class="champInfo">
+                <h3>${element.id}</h3>
+            </div>
+        </div>
+        <div id="back-card">
+        <div class="champStats">
+            <br>
+            <h3>${element.id}</h3>
+            <h4>Information</h4> <br>
+            <p>Attack: ${element.info.attack}</p>
+            <p>Defense: ${element.info.defense}</p>
+            <p>Magic: ${element.info.magic}</p>
+            <p>Difficulty: ${element.info.difficulty}</p> <br>
+            <h4>Stats</h4> <br>
+            <p>HP: ${element.stats.hp}</p>
+            <p>MP: ${element.stats.mp}</p>
+            <p>Move speed: ${element.stats.movespeed}</p>
+            <p>Armor: ${element.stats.armor}</p>
+            <p>Spell block: ${element.stats.spellblock}</p>
+            <p>Attack range: ${element.stats.attackrange}</p>
+            <p>HP regeneration: ${element.stats.hpregen}</p>
+            <p>MP regeneration: ${element.stats.mpregen}</p>
+            <p>Crit: ${element.stats.crit}</p>
+            <p>Attack damage: ${element.stats.attackdamage}</p>
+            <p>Attack speed: ${element.stats.attackspeedoffset}</p> <br><br>
+        </div>
+    </div>
+    </div>
+</div>`
+  })
+  rolePage.innerHTML = stringV;
+}
