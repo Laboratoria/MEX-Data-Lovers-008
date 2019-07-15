@@ -2,13 +2,14 @@
   font-family: "LOL!";
   src: url(fonts/LOL!.ttf);
 }
-/*Para ocultar y mostrar secciones*/
-.hide{
-  display : none;
-}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+.hide {
+  display: none;
 }
 
 #homePage {
@@ -25,7 +26,7 @@
   margin-top: -50px;
   display: block;
 }
-#buttonEnter {
+#button-enter {
   border: 2px rgb(239, 184, 16) outset;
   font-family: "LOL!";
   font-size: 20px;
@@ -39,7 +40,298 @@
   border-radius: 4px;
 }
 
-.champion {
-  width: 95px;
-  height:95px;
+header {
+  width: 100vw;
+  overflow: hidden;
+  background-color: black;
+  text-align: center;
 }
+
+#mainLogo #logo1 {
+  width: 284px;
+  height: 125px;
+  float: left;
+}
+#menuNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  font-size: 20px;
+}
+
+.item {
+  float: left;
+  position: relative;
+  right: 150px;
+  width: 3cm;
+}
+
+.roleBtn, .item, .orderBtn {
+  background-color: black;
+  color: rgb(239, 184, 16);
+  display: block;
+  text-decoration: none;
+  padding: 12px 22px;
+  font-family: "LOL!";
+  width: 1.84cm;
+}
+
+#desple {
+  display: none;
+}
+.item:hover #desple {
+  display: block;
+}
+
+.item :hover {
+  color: black;
+  background-color: rgb(239, 184, 16);
+  animation: 0.5s ms 1;
+}
+
+@keyframes ms {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+
+#search {
+  position: relative;
+  top: 50px;
+  right: 30px;
+}
+body {
+  background: linear-gradient(to bottom, gray, black);
+}
+
+#allAvatar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 120px;
+  color: rgb(239, 184, 16);
+  font-family: "LOL!";
+}
+
+.img-champions {
+  width: 95px;
+  height: 95px;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.img-champions :hover {
+  opacity: 0.5;
+}
+
+#img-avatar {
+  width: 55px;
+  height: 55px;
+}
+
+#buscar {
+  width: 200px;
+  height: 25px;
+  border-radius: 6px;
+  border-color: rgb(239, 184, 16);
+}
+#searchIcon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  right: 0px;
+  top: 5px;
+}
+
+footer {
+  background-color: rgb(26, 25, 25);
+  color: rgb(239, 184, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#individualChampion {
+  background-color: rgb(239, 184, 16);
+  opacity: 0.4;
+  border-radius: 25px;
+  height: 500px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.iconX {
+  float: right;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+}
+
+.iconX:hover {
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#absoluteImg {
+  width: 405px;
+  height: 239px;
+}
+
+/* Responsive */
+[class*="col-"] {
+  min-height: 10px;
+  /* gutters */
+  padding: 12px;
+}
+.col-1 {
+  width: 8.333333333333332%;
+}
+.col-2 {
+  width: 16.666666666666664%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333333333333%;
+}
+.col-5 {
+  width: 41.66666666666667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.333333333333336%;
+}
+.col-8 {
+  width: 66.66666666666666%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33333333333334%;
+}
+.col-11 {
+  width: 91.66666666666666%;
+}
+.col-12 {
+  width: 100%;
+}
+
+#descChamp {
+  width: 400px;
+  height: 200px;
+  font-family: "LOL!";
+  color: black;
+}
+
+#cards {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  background-color: rgb(182, 160, 84);
+  border-radius: 25px;
+  height: 500px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* modificando*/
+
+#rolePage {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#bigImg {
+  width: 100%; /*cambiar a 100 ambas*/
+  height: 100%;
+}
+.flip-card {
+  position: relative;
+  width: 45%;
+  align-items: center;
+  border: #00b3cc 0.5rem;
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  background-color:transparent;
+  color:rgb(239, 184, 16);
+  position: relative;
+  width: 100%; /* regresar a 100% width y height*/
+  height: 100%;
+  text-align: center;
+  vertical-align: center;
+  transition: transform 0.6s;
+  /* transform-style: preserve-3d; */
+}
+
+/* .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+} */
+
+.front-card, .back-card {
+  width: 100%;
+  height: 100%;
+  /* margin-bottom: 5rem; */
+  /* height: 450px; */
+  /* vertical-align: center; */
+  -moz-backface-visibility: hidden;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* padding: 2rem 0;
+  margin-bottom: 2rem;
+  height: 100%;
+  border-radius: 1rem;
+  -webkit-box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
+  background-color: rgba(255, 255, 255, 0.6); */
+}
+
+.front-card {
+  color: gray;
+  width: 50%;
+  background-color: blueviolet;
+  position: absolute;
+  height: auto;
+  color: black;
+}
+
+.back-card {
+  background-color:yellow;
+  color: black;
+  transform: rotateY(180deg);
+  position: relative;
+}
+.champInfo {
+  background-color:transparent;
+}
+/* .front-card .champInfo{
+  height: 100%;
+}
+.champInfo {
+  margin-top: 1rem;
+} */
