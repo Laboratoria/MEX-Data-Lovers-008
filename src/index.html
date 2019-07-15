@@ -17,7 +17,6 @@
 
     <!--PANTALLA DE BIENVENIDA-->
     <section id="pantalla-bienvenida" class="row">
-        <!--<div id="button-inicio" class="gif-button col-6"><input type="image" alt="Inicio" src="images/portal png 1(6).gif" :hover></div>-->
         <div id="button-personajes" class="gif-button col-6"><input type="image" alt="Personajes" src="images/rick-spinning.giphy(2).gif" :hover><div class="nombre-secciones">Personajes</div></div>
         <div id="button-planetas" class="gif-button col-6"><input type="image" alt="Planetas" src="images/yell.giphy.gif" :hover><div class="nombre-secciones">Planetas y dimensiones</div></div>
         <div id="button-explorar" class="gif-button col-6"><input type="image" alt="Explorar" src="images/rick-morty-watch-giphy(2).gif" :hover><div class="nombre-secciones">Explorar</div></div>
@@ -26,33 +25,35 @@
 
      <!--PANTALLA DE PERSONAJES-->
     <section id="pantalla-personajes" class="row disappear">
-      <article>
-        <div class="section-header">
+      <div class="row">
+        <article>
           <h1>Personajes</h1>
+        </article>
+      </div>
+      <div class="row" id="inputs-pantalla-personajes">
+        <div class="col-2">
+          <select id="input-filter-personajes">
+            <option value="filter">Filtrar</option>
+            <option value="all">Todos</option>
+            <option value="status.Alive">Vivos</option>
+            <option value="status.Dead">Muertos</option>
+            <option value="gender.Male">Masculinos</option>
+            <option value="gender.Female">Femeninos</option>
+          </select>
         </div>
-      </article>
-      <div class="card-display">
-        <div id="card-display"></div>
+        <div class="col-2">
+          <select id="input-sort-personajes">
+            <option value="all">Ordenar</option>
+            <option value="sortAZ">Ordenar A-Z</option>
+            <option value="sortZA">Ordenar Z-A</option>
+          </select>
+        </div>
       </div>
-      <div class="row" id="filter-personajes">
-        <select class="col-2" id="input-filter-personajes">
-          <option value="filter">Filtrar</option>
-          <option value="all">Todos</option>
-          <option value="status.Alive">Vivos</option>
-          <option value="status.Dead">Muertos</option>
-          <option value="gender.Male">Masculinos</option>
-          <option value="gender.Female">Femeninos</option>
-        </select>
+      <div class="row">
+        <div class="card-display">
+          <div id="card-display"></div>
+        </div>
       </div>
-      <br>
-      <br>
-      <!--<div class="row .input-ordenar" id="sort-personajes">
-        <select name="" class="col-8" id="input-sort-personajes">
-          <option value="all">Ordenar</option>
-          <option value="sortAZ">Ordenar A-Z</option>
-          <option value="sortZA">Ordenar Z-A</option>
-        </select>
-      </div>-->
     </section>
 
      <!--PANTALLA DE PLANETAS-->
@@ -95,14 +96,8 @@
       </div>
     </div>
 
+    <!--FOOTER-->
     <footer id="footer" class="row">
-        <div class="row .input-ordenar" id="sort-personajes">
-            <select name="" class="col-8" id="input-sort-personajes">
-              <option value="all">Ordenar</option>
-              <option value="sortAZ">Ordenar A-Z</option>
-              <option value="sortZA">Ordenar Z-A</option>
-            </select>
-          </div>
       <h3>Rick and Morty Lovers - 2019</h3>
     </footer>
 

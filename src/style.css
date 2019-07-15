@@ -186,9 +186,8 @@ section {
     
 }
 
-#filter-personajes {
+#inputs-pantalla-personajes {
     background-color: green;
-    position: fixed;
 }
 
 article {

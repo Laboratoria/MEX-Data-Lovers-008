@@ -1,3 +1,4 @@
+//Variables globales para funciones DOM y manipular data
 const data = window.RICKANDMORTY.results;
 const buttonReinicio = document.getElementById("button-reinicio");
 const buttonPersonajes = document.getElementById("button-personajes");
@@ -11,8 +12,8 @@ const screenPersonajes = document.getElementById("pantalla-personajes");
 const screenPlanetas = document.getElementById("pantalla-planetas");
 const screenExplorar = document.getElementById("pantalla-explorar");
 const screenAyuda = document.getElementById("pantalla-ayuda");
-//const buttonInicio = document.getElementById("button-inicio");
 
+//Función para pantalla de bienvenida
 const pantallaBienvenida = () => {
     screenBienvenida.classList.remove("disappear");
     screenPersonajes.classList.add("disappear");
@@ -23,6 +24,7 @@ const pantallaBienvenida = () => {
     buttonFilter.classList.add("disappear");
 }
 
+//Función para pantalla de personajes
 const pantallaPersonajes = () => {
     screenBienvenida.classList.add("disappear");
     screenPersonajes.classList.remove("disappear");
@@ -31,11 +33,13 @@ const pantallaPersonajes = () => {
     screenAyuda.classList.add("disappear");
     buttonReinicio.classList.remove("disappear");
     buttonFilter.classList.remove("disappear");
+    buttonSort.classList.remove("disappear");
 }
 
+//Función para pintar toda la data de los personajes
 let printDataPersonajes = (data) => {
-    let str = "";
-    data.forEach(element => {
+    let str = "";//Variable vacía para recibir resultado
+    data.forEach(element => { // Método para recorrer todas las entradas del array. Enseguida se crea un template string para imprimir los datos que queremos de cada entrada.
       str += `<div id="cards">
         <div class="col-10">
             <div class="row">
@@ -51,36 +55,35 @@ let printDataPersonajes = (data) => {
         </div>
     </div>`
     });
-    document.getElementById("card-display").innerHTML = str;
+    document.getElementById("card-display").innerHTML = str;//Imprime en pantalla
     }
     printDataPersonajes(data);
 
+//Función para filtrar data    
 let filterData1 = () => {
-    let filterValue = buttonFilter.value;
-    let splitFilterValue = filterValue.split(".");
-    let key = splitFilterValue[0];
-    let value = splitFilterValue[1];
+    let filterValue = buttonFilter.value;//Obtiene el value elegido por usuarix para filtrar
+    let splitFilterValue = filterValue.split(".");//Método split que permite obtener del value del input los parámetros para filtrar
+    let key = splitFilterValue[0];//Obtiene key de la entrada del objeto, como cirterio de filtrado
+    let value = splitFilterValue[1];//Obtiene el valor elegido para filtrar
     let filterResult = window.filterData(data, key, value);
     printDataPersonajes(filterResult);
 };
 filterData1();
 
+//Función para ordenar data por nombre en orden A-Z y Z-A
 let sortData = () => {
-    let sortValue = buttonSort.value;
-    console.log(sortValue);
+    let sortValue = buttonSort.value; //Obtiene valor elegido por usuarix para ordenar
     if (sortValue === "sortAZ") {
         sortResult = window.sortDataAZ(data, sortValue);
         printDataPersonajes(sortResult);
-        console.log(sortResult);        
     } else if (sortValue === "sortZA") {
         sortResult = window.sortDataZA(data, sortValue);
         printDataPersonajes(sortResult);
-        console.log(sortResult);
     }
 };
 sortData();
 
-
+//Pantalla para data de planetas. Tentativo retirar.
 const pantallaPlanetas = () => {
     screenBienvenida.classList.add("disappear");
     screenPersonajes.classList.add("disappear");
@@ -91,6 +94,7 @@ const pantallaPlanetas = () => {
     buttonFilter.classList.add("disappear");
 }
 
+//Pantalla de recursos externos
 const pantallaExplorar = () => {
     screenBienvenida.classList.add("disappear");
     screenPersonajes.classList.add("disappear");
@@ -101,6 +105,7 @@ const pantallaExplorar = () => {
     buttonFilter.classList.add("disappear");
 }
 
+//Pantalla de información sobre la web app
 const pantallaAyuda = () => {
     screenBienvenida.classList.add("disappear");
     screenPersonajes.classList.add("disappear");
@@ -111,6 +116,7 @@ const pantallaAyuda = () => {
     buttonFilter.classList.add("disappear");
 }
 
+//Declara funciones del DOM
 buttonReinicio.addEventListener("click", pantallaBienvenida);
 buttonPersonajes.addEventListener("click", pantallaPersonajes);
 buttonPlanetas.addEventListener("click", pantallaPlanetas);
@@ -118,4 +124,3 @@ buttonExplorar.addEventListener("click", pantallaExplorar);
 buttonAyuda.addEventListener("click", pantallaAyuda);
 buttonFilter.addEventListener("change", filterData1);
 buttonSort.addEventListener("change", sortData);
-//buttonInicio.addEventListener("click", pantallaBienvenida);
