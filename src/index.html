@@ -1,14 +1,135 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>CatchMaster</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Asap:400,500,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <header class="header container">
+      <div id="menu-ham" class="ham-menu">
+        <span id="icon-menu"
+          ><img src="./arch_ext/icono_menu-01.png" alt="" width="40%"
+        /></span>
+        <span id="icon-menu-close"
+          ><img src="./arch_ext/icono_menu-02.png" alt="" width="40%"
+        /></span>
+      </div>
+      <nav class="navigation" id="nav">
+        <ul class="menu">
+          <li>
+            <a id="home-m" class="link" href="#welcome">HOME</a>
+          </li>
+          <li>
+            <a id="search-m" class="link" href="#search">BÚSQUEDA</a>
+          </li>
+          <li>
+            <a id="collection-m" class="link" href="#collection-section"
+              >MI COLECCIÓN</a
+            >
+          </li>
+          <li>
+            <a class="link" href="#missing-section">FALTANTES</a>
+          </li>
+        </ul>
+      </nav>
+      <figure class="logo">
+        <a href="#">
+          <img
+            src="./arch_ext/logo_catchm.png"
+            width="60%"
+            alt="Logo CatchMaster"
+          />
+        </a>
+      </figure>
+    </header>
+
+    <div id="container-charge">
+      <div id="charge">
+        <figure>
+          <img src="./arch_ext/logo_catchm.png" alt="Logo CatchMaster" />
+        </figure>
+      </div>
+    </div>
+
+    <main id="cont">
+      <section id="welcome" class="welcome-s">
+        <div class="container-welcome">
+          <h1>BIENVENIDOS</h1>
+          <p>
+            Esta aplicación te ayudará a llevar un registro de los pokemones que
+            has capturado, los que te faltan por capturar y además podrás
+            conocer sus principales características para que ganes el mayor
+            número de combates y sepas el momento correcto para evolucionar a
+            tus pokemones.<br />
+            <strong>¡Atrápalos ya!</strong>
+          </p>
+          <input type="button" value="COMENZAR" id="button-start" />
+        </div>
+      </section>
+      <!-- <section class="search-section" id="search">
+        <div class="title-input">
+          <span class="title"><h2>BÚSQUEDA</h2></span>
+          <div class="inp-search">
+            <form>
+              <input
+                type="search"
+                id="my-search1"
+                name="q"
+                placeholder="Busca un pokémon"
+              />
+              <img src="./arch_ext/lupa-03.png" alt="x" width="5%" />
+              <button id="but-search"></button>
+            </form>
+            <div id="search-results"></div>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="collection-section" class="search-section collection">
+        <div class="input-select">
+          <select name="" id="pick-type">
+            <option disabled selected>Elige el tipo</option>
+            <option value="Normal">NORMAL</option>
+            <option value="Fight">LUCHADOR</option>
+            <option value="Flying">VOLADOR</option>
+            <option value="Poison">VENENOSO</option>
+            <option value="Ground">TIERRA</option>
+            <option value="Rock">ROCA</option>
+            <option value="Bug">BICHO</option>
+            <option value="Ghost">FANTASMA</option>
+            <option value="Fire">FUEGO</option>
+            <option value="Water">AGUA</option>
+            <option value="Grass">HIERBA</option>
+            <option value="Electric">ELÉCTRICO</option>
+            <option value="Psychic">PSÍQUICO</option>
+            <option value="Ice">HIELO</option>
+            <option value="Dragon">DRAGÓN</option>
+          </select>
+          <select name="" id="pick-sort">
+            <option disabled selected>Ordenar</option>
+            <option value="za">Z-A</option>
+            <option value="az">A-Z</option>
+            <!-- <option value="minor-greater">NÚMERO - +</option>
+            <option value="greater-minor">NÚMERO + -</option> -->
+          </select>
+          <!-- <span class="go-up go-up-icon"
+            ><img src="./arch_ext/arrow-up.png" alt=""
+          /></span> -->
+        </div>
+        <div class="secundary-section">
+          <h2>MI COLECCIÓN</h2>
+          <div id="data"></div>
+        </div>
+      </section>
+    </main>
     <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+    <script src="./data/pokemon/pokemon.js"></script>
     <!-- <script src="./data/steam/steam.js"></script> -->
     <!-- <script src="./data/worldbank/worldbank.js"></script> -->
     <!-- <script src="./data/lol/lol.js"></script> -->

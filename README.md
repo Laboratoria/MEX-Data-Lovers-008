@@ -1,3 +1,109 @@
+# Data Lovers/Pokémon CatchMaster
+
+## Índice
+
+- [Definición del producto](#definición)
+- [Encuestas](#encuestas)
+- [Definición del usuario](#usuario)
+- [Problemática](#problemática)
+- [Historias de usuario](#historias)
+- [Proceso de diseño de interfaz](#diseño)
+- [Planificación del proyecto](#planificación)
+- [Mejoras a futuro](#mejoras)
+
+## Definición del producto
+
+La aplicación le ayudará al usuario a llevar un registro de los pokemones que ha capturado, los que le faltan por capturar y además podrá visualizar la información de los pokemones ordenada por la importancia que el usuario le da a cada dato como guía para que gane el mayor número de combates y sepa el momento correcto para evolucionar a tus pokemones.
+
+## Encuestas
+
+Después de leer los requerimientos del proyecto, decidimos realizar una encuesta en línea con la ayuda de la herramienta Google Forms. El cuetionario se realizó con base a la información proporcionada en la data y algunas preguntas se realizaron con el fin de conocer mejor a nuestro usuario.
+La encuesta fue lanzada en grupos de FB dirigidos a jugadores de Pokémon GO, TW con los hashtags #PokemonGO #PokemonGOMéxico entre otros y en Slack.
+
+[Cuestionario](https://docs.google.com/forms/d/1u8vdwKt311HEo8Y2_a1TdiGUYT1mSPkkYpCxMHge3h4/edit?usp=sharing)
+
+A continuación mostramos los resultados más relevantes:
+
+![Género](./src/arch_ext/pokemon_encuesta/genero.jpg)
+
+Nuestra encuesta fue contestada por un mayor número de mujeres
+
+![Edad](./src/arch_ext/pokemon_encuesta/edad.jpg)
+
+Nuestro usuario tiene entre 26 - 30 años de edad
+
+![Frecuencia de juego](./src/arch_ext/pokemon_encuesta/frecuencia.jpg)
+
+Juega diariamente
+
+![Gusto](./src/arch_ext/pokemon_encuesta/gusto.jpg)
+
+Lo que más le gusta de Pokémon GO es que puede armar una colección con los mejore pokemones
+
+![Datos importantes](./src/arch_ext/pokemon_encuesta/c_import.jpg)
+
+Le da más importancia a datos como Tipo, Número de caramelos y Debilidades, que a datos como la Altura y Peso y información sobre Eclosión de huevos.
+
+También pudimos saber que nuestro usuario no utiliza regularmente alguna aplicación o sitio web para saber o conocer más a sus pokemones.
+
+Además les preguntamos a los encuestados para que utilizarían los siguientes datos: tipo, altura, peso, caramelos, información sobre incubación y debilidades. Por lo que pudimos concluir que lo más importante para nuestros usuarios es conocer las características para que puedan ganar mayor número de combates y también saber cual es el momento en el que se les permitira evolucionar a sus pokemones.
+
+## Definición del usuario
+
+Gracias a la encuesta realizada pudimos realizar un arquetipo de nuestro usuario.
+
+![Arquetipo](./src/arch_ext/arquetipo.png)
+
+## Problemática
+
+Después de analizar la data obtenida de las encuestas definimos nuestra problemática y la presentamos a continuación:
+
+El usuario necesita una aplicación que le muestre un listado de sus pokemones para que pueda ver sus principales características y saber cual pokémon está listo para evolucionar, cual le dará mejor rendimiento en combate y que pokémon le falta para completar su pokédex.
+
+## Historias de usario
+
+Éstas son algunas historias de usuario que comenzamos a definir:
+
+![Historias de usuario](./src/arch_ext/historias-02.png)
+
+## Proceso de diseño de interfaz
+
+Después de hacer una análisis de aplicación Pokémon GO, llegamos a un acuerdo en que la aplicación web a desarrollar debía ser similar a la aplicación original, ya que el usuario ya esta familiarizado con esa interfaz y le permitira un mejor y más rápido manejo.
+
+![Prototipo de baja fidelaidad](./src/arch_ext/prototipo_b-04.png)
+
+![Prototipo de baja fidelaidad 2](./src/arch_ext/prototipo_b2-03.png)
+
+![Prototipo de alta fidelidad](./src/arch_ext/prot_alt-05.png)
+
+![](./src/arch_ext/prot_alt-06.png)
+![](./src/arch_ext/prot_alt-07.png)
+
+### Paleta de color
+
+![Paleta](./src/arch_ext/elemento-01.png)
+
+### Tipografía
+
+![Tipografía](./src/arch_ext/elemento-02.png)
+
+### Elementos visuales de la aplicación
+
+![E Visuales](./src/arch_ext/elemento-05.png)
+
+### Marca
+
+![Marca](./src/arch_ext/elemento-03.png)
+![Elementos](./src/arch_ext/elemento-04.png)
+
+## Planificación del proyecto
+
+![Planificación](./src/arch_ext/elemento-06.png)
+
+## Mejoras a futuro
+
+Con la finalidad de mejorar nuestra aplicación web queremos testear nuestros prototipos, además concideramos que una entrevista a algunos de nuestros usuarios potenciales nos daría un mejor panorama de sus gustos y manera de pensar.
+
 # Data Lovers
 
 ## Índice
@@ -50,7 +156,6 @@ ayude a interactuar y entender mejor esos datos.
 
 Estos son datos que te proponemos:
 
-
 - [Pokémon](src/data/pokemon/pokemon.json):
   En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
   junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](pokemongolive.com).
@@ -63,8 +168,7 @@ Estos son datos que te proponemos:
   este [link](https://developer.riotgames.com/api-methods/).
 - [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
   Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com). 
-
+  Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com).
 
 Como entregable final tendrás una página web que permita **visualizar la data,
 filtrarla, ordenarla y hacer algún cálculo agregado**. Como aclaración,
@@ -143,7 +247,6 @@ una herramienta que funciona en el navegador y, además, puedes crear una cuenta
 gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
 Illustrator, Photoshop, PowerPoint, Keynote, etc.
 
-
 #### Testeos de usabilidad
 
 Durante el reto deberás realizar tests de usabilidad con distintos usuarios, y
@@ -216,7 +319,6 @@ Features/características extra sugeridas:
 - Agregarle a tu interfaz de usuario implementada visualizaciones gráficas. Para
   ello te recomendamos explorar librerías de gráficas como [Chart.js](https://www.chartjs.org/)
   o [Google Charts](https://developers.google.com/chart/).
-
 
 ## Consideraciones técnicas
 
@@ -322,7 +424,6 @@ asíncrona con [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_A
 Tendrás también que completar las pruebas unitarias de las funciones
 implementadas en el archivo `data.js`.
 
-
 ---
 
 ## Pistas sobre cómo empezar a trabajar en el proyecto
@@ -397,11 +498,11 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 - [ ] Pasa tests (`npm test`)
 - [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+- [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [x] Incluye historias de usuario en `README.md`.
+- [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
-- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+- [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
       en `README.md`.
 - [ ] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.

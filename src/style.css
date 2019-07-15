@@ -1,0 +1,544 @@
+/* ---- Quitando estilos predetermindos ---- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* ---- Estilos generales ---- */
+body {
+  font-family: "Asap", sans-serif;
+  color: rgba(51, 51, 51, 1);
+}
+
+img {
+  max-width: 100%;
+}
+h1 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 253%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 260%;
+  text-align: center;
+}
+
+/* ---- HEADER ---- */
+.container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  z-index: 2000;
+}
+
+header {
+  padding: 20px;
+  position: absolute;
+}
+
+header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.logo {
+  float: left;
+  display: flex;
+  padding-top: 2em;
+}
+
+header #icon-menu {
+  cursor: pointer;
+}
+
+.navigation {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    180deg,
+    rgba(220, 53, 51, 1),
+    rgba(68, 1, 0, 1)
+  );
+  overflow: hidden;
+  clip-path: circle(0px at top left);
+  transition: clip-path ease-in-out 700ms;
+  margin-top: -65px;
+}
+.site-nav-open {
+  height: 100vh;
+  clip-path: circle(150% at top left);
+}
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation .menu a {
+  display: block;
+  padding: 2em 6em;
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+.ham-menu {
+  top: 0.5em;
+  right: 0.5em;
+  display: flex;
+  position: relative;
+  z-index: 1000;
+}
+
+.menu-open .ham {
+  transform: rotate(45deg);
+}
+
+.menu-open .ham::before {
+  opacity: 0;
+}
+
+.menu-open .ham::after {
+  transform: translateY(-3px) rotate(-90deg);
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+#icon-menu-close {
+  display: none;
+}
+/* ---- Carga ---- */
+#container-charge {
+  background-image: linear-gradient(
+    180deg,
+    rgba(220, 53, 51, 1),
+    rgba(68, 1, 0, 1)
+  );
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 3000;
+}
+
+#charge {
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 70%;
+  padding-right: 5%;
+
+  -webkit-animation: crecer 4s linear infinite;
+  -o-animation: crecer 4s linear infinite;
+  animation: crecer 4s linear infinite;
+}
+
+@keyframes crecer {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* ---- Welcome ---- */
+#welcome {
+  background-image: linear-gradient(
+    180deg,
+    rgba(220, 53, 51, 1),
+    rgba(68, 1, 0, 1)
+  );
+  height: 100vh;
+  text-align: center;
+}
+
+.container-welcome {
+  width: 70%;
+  padding-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#welcome p {
+  color: rgba(255, 255, 255, 1);
+  padding-top: 10%;
+}
+
+#welcome p strong {
+  font-size: 130%;
+}
+
+#welcome input {
+  background-image: linear-gradient(
+    120deg,
+    rgba(220, 53, 51, 1),
+    rgba(68, 1, 0, 1)
+  );
+  color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  width: 40%;
+  height: 6vh;
+  font-family: "Asap", sans-serif;
+  font-weight: 500;
+  border-color: transparent;
+  margin-top: 10%;
+  font-size: 90%;
+}
+
+/* ---- Sección BÚSQUEDA ---- */
+/* .search-section {
+  display: none;
+}
+#search {
+  background-image: linear-gradient(
+    180deg,
+    rgba(220, 53, 51, 1),
+    rgba(255, 255, 255, 1)
+  );
+  height: 100vh;
+}
+
+.title-input {
+  width: 100%;
+  padding: 46% 10%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+}
+
+.input-search {
+  width: 100%;
+  align-items: center;
+}
+
+#but-search {
+  width: auto;
+  overflow: visible;
+  cursor: pointer;
+} */
+
+/* ---- Sección MI COLECCIÓN ---- */
+.search-section {
+  display: none;
+}
+
+select {
+  font-size: 85%;
+  background-color: rgba(0, 29, 126, 1);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.input-select {
+  padding-top: 30%;
+  padding-left: 26%;
+}
+#collection-section {
+  background-image: linear-gradient(
+    180deg,
+    rgba(153, 169, 220, 1),
+    rgba(255, 255, 255, 1)
+  );
+  height: 2000vh;
+}
+
+.collection div form {
+  padding-left: 2em;
+  padding-top: 1em;
+  width: 50%;
+  height: 4vh;
+  margin-bottom: 3%;
+  display: block;
+}
+
+/* .order select {
+  width: 35%;
+  margin-bottom: 3%;
+  background-color: blue;
+  color: aliceblue;
+  float: left;
+  display: block;
+} */
+
+.show-collection {
+  height: 100vh;
+}
+
+/* ---- Trajeta de Pokémon ---- */
+#data {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.poke-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.poke-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 8%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.poke-card:hover .poke-card-inner {
+  transform: rotateY(180deg);
+}
+
+.poke-card-front,
+.poke-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.poke-card-front {
+  background-color: transparent;
+  color: rgba(51, 51, 51, 1);
+}
+
+.poke-card-back {
+  background-color: transparent;
+  color: rgba(51, 51, 51, 1);
+  transform: rotateY(180deg);
+  float: left;
+}
+
+#p-number {
+  font-weight: 400;
+}
+#p-name {
+  font-weight: 700;
+}
+#p-type {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    position: absolute;
+    top: 63%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .ham-menu {
+    top: 4.5em;
+    left: 0.5em;
+  }
+  .navigation ul {
+    margin: 61px;
+  }
+  .logo {
+    float: left;
+    padding-top: 9em;
+  }
+  #data {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  .poke-card {
+    float: left;
+    margin-bottom: 25px;
+    margin-right: 28px;
+    margin-left: 28px;
+  }
+
+  .input-select {
+    padding-left: 37%;
+  }
+  select {
+    font-size: 104%;
+  }
+
+  h2 {
+    font-size: 309%;
+  }
+  #charge {
+    padding-top: 55%;
+    padding-right: 3%;
+  }
+  .container-welcome {
+    width: 52%;
+    padding-top: 40%;
+    padding-right: 0%;
+  }
+  h1 {
+    font-size: 400%;
+  }
+  #welcome p {
+    font-size: 124%;
+  }
+  #welcome p strong {
+    font-size: 150%;
+  }
+  #welcome input {
+    margin-top: 15%;
+    font-size: 131%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .navigation {
+    position: absolute;
+    top: 63%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .navigation .menu a {
+    font-size: 333%;
+  }
+  header #icon-menu {
+    width: 30%;
+    margin-left: 9%;
+    margin-top: 12%;
+  }
+  .logo {
+    padding-top: 19em;
+    width: 30%;
+    margin-left: -12%;
+  }
+  #data {
+    width: 90%;
+  }
+
+  .poke-card {
+    margin-bottom: 25px;
+    margin-right: 28px;
+    margin-left: 28px;
+    width: 500px;
+    height: 500px;
+    perspective: 1000px;
+  }
+  .poke-card-inner {
+    padding-top: 14%;
+    font-size: 170%;
+  }
+
+  .input-select {
+    padding-left: 43%;
+    padding-top: 18%;
+  }
+  select {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 600%;
+  }
+  #charge {
+    padding-top: 15%;
+    padding-right: 3%;
+  }
+  .container-welcome {
+    width: 42%;
+    padding-top: 17%;
+  }
+  h1 {
+    font-size: 700%;
+  }
+  #welcome p {
+    font-size: 200%;
+  }
+  #welcome p strong {
+    font-size: 150%;
+  }
+  #welcome input {
+    font-size: 210%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    position: absolute;
+    top: 63%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .navigation .menu a {
+    font-size: 175%;
+  }
+  header #icon-menu {
+    width: 19%;
+    margin-left: 3%;
+    margin-top: 1%;
+  }
+  .logo {
+    padding-top: 8em;
+    width: 37%;
+    margin-left: -63%;
+  }
+  #data {
+    width: 90%;
+  }
+
+  .poke-card {
+    margin-bottom: 13px;
+    margin-right: 19px;
+    margin-left: 19px;
+    width: 250px;
+    height: 250px;
+  }
+  .poke-card-inner {
+    padding-top: 12%;
+    font-size: 90%;
+  }
+
+  .input-select {
+    padding-left: 40%;
+  }
+  select {
+    font-size: 120%;
+  }
+
+  h2 {
+    font-size: 350%;
+  }
+  .container-welcome {
+    width: 42%;
+    padding-top: 17%;
+  }
+  h1 {
+    font-size: 400%;
+  }
+  #welcome p {
+    font-size: 123%;
+  }
+  #welcome p strong {
+    font-size: 130%;
+  }
+  #welcome input {
+    font-size: 150%;
+  }
+}
