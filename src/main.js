@@ -1,4 +1,4 @@
-//mostrar y ocultar secciones
+// mostrar y ocultar secciones
 
 const enterButton = document.getElementById ('button-enter');
 
@@ -16,7 +16,7 @@ const openPageOne = () => {
   showSection ('pageOne');
 } 
 
-enterButton.addEventListener ('dblclick', openPageOne);
+enterButton.addEventListener ('click', openPageOne);
 
 
 const openRolePage = () => {
@@ -57,6 +57,7 @@ newArray.forEach(element => {
 
   //Pintar en html
   dataForIndividualCard += `<article id="cards" class="col-8">
+  <img class="iconX" src="../img/delete-button.png">
   <img id="absoluteImg" src= "${imagenChamp}" alt="ImagenChampion">
   <div id= "descChamp">
   <h2>${nameChamp}</h2> <br>
@@ -124,15 +125,33 @@ const printByRole = (newArray) => {
             <img id="bigImg" src="${element.splash}" alt="imageChampion">
             <div class="champInfo">
                 <h3>${element.id}</h3>
-                <p>Attack: ${element.info.attack}</p>
-                <p>Defense: ${element.info.defense}</p>
-                <p>Magic: ${element.info.magic}</p>
-                <p>Difficulty: ${element.info.difficulty}</p>
             </div>
         </div>
+        <div id="back-card">
+        <div class="champStats">
+            <br>
+            <h3>${element.id}</h3>
+            <h4>Information</h4> <br>
+            <p>Attack: ${element.info.attack}</p>
+            <p>Defense: ${element.info.defense}</p>
+            <p>Magic: ${element.info.magic}</p>
+            <p>Difficulty: ${element.info.difficulty}</p> <br>
+            <h4>Stats</h4> <br>
+            <p>HP: ${element.stats.hp}</p>
+            <p>MP: ${element.stats.mp}</p>
+            <p>Move speed: ${element.stats.movespeed}</p>
+            <p>Armor: ${element.stats.armor}</p>
+            <p>Spell block: ${element.stats.spellblock}</p>
+            <p>Attack range: ${element.stats.attackrange}</p>
+            <p>HP regeneration: ${element.stats.hpregen}</p>
+            <p>MP regeneration: ${element.stats.mpregen}</p>
+            <p>Crit: ${element.stats.crit}</p>
+            <p>Attack damage: ${element.stats.attackdamage}</p>
+            <p>Attack speed: ${element.stats.attackspeedoffset}</p> <br><br>
+        </div>
+    </div>
     </div>
 </div>`
   })
   rolePage.innerHTML = stringV;
 }
-
