@@ -28,7 +28,6 @@ describe('filterData()', () => {
   });
 
   it('debería retornar un arreglo', () => {
-    //expect(filterData()).toBe('array');
     expect(filterData([]) instanceof Array).toBe(true);
   });
 

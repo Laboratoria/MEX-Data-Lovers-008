@@ -2,14 +2,14 @@
 const data = window.RICKANDMORTY.results;
 const buttonReinicio = document.getElementById("button-reinicio");
 const buttonPersonajes = document.getElementById("button-personajes");
-const buttonPlanetas = document.getElementById("button-planetas");
+//const buttonPlanetas = document.getElementById("button-planetas");
 const buttonExplorar = document.getElementById("button-explorar");
 const buttonAyuda = document.getElementById("button-ayuda");
 const buttonFilter = document.getElementById("input-filter-personajes");
 const buttonSort = document.getElementById("input-sort-personajes");
 const screenBienvenida = document.getElementById("pantalla-bienvenida");
 const screenPersonajes = document.getElementById("pantalla-personajes");
-const screenPlanetas = document.getElementById("pantalla-planetas");
+//const screenPlanetas = document.getElementById("pantalla-planetas");
 const screenExplorar = document.getElementById("pantalla-explorar");
 const screenAyuda = document.getElementById("pantalla-ayuda");
 
@@ -17,23 +17,20 @@ const screenAyuda = document.getElementById("pantalla-ayuda");
 const pantallaBienvenida = () => {
     screenBienvenida.classList.remove("disappear");
     screenPersonajes.classList.add("disappear");
-    screenPlanetas.classList.add("disappear");
+    //screenPlanetas.classList.add("disappear");
     screenExplorar.classList.add("disappear");
     screenAyuda.classList.add("disappear");
     buttonReinicio.classList.remove("disappear");
-    buttonFilter.classList.add("disappear");
 }
 
 //Función para pantalla de personajes
 const pantallaPersonajes = () => {
     screenBienvenida.classList.add("disappear");
     screenPersonajes.classList.remove("disappear");
-    screenPlanetas.classList.add("disappear");
+    //screenPlanetas.classList.add("disappear");
     screenExplorar.classList.add("disappear");
     screenAyuda.classList.add("disappear");
     buttonReinicio.classList.remove("disappear");
-    buttonFilter.classList.remove("disappear");
-    buttonSort.classList.remove("disappear");
 }
 
 //Función para pintar toda la data de los personajes
@@ -83,7 +80,7 @@ let sortData = () => {
 };
 sortData();
 
-//Pantalla para data de planetas. Tentativo retirar.
+/*Pantalla para data de planetas. Tentativo retirar.
 const pantallaPlanetas = () => {
     screenBienvenida.classList.add("disappear");
     screenPersonajes.classList.add("disappear");
@@ -91,35 +88,32 @@ const pantallaPlanetas = () => {
     screenExplorar.classList.add("disappear");
     screenAyuda.classList.add("disappear");
     buttonReinicio.classList.remove("disappear");
-    buttonFilter.classList.add("disappear");
-}
+}*/
 
 //Pantalla de recursos externos
 const pantallaExplorar = () => {
     screenBienvenida.classList.add("disappear");
     screenPersonajes.classList.add("disappear");
-    screenPlanetas.classList.add("disappear");
+    //screenPlanetas.classList.add("disappear");
     screenExplorar.classList.remove("disappear");
     screenAyuda.classList.add("disappear");
     buttonReinicio.classList.remove("disappear");
-    buttonFilter.classList.add("disappear");
 }
 
 //Pantalla de información sobre la web app
 const pantallaAyuda = () => {
     screenBienvenida.classList.add("disappear");
     screenPersonajes.classList.add("disappear");
-    screenPlanetas.classList.add("disappear");
+    //screenPlanetas.classList.add("disappear");
     screenExplorar.classList.add("disappear");
     screenAyuda.classList.remove("disappear");
     buttonReinicio.classList.remove("disappear");
-    buttonFilter.classList.add("disappear");
 }
 
 //Declara funciones del DOM
 buttonReinicio.addEventListener("click", pantallaBienvenida);
 buttonPersonajes.addEventListener("click", pantallaPersonajes);
-buttonPlanetas.addEventListener("click", pantallaPlanetas);
+//buttonPlanetas.addEventListener("click", pantallaPlanetas);
 buttonExplorar.addEventListener("click", pantallaExplorar);
 buttonAyuda.addEventListener("click", pantallaAyuda);
 buttonFilter.addEventListener("change", filterData1);
