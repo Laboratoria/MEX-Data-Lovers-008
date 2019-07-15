@@ -6,7 +6,7 @@
 ---
 Elegimos el tema del presente proyecto con base a la cantidad de data con la que contabamos inicialmente en nuestro pokemon.js. 
 Iniciamos realizando encuentas para determinar cual era el tema que más le interesaba a las personas. 
-![PrimeraEncuesta](imagenes/primeraEncuesta.jpg)
+![PrimeraEncuesta](src/imagenes/primeraEncuesta.jpg)
 ---
 Los datos que obtuvimos al finalizar la primera encuesta fue que era pokémon. 
 ---
