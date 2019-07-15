@@ -38,7 +38,7 @@ const sortDataZA = (data) => {
   return data;
 };
 
-//computeStats(data): la función compute o calcular, nos permitirá hacer cálculos estadísticos básicos para ser mostrados de acuerdo a la data proporcionada.
+//FUNCIÓN PENDIENTE computeStats(data): la función compute o calcular, nos permitirá hacer cálculos estadísticos básicos para ser mostrados de acuerdo a la data proporcionada.
 
 //Declara métodos globales
 window.filterData = filterData;
