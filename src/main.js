@@ -5,6 +5,7 @@ const buttonPlanetas = document.getElementById("button-planetas");
 const buttonExplorar = document.getElementById("button-explorar");
 const buttonAyuda = document.getElementById("button-ayuda");
 const buttonFilter = document.getElementById("input-filter-personajes");
+const buttonSort = document.getElementById("input-sort-personajes");
 const screenBienvenida = document.getElementById("pantalla-bienvenida");
 const screenPersonajes = document.getElementById("pantalla-personajes");
 const screenPlanetas = document.getElementById("pantalla-planetas");
@@ -54,25 +55,30 @@ let printDataPersonajes = (data) => {
     }
     printDataPersonajes(data);
 
-let filterData2 = () => {
+let filterData1 = () => {
     let filterValue = buttonFilter.value;
-    //console.log(filterValue);
     let splitFilterValue = filterValue.split(".");
     let key = splitFilterValue[0];
-    //console.log(key);
     let value = splitFilterValue[1];
-    //console.log(value);
     let filterResult = window.filterData(data, key, value);
-    //console.log(filterResult);
     printDataPersonajes(filterResult);
 };
-filterData2();
+filterData1();
 
-/*let sortData = () => {
-    let name = data.name;
-    console.log(name);
-}
-sortData();*/
+let sortData = () => {
+    let sortValue = buttonSort.value;
+    console.log(sortValue);
+    if (sortValue === "sortAZ") {
+        sortResult = window.sortDataAZ(data, sortValue);
+        printDataPersonajes(sortResult);
+        console.log(sortResult);        
+    } else if (sortValue === "sortZA") {
+        sortResult = window.sortDataZA(data, sortValue);
+        printDataPersonajes(sortResult);
+        console.log(sortResult);
+    }
+};
+sortData();
 
 
 const pantallaPlanetas = () => {
@@ -110,5 +116,6 @@ buttonPersonajes.addEventListener("click", pantallaPersonajes);
 buttonPlanetas.addEventListener("click", pantallaPlanetas);
 buttonExplorar.addEventListener("click", pantallaExplorar);
 buttonAyuda.addEventListener("click", pantallaAyuda);
-buttonFilter.addEventListener("change", filterData2);
+buttonFilter.addEventListener("change", filterData1);
+buttonSort.addEventListener("change", sortData);
 //buttonInicio.addEventListener("click", pantallaBienvenida);
