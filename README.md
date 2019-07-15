@@ -13,16 +13,16 @@ Los datos que obtuvimos al finalizar la primera encuesta fue que era pokémon.
 
 Después gráficamos la cantidad de hombres y mujeres que juegan o jugaban pokémon Go y se nos hizo muy interesante el sesgo tan grande que existe, en este punto nos dimos cuenta que había muy pocas mujeres interactuando con el juego. Fue por ello que decidimos entender el ¿por qué?...
 ![SegundaEncuesta](src/imagenes/SegundaEncuesta.jpg)
-![ComoteIdentificas](imagenes/comoTeIndentificas.png)
-![CuantosAñosTienes](imagenes/queEdadTienes.png)
-![LoMasImportanteQueQUieresSaber](imagenes/loMasImportanteQueQuieresSaber.png)
-![teGustariaNuestraAplicacion](imagenes/teGustariaNuestraAplicacion.png)
+![ComoteIdentificas](src/imagenes/comoTeIndentificas.png)
+![CuantosAñosTienes](src/imagenes/queEdadTienes.png)
+![LoMasImportanteQueQUieresSaber](src/imagenes/loMasImportanteQueQuieresSaber.png)
+![teGustariaNuestraAplicacion](src/imagenes/teGustariaNuestraAplicacion.png)
 
 En el proceso encontramos que muchas chicas, aunque estaban interesadas jamás lo habían jugado porque sentían que no contaban con los conocimientos necesarios para ser una buena jugadora, y de ahí nació nuestra aplicación. 
 
 Iniciamos creando un prototipo de baja afinidad 
 
-![skecthBajaAfinidad](imagenes/sketch.jpg)
+![skecthBajaAfinidad](src/imagenes/sketch.jpg)
 
 Nuestra aplicación pretende convertirse en una herramienta efectiva, fácil de usar, amigable con la usuaria, con la finalidad de que adquiera los conocimientos básicos para adentrarse en el mundo pokémon.
 
