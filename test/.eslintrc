@@ -1,6 +1,10 @@
 {
   "env": {
     "node": true,
-    "jest": true
+    "jest": true,
+    "mocha": true
+  },
+  "globals": {
+    "assert": false
   }
 }

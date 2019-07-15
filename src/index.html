@@ -1,18 +1,124 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>Buscador Pokémon!</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+<body>
+    <!-- Navbar (sit on top)-->
+
+    <ul class="topnav">
+        <li><a class="active" href="#PaginaInicio" id="return-button">Inicio</a></li>
+        <li><a href="#instructions" id="help-button">Instrucciones</a></li>
+        <li><a href="#dataPokemon" id="show-button">Pokedex!</a></li>
+
+    </ul>
+
+    <section id="PaginaInicio" class="display_block"></section>
+
+    <section class="hide" id="instructions">
+        <div class="instructions-text ">
+            <input type="button" name="close" value="X" id="close">
+            <h2>Instrucciones</h2>
+            <p>Esta es una página donde puedes visualizar los 151 Pokémones de la región Kento.</p><br>
+            <p>Utilizarlo es muy sencillo, para ingresar solo necesitas dar click en "Pokedex " y ahí podras ver todos los Pokémones, así como filtrar por tipo, evolución y por nombre de forma ascedente o descendente.</p>
+        </div>
+    </section>
+
+
+    <!-- pokedex-->
+    <section id="Pokedex" class="hide">
+
+        <!-- Menu Filters -->
+        <div id="sorta-z" class="">
+
+            <div id="filtermenu" class="container2">
+                <ul id="nav">
+                    <li><a href="#s1">Filtros</a>
+                        <li class="active"><a href="#s1">POR NOMBRE</a>
+                            <span id="s1"></span>
+                            <ul class="subs">
+                                <li>
+                                    <ul>
+                                        <li><button class="buttonType" id="ordsname-a">Ascendente</button></li>
+                                        <li><button class="buttonType" id="ordsname-d">Descendente</button></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="active"><a href="#s2">POR TIPO</a>
+                            <span id="s2"></span>
+                            <ul class="subs">
+                                <li>
+                                    <ul>
+                                        <li> <button id="Normal" class="buttonType">Normal</button> </li>
+                                        <li> <button id="Fire" class="buttonType">Fuego</button> </li>
+                                        <li> <button id="Grass" class="buttonType">Hierba</button> </li>
+                                        <li> <button id="Poison" class="buttonType">Veneno</button> </li>
+                                        <li> <button id="Ice" class="buttonType">Hielo</button> </li>
+                                        <li> <button id="Water" class="buttonType">Agua</button> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li> <button id="Flying" class="buttonType">Volador</button> </li>
+                                        <li> <button id="Psychic" class="buttonType">Psíquico</button> </li>
+                                        <li> <button id="Ground" class="buttonType">Tierra</button> </li>
+                                        <li> <button id="Ghost" class="buttonType">Fantasma</button> </li>
+                                        <li> <button id="Bug" class="buttonType">Insecto</button> </li>
+                                        <li> <button id="return" class="buttonType">Todos</button> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </li>
+                    <li><a href="#statsmenu" id="statsweight">DATO CURIOSO!<br> ¿Sabes cuál es el peso promedio de todos los pokémones?</a></li>
+                </ul>
+
+            </div>
+
+            <section class="hide" id="statsmenu">
+                <div class="stats-text">
+                    <input type="button" name="close" value="X" id="close2">
+                    <h2>¿Sabías qué?</h2>
+                    <p class="text-stats" id="stats"></p>
+                </div>
+            </section>
+
+            <!-- Botones Filtrado A-Z y Z-A-->
+            <div id="" class="">
+                <h4></h4>
+                <button class="btn-option"></button>
+                <button class="btn-option"></button>
+            </div> 
+
+
+            <!-- Tarjeta Pokemon -->
+            <div id="dataPokemon" class="container Pokedex ">
+            </div>
+          </div>
+    </section>
+ 
+    <div id="root "></div>
+   
+    <script src="./data/pokemon/pokemon.js "></script>
+
+    <script src="main.js "></script>
+    <script src="data.js "></script>
+
+</body>
+
 </html>
+
