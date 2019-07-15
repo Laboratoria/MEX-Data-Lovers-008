@@ -142,7 +142,7 @@ function cargando(){
  container.classList.remove("ocultar");
  pokeboll.classList.add("ocultar");
 };
- setTimeout ("cargando()", 3000);
+ setTimeout ("cargando()", 7000);
 
 const conocertodos=document.getElementById("conocertodos");
 const todospokemones=document.getElementById("todospokemones");
