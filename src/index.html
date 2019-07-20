@@ -1,18 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Champions guide </title>
+  <link rel="icon" href="../img/Logo.ico" type="image/ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--Página de inicio-->
+  <section id="homePage">
+    <img src="../img/LogoDL.png" id="logoHome">
+    <button type="button" id="buttonEnter" class="button-enter">Enter</button>
+  </section>
+
+  <!--Página de acción-->
+  <section class="hide" id="champion-list">
+    <header>
+      <div id="search">
+        <input id="search" type="search" placeholder="Champion name">
+        <img src="../img/magnifier.png" id="searchIcon">
+      </div>
+      <div id="menu">
+        <nav id="menuNav">
+          <ul>
+            <li id="item"><a href="#">Role</a>
+              <ul id="desple">
+                <li><a class="rol" id="Assasins" href="#">Assasins</a></li>
+                <li><a class="rol" id="Fighther" href="#">Fighther</a></li>
+                <li><a class="rol" id="Mage" href="#">Mage</a></li>
+                <li><a class="rol" id="Marksman" href="#">Marksman</a></li>
+                <li><a class="rol" id="Support" href="#">Support</a></li>
+                <li><a class="rol" id="Tank" href="#">Tank</a></li>
+              </ul>
+            </li>
+    
+          </ul>
+        </nav>
+      </div>
+      <ul>
+          <li id="item"><a value="order" href="#">Order</a>
+          <ul id="desple">
+            <li><a id="az" value="A-Z" href="#">A-Z</a></li>
+            <li><a id="za" value="Z-A" href="#">Z-A</a></li>
+          </ul>
+      </ul>
+      </div>
+    </header>
+
+    <h2>Select a champion</h2>
+
+    <div class="square" id="card-summary">
+    </div>
+    <!-- Contenido de la tarjeta de cada campeon-->
+    <div class="hide" id="card-champ">
+      <div class="modal-content">
+        <span class="close" id="close-fun">x</span>
+        <div id="printCard">
+
+        </div>
+      </div>
+    </div>
+    
+    <div id="separator"></div>
+
+    
+    <footer>
+
+    </footer>
+   
+    
+  </section>
+
+  <script src="./data/lol/lol.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
