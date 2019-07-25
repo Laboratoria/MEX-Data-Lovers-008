@@ -1,18 +1,184 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glance at LoL</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
+    <link rel="stylesheet" href="fonts/icons.css">
+</head>
+
+<body class="body-bg">
+    <div class="container">
+
+        <header class="body-header">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#"><span id="button-nav-welcome" class=""><i class="icon icon-home"></i></span>Home</a></li>
+                    <li><a href="#"><span id="button-nav-gbasics" class=""><i class="icon icon-game-controller"></i></span>Game Basics</a></li>
+                    <li>
+                        <a id="logo-welcome" class="logo-welcome" href="#"> <img src="GLol-Logo.png" alt="Logo Glance at LoL" width="100px" height="30px"></a>
+                    </li>
+                    <li><a href="#"><span id="button-nav-champions" class=""><i class="icon icon-trophy"></i></span>Champions</a></li>
+                    <li id="button-nav-filter" class="hide"><a href="#"><span class=""><i class="icon icon-search"></i></span>Filtrar</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section id="welcome" class="section-welcome">
+            <div>
+                <header class="section-welcome-header">
+                    <box id="box-modal-button" class="b-m-button">
+                        <a href="#" id="modal-help"> <img src="help-icon.png"></a>
+                    </box>
+                    <div id="modal-box" class="m-box">
+                        <div id="modal-flex" class="m-flex">
+                            <div id="modal-content" class="m-content">
+                                <header id="modal-header" class="m-header flex">
+                                    <h2>¿Cómo usar Glance at LoL?</h2>
+                                    <span id="close-modal" class="close">&times;</span>
+                                </header>
+                                <div id="modal-body" class="m-body">
+                                    <figure>
+                                        <img src="lol-bronze.png" width="60px" height="40px">
+                                    </figure>
+                                    <section class="text-m-content">
+                                        <p class="m-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ab non architecto saepe a esse ratione repellat at commodi repellendus sapiente earum, odio provident amet magni. Asperiores sed architecto eveniet
+                                            molestias corrupti. Nobis repellat incidunt animi dicta quod temporibus. Praesentium ea, nobis ratione sapiente magni dicta obcaecati quas? Officiis nisi minima magni aliquam nostrum fugit asperiores delectus
+                                            qui iste in. Aperiam ut voluptatibus nulla nemo, eum doloribus illum quia distinctio?</p>
+                                    </section>
+                                </div>
+                                <div id="modal-footer" class="m-footer">
+                                    <h3>¡Disfruta tu recorrido!</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="welcome-header" class="w-header">
+                        <h1>Bienvenid@ a Glance at LoL</h1>
+                    </div>
+                </header>
+            </div>
+            <main>
+                <section id="principal-content" class="welcome-content">
+                    <subtitle id="engagement">
+                        <h2>¿Quieres jugar LoL como todo un Pro-Gamer?</h2> <br> <br>
+                        <p>¿Dedicas buena parte de tu tiempo viendo gameplays, disfrutas ver jugar a tus amigos y en el fondo, <br> quieres lanzarte a la jungla, pero no sabes por donde empezar?</p> <br>
+                    </subtitle>
+
+                    <figure class="welcome-img">
+                        <img id="welcome-lol-img" src="welcome-lol.png">
+                    </figure>
+
+                    <section id="info-basic" class="info-basic">
+                        <p>¡Por fin! Una herramienta que te ayude a obtener una mirada rápida al universo LoL, empezando por sus campeones que te ayuda a tomar las mejores decisiones a la hora de jugar.</p> <br>
+                        <button id="button-meet-champions" class="button-meet-c">Conocer a los Campeones</button>
+                    </section>
+                </section>
+            </main>
+        </section>
+
+        <section id="game-basics" class="hide">
+            <article>
+                <header>
+                    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+                </header>
+
+                <hr class="content-basics">
+                <!--Se cambia la class y los elementos que contiene el siguiente div-->
+                <div class="content-basics conteiner mt-5">
+                    <h1>Reglas Básicas</h1>
+                    <br>
+                    <input type="text" id="form" class="form-control my-10">
+                    <br>
+                    <button class="btn btn-info mb-10" id="buttonSearch">Buscar</button>
+
+
+                    <br>
+                    <div class="search-zone">
+                        <ul id="result-found" class="resultFound">
+
+                        </ul>
+                    </div>
+
+                </div>
+                <br>
+                <br>
+                <button id="button-gb-start">Comenzar</button>
+                <br>
+                <br>
+            </article>
+        </section>
+        <section id="champions" class="section-champions hide">
+            <header class="champions-header">
+                <nav class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="#"> <select id="filter-roles" class="select-roles">
+                                            <option value="">Choose Role</option>
+                                            <option value="Assassin">Asesinos</option>
+                                            <option value="Fighter">Luchadores</option>
+                                            <option value="Mage">Magos</option>
+                                            <option value="Marksman">Tiradores</option>
+                                            <option value="Tank">Tanques</option>
+                                            <option value="Support">Soporte</option>
+                                    </select></a>
+                        </li>
+                        <li>
+                            <a href="#"><select id="filter-ability" class="select-ability"> 
+                                            <option value="">Best 10 By Ability</option>
+                                            <option value="armor">AR</option>
+                                            <option value="attackdamage">AD</option>
+                                            <option value="attackspeedoffset">AS</option>
+                                            <option value="movespeed">MS</option>
+                                    </select></a>
+                        </li>
+                        <li>
+                            <a href="#"><select id="order-alphabeth" class="select-alphabeth"> 
+                                            <option value="">Alphabeth Order</option>
+                                            <option value="A">A-Z</option>
+                                            <option value="Z">Z-A</option>
+                                        </select></a>
+                        </li>
+                        <li><button id="average">Average</button></li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="section-champions" class="main-cards">
+                <div id="box-cards" class="box-cards">
+                </div>
+            </main>
+        </section>
+
+        <footer class="footer-body">
+            <section class="copyright">
+                <p><i class="icon icon-code"></i> Tania Juarez ★ Leda Huerta <i class="icon icon-code1"> </i> Laboratoria ® ©</p>
+            </section>
+            <div class="box-white">
+            </div>
+            <figure class="footer-logos">
+                <div>
+                    <img src="laboratoria-logo.png" width="150px" height="30px">
+                </div>
+                <div class="logo-f2">
+                    <img src="lol-logo.png" width="150px" height="30px">
+                </div>
+            </figure>
+        </footer>
+
+
+    </div>
+
+
+    <script src="./data/lol/lol.js"></script>
     <script src="data.js"></script>
+    <script src="gameBasics.js"></script>
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>

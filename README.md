@@ -1,3 +1,200 @@
+# ⚔️ Glance at LoL ⚔️
+
+Es un sitio que nos presenta una guía básica acerca de los principales elementos que componen el videojuego de League of Leyends.
+
+Este videojuego es del género multijugador de arena de batalla en línea (MOBA) y deporte electrónico, desarrollado por Riot Games para Microsoft Windows y OS X. 
+
+Cuenta con más de 100 millones de usuarios alrededor del mundo y motivo de competencias multitudinarias mundiales que se disputa todos los años.
+
+Los campeones comienzan cada partida con un bajo nivel y luego ganan experiencia en el transcurso de la partida para alcanzar un nivel máximo de 18. Ganar niveles de experiencia en las partidas permite a los jugadores desbloquear las habilidades especiales de su campeón y aumentarlas de varias maneras únicas para cada personaje.
+
+El juego consta de 3 modos actuales de juego en ejecución: La Grieta del Invocador, El Bosque Retorcido y El Abismo de los Lamentos. Los jugadores compiten en partidas, que duran entre 20 y 60 minutos en promedio. En cada modo de juego, los equipos trabajan juntos para lograr una condición de victoria, normalmente destruyendo la estructura central (llamado Nexo) en la base del equipo enemigo después de pasar por alto una línea de estructuras defensivas llamadas Torretas. En todos los modos de juego, los jugadores controlan personajes llamados «campeones», elegidos o asignados en cada partida, que tienen un conjunto de habilidades únicas, con los cuales jugarán toda la partida hasta su conclusión.
+
+A través de las partidas, los jugadores también obtienen recompensas que se aplican a su cuenta. Las cuentas de los jugadores comienzan en el nivel uno y progresan mediante la cantidad de partidas jugadas. El nivel de jugador es independiente del nivel de personaje.
+
+Nos dimos a la tarea de investigar mas acerca de este videojuego en tendencia, ver las modalidades y cómo es que impacta entre la comunidad gamers.
+
+
+
+
+
+## Research 🕵️
+
+
+En nuestros desing research, nos dimos a la tarea de investigar el perfil de los usuarios de LoL, estadisticas, datos sociodemograficos, asi como comportamientos, necesidades y preferencias que tienen. 
+
+![research](img/research.jpg)
+
+
+
+
+
+### Benchmarking 📊
+
+
+Las principales aplicaciones utilizadas, se muestran en la siguiente tabla:
+![tabla-benchmarking](img/benchmarking.png)
+
+
+
+
+
+### Investigación de Usuario y su comportamiento 🔎
+![caracteristicas-usuario](img/caracteristicas-usuario.jpg)
+
+
+
+
+
+### Insights 📢
+
+
+Al entender y detectar a los jugadores de esta plataforma, entendimos que:
+
+•	Presentan problemas al acceder a ciertas aplicaciones.
+
+•	Presentan problemas de conexión en algunos dispositivos.
+
+•	Tanto los usuarios expertos como los iniciadores, necesitan entender y conocer los lineamientos generales.
+
+•	Necesitan conocer cada campeón.
+
+•	Requieren poder identificar los campeones que frecuentemente son utilizados.
+
+•	Bases de datos de objetos y campeones.
+
+•	Interfaz amigable y facil de usar.
+
+
+
+
+
+### User Persona 👥
+
+
+![user-persona](src/img/userPersona.png)
+
+
+
+
+
+
+### Necesidades 😧
+
+
+En general, los usuarios presentan las siguientes necesidades:
+
+• Entender el objetivo del juego.
+
+• Conocer las mecánicas mas básicas.
+
+• Entender conceptos básicos y tips.
+
+• Buscar una forma de mejorar sus jugadas y estrategias.
+
+
+
+
+
+### Encuesta ❓
+
+Decidimos realizar una encuesta a los usuarios de LoL que nos permitiera saber mas acerca de sus referencias, gustos e intereses. Las preguntas que lanzamos fueron las siguientes:
+
+![Encuesta](img/encuesta.png)
+
+• ¿Has jugado/visto League Of Legends en los últimos 3 meses?
+
+• ¿Cómo te identificas?
+
+• ¿Qué edad tienes?
+
+• ¿Cuántas veces a la semana lo juegas?
+
+• ¿Qué habilidades te resultan más importantes al conocer a un campeón?
+
+• ¿Qué roles te resultan más interesantes?
+
+• ¿Qué consideras mas importante al momento de elegir/comparar a un campeón?
+
+• ¿Qué posiciones ocupas al jugar?
+
+_Resultados_
+
+Obtuvimos 34 encuestas contestadas, teniendo los siguientes resultados:
+
+![pregunta1](img/pregunta1.png)
+
+![pregunta2](img/pregunta2.png)
+
+![pregunta3](img/pregunta3.png)
+
+![pregunta4](img/pregunta4.png)
+
+![pregunta5](img/pregunta5.png)
+
+![pregunta6](img/pregunta6.png)
+
+![pregunta7](img/pregunta7.png)
+
+![pregunta8](img/pregunta8.png)
+
+
+
+
+
+### Primer Sketch ✏️📒
+
+
+Como primer boceto, nos planteamos el siguiente:
+
+![sketch](img/sketch1.jpg)
+
+
+
+
+
+### Historias de usuario ✍
+
+
+• Presentar una guia de uso sobre esta aplicación.
+• Permitir al usuario conocer los términos generales, vocabulario y reglas básicas del juego.
+• Mostrar la información de los campiones de League of Leyends en orden alfabetico.
+• Permitir al usuario filtar y obtener la información de los campeones de acuerdo a sus roles.
+• Consultar estadisticas 
+
+
+
+
+## Construido con ⚒️
+
+### ✔️ HTML5
+### ✔️ CSS3
+### ✔️ JS ES6
+
+
+
+
+## Autores 👓
+Leda Huerta /
+Tania E Juarez
+
+
+
+## Expresiones de Gratitud
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+- - - 
+
 # Data Lovers
 
 ## Índice

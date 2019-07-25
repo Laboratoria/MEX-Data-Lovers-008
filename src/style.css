@@ -1,0 +1,541 @@
+/*limpiar estilos por defecto*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.body-bg {
+    width: 100%;
+    background-image: url(LoLFont.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    height: 100vh;
+}
+
+
+/*Crear contenedor del sistema*/
+
+.container {
+    display: block;
+    width: 100%;
+    margin: 0px auto;
+    height: 100vh;
+}
+
+
+/*Estilos Menu Navegacion*/
+
+.body-header {
+    width: 100%;
+    background-color: #0A1616;
+}
+
+nav {
+    margin: 0.1% auto;
+    width: 90%;
+    max-width: 1600px;
+    background-color: #0A1616;
+}
+
+nav ul {
+    list-style: none;
+}
+
+
+/*Especificidad de > con el le decimos que toma a los ul que sean hijos de navr*/
+
+nav>ul {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    background-color: #0A1616;
+    position: relative;
+}
+
+nav>ul li {
+    display: table-cell;
+    text-align: center;
+}
+
+nav>ul li a {
+    color: #CD951A;
+    display: block;
+    line-height: 60px;
+    margin-top: 1%;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav>ul>li>a>span {
+    background-color: #0A1616;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -55px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav>ul>li>a>span.icon {
+    display: block;
+    text-align: center;
+    align-items: center;
+    line-height: 40px;
+}
+
+nav>ul>li a:hover>span {
+    top: 0;
+}
+
+
+/*Estilos de  footer*/
+
+.footer-body {
+    width: 100%;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    background-color: #0A1616;
+    display: inline-flex;
+}
+
+.copyright {
+    color: #CD951A;
+    text-align: center;
+    display: inline-flex;
+    background-color: #0A1616;
+}
+
+.footer-logos {
+    display: inline-flex;
+    background-color: #0A1616;
+}
+
+.box-white {
+    width: 30vw;
+    background-color: #0A1616;
+}
+
+.logo-f2 {
+    margin-left: 1vw;
+}
+
+
+/*Estilos de  section welcome*/
+
+.section-welcome {
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.section-welcome-header {
+    color: #785C20;
+    display: block;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.w-header {
+    color: #785C20;
+    display: block;
+    text-align: center;
+}
+
+.welcome-content {
+    display: block;
+    color: #785C20;
+    text-align: center;
+}
+
+.engagement {
+    text-align: center;
+}
+
+.welcome-img {
+    display: contents;
+    width: 40%;
+    height: 200px;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.info-basic {
+    text-align: center;
+}
+
+.button-meet-c {
+    text-decoration-skip-ink: none;
+    -moz-text-decoration-style: none;
+    background-image: url(arrow-lol.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0A1616;
+    color: #CD951A;
+    border: none;
+    height: 15px;
+    font-size: 18px;
+}
+
+
+/*Estilos de Modal*/
+
+
+/*Estilo del flexbox modal*/
+
+.flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*Estilos de boton del Modal:*/
+
+.b-m-button {
+    background-color: none;
+    align-items: center;
+    display: inline-block;
+    padding: 8 px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.b-m-button:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+/*Estilos del Contenido del Modal*/
+
+.m-header,
+.m-footer {
+    text-align: center;
+    padding: 8px 16px;
+    background-color: #0A1616;
+    color: #E4B04C;
+    border-radius: 25%;
+}
+
+.m-body,
+.m-text {
+    text-align: center;
+    padding: 20 px 16px;
+    border-radius: 25%;
+}
+
+.m-box {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(191, 160, 4, 0.465);
+    ALIGN-ITEMS: CENTER;
+    JUSTIFY-CONTENT: CENTER;
+}
+
+.m-content {
+    display: grid;
+    text-justify: auto;
+    position: relative;
+    background-color: #03080B;
+    color: #785C20;
+    margin: 33%;
+    width: 30%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .4);
+    border-radius: 25%;
+    animation-name: modal;
+    animation-duration: 1s;
+}
+
+.text-m-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+}
+
+
+/*Animación del Modal*/
+
+@keyframes modal {
+    from {
+        top: -330px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.close {
+    color: #785C20;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: rgb(219, 233, 148);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*
+estilo sección game-basics
+*/
+
+.content-basics h1 {
+    font-size: 33px;
+    color: #BFA004;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 2px 1px #785C20;
+    word-spacing: 5px;
+}
+
+.resultFound {
+    font-size: 23px;
+    color: #CD951A;
+    text-align: justify;
+    background: #054A61;
+    margin: 10px;
+}
+
+.search-zone {
+    overflow: auto;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 4px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: #ccc;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+
+/* Estilos seccion Champions*/
+
+
+/*1.- estilos del submenu */
+
+.section-champions {
+    width: 100%;
+    height: 100%;
+}
+
+.champions-header {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    background-color: #0A1616;
+}
+
+.sub-menu {
+    width: 100%;
+    background-color: #0A1616;
+}
+
+.select-roles,
+.select-ability,
+.select-alphabeth,
+#average {
+    text-decoration: none;
+    background-color: #0A1616;
+    color: #CD951A;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.select-roles:focus,
+.select-ability:focus {
+    outline: none;
+    background-color: #0A1616;
+    color: #CD951A;
+    border-color: #0A1616;
+}
+
+.main-cards {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-items: space-between;
+    overflow: auto;
+}
+
+.box-cards {
+    width: 100%;
+    height: 100%;
+    display: inherit;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-items: space-between;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    padding: 50px;
+    position: relative;
+    margin: 10px auto;
+    color: #CD951A;
+    font-size: 15px;
+    text-align: center;
+}
+
+.cards-frame {
+    width: 25%;
+    height: 50vh;
+    position: relative;
+    margin: 15px;
+}
+
+.card {
+    background-color: transparent;
+    color: #CD951A;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 15px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #03080B;
+    color: #E4B04C;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card-back {
+    background-color: #03080B;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #E4B04C;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    transform: rotateY(180deg);
+}
+
+.card-text {
+    margin: 20px;
+    padding: auto;
+    transform: rotateY(180deg)
+}
+
+.card-img {
+    width: 40%;
+    height: 30%;
+    margin-top: 5%;
+    display: block;
+}
+
+.champion-img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-alias {
+    margin-top: 80px;
+    display: block;
+}
+
+
+/* responsive */
+
+@media screen (max-width:425px) {
+    .body-bg {
+        width: 40%;
+    }
+    .body-header {
+        width: 30%;
+    }
+    nav>ul li {
+        width: 40%;
+    }
+    nav>ul li a {
+        width: 40%;
+    }
+    .cards-frame {
+        width: 100%;
+    }
+    .card {
+        100%;
+    }
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width:768px) {
+    .logo-welcome {
+        width: 50%;
+        height: 70%;
+    }
+    .body-header,
+    .menu,
+    ul,
+    span,
+    li {
+        max-width: 100%;
+        display: inline-block;
+    }
+    .container,
+    .welcome-content {
+        width: 80%;
+        height: auto;
+    }
+    .welcome-img,
+    #welcome-lol-img {
+        width: 250px;
+    }
+}
