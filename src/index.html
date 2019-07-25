@@ -1,18 +1,84 @@
+<!--A Recomendacion de Lii y Silvana usar variables en ingles (buscar en direccionario)-->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>Poke Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Changa:500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
+      <header>
+          <nav>
+            <div class="navegation"><!--<div class="nav-wrapper">-->
+              <ul id="nav-cel" class="links center"><!--<ul id="nav-mobile" class=" links right hide-on-med-and-down"> -->
+                <li><a href="https://www.eurogamer.es/articles/trucos-guia-pokemon-go">Tip's para Nuevos Juagodores</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=es_MX">Descargar la app</a></li>
+              </ul>
+            </div>
+          </nav>
+      </header>
+
+      <div id= "informationPokemon">               
+         <main class="container_one"> <!--aqui pinta la data orginal de los pokemones -->
+            <section class="row"> 
+                <div class="col-3 filter"> <!--class="input-field col s12 m6">-->
+                    <select id="selectType">
+                        <option value="">Tipos de Pokemón</option>
+                        <option value="Grass">Planta </option>
+                        <option value= "Poison">Veneno</option>
+                        <option value="Fire">Fuego </option>
+                        <option value= "Water">Agua</option>
+                        <option value= "Normal">Normal</option>
+                        <option value="Ground">Tierra </option>
+                        <option value= "Fighting">Lucha</option>
+                        <option value= "Rock">Roca</option>
+                        <option value="Ice">Hielo </option>
+                        <option value= "Flying">Volador</option>
+                        <option value= "Bug">Bicho</option>
+                        <option value="Electric">Eléctrico </option>
+                        <option value= "Fairy">Hada</option>
+                        <option value= "Psychic">Psíquico</option>
+                        <option value="Ghost">Fantasma </option>
+                        <option value="Dragon">Dragón</option>
+                    </select>
+                </div>
+                <div class="col-3 filter_evolution">
+                   <select id="evolution">
+                    <option value="">Tipos de Evolución</option>
+                    <option value="next_evolution">Evolución </option>
+                    <option value= "prev_evolution">Pre-Evolución</option>
+                   </select>
+                </div>
+                 <div class="col-3 order"> <!--class="input-field col s12 m6">-->
+                    <select id="selectOrder">
+                        <option value="seleccione_opcion">Ordenar</option>
+                        <option value="a-z">Ordenar a-z</option>  
+                        <option value="z-a">Ordenar z-a</option>
+                        <option value="1-151">Ordenar por número</option>
+                    </select>
+                </div>
+              </section>
+            <div class="container_two"> <!--<div class="container_dos">-->
+                <section class="row">
+                  <div id="container_organized"> <!--aqui se imprime los pokemons filtrados y ordenados-->
+                  </div>
+                </section>
+            </div>
+                 
+          </main>
+      </div>
+      <main class="continer">
+      <section class="row" id="root">
+      <div id="cardInformation"><!--aqui se imprime la nueva data con el nueva array-->
+        </div>
+      </section>
+    </main>
+    <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
+
   </body>
 </html>

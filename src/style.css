@@ -1,0 +1,144 @@
+
+/* colocar todo de la etiqueta li alineado y centrado a la izquierda*/
+/*.navegation{
+  background-color: blue
+}*/
+   body {
+  background-image: url(img/pokemon.jpg);
+  background-size: cover; /*para que cubra todo el body*/
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+/*alineacion texto de navegacion*/
+.nav-cel li>span {
+  font-size: 16px;
+  color:  #326AB1;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+}
+
+/* colocar la fuente en toda nuestra pagina*/
+
+*{
+  font-family: 'Changa', sans-serif;
+}
+
+/*contenedor*/
+
+*{informatioinPokemon
+box-sizing:border-box;
+margin: 0;
+padding:0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0px auto;
+}
+
+.row{
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.row:before, .row:after{
+  content: "";
+  display:table;
+}
+.row:after {
+  clear: both;
+  display:table;
+ 
+}
+
+/* seccion de las clases*/
+[class*= "col-"]{
+  float: left;
+  min-height: 10 px;
+  padding: 12px;
+}
+
+.col-1{width: 8.333333333333332%;}
+.col-2{width: 16.66666666666664%;}
+.col-3{width: 25%;}
+.col-4{width: 33.3333333333333%;}
+.col-5{width: 41.6666666666667%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33333333333336%;}
+.col-8{width: 66.66666666666666%;}
+.col-9{width: 75%;}
+.col-10{width: 83.3333333333334%;}
+.col-11{width: 91.6666666666666%;}
+.col-12{width: 100%;}
+
+.filter{
+  height: 20vh;
+ 
+}
+
+.order{
+  height: 20vh;
+}
+
+.evolution{
+  height: 20vh;
+}
+/*pintado de la cajita*/
+.card-item{
+  margin: 6px 0px 6px 7px;
+  border: 1px rgba(204, 204, 204, 1) solid;
+  text-align: center;
+  color: #1650B4;
+  width: 25%;
+  height: 13%;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  -webkit-box-shadow: -9px 2px 1px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: -9px 4px 2px 1px rgba(0, 0, 0, 0.11);
+  box-shadow: 2px 2px 7px 1px #1C6EA4;
+  background-color: rgba(231, 211, 25, 0.6);
+ /*colocar tamaño y ancho de letra*/
+  
+  /*datos de los nombres de las tarjetas*/
+}  
+
+/* darle formato a nuestra tarjetita en cuanto a la letra*/
+.poke-num{
+  color: rgb(10, 9, 17); /*color de la letra*/ 
+  font-weight: 300;
+  font-size: xx-large;
+}
+
+.poke-name{
+  color: #1511Ff; /*color de la letra*/
+  font-weight: 300;
+  font-size: xx-large;
+  
+}
+
+.poke-type{
+  color: #1511Ff; /*color de la letra*/
+  font-weight: 300;
+  font-size: large;
+}
+
+/*para hacer resposivo*/
+@media screen and(max-width:768px){
+  .filter{
+    width: 100%;
+  }
+  .order{
+    width: 100%;
+  }
+  .evolution{
+    width: 100%;
+  }
+  .card-item{
+   width: 100%;
+ }
+}
