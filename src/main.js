@@ -71,14 +71,12 @@ let numType = [];
 typeP.forEach(element =>{
     numType.push((window.filterData(dataPokemon,element).length));
 });
-console.log(numType);
 
 let porcentageTypePokemon = [];
 
  numType.forEach(element => {
      porcentageTypePokemon.push(window.stadistics(element, dataPokemon));
  });
-
 
 const show = () =>{
     pokemones.classList.remove("hidden");

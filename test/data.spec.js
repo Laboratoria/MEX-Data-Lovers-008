@@ -32,3 +32,16 @@ describe("sortData",()=>{
  });
 });
 
+//Testeando la funcion de estadisticas
+describe("stadistics",()=>{
+  it("is a function",() =>{
+    expect(typeof stadistics).toBe("function");
+  });
+  it("returns Descending alphabetical order: Should return water = 32, Fire = 12, Electric = 9",()=>{
+    expect(window.stadistics(window.POKEMON.pokemon,"A-to-Z")[0].name).toBe("Abra");
+    expect(window.stadistics(window.POKEMON.pokemon,"A-to-Z")[1].name).toBe("Aerodactyl");
+    expect(window.stadistics(window.POKEMON.pokemon,"A-to-Z")[2].name).toBe("Alakazam");
+    expect(window.stadistics(window.POKEMON.pokemon,"A-to-Z")[148].name).toBe("Wigglytuff");
+    expect(window.stadistics(window.POKEMON.pokemon,"A-to-Z")[149].name).toBe("Zapdos");
+  });
+});
