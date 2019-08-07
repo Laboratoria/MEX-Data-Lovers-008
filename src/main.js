@@ -16,13 +16,12 @@ const openPageOne = () => {
   showSection ('pageOne');
 } 
 
+
+
 enterButton.addEventListener ('click', openPageOne);
 
 
-const openRolePage = () => {
-  showSection ('rolePage');
-  hideSection ('PageOne');
-}
+
 
 
 // //accediendo a data de aatrox
@@ -78,7 +77,6 @@ showCard.innerHTML= dataForIndividualCard;
 
 //Pintar todos los avatares en pantalla solución 1 
 const printAllAvatar = document.getElementById("allAvatar"); 
-
 //En vez de usar forEach, uso for
 
 const showChampions= (newArray) => {
@@ -119,7 +117,7 @@ const rolePage = document.getElementById('rolePage');
 const printByRole = (newArray) => {
   let stringV ='';
   newArray.forEach(element =>{
-    stringV += `<div class="flip-card">
+    stringV += `<div class="flip-card" id="flipCard">
     <div class="flip-card-inner">
         <div id="front-card">
             <img id="bigImg" src="${element.splash}" alt="imageChampion">
@@ -155,3 +153,11 @@ const printByRole = (newArray) => {
   })
   rolePage.innerHTML = stringV;
 }
+
+const initBtn = document.getElementById('initBtn');
+const openPageOne2 = () => {
+  hideSection ('rolePage');
+  showSection ('pageOne');
+} 
+
+initBtn.addEventListener ('click', openPageOne2);

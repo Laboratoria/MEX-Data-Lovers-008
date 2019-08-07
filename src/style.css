@@ -2,12 +2,10 @@
   font-family: "LOL!";
   src: url(fonts/LOL!.ttf);
 }
-
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
-
 .hide {
   display: none;
 }
@@ -19,7 +17,6 @@
   background-size: 100% 100%;
   overflow: hidden;
   background-color: gray;
-  background: url(background-photo.jpg) center center cover no-repeat fixed;
 }
 #logoHome {
   margin: auto;
@@ -47,6 +44,14 @@ header {
   text-align: center;
 }
 
+#menuNav {
+  margin-top: -57px;
+  font-size: 20px;
+  position: absolute;
+  left: 55%;
+  z-index: 999;
+}
+
 #mainLogo #logo1 {
   width: 284px;
   height: 125px;
@@ -54,15 +59,12 @@ header {
 }
 #menuNav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  float: right;
   font-size: 20px;
 }
 
 .item {
+
   float: left;
-  position: relative;
   right: 150px;
   background-color: black;
   color: rgb(239, 184, 16);
@@ -70,11 +72,11 @@ header {
   text-decoration: none;
   padding: 12px 22px;
   font-family: "LOL!";
-  width: 3cm;
-  z-index: 999;
+  width: 2.5cm;
 }
 
-.roleBtn,  .orderBtn {
+.roleBtn,
+.orderBtn {
   background-color: black;
   color: rgb(239, 184, 16);
   display: block;
@@ -117,7 +119,8 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 120px;
+  padding: 22px;
+  margin: 78px;
   color: rgb(239, 184, 16);
   font-family: "LOL!";
 }
@@ -139,6 +142,7 @@ body {
 }
 
 #buscar {
+  margin-right: 40%;
   width: 200px;
   height: 25px;
   border-radius: 6px;
@@ -147,9 +151,8 @@ body {
 #searchIcon {
   width: 16px;
   height: 16px;
+  margin-right: 24%;
   position: relative;
-  right: 0px;
-  top: 5px;
 }
 
 footer {
@@ -160,8 +163,9 @@ footer {
   align-items: center;
 }
 
-
 .iconX {
+  position: absolute;
+  right: 18%;
   transition: 0.7s;
   -webkit-transition: 0.7s;
   -moz-transition: 0.7s;
@@ -261,7 +265,7 @@ footer {
   width: 100%; /*cambiar a 100 ambas*/
   height: 100%;
 }
-.flip-card {
+#flipCard {
   position: relative;
   width: 45%;
   align-items: center;
@@ -270,8 +274,8 @@ footer {
 }
 
 .flip-card-inner {
-  background-color:transparent;
-  color:rgb(239, 184, 16);
+  background-color: transparent;
+  color: rgb(239, 184, 16);
   position: relative;
   width: 100%; /* regresar a 100% width y height*/
   height: 100%;
@@ -281,31 +285,19 @@ footer {
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+#flipCard:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-#front-card, #back-card {
+#front-card,
+#back-card {
   width: 100%;
   height: 100%;
-  /* margin-bottom: 5rem; */
-  /* height: 450px; */
-  /* vertical-align: center; */
   -moz-backface-visibility: hidden;
-  position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* padding: 2rem 0;
-  margin-bottom: 2rem;
-  height: 100%;
-  border-radius: 1rem;
-  -webkit-box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
-  -moz-box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
-  box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
-  background-color: rgba(255, 255, 255, 0.6); */
 }
 
 #front-card {
@@ -315,21 +307,26 @@ footer {
   background-color: transparent;
   position: absolute;
   height: auto;
-  color:rgb(239, 184, 16);
+  color: rgb(239, 184, 16);
+  font-size: 25px;
 }
 
 #back-card {
   background-color: black;
-  color:rgb(239, 184, 16);
+  color: rgb(239, 184, 16);
   transform: rotateY(180deg);
   position: relative;
 }
 .champInfo {
-  background-color:transparent;
+  background-color: transparent;
 }
-.front-card .champInfo{
+.front-card .champInfo {
   height: 100%;
 }
 .champInfo {
   margin-top: 1rem;
+}
+
+#cards-champion {
+  display: none;
 }
