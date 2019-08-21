@@ -139,78 +139,34 @@ const getFilterValue = event => {
 
 const getOrdervalue = event => {
     const orderValue = event.target.value;
-
-    if (orderValue === 'a-z') {
-        if (newData !== '') {
-            let result = window.orderData(newData);
-            let counterValue = result.length;
-            counter.innerHTML = counterValue;
-            const card = result.map(element => templateStringForCards(element));
-            allData.innerHTML = card.join('');
-        } else {
-            let result = window.orderData(data);
-            let counterValue = result.length;
-            counter.innerHTML = counterValue;
-            const card = result.map(element => templateStringForCards(element));
-            allData.innerHTML = card.join('');
-        }
-    } else if (orderValue === 'z-a') {
-        if (newData !== '') {
-            let result = window.orderDataZA(newData);
-            let counterValue = result.length;
-            counter.innerHTML = counterValue;
-            const card = result.map(element => templateStringForCards(element));
-            allData.innerHTML = card.join('');
-        } else {
-            let result = window.orderDataZA(data);
-            let counterValue = result.length;
-            counter.innerHTML = counterValue;
-            const card = result.map(element => templateStringForCards(element));
-            allData.innerHTML = card.join('');
-        }
-    }
+    const sort = newData !== '' ? newData : data;
+    const result = window.sortData(sort, orderValue);
+    const card = result.map(element => templateStringForCards(element));
+    allData.innerHTML = card.join('');
 };
 
 const getSpeciesValue = event => {
     const speciesValue = event.target.value; //Se guarda el valor de los option del html
-    if (newData !== '') {
-        if (speciesValue === 'species.Human') {
-            let result = window.filterHumans(newData);
-            let counterValue = result.length;
-            counter.innerHTML = counterValue;
-            const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
-            allData.innerHTML = card.join('');
-        } else {
-            const splitSpeciesValue = speciesValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
-            const key = splitSpeciesValue[0]; //aqui se guarda la propiedad ej. "name"
-            const value = splitSpeciesValue[1]; //aqui se guarda el valor ej."Rick"
+    const dataType = newData !== '' ? newData : data;
 
-            let result = window.filterData(key, value, newData); //variable vacía que guarda el resultado de la función ya ejecutada
-            let counterValue = result.length;
-            counter.innerHTML = counterValue;
-            const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
-            allData.innerHTML = card.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.
-        }
+    if (speciesValue === 'species.Human') {
+        let result = window.filterHumans(dataType);
+        let counterValue = result.length;
+        counter.innerHTML = counterValue;
+        const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
+        allData.innerHTML = card.join('');
     } else {
-        if (speciesValue === 'species.Human') {
-            let result = window.filterHumans(data);
-            let counterValue = result.length;
-            counter.innerHTML = counterValue;
-            const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
-            allData.innerHTML = card.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.
-        } else {
-            const splitSpeciesValue = speciesValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
-            const key = splitSpeciesValue[0]; //aqui se guarda la propiedad ej. "name"
-            const value = splitSpeciesValue[1]; //aqui se guarda el valor ej."Rick"
+        const splitSpeciesValue = speciesValue.split('.'); //Toma el filter value y lo divide en un array por el punto. El split detecta el . del nombre del value.
+        const key = splitSpeciesValue[0]; //aqui se guarda la propiedad ej. "name"
+        const value = splitSpeciesValue[1]; //aqui se guarda el valor ej."Rick"
 
-            let result = window.filterData(key, value, data); //variable vacía que guarda el resultado de la función ya ejecutada
-            let counterValue = result.length;
-            counter.innerHTML = counterValue;
-            const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
-            allData.innerHTML = card.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.
-        }
-    }
-};
+        let result = window.filterData(key, value, dataType); //variable vacía que guarda el resultado de la función ya ejecutada
+        let counterValue = result.length;
+        counter.innerHTML = counterValue;
+        const card = result.map(element => templateStringForCards(element)); // result = array. .map itera items
+        allData.innerHTML = card.join(''); //Al cumplirse con la condición, ejecutar el siguiente código.
+    };
+}
 
 filterButton.addEventListener('change', getFilterValue);
 orderButton.addEventListener('change', getOrdervalue);

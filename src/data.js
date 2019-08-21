@@ -21,39 +21,36 @@ const statisticsValue = (key, value, data) => {
     return items.length;
 };
 
-const orderData = (data) => {
-    data.sort((a, b) => {
+const sortData = (data, sortOrder) =>{
+    console.log(data);
+    // console.log(sortBy);
+    console.log(sortOrder);
+   return data.sort((a, b) => {
         let nameA = a.name.toUpperCase();
         let nameB = b.name.toUpperCase();
-        if (nameA < nameB) {
-            return -1;
+        if (sortOrder === 'a-z'){
+            if (nameA < nameB){
+                return -1;
+            }else if(nameA > nameB){
+                return 1;
+            }else {
+                return 0;           
+            }
+        }else{
+            if (nameA > nameB){
+                return -1;
+            }else if(nameA < nameB){
+                return 1;
+            }else {
+                return 0;           
+            }
         }
-        if (nameA > nameB) {
-            return 1;
-        }
-        return 0;
     });
-    return data;
-};
-
-const orderDataZA = (data) => {
-    data.sort((a, b) => {
-        let nameA = a.name.toUpperCase();
-        let nameB = b.name.toUpperCase();
-        if (nameA < nameB) {
-            return -1;
-        }
-        if (nameA > nameB) {
-            return 1;
-        }
-        return 0;
-    });
-    return data.reverse();
+    
 };
 
 
-window.orderData = orderData;
-window.orderDataZA = orderDataZA;
+window.sortData = sortData;
 window.filterData = filterData; //Guarda la función en el global para poder ser invocada de donde sea
 window.statisticsPercentage = statisticsPercentage;
 window.statisticsValue = statisticsValue;
