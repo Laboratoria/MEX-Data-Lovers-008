@@ -1,4 +1,20 @@
-const data = POKEMON.pokemon;
+// const data = POKEMON.pokemon;
+
+
+let consultarPokemon = (id) => {
+    //funcion extraer data api
+    fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+    .then(function(response){
+      response.json()
+      .then(function(pokemon){
+        console.log(pokemon.name);
+      })
+    })
+}
+
+consultarPokemon();
+
+const data = consultarPokemon;
 
 //Seleccionando a los elementos del HTML con ayuda de su Id.
 const firstButton = document.getElementById("siguiente");
@@ -80,18 +96,18 @@ imprimir(data);
 //----------------------------------------------------------------
 //Función para filtrar
 
-const busqueda = () => {
- let nombre=input.value;
- newData = data.filter(pokemon => pokemon.name.toLowerCase() == nombre.toLowerCase());
- imprimir(newData);
-}
-buscar.addEventListener("click",busqueda);
+// const busqueda = () => {
+//  let nombre=input.value;
+//  newData = data.filter(pokemon => pokemon.name.toLowerCase() == nombre.toLowerCase());
+//  imprimir(newData);
+// }
+// buscar.addEventListener("click",busqueda);
 
-const mostrartodosdenuevo = () =>{
- imprimir(data);
-}
+// const mostrartodosdenuevo = () =>{
+//  imprimir(data);
+// }
 
-todos.addEventListener("click",mostrartodosdenuevo);
+// todos.addEventListener("click",mostrartodosdenuevo);
 
 //----------------------------------------------------------
 //ULTIMA PRUEBA - FILTRAR POR TIPO DE POKEMON
@@ -138,14 +154,42 @@ todos.addEventListener("click",mostrartodosdenuevo);
  btnZA.addEventListener("click", orderZA);
 
  //----------------------------------------------------------
-const btnIce = document.getElementById("Ice");
+//  *****************************************************
+//  Buttons for pokemons type
 
-const filterIce = () => {
+const btnIce = document.getElementById("Ice");
+const btnFire = document.getElementById("Fire");
+const btnWater = document.getElementById("Water");
+const btnGrass = document.getElementById("Grass");
+const btnPsychic = document.getElementById("Psychic");
+const btnRock = document.getElementById("Rock");
+const btnElectric = document.getElementById("Electric");
+const btnBug = document.getElementById("Bug");
+const btnFlying = document.getElementById("Flying");
+
+
+
+const filter = () => {
   let result = window.filterByType(data);
   imprimir(result);
 }
 
-btnIce.addEventListener("click", filterIce);
+btnIce.addEventListener("click", filter);
+btnFire.addEventListener("click", filter);
+btnWater.addEventListener("click", filter);
+btnGrass.addEventListener("click", filter);
+btnPsychic.addEventListener("click", filter);
+btnRock.addEventListener("click", filter);
+btnElectric.addEventListener("click", filter);
+btnBug.addEventListener("click", filter);
+btnFlying.addEventListener("click", filter);
+
+// *****************************************************
+
+//
+  
+
+
 // function cargando(){
 //  container.classList.remove("ocultar");
 //  pokeboll.classList.add("ocultar");
@@ -178,4 +222,14 @@ conocertodos.addEventListener("click",mostrartodos);
   
   
 // });
+//PROBANDO CON EL SELECT
+// let imSelection = document.getElementById("select-type");
+// imSelection.addEventListener("click", () => {
+// let imValue = imSelection.options[imSelection.selectedIndex].value;
+// //console.log(typeof imValue);
+// //console.log(imValue);
 
+// let pokeFilterData = window.data.filterByType(data, imValue);
+
+// imprimir(pokeFilterData);
+// });
