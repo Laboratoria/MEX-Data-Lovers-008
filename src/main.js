@@ -31,15 +31,15 @@ let contador = 0;
 // Funciones puras
 // Esta función sirve para que al darle click a un botón pueda mostar a los pokemones de uno en uno. El contador avanza en 1 por cada click.
 const showOnexOne = () => {
- name.innerHTML = "nombre:" + " " + window.pikachu.pokemon[contador].name;
- img.src = window.pikachu.pokemon[contador].img;
+ name.innerHTML = "nombre:" + " " + window.POKEMON.pokemon[contador].name;
+ img.src = window.POKEMON.pokemon[contador].img;
  contador=contador+1;
 }
 
 // Esta función sirve para que al darle click a un botón "atrás" pueda mostar a los pokemones de uno en uno pero en reversa. El contador disminuye en 1 por cada click.
 const showOnexOneReverse = () => {
- name.innerHTML = "nombre:" + " " + window.pikachu.pokemon[contador].name;
- img.src = window.pikachu.pokemon[contador].img;
+ name.innerHTML = "nombre:" + " " + window.POKEMON.pokemon[contador].name;
+ img.src = window.POKEMON.pokemon[contador].img;
  contador=contador-1;
 }
 
@@ -96,22 +96,22 @@ todos.addEventListener("click",mostrartodosdenuevo);
 //----------------------------------------------------------
 //ULTIMA PRUEBA - FILTRAR POR TIPO DE POKEMON
 
+// *************************************************************
+// const btnPok = document.getElementsByClassName("btnPok");
 
-const btnPok = document.getElementsByClassName("btnPok");
-
-const filtrar=()=>{
- for(let index = 0; index < btnPok.length; index++){
-   btnPok[index].addEventListener("click", () => {
-     console.log(btnPok[index])
-     const idTarget = event.target.id;
-     const newArray = data.filter(pokemon => pokemon.type[0] == idTarget || pokemon.type[1] == idTarget || pokemon.type[2] == idTarget)
-     newData = newArray;
-     console.log(newData)
-     imprimir(newData);
-   })
- }
-}
-filtrar();
+// const filtrar=()=>{
+//  for(let index = 0; index < btnPok.length; index++){
+//    btnPok[index].addEventListener("click", () => {
+//      console.log(btnPok[index])
+//      const idTarget = event.target.id;
+//      const newArray = data.filter(pokemon => pokemon.type[0] == idTarget || pokemon.type[1] == idTarget || pokemon.type[2] == idTarget)
+//      newData = newArray;
+//      console.log(newData)
+//      imprimir(newData);
+//    })
+//  }
+// }
+// filtrar();
  //----------------------------------------------------
  //FUNCION PARA ORDENAR DE A-Z
  const btnAZ = document.getElementById("enlace");
@@ -138,16 +138,23 @@ filtrar();
  btnZA.addEventListener("click", orderZA);
 
  //----------------------------------------------------------
+const btnIce = document.getElementById("Ice");
 
-function cargando(){
- container.classList.remove("ocultar");
- pokeboll.classList.add("ocultar");
- loading.classList.add("ocultar");
-};
- setTimeout ("cargando()", 7000);
+const filterIce = () => {
+  let result = window.filterByType(data);
+  imprimir(result);
+}
 
-const conocertodos=document.getElementById("conocertodos");
-const todospokemones=document.getElementById("todospokemones");
+btnIce.addEventListener("click", filterIce);
+// function cargando(){
+//  container.classList.remove("ocultar");
+//  pokeboll.classList.add("ocultar");
+//  loading.classList.add("ocultar");
+// };
+//  setTimeout ("cargando()", 7000);
+
+// const conocertodos=document.getElementById("conocertodos");
+// const todospokemones=document.getElementById("todospokemones");
 
 function mostrartodos(){
  todospokemones.classList.remove("ocultar");
@@ -158,3 +165,17 @@ function mostrartodos(){
 };
 
 conocertodos.addEventListener("click",mostrartodos);
+
+
+//**************************************************
+// filtrar con las options del select
+
+// const selectType = document.getElementById("filter");
+// selectType.addEventListener("click", () => {
+//   const optionValue = selectType.options[selectType.selectedIndex].value;
+//   const filterData = window.data.filterByType(data, optionValue);
+
+  
+  
+// });
+

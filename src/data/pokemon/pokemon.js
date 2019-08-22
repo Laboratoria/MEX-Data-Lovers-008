@@ -1,4 +1,4 @@
-var POKEMON = {
+window.POKEMON = {
   "pokemon": [{
     "id": 1,
     "num": "001",
@@ -4086,5 +4086,5 @@ var POKEMON = {
 }
 ;;
 
-window.pikachu = POKEMON;
+
 

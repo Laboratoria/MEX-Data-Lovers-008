@@ -12,24 +12,14 @@
     
    </head>
    <body>
-      <div class= "container">
-      <section id="section1" class="row">
-       <div id="welcomee" class="col-12 color">
-         <img id="pokemon-title" src="logologo.png" alt=""> <br>
-         <img id="pokeboll" src="pokebola.gif" alt=""> <br>
-         <img id="loading" src="loading.gif" alt="">  
-
-
-       </div>
-     </section>
-     </div>
+      
     
 
       <section id="section2">
       </section>
      
       <center>
-      <div id="container" class="ocultar">
+      <div id="container" >
               <div id="pokemones-unoxuno">
                   <div >
                     <br>
@@ -74,6 +64,46 @@
                
 
            </div>
+           <!-- *************************************************************** -->
+
+           <input type="button" class="button" value="Pokemones" id="catalog">
+
+           <section id="characters-page" > 
+               <div class="menu-second content">
+                 <h2>Pokemones</h2>
+                 <div class="order-and-filter-button">
+                 <div class="pokemon-type order-filter">
+       
+                   <select name="filter" id="filter">
+                     <option value="all">Mostrar todos</option>
+                     <option value="type.ice">Ice</option>
+                     <option value="type.fire">Fire</option>
+                     <option value="type.water">Water</option>
+                     <option value="type.grass">Grass</option>
+                     <option value="type.psychic">Psychic</option>
+                     <option value="type.dragon">Dragon</option>
+                     <option value="type.rock">Rock</option>
+                     <option value="type.electric">Electric</option>
+                     <option value="type.ground">Ground</option>
+                     <option value="type.poison">Poison</option>
+                     <option value="type.flying">Flying</option>
+                   </select>
+       
+                   <select name="order" id="order">
+                     <option value="order" class="order">Ordenar</option>
+                     <option value="a-z">de A a Z</option>
+                     <option value="z-a">de Z a A</option>
+                   </select>
+                 </div>
+                 </div>
+              </div>
+       
+       
+              <section class="all-data" id="all-data">
+              </section>
+           </section>
+     <!-- *************************************************************** -->
+
              <div id="mostrando_lista_pokemones"></div>
        </section>
 
@@ -83,21 +113,13 @@
        </section>
   
         
-       </header>
+    
   
-       <main>
-   
-  
-        
-  
-       
-                   
-       </main>
   
       
       
   
-      <header>
+  
       
       
  
@@ -115,8 +137,7 @@
  
      <script src="./data/pokemon/pokemon.js"></script>
      <script src="main.js"></script>
-     <script src="ordenarByType.js"></script>
-
+     <!-- <script src="ordenarByType.js"></script> -->
       <script src="data.js"></script>
 
 
@@ -127,7 +148,5 @@
     
     
    </body>
-</div>
-
  </html>
 

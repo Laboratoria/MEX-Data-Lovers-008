@@ -52,13 +52,13 @@ window.sortDataZA = sortDataZA;
 //--------------------------------------------------------------
 //Función para filtrar por tipo de Pokemon 
 
-const filterByType = (data, condition) => {
-  let conditionTrue = data.filter(pokemon => pokemon.type[0] == condition || pokemon.type[1] == condition || pokemon.type[2] == condition);
+// const filterByType = (data, condition) => {
+//   let conditionTrue = data.filter(pokemon => pokemon.type[0] == condition || pokemon.type[1] == condition || pokemon.type[2] == condition);
 
-  return conditionTrue;
-}
+//   return conditionTrue;
+// }
 
-window.filterByType = filterByType;
+// window.filterByType = filterByType;
 
 //----------------------------------------------------------------
 //Funciones para estadisticas reduce 
@@ -93,3 +93,16 @@ const statisticsPercentage = (key, value, data) => {
 };
 
 window.statisticsPercentage = statisticsPercentage;
+
+//  *************************************************************** 
+// FILTRAR POR TIPO 
+const filterByType = (data) => {
+  const idTarget = event.target.id;
+  let items = data.filter(element => element.type[0] === idTarget || element.type[1] == idTarget || element.type[2] == idTarget);
+  return items;
+ 
+};
+console.log()
+
+
+window.filterByType = filterByType
