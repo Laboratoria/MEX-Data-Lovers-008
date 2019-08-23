@@ -1,18 +1,93 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lover</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <div class="container">
+    <header class="header row">
+      <div class="col-12 logo">
+        <h1>POKEGUÍA</h1>
+          <figure>
+            <!--<img src="./imagenes/Pokémon_logo.svg.png" width="30%" alt="Logo Pokémon">-->
+          </figure>
+      </div>
+        <div class="menu-container col-12">
+          <!-- <section class="filter-bar"> -->
+            <select class="filter-type" id="filter-type">
+              <option value="all-types">Tipos de Pokémon</option>
+              <option value="Water">Agua</option>
+              <option value="Bug">Bicho</option>
+              <option value="Dragon">Dragón</option>
+              <option value="Electric">Eléctrico</option>
+              <option value="Ghost">Fantasma</option>
+              <option value="Fire">Fuego</option>
+              <option value="Ice">Hielo</option>
+              <option value="Fighting">Lucha</option>
+              <option value="Normal">Normal</option>
+              <option value="Grass">Planta</option>
+              <option value="Psychic">Psíquico</option>
+              <option value="Rock">Roca</option>
+              <option value="Ground">Tierra</option>
+              <option value="Poison">Veneno</option>
+              <option value="Flying">Volador</option>
+            </select>
+
+            <select class="probability" id="probability">
+              <option value="all-probabilities">Probabilidad de encontrar un Pokémon</option>
+              <option id="mayor-probability" value="mayor-probability">Mayor a menor Probabilidad</option>
+              <option id="menor-probability" value="menor-probability">Menor a mayor probabilidad</option>
+            </select>
+
+            <select name="weaknesses" id="weaknesses">
+              <option value="all-weaknesses">Debilidades de un Pokémon</option>
+              <option value="Water">Agua</option>
+              <option value="Bug">Bicho</option>
+              <option value="Dragon">Dragón</option>
+              <option value="Electric">Eléctrico</option>
+              <option value="Ghost">Fantasma</option>
+              <option value="Fire">Fuego</option>
+              <option value="Ice">Hielo</option>
+              <option value="Fighting">Lucha</option>
+              <!-- <option id="Normal" value="Normal">Normal</option> -->
+              <option value="Grass">Planta</option>
+              <option value="Psychic">Psíquico</option>
+              <option value="Rock">Roca</option>
+              <option value="Ground">Tierra</option>
+              <option value="Poison">Veneno</option>
+              <option value="Flying">Volador</option>
+              <option value="Dark">Oscuro</option>
+              <option value="Steel">Acero</option>
+              <option value="Fairy">Hada</option>
+            </select>
+          <!-- </section> -->
+        </div>
+    </header>
+
+    <main class="main-container col-12">
+      <article class="background-card col-8">
+        <section id="content-card" class="pokemon-card">
+        </section>
+      </article>
+
+      <aside id="curious-fact-container" class="curious-fact col-4">
+      </aside>
+    </main>  
+  </div>
+
+  <!-- <script src="./data/injuries/injuries.js"></script> -->
+  <script src="./data/pokemon/pokemon.js"></script>
+  <!-- <script src="./data/steam/steam.js"></script> -->
+  <!-- <script src="./data/worldbank/worldbank.js"></script> -->
+  <!-- <script src="./data/lol/lol.js"></script> -->
+  <script src="./data.js"></script>
+  <script src="./main.js"></script>
+</body>
 </html>
