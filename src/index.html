@@ -1,52 +1,39 @@
 
 <!DOCTYPE html>
 <html>
-
-<div class="contieneResponsive">
    <head>
-       <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
      <meta charset="utf-8">
      <title>Data Lovers</title>
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css" />
-    
    </head>
    <body>
-
-    
-      
-    
-
-      <section id="section2">
-      </section>
-     
-     
       <div id="container" >
-              <div id="pokemones-unoxuno">
-                  <div >
-                    <br><br>
-                     <h2 id="name">¿Quieres comenzar a conocer el universo Pokémon? <br> </h2><br>
-                     <img id="img" height="250" width="250" src="./imagenes/balbasaur.png"><br>
-                  </div>
-          
-           
-  
+        <figure>
+          <img src="./imagenes/logologo.png" id="logologo" alt="">
+        </figure>
+              <div id="pokemones-unoxuno">   
+                <div>
+                   <h2 id="name">¡Para que comiences a conocer el universo Pokémon! <br> </h2><br>
+                   <img id="img" height="250" width="250" src="./imagenes/pikachuuu.png"><br>
+                </div>
+
              <div>
                <button id="atras" class="button_unoxuno">Atrás</button>
                <button id="siguiente" class="button_unoxuno">Siguiente</button>
-             </div>
-             <br>
+             </div><br>
+             
              <button id="conocertodos" class="btn_todos_pokemones">conocer a todos los pokemones</button>
-           </div>
-         </div>
+            </div>
+      </div>
      
-         <section id="estadistica" class="ocultar">
+        <section id="estadistica" class="ocultar">
             <p id="numerodepokemones"></p>
             <p id="porcentajedepokemones"></p>
-          </section>
+         </section>
          <section id="todospokemones" class="ocultar ">
-           <div id="nav">
-             
+           <div id="nav"> 
                 <button class="enlace btnPok"  type="button" id="Ice">Hielo</button>
                 <button class="enlace btnPok" type="button" id="Fire">Fuego</button>
                 <button class="enlace btnPok" type="button" id="Water">Agua</button>
@@ -58,20 +45,17 @@
                 <button class="enlace btnPok" type="button" id="Flying">Volador</button>
               <button class="enlace btnPok" id="enlace">Filtrar A-Z</button>
               <button class="enlace btnPok" id="orderZ_A">Filtrar Z-A</button> <br>
-           
-               
-
            </div>
-           <!-- *************************************************************** -->
+           <div id="mostrando_lista_pokemones"></div>
+        </section>
+  <!-- *************************************************************** -->
 
            <!-- <input type="button" class="button" value="Pokemones" id="catalog">
-
            <section id="characters-page" > 
                <div class="menu-second content">
                  <h2>Pokemones</h2>
                  <div class="order-and-filter-button">
-                 <div class="pokemon-type order-filter">
-       
+                 <div class="pokemon-type order-filter">   
                    <select name="filter" id="filter">
                      <option value="all">Mostrar todos</option>
                      <option value="ice">Ice</option>
@@ -95,53 +79,16 @@
                  </div>
                  </div>
               </div>
-       
-       
+           
               <section class="all-data" id="all-data">
               </section>
            </section> -->
      <!-- *************************************************************** -->
 
-       <div id="mostrando_lista_pokemones"></div>
-
-       </section>
-      
-  
-        
-    
-  
-  
-      
-      
-  
-  
-      
-      
- 
-        
- 
- 
- 
-    
-     
- 
-    
-   
-     
-        
- 
      <script src="./data/pokemon/pokemon.js"></script>
      <script src="main.js"></script>
-     <!-- <script src="ordenarByType.js"></script> -->
-      <script src="data.js"></script>
+     <script src="data.js"></script>
 
-
-    
- 
- 
-
-    
-    
    </body>
  </html>
 
