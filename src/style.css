@@ -1,0 +1,269 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container{
+width: 100%;
+margin: 0px auto;
+
+}
+
+.row{
+margin: auto;
+width: 100%;
+height: auto;
+}
+
+body  {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  margin:0;
+
+}
+
+/*Clases de los elementos encontrados en el encabezado*/
+
+.styleHeader {
+  color: white;
+  background-color: #030814;
+  font-family: Beaufort for LOL,Arial,sans-serif;
+  font-size: 19px;
+  border-bottom: 4px solid #90723b;
+  align-content: center;
+  padding: 5px 0 0 0;
+
+}
+
+
+
+.styleLogo{
+  width: 50px;
+  height: 50px;
+  float:left;
+  width: 6%;
+  height: 6%;
+
+}
+
+
+.styleTittleHeader{
+color:#90723b;
+text-align:center;
+font-family: Friz Quadrata, sans-serif;
+height:20%;
+padding: 2%;
+}
+
+.styleNavigationBar{
+  text-align:center;
+  background-color: #030814;
+  font-family: 'Gurajada', serif;
+}
+
+
+
+
+.container{
+width:100%;
+}
+
+
+
+/*Estilos del formato para las cartas donde aparece la información de los campeones*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  float: left;
+  margin: 2%;
+  color: #CBC2B0;
+  font-family: Friz Quadrata, sans-serif;
+  font-size: small;
+
+}
+
+.apodo{
+  color: #84683d;
+  font-family: Friz Quadrata, sans-serif;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #030814;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 5px;
+}
+.p{
+  margin:0 10px 0 30px;
+  text-align:center;
+}
+
+.i{
+  width:300px;
+  height:200px;
+}
+
+
+
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(IMG/loader.gif) 50% 50% no-repeat rgb(0,0,0);
+    opacity: .8;
+}
+
+
+
+.header {
+  color: white;
+  background-color: #030814;
+  font-family: Beaufort for LOL,Arial,sans-serif;
+  font-size: 19px;
+  border-bottom: 1px solid #262626;
+  align-content: center;
+  padding: 5px 0 0 0;
+
+}
+
+.father{
+  text-align:center;
+  background-color: #030814;
+  font-family: 'Gurajada', serif;
+}
+
+
+.son{
+  display:inline-block;
+  padding: 0 10px 0 0;
+  margin: 0 50px 0 0;
+  background-color: black;
+  border: none;
+  text-decoration:none;
+  color: #9d7f43;
+  font-family: 'Gurajada', serif;
+  font-size: 25px;
+  size:100px;
+
+}
+
+
+.btnsearch, .btndelete, .styleFilters  {
+color:#9d7f43;
+background: black;
+font-family:'Gurajada', serif;
+font-size:130%;
+text-align: center;
+border:5px #9d7f43 groove;
+size:100%;
+margin:1%;
+height: 10%;
+width: 10%;
+}
+
+.nameOfChampion{
+color:#9d7f43;
+background:black;
+border:none;
+font-family:'Gurajada', serif;
+font-size:100%;
+size:100%;
+display:inline-block;
+padding: 0 10px 0 0;
+margin: 0 50px 0 0;
+background-color: #030814;
+text-decoration:none;
+font-size: 25px;
+
+}
+
+
+.result {
+ color:#9d7f43;
+ text-align: center;
+ font-family: 'Gurajada', serif;
+ font-size: 300%;
+ border: 2px solid #9d7f43;
+ margin: 0%;
+ padding: 0%;
+ 
+
+}
+
+.video{
+text-align: center;
+}
+
+.footer{
+background:black;
+color: #D4AF37;
+position:fixed;
+width:100%;
+bottom:0;
+box-sizing:border-box;
+height:5%;
+}
+
+
+
+/* Para 960px */  
+@media only screen and (max-width: 980px) and (min-width: 821px) {  
+  
+}  
+  
+/* Para 800px */  
+@media only screen and (max-width: 820px) and (min-width: 621px) {  
+  
+}  
+  
+/* Para 600px */  
+@media only screen and (max-width: 620px) and (min-width: 501px) {  
+  
+}  
+  
+/* Para 480px */  
+@media only screen and (max-width: 500px) and (min-width: 341px) {  
+  
+}  
+  
+/* Para 320px */  
+@media only screen and (max-width: 340px) and (min-width: 5px)  {  
+  
+
+}
+
