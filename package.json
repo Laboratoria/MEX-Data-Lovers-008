@@ -14,5 +14,21 @@
     "eslint-plugin-jest": "^22.1.2",
     "htmlhint": "^0.10.1",
     "jest": "^23.6.0"
+  },
+  "description": "- ¿Quiénes son los principales usuarios de producto?",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anabahena/MEX-Data-Lovers-008.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/anabahena/MEX-Data-Lovers-008/issues"
+  },
+  "homepage": "https://github.com/anabahena/MEX-Data-Lovers-008#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.0"
   }
 }
