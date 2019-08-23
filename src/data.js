@@ -44,7 +44,7 @@ const statisticsPercentage = (key, value, data) => {
 };
 
 //--------------------------------------------------------------
-// Esta función filtra por tipo de pokemon
+// Función que filtra por tipo de pokemon
 const filterByType = (data) => {
   const idTarget = event.target.id;
   let items = data.filter(element => element.type[0] === idTarget || element.type[1] == idTarget || element.type[2] == idTarget);
