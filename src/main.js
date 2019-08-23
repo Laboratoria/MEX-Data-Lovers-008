@@ -1,20 +1,22 @@
-// const data = POKEMON.pokemon;
+const data = POKEMON.pokemon;
 
 
-let consultarPokemon = (id) => {
-    //funcion extraer data api
-    fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
-    .then(function(response){
-      response.json()
-      .then(function(pokemon){
-        console.log(pokemon.name);
-      })
-    })
-}
+// const consultarPokemon = (id) => {
+//     //funcion extraer data api
+//     fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+//     .then(function(response){
+//       response.json()
+//       .then(function(pokemon){
+//         console.log(pokemon.name);
+//       })
+//     })
+// }
 
-consultarPokemon();
+// consultarPokemon(2);
 
-const data = consultarPokemon;
+// // const getData = () => {
+
+
 
 //Seleccionando a los elementos del HTML con ayuda de su Id.
 const firstButton = document.getElementById("siguiente");

@@ -89,7 +89,8 @@ const statisticsPercentage = (key, value, data) => {
   let total = data.length;
   let items = data.filter(element => element[key].indexOf(value) > -1);
   let result = (items.length * 100) / total;
-  return Math.round(result);
+  let trunc = Math.round(result);
+  return trunc;
 };
 
 window.statisticsPercentage = statisticsPercentage;
