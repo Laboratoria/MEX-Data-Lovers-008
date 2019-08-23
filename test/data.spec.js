@@ -10,3 +10,11 @@ describe('example', () => {
     expect(example()).toBe('example');
   });
 });
+
+//Test filterByType
+describe('filterByType', () => {
+  it('is a function', () => {
+    expect(typeof filterByType).toBe('function');
+  });
+});
+
