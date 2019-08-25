@@ -1,0 +1,217 @@
+
+@import url("https://fonts.googleapis.com/css?family=Boogaloo&display=swap");
+*{
+    margin: 0px;
+    padding: 0px;
+    background-size:cover;
+    overflow:inherit;
+}
+#navegador {
+    list-style-type: none;
+    text-align: right;
+    display: inline;
+ }
+ #navegador li{
+    display: inline;
+    text-align:right;
+    margin: 0 10px 0 0;
+ }
+ #navegador li a {
+    padding: 2px 7px 2px 7px;
+    color: chartreuse;
+    font-family:'Boogaloo', cursive;
+    background-color: transparent;
+    text-decoration: none;
+ }
+ #navegador li a:hover{
+    background-color: dodgerblue;
+    color: #ffffff;
+ }
+h1 {
+    font-family:'Boogaloo', cursive;
+    color: chartreuse;
+    text-align: center;
+    font-size: 60px;
+}
+h2{
+    font-family:'Boogaloo', cursive;;
+    color: dodgerblue;
+    font-size: 35px;
+    text-align: center;
+}
+h3{
+    font-family:'Boogaloo', cursive;
+    color: dodgerblue;
+    font-size: 25px;
+    text-align: center;
+}
+/* #buscador{
+    text-align:left;
+    margin: 15px;
+    position: absolute;
+    bottom: 10px;
+} */
+/* #boton-ricolor {
+  position: absolute;
+  bottom: 25px;
+  left: 250px;
+} */
+
+/* #main-style{
+  display:block;
+  border-color: white;
+  width:inherit;
+  height:inherit;
+} */
+
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0.9rem 0;
+  border-radius: 1rem;
+  width: 50vh;
+  height: 65vh;
+  background-color:black;
+  font-size: small;
+  text-align: center;
+  text-overflow:inherit;
+      color: chartreuse;
+      flex-direction: row;
+      flex-flow: column;
+}
+
+
+*{
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+.container{
+
+  width: 100%;
+
+  /* max-width: 1280px; */
+
+  margin: 0px auto;
+
+}
+
+.row{
+
+  margin: auto;
+
+  width: 100%;
+
+  height: auto;
+
+}
+
+.row:before, .row:after{
+
+  content:"";
+
+  display:table;
+
+}
+
+.row:after{
+
+  clear:both;
+
+}
+
+[class*= "col-" ]{
+
+  float: left;
+
+  min-height: 10px;
+
+  /* gutters */
+
+  padding: 12px;
+
+}
+
+  .col-1{width: 8.333333333333332%;}
+
+  .col-2{width: 16.666666666666664%;}
+
+  .col-3{width: 25%;}
+
+  .col-4{width: 33.33333333333333%;}
+
+  .col-5{width: 41.66666666666667%;}
+
+  .col-6{width: 50%;}
+
+  .col-7{width: 58.333333333333336%;}
+
+  .col-8{width: 66.66666666666666%;}
+
+  .col-9{width: 75%;}
+
+  .col-10{width: 83.33333333333334%;}
+
+  .col-11{width: 91.66666666666666%;}
+
+  .col-12{width: 100%;}
+
+  /* .col-12{width: calc(100% * 1 - 0px);}
+
+  .col-11{width: calc(91.66% * 1 - 0px);}
+
+  .col-10{width: calc(83.33% * 1 - 0px);}
+
+  .col-9 {width: calc(75% * 1 - 0px);}
+
+  .col-8 {width: calc(66.66% * 1 - 0px);}
+
+  .col-7 {width: calc(58.33% * 1 - 0px);}
+
+  .col-6 {width: calc(50% * 1 - 0px);}
+
+  .col-5 {width: calc(41.66% * 1 - 0px);}
+
+  .col-4 {width: calc(33.33% * 1 - 0px);}
+
+  .col-3 {width: calc(25% * 1 - 0px);}
+
+  .col-2 {width: calc(16.66% * 1 - 0px);}
+
+  .col-1 {width: calc(8.33% * 1 - 0px);} */
+
+/*
+
+*/
+
+@media all and (max-width: 450px){
+  [class*= "col-"]{
+    width: 100%;
+
+  }
+
+}
+
+@media screen and (max-width: 778px){
+
+  .media{
+
+    width: 100%;
+
+    /* background: yellow; */
+
+  }
+
+/* p{
+   color:  dodgerblue;
+   width: 100%;
+   font-family: 'Boogaloo', cursive;
+} */
