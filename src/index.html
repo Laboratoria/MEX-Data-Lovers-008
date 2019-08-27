@@ -2,17 +2,166 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <link rel="shortcut icon" href="PM-icon-207.png">
+    <link rel="shortcut icon" href="https://scontent-mia3-2.cdninstagram.com/vp/3f268ef7e4cbdf16b0b298535fb3a095/5D98AB2E/t51.2885-15/sh0.08/e35/s640x640/60896059_363526267614915_9022280140086626890_n.jpg?_nc_ht=scontent-mia3-2.cdninstagram.com"/>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Titillium+Web&display=swap" rel="stylesheet">
+    <title>Rick & Morty API Universe</title>
+
     <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,600&display=swap" rel="stylesheet">
+
+         
+    <!-- <script src="./data/steam/steam.js"></script> -->
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
   </head>
   <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
+
+    <!-- Icono ir abajo -->
+    <span class="icon-circle-down"></span>
+    
+  <!-- redes sociales -->
+  <div class="wrapper">
+    <div class="title">
+      <p>Simple hover effect only use CSS3</p>
+    </div>
+    <div class="buttons">
+      <div class="button button-fb">
+        <i class="fa fa-facebook"></i>
+      </div>
+      <div class="button button-tw">
+        <i class="fa fa-twitter"></i>
+      </div>
+      <div class="button button-go">
+        <i class="fa fa-google-plus"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- presentación pagina -->
+      <section class="informacion">
+        <div class="Textear"></div>
+        <p>Rick es un brillante científico un tanto borracho que secuestra
+          <br> 
+          a su irritable nieto adolescente Morty para vivir aventuras en 
+          <br>
+          otros mundos y en dimensiones alternativas, te animas
+          <br>
+          a conocer mas sobre estos y otros personajes.</p> 
+        </div> 
+    </aside>
+
+          <!-- <div><a href="#" class="btn-empezar">Empezar</a></div> -->
+        </section> 
+    
+        <!-- tabla -->
+        <table class="table">
+          <thead>
+              <th>TOP RANKING</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tabla">Rick Sánchez</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td class="tabla">Morty Smith</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td class="tabla">Mr. Poopybutthole</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td class="tabla">Evil Morty</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td class="tabla">Squanchy</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+          
+          <tfoot>  
+          </tfoot>
+        </table>
+        <!-- boton abajo -->
+      <div class="abajo">
+        <a href="" id="down" class="button"><i class="far fa-arrow-alt-circle-down"></i></a>
+        <div class="slide">
+            <div id="facts">
+            </div>
+      </div>
+      
+
+     
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+<!-- sección video -->
+<section>
+  <h1>Avances de la nueva temporada</h1>
+  <h2>Noviembre 2019</h2>
+
+        <div id="video"  class="contenedor-video">
+            <video width= "1200px" height="1000px" class="fm-video video-js vjs-16-9  vjs-big-play-centered" data-setup="{}" controls preload="auto">
+                <source src="video/rick_y_morty_temp4.mp4" type="video/mp4">
+            </video>
+            
+        </div>
+
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<section id="info" class="hide">
+  <div class=" info">
+    <div class= "ordenar-boton">
+      <select name="filter" id="filter"> 
+      <option value="filter">Filtrar</option>
+      <option value="nombre.name">Nombre</option>
+      <option value="species.species">Especies</option>
+      <option value="location.name">Dimensión</option>
+      <option value="origin.name">Origen</option>
+      </select>
+
+      <select id="choose-fruit-multiple" multiple>
+          <option value="1">Apple</option>
+          <option value="2">Orange</option>
+          <option value="3">Banana</option>
+          <option value="4">Guava</option>
+          <option value="5">Grapes</option>
+        </select>
+    </div>
+    </div>
+
+</select>
+</div>
+<br>
+<br>
+<br>
+<div id="contenedor">
+  <section class="data" id='data'>
+</div>
+</section>
+
     <script src="main.js"></script>
+    <script src="data.js"></script>
   </body>
 </html>
+
+
