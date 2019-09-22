@@ -2,17 +2,221 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <link rel="shortcut icon" href="PM-icon-207.png">
+    <link rel="shortcut icon" href="https://scontent-mia3-2.cdninstagram.com/vp/3f268ef7e4cbdf16b0b298535fb3a095/5D98AB2E/t51.2885-15/sh0.08/e35/s640x640/60896059_363526267614915_9022280140086626890_n.jpg?_nc_ht=scontent-mia3-2.cdninstagram.com"/>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Titillium+Web&display=swap" rel="stylesheet">
+    <title>Rick & Morty API Universe</title>
+
     <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,600&display=swap" rel="stylesheet">
+
+         
+    <!-- <script src="./data/steam/steam.js"></script> -->
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
+
+    <!-- Icono ir abajo -->
+    <span class="icon-circle-down"></span>
+    
+
+  <!-- presentación pagina -->
+      <section class="informacion">
+        <div class="Textear"></div>
+        <p>Humor negro, viajes al espacio, relaciones familiares <br>
+          complicadas y personajes extraños y 
+          extravagantes son<br>
+          los elementos de Rick y Morty, la políticamente 
+          <br>incorrecta serie de animación creada por 
+          <br>Justin Roiland y Dan Harmon.
+          
+         </p> 
+        </div> 
+    </aside>
+
+          <!-- <div><a href="#" class="btn-empezar">Empezar</a></div> -->
+        </section> 
+    
+        <!-- tabla -->
+        <table class="table">
+          <thead>
+              <th>TOP RANKING</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tabla">Rick Sánchez</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td class="tabla">Morty Smith</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td class="tabla">Mr. Poopybutthole</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td class="tabla">Evil Morty</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td class="tabla">Squanchy</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+          
+          <tfoot>  
+          </tfoot>
+        </table>
+        <br>
+        <br>
+        <a href="#" class= "button" id="vota">¡VOTA!</a>
+       
+    
+<!-- sección video -->
+<section>
+  <h1>Avances de la nueva temporada</h1>
+  <h2>Noviembre 2019</h2>
+
+        <div id="video"  class="contenedor-video">
+            <video width= "70%" height="600px" class="fm-video video-js vjs-16-9  vjs-big-play-centered" data-setup="{}" controls preload="auto">
+                <source src="video/rick_y_morty_temp4.mp4" type="video/mp4">
+            </video>
+            
+        </div>
+
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+ 
+  
+ <form>
+
+    <select name="filterSpecie" id="species"> 
+        <option disabled selected>Especies</option>
+        <option value= "Human">Human</option>
+        <option value= "Alien">Alien</option>
+        <option value= "Robot">Robot</option>
+        <option value= "Vampire">Vampire</option>
+        <option value= "Humanoid">Humanoid</option>
+        <option value= "Cronenberg">Cronenberg</option>
+        <option value= "Mytholog">Mytholog</option>
+        <option value= "Poopybutthole">Poopybutthole</option>
+        <option value= "Parasite">Parasite</option>
+    </select>
+ </form>
+    <form>
+      <select name="filter" id="filter"> 
+      <option disabled selected>Origen</option>
+      <option value= "unknown">unknown</option>
+      <option value= "Earth (C-137)">Earth (C-137)</option>
+      <option value= "Earth (J-22)">Earth (J-22)</option>
+      <option value= "Earth (K-22)">Earth (K-22)</option>
+      <option value= "Earth (K-83)">Earth (K-83)</option>
+      <option value= "Earth (S-126)">Earth (S-126)</option>
+      <option value= "Earth (C-500A)">Earth (C500A)</option>
+      <option value= "Earth (D716)">Earth (D716)</option>
+      <option value= "Earth (D716-B)">Earth (D716-B)</option>
+      <option value= "Earth (D716-C)">Earth (D716-C)</option>
+      <option value= "Earth (J19ζ7)">Earth (J19ζ7)</option>
+      <option value= "Earth (D99)">Earth (D99)</option>
+      <option value= "Earth (K-83)">Earth (D716-C)</option>
+      <option value= "Earth (Chair Dimension)">Earth (Chair Dimension)</option>
+      <option value= "Earth (Replace Dimension)">Earth (Replace Dimension)</option>
+      <option value= "Earth (Phone Dimension)">Earth (Phone Dimension)</option>
+      <option value= "Earth (Pizza Dimension)">Earth (Pizza Dimension)</option>
+      <option value= "Earth (Evil Rick's Target Dimension)">Earth (Evil Rick's Target Dimension)</option>
+      <option value= "Earth (Giant Telepathic Spiders Dimension)">Earth (Giant Telepathic Spiders Dimension)</option>
+      <option value= "Post Apocalyptic Earth">Post Apocalyptic Earth</option>
+      <option value= "Cronenberg Earth">Cronenberg Earth</option>
+      <option value= "Citadel of Rick's">Citadel of Rick's</option>
+      <option value= "Árboles Mentirosos">Árboles Mentirosos</option>
+      <option value= "Roy: A life Well Lived">Roy: A life Well Lived</option>
+      <option value= "Gear World">Gear World</option>
+      <option value= "Testicle Monster Dimension">Testicle Monster Dimension</option>
+      <option value= "Pluto">Pluto</option>
+      <option value= "Greasy Grandma World">Greasy Grandma World</option>
+      <option value= "Interdimensional Cable">Interdimensional Cable</option>
+      <option value= "Giant's Town">Giant's Town</option>
+      <option value= "Snuffle's Dream">Snuffle's Dream</option>
+      <option value= "Mr. Goldenfold's Dream">Mr. Goldenfold's Dream</option>
+      <option value= "Girvonesk">Girvonesk</option>
+      <option value= "Rick's Battery Microverse">Rick's Battery Microverse</option>
+      <option value= "Nuptia 4">Nuptia 4</option>
+      <option value= "Gazorpazorp">Gazorpazorp</option>
+      <option value= "Plopstar">Plopstar</option>
+      <option value= "Resort Planet">Resort Planet</option>
+      <option value= "Trunk World">Trunk World</option>
+      <option value= "Kyle's Teenyverse">Kyle's Teenyverse</option>
+      <option value= "Krootabulon">Krootabulon</option>
+      <option value= "Detoxifier">Detoxifier</option>
+      <option value= "Unity's Planet">Unity's Planet</option>
+      <option value= "Zeep Xanflorp's Miniverse">Zeep Xanflorp's Miniverse</option>
+      <option value= "Planet Squanch">Planet Squanch</option>
+      <option value= "Fantasy World">Fantasy World</option>
+      <option value= "Purge Planet">Purge Planet</option>
+      <option value= "Mega Gargantuan Kingdom">Mega Gargantuan Kingdom</option>
+      <option value= "Mr. Meeseks Box">Mr. Meeseks Box</option>
+      <option value= "Alphabetrium">Alphabetrium</option>
+      <option value= "Larva Alien's Planet">Larva Alien's Planet</option>
+      <option value= "Zeep Xanflorp's Miniverse">Zeep Xanflorp's Miniverse</option>
+      <option value= "Hamster in Butt World">Hamster in Butt World</option>
+      <option value= "Glaagablaaga">Glaagablaaga</option>
+      <option value= "Eric Stoltz Mask Earth">Eric Stoltz Mask Earth</option>
+      <option value= "Anathomy Park">Anathomy Park</option>
+      <option value= "Hideout Planet">Hideout Planet</option>
+      <option value= "The Menagerie">The Menagerie</option>
+      <option value= "Grom Flom Prime">Grom Flom Prime</option>
+      <option value= "Bird World">Bird World</option>
+      <option value= "Bepis 9">Bepis 9</option>
+      <option value= "Venzenulon 7">Venzenulon 7</option>
+      <option value= "Signus Expanse">Signus Expanse</option>
+      <option value= "Abadango">Abadango</option>
+     
+
+      
+
+      </select>
+
+    
+      </form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="contenedor">
+  <section class="data" id='data'>
+</div>
+</section>
+
     <script src="main.js"></script>
+    <script src="data.js"></script>
   </body>
 </html>
+
+
+<!--<option disabled selected>Filtrar</option>
+      <option disabled>-----Especies-----</option>
+      <option value= "Human">Human</option>
+      <option value= "Alien">Alien</option>
+      <option value= "Robot">Robot</option>
+      <option value= "Vampire">Vampire</option>
+      <option value= "Humanoid">Humanoid</option>
+      <option value= "Cronenberg">Cronenberg</option>
+      <option value= "Mytholog">Mytholog</option>
+      <option value= "Poopybutthole">Poopybutthole</option>
+      <option value= "unknow">unknow</option>
+      <option value= "Parasite">Parasite</option>-->
+
