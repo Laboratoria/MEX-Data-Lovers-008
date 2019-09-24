@@ -1,0 +1,168 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=" 1.0">
+    <title>Poké-Easy</title>
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="grid.css" />
+  </head>
+
+  <body>
+    <div class="container"> 
+        <header class="col-12 encabezado">
+            <h2><img src="imagenes-pokemon/img-08.png" alt="logo pokemon"></h2>
+         </header>
+
+        <div class="buscadores">
+            <select name="select-type" id="select-type-pokemon">
+            
+                <option value="Todos">Tipo de Pokémon</option>
+                <option value="Todos">Todos</option>
+                <option value="Dragon">Dragón</option>
+                <option value="Fire">Fuego</option>
+                <option value="Ghost">Fantasma</option>
+                <option value="Ground">Tierra</option>
+                <option value="Normal">Normal</option>
+                <option value="Psychic">Psíquico</option>
+                <option value="Steel">Acero</option>
+                <!----option value="value9">Siniestro</option-->
+                <!-- <option value="Electric">Eléctrico</option>
+                <option value="Fighting">Lucha</option>
+                <option value="Poison">Veneno</option>
+                <option value="Rock">Roca</option>
+                <option value="Water">Agua</option>
+                <option value="Bug">Insecto</option>
+                <option value="Grass">Hierba</option>
+                <option value="Flying">Volador</option>
+                <option value="Ice">Hielo</option>
+                <option value="Dark">Oscuro</option>
+            </select>
+
+            <!---input id="busqueda" type="text"-->
+            <!---button>Buscar</button-->
+            
+            <!-- <select name="select-orden" id="select-order">
+                <option value="">Ordena por...</option>
+                <option value="inferior">Número inferior</option>
+                <option value="superior">Número superior</option>
+                <option value="A">A-Z</option>
+                <option value="Z">Z-A</option>
+              </select>
+        </div> 
+
+        <main class="main2">
+          <h1>POKEDEX</h1>
+            <div  class="tarjetas" id="contenido-cards"> </div>
+            <div id="container-pokemon-trype"> </div> 
+            
+        </main>
+
+        <footer class="footer2">
+             <p>PIE DE PAGINA</p><br>
+             <p>ESTA PAGINA ESTA DISEÑADA POR: </p>
+        </footer>
+    </div>
+
+    <div id="root"></div>
+    <section class="row">
+    <script src="./data/pokemon/pokemon.js"></script>
+   
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+  
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=" 1.0">
+    <title>Poké-Easy</title>
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    
+    <section class="container">
+      <section class="row">
+        
+        <header class="col-12 encabezado">
+          <figure class="col-12 logo">
+            <img href="#" src="imagenes-pokemon/img-08.png" alt="Logo" class="col-3 log">
+            
+            
+            
+            <!---input id="busqueda" type="text" onkeyup="autocompletar"-->
+            <!---button id="boton-busqueda">Buscar</button-->
+            
+            <button id="boton-home" onclick="location.href='index.html'">Home</button>
+          </header>
+      </section>
+    </section>
+    
+    <section class="row">
+      <h1 class="col-12 pokedex">Pokédex</h1>
+        <select name="select-type" id="select-type-pokemon" class="select-type">
+          
+         <option value="Todos">Tipo de Pokémon</option>
+         <option value="Todos">Todos</option>
+         <option value="Dragon">Dragón</option>
+         <option value="Fire">Fuego</option>
+         <option value="Ghost">Fantasma</option>
+         <option value="Ground">Tierra</option>
+         <option value="Normal">Normal</option>
+         <option value="Psychic">Psíquico</option>
+         <option value="Steel">Acero</option>
+         <!--option value="value9">Siniestro</option-->
+         <option value="Electric">Eléctrico</option>
+         <option value="Fighting">Lucha</option>
+         <option value="Poison">Veneno</option>
+         <option value="Rock">Roca</option>
+         <option value="Water">Agua</option>
+         <option value="Bug">Insecto</option>
+         <option value="Grass">Hierba</option>
+         <option value="Flying">Volador</option>
+         <option value="Ice">Hielo</option>
+         <option value="Dark">Oscuro</option>
+          
+        </select>
+      
+      <select name="select-orden" id="select-order">
+        <option value="">Ordena por...</option>
+        <option value="inferior">Número inferior</option>
+        <option value="superior">Número superior</option>
+        <option value="A">A-Z</option>
+        <option value="Z">Z-A</option>
+      </select>
+
+      <div id="contenido-cards">
+
+      
+      </div>
+
+    </section>
+
+  
+    
+    
+    <div id="root"></div>
+
+
+    <footer class="footer2">
+      <p>PIE DE PAGINA</p><br>
+      <p>ESTA PAGINA ESTA DISEÑADA POR: </p>
+ </footer>
+    
+
+    <script src="./data/pokemon/pokemon.js"></script>
+   
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>

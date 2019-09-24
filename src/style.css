@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+.container{
+    width: 100%;
+    /*max-width: 1000px;*/
+    margin: 0px auto;
+}
+
+.row{
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.row:before, .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.row:after{
+    clear:both; 
+  }
+
+[class*="col-"]{
+    float: left;
+    min-height: 10px;
+    /*gutters*/
+    padding: 12px;
+}
+
+.col-1{width: 8.333333333333332%}
+.col-2{width: 16.666666666666664%}
+.col-3{width: 25%}
+.col-4{width: 33.33333333333333%}
+.col-5{width: 41.66666666666667%}
+.col-6{width: 50%}
+.col-7{width: 58.333333333333336%}
+.col-8{width: 66.66666666666666%}
+.col-9{width: 75%}
+.col-10{width: 83.33333333333334%}
+.col-11{width: 91.66666666666666%}
+.col-12{width: 100%}
+
+/*@media screen and (min-width:780px) and (max-width:1024px){
+    [class*="col-"]{
+        width: 100%;
+    }
+    .logo{
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width:450px) and (max-width:700px){
+    
+    .logo{
+        width: 50%;
+        
+    }
+}*/
+.tarjetas {
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    border: medium;
+    text-align: center;
+    padding: 2em;
+    margin: 1em 2em 2em 1em;
+    background-image: url(imagenes-pokemon/tarjeta-09.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.encabezado{
+    background-image: url(imagenes-pokemon/img-07.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#num {
+    text-align: left;
+    font-size: 80%;
+    font-weight: bold;
+    color: #6B6C75;
+    
+}
+#nombre {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    color: #3A3C49;
+}
+#tipo {
+    text-align: center;
+    font-size: 120%;
+    line-height: 170%;
+
+}
+#debilidad {
+    text-align: left;
+    font-size: 100%;
+    line-height: 170%;
+
+}
+#log {
+    width: 100;
+}
+#select-type-pokemon{
+    padding: 10px;
+    margin: 15px 20px;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    white-space: nowrap;
+    border: 5px #1d1d1d;
+    font-weight: bold;
+
+}
+#select-order{
+    padding: 10px;
+    margin: 15px 20px;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    white-space: nowrap;
+    border: 5px #1d1d1d;
+    font-weight: bold;
+
+}
+#boton-home{
+    justify-content: space-between;
+    padding: 10px;
+    margin: 15px 20px;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #3A5DA8;
+    border-radius: 10px;
+    white-space: nowrap;
+    border: 5px #3A5DA8;
+    font-weight: bold;
+
+}

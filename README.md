@@ -1,3 +1,113 @@
+# Pokémon Easy
+
+## Investigación
+
+El significado de Pokémon viene del japonés Poketto Monsutā que significa monstruos de bolsillo. Inicialmente se distribuyó como un videojuego para la consola Nintendo.
+
+El diseño de los pokémon está basado en animales reales, criaturas míticas y mitológicas orientales, así como en cosas inanimadas y legendarias. El nombre que se le da a los usuarios son “entrenadores pokémon” cuyo objetivo es capturar, por medio de un artefacto llamado pokébola, a todas las especies pokémon disponibles en la región ficticia, la finalidad es completar la información del pokédex (un dispositivo electrónico donde se guarda la información de cada pokemon, desde su tipo, fortalezas, debilidades, evolución, etc.).
+
+Otra finalidad de los entrenadores pokémon es entrenar y enfrentar los pokémon capturados con otros para conseguir otro título el cual es “maestro pokémon”, lo cual les permite recolectar medallas de gimnasio después de vencer a los líderes.
+
+Existen 18 tipos de pokémon.
+
+**Pokédex**
+
+El pokédex registra los datos de los pokémon, al inicio de los videojuegos el pokédex está en blanco, ya que quieren que el jugador a medida que va avanzando y conociendo la zona conoce los pokémon y los archiva para después tener información de ellos y pueda utilizarlos en sus enfrentamientos.
+
+El tipo de información que se recolecta es el tipo de pokémon (agua, hierva, veneno, psíquico, etc), altura, peso, técnicas y descripción breve.
+
+**Kanto**
+
+Es una región del mundo ficticio de Pokémon. La región Kanto esta presente en los videojuegos de la primera generación así como también aparece en la primera temporada del anime, donde se desarrolla la aventura de Ash Ketchum.
+
+**Pokémon Go**
+
+Pokémon Go es una aplicación para dispositivos móviles con sistema iPhone y Android cuya fecha de lanzamiento fue el 6 de julio de 2016. La finalidad de la aplicación es hacer que sus usuarios tengan la oportunidad de explorar lugares reales en busca de Pokémon. A medida que va avanzando el usuario su smartphone enviara una alerta cuando un pokemon este cerca.
+
+En la actualidad Pokémon Go ha hecho que tenga de nuevo popularidad, por lo que consideramos importante investigar más sobre él, ya que a partir de este momento aparecen nuevos de usuarios (generaciones más jóvenes), así como re-conecta con usuarios que no eran tan activos en las plataformas que ya tenían, es así que las necesidades y expectativas de los usuarios cambian. Sin embargo nuestro proyecto no se basará en la información de Pokémon Go, por requerimientos del proyecto.
+
+## Objetivo del proyecto
+
+Crear una página web donde el usuario pueda tener información específica de cada pokémon en la región Kanto. Que el usuario pueda hacer una búsqueda de su pokémon favorito y tenga información específica de él. Facilitar al usuario la búsqueda por medio de categorías como por el tipo de pokémon, los más populares, los más fuertes.
+
+## Objetivo de la encuesta.
+
+Se realizó una encuesta para determinar a nuestro usuario, preguntar directamente que información les interesa tener en la página, determinar el conocimiento del usuario, la edad, generó y los pokémon favoritos.
+
+Se determinó que nuestros usuarios en la mayoría son mujeres, sin embargo la encuesta nos arrojó un número muy similar entre los usuarios.
+![](src/Imagenes-readme/genero.png)
+
+En cuanto la edad la mayoría de los usuarios tiene una edad de entre los 26 y 35 años. Por lo que consideramos que pertenecen a la generación que re-conectó en los últimos años.
+
+![](src/Imagenes-readme/Edad.png)
+
+La mayoría de nuestros usuarios conoce pokémon por la caricatura y la película. Nuestra finalidad con esta pregunta era determinar si nuestro usuario es Fan o solo curioso del tema, ya que dejamos que en la pregunta pudieran registrar más de una respuesta. 24 usuarios solo registraron una opción, 6 usuarios registraron dos opciones y 7 usuarios registraron tres opciones. Llegamos a la conclusión de la mayoría de nuestros usuarios no son fans.
+
+![](src/Imagenes-readme/donde_conoces.png)
+
+Se muestra que la información que desean ver en la página es información general como de personajes, después los tipos de pokémon y sus evoluciones.
+
+![](src/Imagenes-readme/informacion.png)
+
+Los pokémon con más menciones fueron
+1.	Charmander con 10 votos
+2.	Charizard con 5 votos
+3.	Pikachu y chikorita 4 votos
+4.	Jigglypuff con 3 votos
+5.	Fenekin y Ditto con dos votos
+
+![](src/Imagenes-readme/pokemonfavorito.png)
+
+## Usuarios
+
+**¿Quiénes son nuestros usuarios?**
+
+Nuestros usuarios no tienen mucho conocimiento sobre pokémon, por lo que no estamos tratando con fanáticos. Nuestros usuarios tienen aproximadamente una edad de 26 a 35 años. Con respecto al género la mayoría son mujeres, pero casi hay una igualdad de género.
+
+El usuario con respecto a pokémon entraría a la plataforma por curiosidad y para tener más información sobre el tema. Los usuarios re-conectaron con pokémon o inclusos unos si tiene más conocimientos.
+
+**¿Qué necesitan nuestros usuarios?**
+
+Nuestros usuarios necesitan una página que le dé más información sobre pokémon, los tipos de pokémon que hay, las evoluciones, la comparación entre pokemones y los más populares.
+
+**¿Qué quieren nuestros usuarios?**
+
+Una página que contenga información específica de los pokémon, poder compararlos, pero además conocer información como la historia, los personajes, etc.
+
+## Análisis de nuestra competencia
+
+https://pokemon.fandom.com/es/wiki/Kanto
+
+Esta página está diseñada con una versión tipo wikipedia de pokémon, donde puedes ver información desde los pokemon, lugares y personajes. Al parecer está dirigido a usuarios con categoría de fan.
+
+https://www.pokemon.com/es/
+
+Esta página es la oficial de la marca, su distribución solo es la información sobre los pokémon, ya que presenta diferentes opciones donde se puede jugar pokémon. Esta página está dirigida a fans y a gente que quiere empezar a conocer, es de fácil manejo y es muy intuitiva. El diseño es sencillo.
+
+## Diseño de interfaz
+
+Consideraciones
+Necesitamos: botón de búsqueda, botones de categorías, comparación de pokémon, filtrar por número, definir colores (negro, rojo, azul, amarillo), información extra.
+
+#### Prototipo de baja fidelidad
+
+Añadimos el prototipo de baja fidelidad, con la aplicación de Marvel.
+
+https://marvelapp.com/621b873
+
+![](src/Imagenes-readme/IMG_20190628_133359.jpg)
+![](src/Imagenes-readme/IMG_20190628_133408.jpg)
+
+#### Prototipo de alta fidelidad
+
+#### Testeo
+
+
+
+
+
+
+
 # Data Lovers
 
 ## Índice

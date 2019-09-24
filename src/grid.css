@@ -1,0 +1,165 @@
+.contenedor {
+    display: grid;
+    grid-gap: 20px;
+    margin: 20px auto;
+    width: 80%;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header         header     header"
+                            "map         widget     sidebar"
+                            "contenido   contenido  sidebar"
+                            "source1     source2    source3"
+                            "footer      footer     footer"
+
+}
+.contenedor .header{
+    background-color: #FF1C1C;
+    grid-area: header;
+}
+.contenedor .map{
+    grid-area: map; 
+}
+
+.contenedor .widget{
+    background: #D8D8D8;
+    grid-area: widget;
+   
+}
+.contenedor .sidebar{
+    background: rgb(245, 210, 73);
+    grid-area: sidebar;
+}
+.contenedor .contenido{
+    background: #f6faf9;
+    grid-area: contenido;
+}
+.contenedor .source1,
+.contenedor .source2,
+.contenedor .source3{
+  background: #3A5DA8;
+  height:100px;
+}
+.contenedor .source1{
+    grid-area: source1;
+}
+.contenedor .source2{
+    grid-area: source2;
+}
+.contenedor .source3{
+    grid-area: source3;
+}
+.contenedor .footer{
+    background: #1d1d1d;
+    color: antiquewhite;
+    grid-area: footer;
+}
+
+
+@media screen and (max-width:768px){
+    .contenedor{
+        grid-template-areas: "header         header     header     header"
+                             "map            map        widget     widget"
+                             "contenido      contenido  contenido contenido"
+                             "sidebar        sidebar    sidebar   sidebar"
+                             "source1        source1    source1   source1 " 
+                             "source2        source2    source3   source3"
+                             "footer         footer     footer    footer"
+    }
+}
+
+*{  
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+    background: #e9ecf4;
+    color: black;
+}
+
+.contenedor{
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+} 
+
+.map img{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.widget img{
+    width: 100%;
+    height: auto;
+    max-block-size: 500px;
+}
+.source3 img{
+    width: 100%;
+    height: auto; 
+}
+
+.contenido{
+    font-size: small;
+}
+
+.source1 video{
+    width: 100%
+}
+.source2 img{
+    width: 1000%;
+    height: auto; 
+}
+.source3 img{
+    width: 100%;
+    height: auto; 
+}
+
+
+/* RESPONSIVE INDEX2.HTML
+.contenedor2 {
+    display: grid;
+    box-sizing: border-box;
+    grid-gap: 20px;
+    margin: 10px auto;
+    width: 80%;
+    /* grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto); */
+    /* grid-template-areas: "header2         header2     header2"
+                         "buscadores      buscadores  buscadores"
+                         "main2            main2        main2"
+                         "tarjetas        tarjetas    tarjetas"
+                         "footer2          footer2    footer2"
+
+}
+.contenedor2 .header2{
+    background-color: red;
+    grid-area: header2;
+}
+.contenedor2 .buscador{
+    grid-area: buscador; 
+}
+.contenedor2 .main2{
+    grid-area: main2; 
+}
+.contenedor2 .tarjetas{
+    grid-area: tarjetas;    
+}
+.contenedor2 .footer2{
+    background: black;
+    color: antiquewhite;
+    grid-area: footer2;
+} */ 
+
+
+/* @media screen and (max-width:768px){
+    .contenedor2{
+        grid-template-areas: "header         header     header     header"
+                             "map            map        widget     widget"
+                             "contenido      contenido  contenido contenido"
+                             "sidebar        sidebar    sidebar   sidebar"
+                             "source1        source1    source1   source1 " 
+                             "source2        source2    source3   source3"
+                             "footer         footer     footer    footer"
+    } */
