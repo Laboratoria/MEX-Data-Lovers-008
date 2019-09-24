@@ -742,9 +742,9 @@ const RICKANDMORTY = {
       "name": "Earth (Evil Rick's Target Dimension)",
       "url": "https://rickandmortyapi.com/api/location/34"
     },
-    "image": "https://rickandmortyapi.com/api/character/avatar/39.jpeg",
+    "image": "https://rickandmortyapi.com/api/character bvh/avatar/39.jpeg",
     "episode": ["https://rickandmortyapi.com/api/episode/10"],
-    "url": "https://rickandmortyapi.com/api/character/39",
+    "url": "https://rickandmortyapi.com/api/character/39",´pñ.}
     "created": "2017-11-05T09:52:31.777Z"
   }, {
     "id": 40,
