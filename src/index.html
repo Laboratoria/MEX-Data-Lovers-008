@@ -1,18 +1,118 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Rick and Morty Lovers</title>
+      <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
+    <main class="container" id="container">
+      <header class="row">
+        <figure>
+          <a href="">
+            <img src="images/banner1.png" alt="Rick and Morty Lovers">
+          </a>
+        </figure>
+      </header>
+
+    <!--PANTALLA DE BIENVENIDA-->
+    <section id="pantalla-bienvenida" class="row">
+        <div id="button-personajes" class="gif-button col-6"><input type="image" alt="Personajes" src="images/rick-spinning.giphy(2).gif" :hover><div class="nombre-secciones">Personajes</div></div>
+        <!--
+        <div id="button-planetas" class="gif-button col-6"><input type="image" alt="Planetas" src="images/yell.giphy.gif" :hover><div class="nombre-secciones">Planetas y dimensiones</div></div>
+        -->
+        <div id="button-explorar" class="gif-button col-6"><input type="image" alt="Explorar" src="images/rick-morty-watch-giphy(2).gif" :hover><div class="nombre-secciones">Explorar</div></div>
+        <div id="button-ayuda" class="gif-button col-6"><input type="image"  alt="Explorar" src="images/yell.giphy.gif" :hover><div class="nombre-secciones">Sobre Nosotros</div></div>
+    </section>
+
+     <!--PANTALLA DE PERSONAJES-->
+    <section id="pantalla-personajes" class="row disappear">
+      <div class="row">
+        <article>
+          <h1>Personajes</h1>
+        </article>
+      </div>
+      <div class="row" id="inputs-pantalla-personajes">
+        <div class="col-2">
+          <select id="input-filter-personajes">
+            <option value="filter">Filtrar</option>
+            <option value="all">Todos</option>
+            <option value="status.Alive">Vivos</option>
+            <option value="status.Dead">Muertos</option>
+            <option value="gender.Male">Masculinos</option>
+            <option value="gender.Female">Femeninos</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <select id="input-sort-personajes">
+            <option value="all">Ordenar</option>
+            <option value="sortAZ">Ordenar A-Z</option>
+            <option value="sortZA">Ordenar Z-A</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-display">
+          <div id="card-display"></div>
+        </div>
+      </div>
+    </section>
+
+     <!--PANTALLA DE PLANETAS
+    <section id="pantalla-planetas" class="row disappear">
+      <article class="header">
+        <h1>Planetas y dimensiones</h1>
+      </article>
+    </section>
+    -->
+
+     <!--PANTALLA DE EXPLORAR-->
+    <section id="pantalla-explorar" class="row disappear">
+      <article class="row">
+        <h2 class="col-12">Explorar</h2>
+      </article>
+      <article class="col-12 event-videos">
+        <figure class="event-imageContainer">
+          <iframe width='560' height='315' src='https://www.adultswim.com/player/embed/AWq749adCorLtcgflqdN' frameborder='0' allowfullscreen>
+          </iframe>
+        </figure>
+        <div class="texto-pantallas">
+          <h3 class="event-videos-título">Rick and Morty Temporada 4</h3>
+            <p class="event-videos-descrip"> La cuarta temporada de Rick and Morty llega en Noviembre de 2019!
+              Mientras tanto vuelve a ver tus episodios favoritos.
+            </p>
+            
+        </div>
+      </article>
+    </section>
+
+     <!--PANTALLA DE AYUDA-->
+    <section id="pantalla-ayuda" class="row disappear">
+     <article class="header">
+       <h1>Sobre Rick and Morty Lovers</h1>
+      </article>
+      <div class="row texto-pantallas">
+        <img src="images/giphy(4).gif" alt="Rick and Morty">
+        <h2>Rick and Morty Lovers es un sitio web creado por y para fans de esta serie, con el fin de entretener a todos aquellos inetnautas que deseen adentrarse en el maravilloso mundo de esta serie, ya que en este sitio podran encontrar informacion a cerca de todos y cada uno de los personajes que aparecen en esta serie.<h1>
+      </div>
+    </section>
+
+     <!--BOTÓN REINICIO-->
+    <div id="button-reinicio">
+      <div>
+        <input id="portal" type="image" alt="Inicio" :hover src="images/portal png 1(3).gif">
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer id="footer" class="row">
+      <h3>Rick and Morty Lovers - 2019</h3>
+    </footer>
+
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
+
+    </main>
   </body>
 </html>
