@@ -19,9 +19,9 @@ var POKEMON = {
     "multipliers": [1.58],
     "weaknesses": [
       "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
+      " Ice",
+      " Flying ",
+      " Psychic "
     ],
     "next_evolution": [{
       "num": "002",
@@ -4085,3 +4085,6 @@ var POKEMON = {
   }]
 }
 ;;
+
+window.pikachu = POKEMON;
+
