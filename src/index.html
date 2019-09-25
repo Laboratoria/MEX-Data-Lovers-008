@@ -1,18 +1,105 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Rick and Morty Lovers</title>
+      <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
+  <body> 
+    <main class="container" id="container">
+      <header class="row">
+        <figure>
+          <a href="">
+            <img src="images/banner1.png" alt="Rick and Morty Lovers">
+          </a>
+        </figure>
+      </header>
+
+    <!--PANTALLA DE BIENVENIDA-->
+    <section id="pantalla-bienvenida" class="row">
+        <!--<div id="button-inicio" class="gif-button col-6"><input type="image" alt="Inicio" src="images/portal png 1(6).gif" :hover></div>-->
+        <div id="button-personajes" class="gif-button col-6"><input type="image" alt="Personajes" src="images/rick-spinning.giphy(2).gif" :hover><div class="nombre-secciones">Personajes</div></div>
+        <div id="button-planetas" class="gif-button col-6"><input type="image" alt="Planetas" src="images/yell.giphy.gif" :hover><div class="nombre-secciones">Planetas y dimensiones</div></div>
+        <div id="button-explorar" class="gif-button col-6"><input type="image" alt="Explorar" src="images/rick-morty-watch-giphy(2).gif" :hover><div class="nombre-secciones">Explorar</div></div>
+        <div id="button-ayuda" class="gif-button col-6"><input type="image"  alt="Explorar" src="images/morty(2).gif" :hover><div class="nombre-secciones">Ayuda</div></div>
+    </section>
+
+     <!--PANTALLA DE PERSONAJES-->
+    <section id="pantalla-personajes" class="row disappear">
+      <article>
+        <div class="section-header">
+          <h1>Personajes</h1>
+        </div>
+      </article>
+      <div class="card-display">
+        <div id="card-display"></div>
+      </div>
+      <div class="row" id="filter-personajes">
+        <select class="col-2" id="input-filter-personajes">
+          <option value="filter">Filtrar</option>
+          <option value="all">Todos</option>
+          <option value="allAlive">Vivos</option>
+          <option value="allDead">Muertos</option>
+          <option value="allMale">Masculinos</option>
+          <option value="allFemale">Femeninos</option>
+        </select>
+      </div>
+      <!--<div class="row" id="ordenar-personajes">
+        <select class="col-2" name="ordenar" id="input-ordenar-personajes">
+          <option value="a-z">A-Z</option>
+          <option value="z-a">Z-A</option>
+        </select>
+      </div>-->
+    </section>
+
+     <!--PANTALLA DE PLANETAS-->
+    <section id="pantalla-planetas" class="row disappear">
+      <article class="header">
+        <h1>Planetas y dimensiones</h1>
+      </article>
+    </section>
+
+     <!--PANTALLA DE EXPLORAR-->
+    <section id="pantalla-explorar" class="row disappear">
+      <article class="row">
+        <h2 class="col-12">Explorar</h2>
+      </article>
+      <article class="col-12 event-videos">
+        <figure class="event-imageContainer">
+          <iframe width='560' height='315' src='https://www.adultswim.com/player/embed/AWq749adCorLtcgflqdN' frameborder='0' allowfullscreen>
+          </iframe>
+        </figure>
+        <div class="event-videos">
+          <h3 class="event-videos-título">Rick ann Morty Temporada 4</h3>
+            <p class="event-videos-descrip"> La cuarta temporada de Rick and Morty llega en Noviembre de 2019!
+              Mientras tanto vuelve a ver tus episodios favoritos.
+            </p>
+        </div>
+      </article>
+    </section>
+
+     <!--PANTALLA DE AYUDA-->
+    <section id="pantalla-ayuda" class="row disappear">
+     <article class="header">
+       <h1>Sobre Rick and Morty Lovers</h1>
+      </article>
+    </section>
+
+     <!--BOTÓN REINICIO-->
+    <div id="button-reinicio">
+      <div>
+        <input id="portal" type="image" alt="Inicio" :hover src="images/portal png 1(3).gif">
+      </div>
+    </div>
+
+    <footer id="footer" class="row">
+      <h3>Rick and Morty Lovers - 2019</h3>
+    </footer>
+
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
+    
+    </main>
   </body>
 </html>
