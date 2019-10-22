@@ -5,8 +5,8 @@ require('../src/data.js');
 describe('filterByType', () => {
   it('is a function', () => {
     expect(typeof filterByType).toBe('function');
-  });
-});
+      });
+    });
 
 describe('sortData', () => {
   it('is a function', () => {
