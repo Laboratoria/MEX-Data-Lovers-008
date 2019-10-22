@@ -1,18 +1,94 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
-</html>
+   <head>
+     <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+     <meta charset="utf-8">
+     <title>Data Lovers</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div id="container" >
+        <figure>
+          <img src="./imagenes/logologo.png" id="logologo" alt="">
+        </figure>
+              <div id="pokemones-unoxuno">   
+                <div>
+                   <h2 id="name">¡Para que comiences a conocer el universo Pokémon! <br> </h2><br>
+                   <img id="img" height="250" width="250" src="./imagenes/pikachuuu.png"><br>
+                </div>
+
+             <div>
+               <button id="atras" class="button_unoxuno">Atrás</button>
+               <button id="siguiente" class="button_unoxuno">Siguiente</button>
+             </div><br>
+             
+             <button id="conocertodos" class="btn_todos_pokemones">conocer a todos los pokemones</button>
+            </div>
+      </div>
+     
+        <section id="estadistica" class="ocultar">
+            <p id="numerodepokemones"></p>
+            <p id="porcentajedepokemones"></p>
+         </section>
+         <section id="todospokemones" class="ocultar ">
+           <div id="nav"> 
+                <button class="enlace btnPok"  type="button" id="Ice">Hielo</button>
+                <button class="enlace btnPok" type="button" id="Fire">Fuego</button>
+                <button class="enlace btnPok" type="button" id="Water">Agua</button>
+                <button class="enlace btnPok" type="button" id="Grass">Hierba</button>
+                <button class="enlace btnPok" type="button" id="Psychic">Psíquico</button>
+                <button class="enlace btnPok" type="button" id="Rock">Roca</button>
+                <button class="enlace btnPok" type="button" id="Electric">Eléctrico</button>
+                <button class="enlace btnPok" type="button" id="Bug">Insecto</button>
+                <button class="enlace btnPok" type="button" id="Flying">Volador</button>
+              <button class="enlace btnPok" id="enlace">Filtrar A-Z</button>
+              <button class="enlace btnPok" id="orderZ_A">Filtrar Z-A</button> <br>
+           </div>
+           <div id="mostrando_lista_pokemones"></div>
+        </section>
+  <!-- *************************************************************** -->
+
+           <!-- <input type="button" class="button" value="Pokemones" id="catalog">
+           <section id="characters-page" > 
+               <div class="menu-second content">
+                 <h2>Pokemones</h2>
+                 <div class="order-and-filter-button">
+                 <div class="pokemon-type order-filter">   
+                   <select name="filter" id="filter">
+                     <option value="all">Mostrar todos</option>
+                     <option value="ice">Ice</option>
+                     <option value="fire">Fire</option>
+                     <option value="water">Water</option>
+                     <option value="grass">Grass</option>
+                     <option value="psychic">Psychic</option>
+                     <option value="dragon">Dragon</option>
+                     <option value="rock">Rock</option>
+                     <option value="electric">Electric</option>
+                     <option value="ground">Ground</option>
+                     <option value="poison">Poison</option>
+                     <option value="flying">Flying</option>
+                   </select>
+       
+                   <select name="order" id="order">
+                     <option value="order" class="order">Ordenar</option>
+                     <option value="a-z">de A a Z</option>
+                     <option value="z-a">de Z a A</option>
+                   </select>
+                 </div>
+                 </div>
+              </div>
+           
+              <section class="all-data" id="all-data">
+              </section>
+           </section> -->
+     <!-- *************************************************************** -->
+
+     <script src="./data/pokemon/pokemon.js"></script>
+     <script src="main.js"></script>
+     <script src="data.js"></script>
+
+   </body>
+ </html>
+
